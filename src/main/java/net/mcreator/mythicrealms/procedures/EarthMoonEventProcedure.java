@@ -35,7 +35,7 @@ public class EarthMoonEventProcedure {
 		if (skyRenderEvent == null)
 			return;
 		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("mythicrealms:moon"))) {
-			RenderUtils.renderCustomMoon(skyRenderEvent, ResourceLocation.parse("mythicrealms:textures/environment/earth_moon.png"));
+			RenderUtils.swapVanillaTexture(RenderUtils.MOON_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/earth_moon.png"));
 			if (world.getServer() != null) {
 				world.getServer().setDifficulty(Difficulty.PEACEFUL, true);
 			}

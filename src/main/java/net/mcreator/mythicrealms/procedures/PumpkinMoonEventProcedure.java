@@ -15,7 +15,7 @@ public class PumpkinMoonEventProcedure {
 	public static void execute(LevelAccessor world, RenderLevelStageEvent.AfterSky skyRenderEvent) {
 		if (skyRenderEvent == null)
 			return;
-		RenderUtils.renderCustomMoon(skyRenderEvent, ResourceLocation.parse("mythicrealms:textures/environment/pumpkin_moon.png"));
+		RenderUtils.swapVanillaTexture(RenderUtils.MOON_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/pumpkin_moon.png"));
 		if (world.getServer() != null) {
 			world.getServer().setDifficulty(Difficulty.HARD, true);
 		}

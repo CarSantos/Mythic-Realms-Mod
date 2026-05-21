@@ -429,5 +429,10 @@
   "item.mythicrealms.xochitl_leather": "Xochitl Leather",
   "item.mythicrealms.xochitl_ingot": "Xochitl Ingot",
   "item.mythicrealms.xochitl_spawn_egg": "Xochitl Spawn Egg",
-  "entity.mythicrealms.xochitl": "Xochitl"
+  "entity.mythicrealms.xochitl": "Xochitl",
+  "item.mythicrealms.star_dust": "Star Dust",
+  "item.mythicrealms.sand_of_star": "Sand Of Star",
+  "biome.mythicrealms.desert_of_dead_star": "Desert Of Dead Star",
+  "item.mythicrealms.toxic_sand": "Toxic Sand",
+  "biome.mythicrealms.toxic_biome": "Toxic Biome"
 }

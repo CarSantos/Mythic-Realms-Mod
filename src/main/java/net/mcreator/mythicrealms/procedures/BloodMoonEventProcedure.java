@@ -20,7 +20,7 @@ public class BloodMoonEventProcedure {
 	public static void execute(LevelAccessor world, Entity entity, RenderLevelStageEvent.AfterSky skyRenderEvent) {
 		if (entity == null || skyRenderEvent == null)
 			return;
-		RenderUtils.renderCustomMoon(skyRenderEvent, ResourceLocation.parse("mythicrealms:textures/environment/blood_moon.png"));
+		RenderUtils.swapVanillaTexture(RenderUtils.MOON_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/blood_moon.png"));
 		if (world.getServer() != null) {
 			world.getServer().setDifficulty(Difficulty.HARD, true);
 		}

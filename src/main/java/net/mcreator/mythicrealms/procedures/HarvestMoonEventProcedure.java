@@ -20,7 +20,7 @@ public class HarvestMoonEventProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, RenderLevelStageEvent.AfterSky skyRenderEvent) {
 		if (skyRenderEvent == null)
 			return;
-		RenderUtils.renderCustomMoon(skyRenderEvent, ResourceLocation.parse("mythicrealms:textures/environment/blood_moon.png"));
+		RenderUtils.swapVanillaTexture(RenderUtils.MOON_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/green_moon.png"));
 		if (world instanceof Level _level) {
 			BlockPos _bp = BlockPos.containing(x, y, z);
 			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {

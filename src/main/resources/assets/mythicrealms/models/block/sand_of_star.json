@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/sandofstar",
+    "up": "mythicrealms:block/sandofstar",
+    "north": "mythicrealms:block/sandofstar",
+    "east": "mythicrealms:block/sandofstar",
+    "south": "mythicrealms:block/sandofstar",
+    "west": "mythicrealms:block/sandofstar",
+    "particle": "mythicrealms:block/sandofstar"
+  },
+  "render_type": "solid"
+}

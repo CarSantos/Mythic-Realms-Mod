@@ -75,6 +75,8 @@ public class MythicrealmsModBlocks {
 	public static final DeferredBlock<Block> YGGDRASIL_BUTTON;
 	public static final DeferredBlock<Block> YGGDRASIL_SAPLING;
 	public static final DeferredBlock<Block> URANIUM_BLOCK;
+	public static final DeferredBlock<Block> SAND_OF_STAR;
+	public static final DeferredBlock<Block> TOXIC_SAND;
 	static {
 		TITANIUM_ORE = register("titanium_ore", TitaniumOreBlock::new);
 		VIBRANIUM_ORE = register("vibranium_ore", VibraniumOreBlock::new);
@@ -135,6 +137,8 @@ public class MythicrealmsModBlocks {
 		YGGDRASIL_BUTTON = register("yggdrasil_button", YggdrasilButtonBlock::new);
 		YGGDRASIL_SAPLING = register("yggdrasil_sapling", YggdrasilSaplingBlock::new);
 		URANIUM_BLOCK = register("uranium_block", UraniumBlockBlock::new);
+		SAND_OF_STAR = register("sand_of_star", SandOfStarBlock::new);
+		TOXIC_SAND = register("toxic_sand", ToxicSandBlock::new);
 	}
 
 	// Start of user code block custom blocks

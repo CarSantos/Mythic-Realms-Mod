@@ -12,30 +12,6 @@
     "underwaterBlock": {
       "value": "CUSTOM:LunarBlock"
     },
-    "airColor": {
-      "value": -16710592,
-      "falpha": 0.0
-    },
-    "fogColor": {
-      "value": -16710592,
-      "falpha": 0.0
-    },
-    "grassColor": {
-      "value": -12501455,
-      "falpha": 0.0
-    },
-    "foliageColor": {
-      "value": -12501455,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -12501455,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -12501455,
-      "falpha": 0.0
-    },
     "ambientSound": {
       "value": ""
     },
@@ -60,24 +36,24 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.5,
+      "min": -2.0,
       "max": 0.5
     },
     "genHumidity": {
-      "min": -0.5,
+      "min": -2.0,
       "max": 0.5
     },
     "genContinentalness": {
-      "min": 0.3,
+      "min": -2.0,
       "max": 1.0
     },
     "genErosion": {
-      "min": -0.5,
+      "min": -2.0,
       "max": 0.5
     },
     "genWeirdness": {
-      "min": -1.0,
-      "max": 1.0
+      "min": -2.0,
+      "max": 2.0
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",

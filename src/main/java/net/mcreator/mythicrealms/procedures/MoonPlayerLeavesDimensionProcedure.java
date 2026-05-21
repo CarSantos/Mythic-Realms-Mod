@@ -11,13 +11,9 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
-
-import net.mcreator.mythicrealms.init.MythicrealmsModMobEffects;
-import net.mcreator.mythicrealms.MythicrealmsMod;
 
 import javax.annotation.Nullable;
 
@@ -39,10 +35,6 @@ public class MoonPlayerLeavesDimensionProcedure {
 			if (entity instanceof LivingEntity _livingEntity3 && _livingEntity3.getAttributes().hasAttribute(Attributes.GRAVITY))
 				_livingEntity3.getAttribute(Attributes.GRAVITY).setBaseValue(0.02);
 			entity.setAirSupply((int) (entity.getAirSupply() - 0.1));
-			MythicrealmsMod.queueServerWork(200, () -> {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MythicrealmsModMobEffects.FROZEN, 60, 1));
-			});
 		}
 	}
 }

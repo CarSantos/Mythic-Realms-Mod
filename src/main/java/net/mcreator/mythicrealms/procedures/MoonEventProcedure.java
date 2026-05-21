@@ -46,6 +46,9 @@ public class MoonEventProcedure {
 					HarvestMoonEventProcedure.execute(world, x, y, z, skyRenderEvent);
 				}
 			} else {
+				if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 14) {
+					ManaMoonEventProcedure.execute(world, entity, skyRenderEvent);
+				}
 				RenderUtils.swapVanillaTexture(RenderUtils.MOON_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/moon_phases.png"));
 			}
 		}

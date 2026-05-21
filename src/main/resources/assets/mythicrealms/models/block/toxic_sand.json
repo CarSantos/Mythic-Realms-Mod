@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/toxicsand",
+    "up": "mythicrealms:block/toxicsand",
+    "north": "mythicrealms:block/toxicsand",
+    "east": "mythicrealms:block/toxicsand",
+    "south": "mythicrealms:block/toxicsand",
+    "west": "mythicrealms:block/toxicsand",
+    "particle": "mythicrealms:block/toxicsand"
+  },
+  "render_type": "solid"
+}

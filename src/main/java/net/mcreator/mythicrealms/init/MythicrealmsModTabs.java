@@ -152,6 +152,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.DEMON_SCALE.get());
 			tabData.accept(MythicrealmsModItems.DEMON_INGOT.get());
 			tabData.accept(MythicrealmsModItems.MANA_BOTTLE.get());
+			tabData.accept(MythicrealmsModItems.STAR_DUST.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
@@ -168,6 +169,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModBlocks.LUNAR_BLOCK.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_LEAVES.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_SAPLING.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.SAND_OF_STAR.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(MythicrealmsModItems.STEEL_SWORD.get());
 			tabData.accept(MythicrealmsModItems.NINJA_ARMOR_HELMET.get());

@@ -19,7 +19,7 @@ public class EclipseEventProcedure {
 	public static void execute(LevelAccessor world, Entity entity, RenderLevelStageEvent.AfterSky skyRenderEvent) {
 		if (entity == null || skyRenderEvent == null)
 			return;
-		RenderUtils.renderCustomSun(skyRenderEvent, ResourceLocation.parse("mythicrealms:textures/environment/eclipse.png"));
+		RenderUtils.swapVanillaTexture(RenderUtils.SUN_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/eclipse.png"));
 		if (world.dayTime() == 0) {
 			if (world instanceof ServerLevel _level) {
 				_level.getServer().getPlayerList().broadcastSystemMessage(Component.literal("A Solar Eclipse darkens the sky!").withColor(0xffffcc).withStyle(ChatFormatting.BOLD), false);

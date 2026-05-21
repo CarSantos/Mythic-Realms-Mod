@@ -240,6 +240,9 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> XOCHITL_LEATHER;
 	public static final DeferredItem<Item> XOCHITL_INGOT;
 	public static final DeferredItem<Item> XOCHITL_SPAWN_EGG;
+	public static final DeferredItem<Item> STAR_DUST;
+	public static final DeferredItem<Item> SAND_OF_STAR;
+	public static final DeferredItem<Item> TOXIC_SAND;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -453,6 +456,9 @@ public class MythicrealmsModItems {
 		XOCHITL_LEATHER = register("xochitl_leather", XochitlLeatherItem::new);
 		XOCHITL_INGOT = register("xochitl_ingot", XochitlIngotItem::new);
 		XOCHITL_SPAWN_EGG = register("xochitl_spawn_egg", properties -> new SpawnEggItem(MythicrealmsModEntities.XOCHITL.get(), properties));
+		STAR_DUST = register("star_dust", StarDustItem::new);
+		SAND_OF_STAR = block(MythicrealmsModBlocks.SAND_OF_STAR);
+		TOXIC_SAND = block(MythicrealmsModBlocks.TOXIC_SAND);
 	}
 
 	// Start of user code block custom items

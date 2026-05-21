@@ -9021,6 +9021,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -10400,6 +10416,254 @@
         ]
       },
       "path": "~/Creature/Xochitl"
+    },
+    {
+      "name": "MythicForestEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythic_forest_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MythicForestEffectProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/MythicForest"
+    },
+    {
+      "name": "StarDust",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "star_dust",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/StarDustItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/star_dust.json",
+          "src/main/resources/assets/mythicrealms/items/star_dust.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/DesertofDeadStar/Block"
+    },
+    {
+      "name": "SandOfStarBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_of_star_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SandOfStarBlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/DesertofDeadStar/Block"
+    },
+    {
+      "name": "SandOfStar",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_of_star",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/blockstates/sand_of_star.json",
+          "src/main/resources/assets/mythicrealms/items/sand_of_star.json",
+          "src/main/java/net/mcreator/mythicrealms/block/SandOfStarBlock.java",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/sand_of_star.json",
+          "src/main/resources/assets/mythicrealms/models/item/sand_of_star.json",
+          "src/main/resources/assets/mythicrealms/models/block/sand_of_star.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/DesertofDeadStar/Block"
+    },
+    {
+      "name": "DesertOfDeadStar",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_of_dead_star",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/worldgen/biome/desert_of_dead_star.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/DesertofDeadStar"
+    },
+    {
+      "name": "SandOfStarEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_of_star_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SandOfStarEntityWalksOnTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/DesertofDeadStar/Block"
+    },
+    {
+      "name": "SandOfStarOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sand_of_star_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SandOfStarOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/DesertofDeadStar/Block"
+    },
+    {
+      "name": "ManaMoonEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_moon_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "skyRenderEvent",
+            "type": "skyRenderEvent"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ManaMoonEventProcedure.java"
+        ]
+      },
+      "path": "~/System/Events"
+    },
+    {
+      "name": "ToxicSandEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_sand_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ToxicSandEntityWalksOnTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains"
+    },
+    {
+      "name": "ToxicSand",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_sand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/block/ToxicSandBlock.java",
+          "src/main/resources/assets/mythicrealms/items/toxic_sand.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/toxic_sand.json",
+          "src/main/resources/assets/mythicrealms/models/item/toxic_sand.json",
+          "src/main/resources/assets/mythicrealms/blockstates/toxic_sand.json",
+          "src/main/resources/assets/mythicrealms/models/block/toxic_sand.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains"
+    },
+    {
+      "name": "ToxicBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/worldgen/biome/toxic_biome.json",
+          "src/main/java/net/mcreator/mythicrealms/world/features/treedecorators/ToxicBiomeFruitDecorator.java",
+          "src/main/resources/data/mythicrealms/worldgen/placed_feature/toxic_biome_tree.json",
+          "src/main/java/net/mcreator/mythicrealms/world/features/treedecorators/ToxicBiomeLeaveDecorator.java",
+          "src/main/java/net/mcreator/mythicrealms/world/features/treedecorators/ToxicBiomeTrunkDecorator.java",
+          "src/main/resources/data/mythicrealms/worldgen/configured_feature/toxic_biome_tree.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains"
     }
   ],
   "variable_elements": [
@@ -10546,6 +10810,8 @@
       "CUSTOM:VulcanMagicBook"
     ],
     "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:ToxicBiome",
+      "~CUSTOM:DesertOfDeadStar",
       "~CUSTOM:DarknessForest",
       "~CUSTOM:DarknessPlains",
       "~CUSTOM:DeepworldSnowForest",
@@ -12496,6 +12762,9 @@
     ],
     "ITEMS:mythicrealms:palladio_armor_repair_items": [
       "~CUSTOM:PalladioIngot"
+    ],
+    "BIOMES:minecraft:has_structure/village_desert": [
+      "~CUSTOM:DesertOfDeadStar"
     ]
   },
   "tab_element_order": {
@@ -12524,7 +12793,8 @@
       "AngelIngot",
       "DemonScale",
       "DemonIngot",
-      "ManaBottle"
+      "ManaBottle",
+      "StarDust"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -12541,7 +12811,8 @@
       "MagneticRock",
       "LunarBlock",
       "YggdrasilLeaves",
-      "YggdrasilSapling"
+      "YggdrasilSapling",
+      "SandOfStar"
     ],
     "COMBAT": [
       "SteelSword",
@@ -13083,7 +13354,12 @@
       "item.mythicrealms.xochitl_leather": "Xochitl Leather",
       "item.mythicrealms.xochitl_ingot": "Xochitl Ingot",
       "item.mythicrealms.xochitl_spawn_egg": "Xochitl Spawn Egg",
-      "entity.mythicrealms.xochitl": "Xochitl"
+      "entity.mythicrealms.xochitl": "Xochitl",
+      "item.mythicrealms.star_dust": "Star Dust",
+      "item.mythicrealms.sand_of_star": "Sand Of Star",
+      "biome.mythicrealms.desert_of_dead_star": "Desert Of Dead Star",
+      "item.mythicrealms.toxic_sand": "Toxic Sand",
+      "biome.mythicrealms.toxic_biome": "Toxic Biome"
     }
   },
   "metadata": {
@@ -13203,7 +13479,8 @@
       "EnrichedUranium": "armorforge:default",
       "XochitlPowder": "armorforge:default",
       "XochitlLeather": "armorforge:default",
-      "XochitlIngot": "armorforge:default"
+      "XochitlIngot": "armorforge:default",
+      "StarDust": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -13289,7 +13566,8 @@
       "EnrichedUranium": "All perspectives",
       "XochitlPowder": "All perspectives",
       "XochitlLeather": "All perspectives",
-      "XochitlIngot": "All perspectives"
+      "XochitlIngot": "All perspectives",
+      "StarDust": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -13349,6 +13627,19 @@
                   },
                   {
                     "name": "MagneticCave",
+                    "children": []
+                  },
+                  {
+                    "name": "DesertofDeadStar",
+                    "children": [
+                      {
+                        "name": "Block",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "ToxicPlains",
                     "children": []
                   }
                 ]
