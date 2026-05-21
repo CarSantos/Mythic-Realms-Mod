@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "biome",
   "definition": {
-    "name": "Toxic Biome",
+    "name": "Toxic Plains",
     "groundBlock": {
       "value": "CUSTOM:ToxicSand"
     },
