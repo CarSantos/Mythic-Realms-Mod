@@ -13,6 +13,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -31,19 +35,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/EarthquakeMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Earthquake"
-    },
-    {
-      "name": "EarthquakeKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "earthquake_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/EarthquakeKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Earthquake"
@@ -72,23 +63,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/FireballMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Fireball"
-    },
-    {
-      "name": "FireballKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fireball_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/FireballKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Fireball"
@@ -152,23 +134,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/IceballMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Iceball"
-    },
-    {
-      "name": "IceballKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iceball_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/IceballKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Iceball"
@@ -232,23 +205,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/ThunderMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Thunder"
-    },
-    {
-      "name": "ThunderKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "thunder_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/ThunderKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Thunder"
@@ -297,6 +261,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -315,19 +283,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/HealMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Heal"
-    },
-    {
-      "name": "HealKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "heal_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/HealKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Heal"
@@ -1417,6 +1372,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1435,19 +1394,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/LifeStealMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/LifeSteal"
-    },
-    {
-      "name": "LifeStealKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "life_steal_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/LifeStealKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/LifeSteal"
@@ -2531,19 +2477,6 @@
       "path": "~/System/Magic/Magic Powers/Meteor"
     },
     {
-      "name": "MeteorKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "meteor_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/MeteorKeyMessage.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Meteor"
-    },
-    {
       "name": "MeteorProjectile",
       "type": "projectile",
       "compiles": true,
@@ -2650,6 +2583,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2668,19 +2605,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/SoulforceStealMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/SoulforceSteal"
-    },
-    {
-      "name": "SoulforceSteal",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soulforce_steal",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/SoulforceStealMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/SoulforceSteal"
@@ -2712,6 +2636,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2735,19 +2663,6 @@
       "path": "~/System/Magic/Magic Powers/Sand"
     },
     {
-      "name": "SandKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sand_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/SandKeyMessage.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Sand"
-    },
-    {
       "name": "MeteorMagic",
       "type": "procedure",
       "compiles": true,
@@ -2758,6 +2673,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ],
         "files": [
@@ -2909,6 +2828,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2927,19 +2850,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/NecromancerMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Necromancer"
-    },
-    {
-      "name": "NecromancerInvocationKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necromancer_invocation_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/NecromancerInvocationKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Necromancer"
@@ -3038,6 +2948,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3056,19 +2970,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/StopTimeEffectProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Stop Time"
-    },
-    {
-      "name": "StopTimeKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "stop_time_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/StopTimeKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Stop Time"
@@ -3556,6 +3457,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3574,19 +3479,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/HighestSoundEffectProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Highest Sound"
-    },
-    {
-      "name": "HighestSoundKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "highest_sound_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/HighestSoundKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Highest Sound"
@@ -3708,6 +3600,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -3759,19 +3655,6 @@
       "path": "~/System/Magic/Magic Powers/Expell"
     },
     {
-      "name": "ExpellKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "expell_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/ExpellKeyMessage.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Expell"
-    },
-    {
       "name": "DetectMagic",
       "type": "procedure",
       "compiles": true,
@@ -3782,6 +3665,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -3835,19 +3722,6 @@
       "path": "~/System/Magic/Magic Powers/Detect"
     },
     {
-      "name": "DetectKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "detect_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/DetectKeyMessage.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Detect"
-    },
-    {
       "name": "VulcanEffect",
       "type": "procedure",
       "compiles": true,
@@ -3858,6 +3732,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -3906,19 +3784,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/mythicrealms/advancement/vulcan_magic_unlock.json"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Vulcan"
-    },
-    {
-      "name": "VulcanKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "vulcan_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/VulcanKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Vulcan"
@@ -3994,6 +3859,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ],
         "files": [
@@ -4011,19 +3880,6 @@
       "metadata": {
         "files": [
           "src/main/resources/data/mythicrealms/advancement/black_hole_magic_unlock.json"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Black Hole"
-    },
-    {
-      "name": "BlackHoleKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "black_hole_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/BlackHoleKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Black Hole"
@@ -4057,19 +3913,6 @@
       "path": "~/System/Magic/Magic Powers/Reflect"
     },
     {
-      "name": "ReflectKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reflect_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/ReflectKeyMessage.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Reflect"
-    },
-    {
       "name": "ReflectMagicEffect",
       "type": "procedure",
       "compiles": true,
@@ -4080,6 +3923,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -4439,6 +4286,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -4457,19 +4308,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/PoisonCloudMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Poison Cloud"
-    },
-    {
-      "name": "PoisonCloudKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "poison_cloud_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/PoisonCloudKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Poison Cloud"
@@ -4527,23 +4365,14 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/LightTravelOnKeyPressedProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Light Travel"
-    },
-    {
-      "name": "LightTravel",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "light_travel",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/LightTravelMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Light Travel"
@@ -4619,19 +4448,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/WaterBreathMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Water Breath"
-    },
-    {
-      "name": "WaterBreathKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "water_breath_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/WaterBreathKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Water Breath"
@@ -7715,6 +7531,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -7733,19 +7553,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/TempestMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Tempest"
-    },
-    {
-      "name": "TempestKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tempest_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/TempestKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Tempest"
@@ -7823,6 +7630,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -7841,19 +7652,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/BarrierEffectProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Barrier"
-    },
-    {
-      "name": "BarrierKey",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "barrier_key",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/BarrierKeyMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Barrier"
@@ -10699,6 +10497,19 @@
         ]
       },
       "path": "~/World Gen/Biome/Overworld/MagneticCave"
+    },
+    {
+      "name": "WaterBreathKey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_breath_key",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/network/WaterBreathKeyMessage.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Water Breath"
     }
   ],
   "variable_elements": [
@@ -12959,11 +12770,6 @@
   },
   "language_map": {
     "en_us": {
-      "key.mythicrealms.earthquake_key": "Earthquake",
-      "key.mythicrealms.fireball_key": "Fireball",
-      "key.mythicrealms.iceball_key": "Iceball",
-      "key.mythicrealms.thunder_key": "Thunder",
-      "key.mythicrealms.heal_key": "Heal",
       "key.mythicrealms.dash_key": "Dash",
       "effect.mythicrealms.expansion_sf": "Expansion SF",
       "effect.mythicrealms.exausted_sf": "Expansion SF",
@@ -12980,7 +12786,6 @@
       "item.mythicrealms.wizard_role": "Wizard",
       "item.mythicrealms.summoner_role": "Summoner",
       "item.mythicrealms.druid_role": "Druid",
-      "key.mythicrealms.life_steal_key": "Life Steal",
       "item.mythicrealms.steel_ingot": "Steel Ingot",
       "item.mythicrealms.steel_plate": "Steel Plate",
       "effect.mythicrealms.plague": "Plague",
@@ -13007,14 +12812,9 @@
       "item.mythicrealms.miners_dream": "Miner\u0027s Dream",
       "key.mythicrealms.cave": "Cave",
       "enchantment.mythicrealms.curse_of_tree": "Curse Of Tree",
-      "key.mythicrealms.meteor_key": "Meteor Key",
-      "key.mythicrealms.soulforce_steal": "Soulforce Steal",
-      "key.mythicrealms.sand_key": "Sand Storm",
       "key.mythicrealms.ghost_key": "Ghost Mode",
       "enchantment.mythicrealms.reflect": "Reflect",
-      "key.mythicrealms.necromancer_invocation_key": "Necromancer Invocation",
       "key.mythicrealms.smoke_key": "Smoke Mode",
-      "key.mythicrealms.stop_time_key": "Stop Time",
       "item.mythicrealms.cave_magic_book": "Book of Knowledge",
       "advancements.cave_magic_unlock.descr": "Now Is Possible For You Use Cave Magic",
       "advancements.cave_magic_unlock.title": "Cave Magic Unlock",
@@ -13061,7 +12861,6 @@
       "advancements.stop_time_magic_unlock.descr": "Now Is Possible For You Use Stop Time Magic",
       "advancements.thunder_magic_unlock.title": "Thunder Magic Unlock",
       "advancements.thunder_magic_unlock.descr": "Now Is Possible For You Use Thunder Magic",
-      "key.mythicrealms.highest_sound_key": "Highest Sound",
       "advancements.highest_sound_magic_unlock.descr": "Now Is Possible For You Use Highest Sound Magic",
       "advancements.highest_sound_magic_unlock.title": "Highest Sound Magic Unlock",
       "item.mythicrealms.highest_sound_magic_book": "Book of Knowledge",
@@ -13072,23 +12871,18 @@
       "item.mythicrealms.expell_magic_book": "Book of Knowledge",
       "advancements.expell_magic_unlock.descr": "Now Is Possible For You Use Expell Magic",
       "advancements.expell_magic_unlock.title": "Expell Magic Unlock",
-      "key.mythicrealms.expell_key": "Expell",
       "item.mythicrealms.detect_magic_book": "Book of Knowledge",
       "advancements.detect_magic_unlock.title": "Detect Magic Unlock",
       "advancements.detect_magic_unlock.descr": "Now Is Possible For You Use Detect Magic",
-      "key.mythicrealms.detect_key": "Detect",
       "item.mythicrealms.vulcan_magic_book": "Book of Knowledge",
       "advancements.vulcan_magic_unlock.title": "Vulcan Magic Unlock",
       "advancements.vulcan_magic_unlock.descr": "Now Is Possible For You Use Vulcan Magic",
-      "key.mythicrealms.vulcan_key": "Vulcan",
       "item.mythicrealms.black_hole_magic_book": "Book of Knowledge",
       "advancements.black_hole_magic_unlock.descr": "Now Is Possible For You Use Black Hole Magic",
       "advancements.black_hole_magic_unlock.title": "Black Hole Magic Unlock",
-      "key.mythicrealms.black_hole_key": "Black Hole",
       "item.mythicrealms.reflect_magic_book": "Book of Knowledge",
       "advancements.reflect_magic_unlock.descr": "Now Is Possible For You Use Reflect Magic",
       "advancements.reflect_magic_unlock.title": "Reflect Magic Unlock",
-      "key.mythicrealms.reflect_key": "Reflect",
       "item.mythicrealms.accelaration_magic_book.description_0": "Accelaration Magic Book",
       "item.mythicrealms.black_hole_magic_book.description_0": "Black Hole Magic Book",
       "item.mythicrealms.cave_magic_book.description_0": "Cave Magic Book",
@@ -13120,12 +12914,10 @@
       "biome.mythicrealms.deepworld_forest": "Deepworld Plains",
       "biome.mythicrealms.deepworld_snow_plains": "Deepworld Snow Forest",
       "biome.mythicrealms.deepworld_snow_forest": "Deepworld Snow Plains",
-      "key.mythicrealms.poison_cloud_key": "Earthquake",
       "item.mythicrealms.poison_cloud_magic_book": "Book of Knowledge",
       "item.mythicrealms.poison_cloud_magic_book.description_0": "Poison Cloud Magic Book",
       "advancements.poison_cloud_magic_unlock.descr": "Now Is Possible For You Use Poison Cloud Magic",
       "advancements.poison_cloud_magic_unlock.title": "Poison Cloud Magic Unlock",
-      "key.mythicrealms.light_travel": "Light Travel",
       "item.mythicrealms.light_travel_magic_book": "Book of Knowledge",
       "item.mythicrealms.light_travel_magic_book.description_0": "Light Travel Magic Book",
       "advancements.light_travel_magic_unlock.title": "Light Travel Magic Unlock",
@@ -13134,7 +12926,6 @@
       "item.mythicrealms.water_breath_magic_book.description_0": "Water Breath Magic Book",
       "advancements.water_breath_magic_unlock.descr": "Now Is Possible For You Use Water Breath Magic",
       "advancements.water_breath_magic_unlock.title": "Water Breath Magic Unlock",
-      "key.mythicrealms.water_breath_key": "Smoke Mode",
       "entity.mythicrealms.pandemic": "Pandemic",
       "item.mythicrealms.pandemic_spawn_egg": "Pandemic Spawn Egg",
       "entity.mythicrealms.yeti": "Yeti",
@@ -13245,14 +13036,12 @@
       "item.mythicrealms.magic_trapdoor": "Magic Trapdoor",
       "item.mythicrealms.magic_pressure_plate": "Magic Pressure Plate",
       "item.mythicrealms.magic_button": "Magic Button",
-      "key.mythicrealms.tempest_key": "Tempest",
       "item.mythicrealms.tempest_magic_book.description_0": "Tempest Magic Book",
       "item.mythicrealms.tempest_magic_book": "Book of Knowledge",
       "advancements.tempest_magic_unlock.descr": "Now Is Possible For You Use Tempest Magic",
       "advancements.tempest_magic_unlock.title": "Tempest Magic Unlock",
       "item_group.mythicrealms.knowledge_of_book": "Knowledge Of Book",
       "item.mythicrealms.crystal": "Crystal",
-      "key.mythicrealms.barrier_key": "Barrier",
       "item.mythicrealms.barrier_magic_book.description_0": "Barrier Magic Book",
       "item.mythicrealms.barrier_magic_book": "Book of Knowledge",
       "advancements.barrier_magic_unlock.descr": "Now Is Possible For You Use Barrier Magic",
@@ -13394,7 +13183,8 @@
       "item.mythicrealms.sand_of_star": "Sand Of Star",
       "biome.mythicrealms.desert_of_dead_star": "Desert Of Dead Star",
       "item.mythicrealms.toxic_sand": "Toxic Sand",
-      "biome.mythicrealms.toxic_biome": "Toxic Plains"
+      "biome.mythicrealms.toxic_biome": "Toxic Plains",
+      "key.mythicrealms.water_breath_key": "Water Breath Key"
     }
   },
   "metadata": {

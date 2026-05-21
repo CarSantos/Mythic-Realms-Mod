@@ -5,11 +5,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
-import net.minecraft.world.scores.PlayerTeam;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraft.world.entity.animal.Animal;
@@ -37,12 +35,6 @@ public class NecroEntityProcedure {
 		if (entity == null)
 			return;
 		if (entity == (findEntityInWorldRange(world, WitherSkeleton.class, x, y, z, 32))) {
-			if (world instanceof Level _level) {
-				PlayerTeam _pt = _level.getScoreboard().getPlayerTeam("Necro");
-				if (_pt != null) {
-					_pt.setAllowFriendlyFire(true);
-				}
-			}
 			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 32), (y + 32), (z + 32), (x - 32), (y - 32), (z - 32)))) {
 				if (entityiterator == (findEntityInWorldRange(world, Player.class, x, y, z, 32))
 						&& !((entity instanceof LivingEntity _teamEnt && _teamEnt.level().getScoreboard().getPlayersTeam(_teamEnt instanceof Player _pl ? _pl.getGameProfile().getName() : _teamEnt.getStringUUID()) != null

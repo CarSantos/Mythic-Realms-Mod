@@ -14,8 +14,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 
-import net.mcreator.mythicrealms.procedures.SmokeMagicRealesedProcedure;
-import net.mcreator.mythicrealms.procedures.SmokeMagicProcedure;
+import net.mcreator.mythicrealms.procedures.WaterBreathMagicProcedure;
 import net.mcreator.mythicrealms.MythicrealmsMod;
 
 @EventBusSubscriber
@@ -52,11 +51,7 @@ public record WaterBreathKeyMessage(int eventType, int pressedms) implements Cus
 			return;
 		if (type == 0) {
 
-			SmokeMagicProcedure.execute(world, x, y, z, entity);
-		}
-		if (type == 1) {
-
-			SmokeMagicRealesedProcedure.execute(entity);
+			WaterBreathMagicProcedure.execute(entity);
 		}
 	}
 

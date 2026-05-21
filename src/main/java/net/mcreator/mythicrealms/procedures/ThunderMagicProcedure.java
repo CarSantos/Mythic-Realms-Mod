@@ -8,9 +8,6 @@ import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
@@ -19,36 +16,32 @@ import net.mcreator.mythicrealms.init.MythicrealmsModEntities;
 import net.mcreator.mythicrealms.entity.ThunderProjectileEntity;
 
 public class ThunderMagicProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel _serverLevel0
-				&& _plr0.getAdvancements().getOrStartProgress(_serverLevel0.getServer().getAdvancements().get(ResourceLocation.parse("mythicrealms:thunder_magic_unlock"))).isDone()) {
-			if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 50) {
-				{
-					Entity _shootFrom = entity;
-					Level projectileLevel = _shootFrom.level();
-					if (!projectileLevel.isClientSide()) {
-						Projectile _entityToSpawn = initArrowProjectile(new ThunderProjectileEntity(MythicrealmsModEntities.THUNDER_PROJECTILE.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), null, 1, true,
-								false, false, AbstractArrow.Pickup.DISALLOWED);
-						_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-						_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, 0);
-						projectileLevel.addFreshEntity(_entityToSpawn);
-					}
+		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 50) {
+			{
+				Entity _shootFrom = entity;
+				Level projectileLevel = _shootFrom.level();
+				if (!projectileLevel.isClientSide()) {
+					Projectile _entityToSpawn = initArrowProjectile(new ThunderProjectileEntity(MythicrealmsModEntities.THUNDER_PROJECTILE.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 1, (byte) 0)), null, 1, true,
+							false, false, AbstractArrow.Pickup.DISALLOWED);
+					_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
+					_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 5, 0);
+					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
-				{
-					MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-					_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 50;
-					_vars.markSyncDirty();
-				}
-			} else {
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
+			}
+			{
+				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 50;
+				_vars.markSyncDirty();
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("You need to unlock this magic first"), true);
+				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
+		if (entity instanceof Player _player)
+			_player.getCooldowns().addCooldown(itemstack, 40);
 	}
 
 	private static AbstractArrow initArrowProjectile(AbstractArrow entityToSpawn, Entity shooter, float damage, boolean silent, boolean fire, boolean particles, AbstractArrow.Pickup pickup) {

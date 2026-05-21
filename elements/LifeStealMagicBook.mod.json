@@ -41,6 +41,12 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onRightClickedInAir": {
+      "name": "LifeStealMagic"
+    },
+    "onRightClickedOnBlock": {
+      "name": "LifeStealMagic"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
