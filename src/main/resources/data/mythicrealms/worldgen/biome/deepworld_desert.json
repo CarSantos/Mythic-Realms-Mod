@@ -5,10 +5,10 @@
   "effects": {
     "foliage_color": -11115008,
     "grass_color": -11115008,
-    "sky_color": -16737844,
-    "fog_color": -16737844,
-    "water_color": -8421808,
-    "water_fog_color": -8421808
+    "sky_color": 7972607,
+    "fog_color": 12638463,
+    "water_color": -8156853,
+    "water_fog_color": -8156853
   },
   "spawners": {
     "monster": [],

@@ -10664,6 +10664,41 @@
         ]
       },
       "path": "~/World Gen/Biome/Overworld/ToxicPlains"
+    },
+    {
+      "name": "MagneticCaveEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnetic_cave_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MagneticCaveEffectProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/MagneticCave"
     }
   ],
   "variable_elements": [

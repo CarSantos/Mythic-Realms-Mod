@@ -12,28 +12,12 @@
     "underwaterBlock": {
       "value": "Blocks.GRAVEL"
     },
-    "airColor": {
-      "value": -4725010,
-      "falpha": 0.0
-    },
-    "fogColor": {
-      "value": -4725010,
-      "falpha": 0.0
-    },
     "grassColor": {
       "value": -2892273,
       "falpha": 0.0
     },
     "foliageColor": {
       "value": -2892273,
-      "falpha": 0.0
-    },
-    "waterColor": {
-      "value": -8667945,
-      "falpha": 0.0
-    },
-    "waterFogColor": {
-      "value": -8667945,
       "falpha": 0.0
     },
     "ambientSound": {

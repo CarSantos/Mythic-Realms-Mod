@@ -12,14 +12,6 @@
     "underwaterBlock": {
       "value": "Blocks.SANDSTONE#0"
     },
-    "airColor": {
-      "value": -16737844,
-      "falpha": 0.0
-    },
-    "fogColor": {
-      "value": -16737844,
-      "falpha": 0.0
-    },
     "grassColor": {
       "value": -11115008,
       "falpha": 0.0
@@ -29,11 +21,11 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -8421808,
+      "value": -8156853,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -8421808,
+      "value": -8156853,
       "falpha": 0.0
     },
     "ambientSound": {
