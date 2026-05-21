@@ -10510,6 +10510,41 @@
         ]
       },
       "path": "~/System/Magic/Magic Powers/Water Breath"
+    },
+    {
+      "name": "WithoutArmor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "without_armor",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/WithoutArmorProcedure.java"
+        ]
+      },
+      "path": "~/System"
     }
   ],
   "variable_elements": [

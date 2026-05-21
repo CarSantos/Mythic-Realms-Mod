@@ -21,7 +21,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.mythicrealms.procedures.PlayerRoleItemTickProcedure;
 import net.mcreator.mythicrealms.init.MythicrealmsModMenus;
 
 import java.util.function.Supplier;
@@ -216,7 +215,6 @@ public class RoleGUIMenu extends AbstractContainerMenu implements MythicrealmsMo
 	@Override
 	public void removed(Player playerIn) {
 		super.removed(playerIn);
-		PlayerRoleItemTickProcedure.execute(world, x, y, z, entity);
 		if (!bound && playerIn instanceof ServerPlayer serverPlayer) {
 			if (!serverPlayer.isAlive() || serverPlayer.hasDisconnected()) {
 				for (int j = 0; j < internal.getSlots(); ++j) {
