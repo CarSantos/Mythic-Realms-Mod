@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "wooden_door",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:YggdrasilPlanks"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:YggdrasilPlanks"
+      },
+      {
+        "value": "CUSTOM:YggdrasilPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:YggdrasilPlanks"
+      },
+      {
+        "value": "CUSTOM:YggdrasilPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:YggdrasilPlanks"
+      },
+      {
+        "value": "CUSTOM:YggdrasilPlanks"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:YggdrasilDoor"
+    },
+    "name": "yggdrasil_door_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "nether_wastes",
+  "spawners": {
+    "type": "mythicrealms:lava_golem",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

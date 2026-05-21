@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "b c",
+    "bdc"
+  ],
+  "key": {
+    "a": "mythicrealms:steel_plate",
+    "b": "mythicrealms:anti_magnetic_rock",
+    "c": "mythicrealms:magnetic_rock",
+    "d": "minecraft:copper_block"
+  },
+  "result": {
+    "id": "mythicrealms:magnet",
+    "count": 1
+  }
+}

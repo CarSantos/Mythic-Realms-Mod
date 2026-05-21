@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:leather",
+    "b": "minecraft:ender_chest"
+  },
+  "result": {
+    "id": "mythicrealms:backpack_item",
+    "count": 1
+  }
+}

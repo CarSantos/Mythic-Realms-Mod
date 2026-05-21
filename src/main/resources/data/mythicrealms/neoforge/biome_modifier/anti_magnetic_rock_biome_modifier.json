@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "mythicrealms:anti_magnetic_rock",
+  "step": "underground_ores"
+}

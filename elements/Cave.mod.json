@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Cave",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "CaveOnKeyPressed"
+    }
+  }
+}

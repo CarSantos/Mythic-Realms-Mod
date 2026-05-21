@@ -1,0 +1,16 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "mythicrealms:deepworld_forest",
+    "mythicrealms:deepworld_ocean",
+    "mythicrealms:deepworld_plains",
+    "mythicrealms:deepworld_snow_forest",
+    "mythicrealms:deepworld_snow_plains"
+  ],
+  "spawners": {
+    "type": "mythicrealms:sturgeon",
+    "weight": 50,
+    "minCount": 4,
+    "maxCount": 6
+  }
+}

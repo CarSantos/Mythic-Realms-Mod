@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/uraniumore",
+    "up": "mythicrealms:block/uraniumore",
+    "north": "mythicrealms:block/uraniumore",
+    "east": "mythicrealms:block/uraniumore",
+    "south": "mythicrealms:block/uraniumore",
+    "west": "mythicrealms:block/uraniumore",
+    "particle": "mythicrealms:block/uraniumore"
+  },
+  "render_type": "solid"
+}

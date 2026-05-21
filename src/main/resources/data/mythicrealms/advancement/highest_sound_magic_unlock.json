@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicrealms:highest_sound_magic_book"
+    },
+    "title": {
+      "translate": "advancements.highest_sound_magic_unlock.title"
+    },
+    "description": {
+      "translate": "advancements.highest_sound_magic_unlock.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "highest_sound_magic_unlock_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "mythicrealms:highest_sound_magic_book"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "mythicrealms:highest_sound_magic_unlock"
+}

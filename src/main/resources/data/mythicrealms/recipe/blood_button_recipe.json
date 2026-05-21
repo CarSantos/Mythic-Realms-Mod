@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    "mythicrealms:blood_planks"
+  ],
+  "result": {
+    "id": "mythicrealms:blood_button",
+    "count": 1
+  }
+}

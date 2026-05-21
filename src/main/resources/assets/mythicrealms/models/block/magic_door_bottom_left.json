@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "mythicrealms:block/magic_door_bottom",
+    "bottom": "mythicrealms:block/magic_door_bottom",
+    "top": "mythicrealms:block/magic_door_top"
+  },
+  "render_type": "cutout"
+}

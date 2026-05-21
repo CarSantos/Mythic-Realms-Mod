@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/palladioblock",
+    "up": "mythicrealms:block/palladioblock",
+    "north": "mythicrealms:block/palladioblock",
+    "east": "mythicrealms:block/palladioblock",
+    "south": "mythicrealms:block/palladioblock",
+    "west": "mythicrealms:block/palladioblock",
+    "particle": "mythicrealms:block/palladioblock"
+  },
+  "render_type": "solid"
+}

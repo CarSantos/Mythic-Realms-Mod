@@ -1,0 +1,34 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "disableGravity": true,
+    "power": 1.0,
+    "damage": 2.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "ThunderMagic"
+    },
+    "onHitsPlayer": {
+      "name": "ThunderMagic"
+    },
+    "onHitsEntity": {
+      "name": "ThunderMagic"
+    },
+    "onFlyingTick": {
+      "name": "ThunderProjectileWhileProjectileFlyingTick"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "experience": 5,
+  "cookingtime": 2000,
+  "ingredient": "mythicrealms:xochitl_powder",
+  "result": {
+    "id": "mythicrealms:xochitl_ingot"
+  }
+}

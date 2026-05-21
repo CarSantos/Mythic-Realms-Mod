@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "mythicrealms:block/bloodtrap",
+    "particle": "mythicrealms:block/bloodtrap"
+  },
+  "render_type": "cutout"
+}

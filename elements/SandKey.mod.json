@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Sand Storm",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "SandMagic"
+    }
+  }
+}

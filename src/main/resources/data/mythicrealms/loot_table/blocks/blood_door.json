@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "mythicrealms:blocks/blood_door",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "mythicrealms:blood_door",
+          "conditions": [
+            {
+              "block": "mythicrealms:blood_door",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

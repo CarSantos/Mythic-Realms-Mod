@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Ghost Mode",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "GhostMagic"
+    },
+    "onKeyReleased": {
+      "name": "GhostMagicRealesed"
+    }
+  }
+}

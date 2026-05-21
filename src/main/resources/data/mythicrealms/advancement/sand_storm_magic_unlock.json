@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicrealms:sand_storm_magic_book"
+    },
+    "title": {
+      "translate": "advancements.sand_storm_magic_unlock.title"
+    },
+    "description": {
+      "translate": "advancements.sand_storm_magic_unlock.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "sand_storm_magic_unlock_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "mythicrealms:sand_storm_magic_book"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "mythicrealms:sand_storm_magic_unlock"
+}

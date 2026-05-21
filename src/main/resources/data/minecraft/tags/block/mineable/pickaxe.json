@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mythicrealms:titanium_ore",
+    "mythicrealms:adamant_ore",
+    "mythicrealms:uranium_block",
+    "mythicrealms:vibranium_ore"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Accelaration",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "AccelarationEffect"
+    }
+  }
+}

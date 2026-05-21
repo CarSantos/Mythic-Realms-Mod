@@ -1,0 +1,15 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Smoke Mode",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "SmokeMagic"
+    },
+    "onKeyReleased": {
+      "name": "SmokeMagicRealesed"
+    }
+  }
+}

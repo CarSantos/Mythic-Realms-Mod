@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    "mythicrealms:yggdrasil_planks"
+  ],
+  "result": {
+    "id": "mythicrealms:yggdrasil_button",
+    "count": 1
+  }
+}

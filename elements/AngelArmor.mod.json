@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "angel_helmet",
+    "enableBody": true,
+    "textureBody": "angel_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "angel_leggingd",
+    "enableBoots": true,
+    "textureBoots": "angel_boots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Angel Helmet",
+    "bodyName": "Angel Chestplate",
+    "leggingsName": "Angel Leggings",
+    "bootsName": "Angel Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelArmor_Angel",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "armor_angel.png",
+    "bodyModelName": "ModelArmor_Angel",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "leftPlate",
+    "armsModelPartR": "rightPlate",
+    "bodyModelTexture": "armor_angel.png",
+    "leggingsModelName": "ModelArmor_Angel",
+    "leggingsModelPartL": "leftLegging",
+    "leggingsModelPartR": "rightLegging",
+    "leggingsModelTexture": "armor_angel.png",
+    "bootsModelName": "ModelArmor_Angel",
+    "bootsModelPartL": "leftBoot",
+    "bootsModelPartR": "rightBoot",
+    "bootsModelTexture": "armor_angel.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 20,
+    "damageValueHelmet": 6,
+    "damageValueBody": 18,
+    "damageValueLeggings": 15,
+    "damageValueBoots": 6,
+    "enchantability": 25,
+    "toughness": 1.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_netherite"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:AngelIngot"
+      }
+    ]
+  }
+}

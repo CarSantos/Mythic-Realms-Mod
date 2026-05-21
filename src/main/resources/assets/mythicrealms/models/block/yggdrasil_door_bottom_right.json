@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_right",
+  "textures": {
+    "particle": "mythicrealms:block/yggdrasil_door_bottom",
+    "bottom": "mythicrealms:block/yggdrasil_door_bottom",
+    "top": "mythicrealms:block/yggdrasil_door_top"
+  },
+  "render_type": "cutout"
+}

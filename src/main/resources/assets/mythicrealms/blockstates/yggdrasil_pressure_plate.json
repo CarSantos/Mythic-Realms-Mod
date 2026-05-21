@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "mythicrealms:block/yggdrasil_pressure_plate"
+    },
+    "powered=true": {
+      "model": "mythicrealms:block/yggdrasil_pressure_plate_down"
+    }
+  }
+}

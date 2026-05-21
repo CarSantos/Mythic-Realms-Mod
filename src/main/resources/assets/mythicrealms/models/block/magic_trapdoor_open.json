@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "mythicrealms:block/magic_trapdoor",
+    "particle": "mythicrealms:block/magic_trapdoor"
+  },
+  "render_type": "cutout"
+}

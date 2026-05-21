@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/titaniumore",
+    "up": "mythicrealms:block/titaniumore",
+    "north": "mythicrealms:block/titaniumore",
+    "east": "mythicrealms:block/titaniumore",
+    "south": "mythicrealms:block/titaniumore",
+    "west": "mythicrealms:block/titaniumore",
+    "particle": "mythicrealms:block/titaniumore"
+  },
+  "render_type": "solid"
+}

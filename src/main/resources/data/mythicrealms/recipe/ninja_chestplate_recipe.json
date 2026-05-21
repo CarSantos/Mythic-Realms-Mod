@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:reinforced_leather"
+  },
+  "result": {
+    "id": "mythicrealms:ninja_armor_chestplate",
+    "count": 1
+  }
+}

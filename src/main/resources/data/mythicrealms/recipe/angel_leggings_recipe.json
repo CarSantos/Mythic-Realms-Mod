@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:angel_ingot",
+    "b": "mythicrealms:palladio_armor_leggings"
+  },
+  "result": {
+    "id": "mythicrealms:angel_armor_leggings",
+    "count": 1
+  }
+}

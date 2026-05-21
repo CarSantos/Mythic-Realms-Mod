@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:bandage"
+  },
+  "result": {
+    "id": "mythicrealms:pharaoh_armor_chestplate",
+    "count": 1
+  }
+}

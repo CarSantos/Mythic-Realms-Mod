@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/pumpkin_staff",
+  "textures": {
+    "1": "mythicrealms:block/pumpkin_staff",
+    "particle": "minecraft:item/blaze_rod"
+  }
+}

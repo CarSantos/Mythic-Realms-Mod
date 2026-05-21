@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:reinforced_leather"
+  },
+  "result": {
+    "id": "mythicrealms:ninja_armor_boots",
+    "count": 1
+  }
+}

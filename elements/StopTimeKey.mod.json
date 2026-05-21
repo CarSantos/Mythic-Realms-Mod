@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Stop Time",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "StopTimeEffect"
+    }
+  }
+}

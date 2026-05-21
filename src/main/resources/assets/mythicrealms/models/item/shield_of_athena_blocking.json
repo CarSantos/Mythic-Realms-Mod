@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/shield_of_athena",
+  "textures": {
+    "0": "mythicrealms:block/shield_of_athena",
+    "particle": "minecraft:item/bolt_armor_trim_smithing_template"
+  }
+}

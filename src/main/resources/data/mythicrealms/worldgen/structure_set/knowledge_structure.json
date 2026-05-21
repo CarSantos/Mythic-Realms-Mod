@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mythicrealms:knowledge_structure",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 16,
+    "salt": 56436291
+  }
+}

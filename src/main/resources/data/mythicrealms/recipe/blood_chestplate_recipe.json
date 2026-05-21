@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:blood_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:blood_armor_chestplate",
+    "count": 1
+  }
+}

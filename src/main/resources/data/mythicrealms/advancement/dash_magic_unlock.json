@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicrealms:dash_magic_book"
+    },
+    "title": {
+      "translate": "advancements.dash_magic_unlock.title"
+    },
+    "description": {
+      "translate": "advancements.dash_magic_unlock.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "dash_magic_unlock_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "mythicrealms:dash_magic_book"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "mythicrealms:cave_magic_unlock"
+}

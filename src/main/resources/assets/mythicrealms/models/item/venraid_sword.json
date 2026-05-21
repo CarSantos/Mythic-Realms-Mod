@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/venraid_sword",
+  "textures": {
+    "0": "mythicrealms:block/venraid_sword",
+    "particle": "mythicrealms:item/steel_sword"
+  }
+}

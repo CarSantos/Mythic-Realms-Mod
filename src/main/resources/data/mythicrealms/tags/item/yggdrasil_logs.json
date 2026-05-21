@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mythicrealms:yggdrasil_wood",
+    "mythicrealms:stripped_yggdrasil_log",
+    "mythicrealms:yggdrasil_log",
+    "mythicrealms:stripped_yggdrasil_wood"
+  ]
+}

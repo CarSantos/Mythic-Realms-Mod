@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:DemonIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DemonIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DemonIngot"
+      },
+      {
+        "value": "CUSTOM:DemonIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DemonIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DemonArmor.boots"
+    },
+    "name": "demon_boots_recipe",
+    "namespace": "mod"
+  }
+}

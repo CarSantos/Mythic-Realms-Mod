@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicrealms:black_hole_magic_book"
+    },
+    "title": {
+      "translate": "advancements.black_hole_magic_unlock.title"
+    },
+    "description": {
+      "translate": "advancements.black_hole_magic_unlock.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "black_hole_magic_unlock_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "mythicrealms:black_hole_magic_book"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "mythicrealms:black_hole_magic_unlock"
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:noble_steel"
+  },
+  "result": {
+    "id": "mythicrealms:samurai_armor_chestplate",
+    "count": 1
+  }
+}

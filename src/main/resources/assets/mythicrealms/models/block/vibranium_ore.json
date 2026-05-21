@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/vibraniumore",
+    "up": "mythicrealms:block/vibraniumore",
+    "north": "mythicrealms:block/vibraniumore",
+    "east": "mythicrealms:block/vibraniumore",
+    "south": "mythicrealms:block/vibraniumore",
+    "west": "mythicrealms:block/vibraniumore",
+    "particle": "mythicrealms:block/vibraniumore"
+  },
+  "render_type": "solid"
+}

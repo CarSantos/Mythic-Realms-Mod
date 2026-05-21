@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "bbb",
+    "ccc"
+  ],
+  "key": {
+    "a": "minecraft:green_dye",
+    "b": "minecraft:redstone_block",
+    "c": "minecraft:gunpowder"
+  },
+  "result": {
+    "id": "mythicrealms:miners_dream",
+    "count": 1
+  }
+}

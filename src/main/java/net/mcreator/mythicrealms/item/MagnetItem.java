@@ -1,0 +1,23 @@
+package net.mcreator.mythicrealms.item;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+
+import net.mcreator.mythicrealms.procedures.MagnetItemInInventoryTickProcedure;
+
+import javax.annotation.Nullable;
+
+public class MagnetItem extends Item {
+	public MagnetItem(Item.Properties properties) {
+		super(properties);
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, ServerLevel world, Entity entity, @Nullable EquipmentSlot equipmentSlot) {
+		super.inventoryTick(itemstack, world, entity, equipmentSlot);
+		MagnetItemInInventoryTickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+	}
+}

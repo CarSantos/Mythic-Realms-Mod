@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/bow_of_appolo",
+  "textures": {
+    "0": "mythicrealms:block/bow_of_apollo",
+    "particle": "minecraft:item/nether_star"
+  }
+}

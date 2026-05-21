@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "samuraihelmet",
+    "enableBody": true,
+    "textureBody": "samuraichestplate",
+    "enableLeggings": true,
+    "textureLeggings": "samuraileggings",
+    "enableBoots": true,
+    "textureBoots": "samuraiboots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Samurai Helmet",
+    "bodyName": "Samurai Chestplate",
+    "leggingsName": "Samurai Leggings",
+    "bootsName": "Samurai Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelArmor_Samurai",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "armor_samurai.png",
+    "bodyModelName": "ModelArmor_Samurai",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "LeftPlate",
+    "armsModelPartR": "RightPlate",
+    "bodyModelTexture": "armor_samurai.png",
+    "leggingsModelName": "ModelArmor_Samurai",
+    "leggingsModelPartL": "LeftLegging",
+    "leggingsModelPartR": "RightLegging",
+    "leggingsModelTexture": "armor_samurai.png",
+    "bootsModelName": "ModelArmor_Samurai",
+    "bootsModelPartL": "LeftBoots",
+    "bootsModelPartR": "RightBoots",
+    "bootsModelTexture": "armor_samurai.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 20,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 15,
+    "toughness": 1.0,
+    "knockbackResistance": 0.5,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:NobleSteel"
+      }
+    ]
+  }
+}

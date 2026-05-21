@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:magic_planks",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "mythicrealms:magic_fence",
+    "count": 3
+  }
+}

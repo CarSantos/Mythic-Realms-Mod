@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "mythicrealms:deepworld_desert",
+    "desert"
+  ],
+  "spawners": {
+    "type": "mythicrealms:mummy",
+    "weight": 50,
+    "minCount": 4,
+    "maxCount": 6
+  }
+}

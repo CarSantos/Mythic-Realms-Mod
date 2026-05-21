@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/blood_sword",
+  "textures": {
+    "2": "mythicrealms:block/blood_sword",
+    "particle": "minecraft:item/stone_sword"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "mythicrealms:block/blood_trapdoor",
+    "particle": "mythicrealms:block/blood_trapdoor"
+  },
+  "render_type": "solid"
+}

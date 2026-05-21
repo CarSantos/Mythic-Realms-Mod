@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "pharaoh_helmet",
+    "enableBody": true,
+    "textureBody": "pharaoh_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "pharaoh_leggings",
+    "enableBoots": true,
+    "textureBoots": "pharaoh_boots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Pharaoh Helmet",
+    "bodyName": "Pharaoh Chestplate",
+    "leggingsName": "Pharaoh Leggings",
+    "bootsName": "Pharaoh Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelArmor_pharaoh",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "armor_pharaoh.png",
+    "bodyModelName": "ModelArmor_pharaoh",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "LeftPlate",
+    "armsModelPartR": "RightPlate",
+    "bodyModelTexture": "armor_pharaoh.png",
+    "leggingsModelName": "ModelArmor_pharaoh",
+    "leggingsModelPartL": "LeftLegging",
+    "leggingsModelPartR": "RightLegging",
+    "leggingsModelTexture": "armor_pharaoh.png",
+    "bootsModelName": "ModelArmor_pharaoh",
+    "bootsModelPartL": "LeftBoots",
+    "bootsModelPartR": "RightBoots",
+    "bootsModelTexture": "armor_pharaoh.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 20,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 15,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Bandage"
+      }
+    ]
+  }
+}

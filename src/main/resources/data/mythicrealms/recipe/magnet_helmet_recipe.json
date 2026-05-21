@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "a c"
+  ],
+  "key": {
+    "a": "mythicrealms:anti_magnetic_rock",
+    "b": "mythicrealms:magnet",
+    "c": "mythicrealms:magnetic_rock"
+  },
+  "result": {
+    "id": "mythicrealms:magnet_armor_helmet",
+    "count": 1
+  }
+}

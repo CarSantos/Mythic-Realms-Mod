@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "mythicrealms:block/blood_grass",
+    "particle": "mythicrealms:block/blood_grass"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mythicrealms:stripped_blood_wood",
+    "mythicrealms:blood_wood",
+    "mythicrealms:stripped_blood_log",
+    "mythicrealms:blood_log"
+  ]
+}

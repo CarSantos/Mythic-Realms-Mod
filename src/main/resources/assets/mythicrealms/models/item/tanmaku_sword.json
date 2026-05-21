@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/tanmaku_sword",
+  "textures": {
+    "0": "mythicrealms:block/tanmaku_sword",
+    "particle": "mythicrealms:item/steel_sword"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.CARVED_PUMPKIN"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "disableGravity": true,
+    "power": 1.0,
+    "damage": 0.0,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 0.7,
+    "modelHeight": 0.7,
+    "onHitsBlock": {
+      "name": "PumpkinProjectileProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "PumpkinProjectileProjectileHitslive"
+    },
+    "onHitsEntity": {
+      "name": "PumpkinProjectileProjectileHitslive"
+    }
+  }
+}

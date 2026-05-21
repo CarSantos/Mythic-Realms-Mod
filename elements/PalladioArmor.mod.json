@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "palladio_helmet",
+    "enableBody": true,
+    "textureBody": "palladio_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "palladio_legs",
+    "enableBoots": true,
+    "textureBoots": "palladio_boots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Palladio Helmet",
+    "bodyName": "Palladio Chestplate",
+    "leggingsName": "Palladio Leggings",
+    "bootsName": "Palladio Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelPaladino_Armor",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "palladin_armor.png",
+    "bodyModelName": "ModelPaladino_Armor",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "LeftPlate",
+    "armsModelPartR": "RightPlate",
+    "bodyModelTexture": "palladin_armor.png",
+    "leggingsModelName": "ModelPaladino_Armor",
+    "leggingsModelPartL": "LeftLegging",
+    "leggingsModelPartR": "RightLegging",
+    "leggingsModelTexture": "palladin_armor.png",
+    "bootsModelName": "ModelPaladino_Armor",
+    "bootsModelPartL": "LeftBoots",
+    "bootsModelPartR": "RightBoots",
+    "bootsModelTexture": "palladin_armor.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 100,
+    "damageValueHelmet": 5,
+    "damageValueBody": 13,
+    "damageValueLeggings": 11,
+    "damageValueBoots": 5,
+    "enchantability": 30,
+    "toughness": 2.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:PalladioIngot"
+      }
+    ]
+  }
+}

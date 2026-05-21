@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:PalladioIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "EQUIPMENT",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PalladioIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PalladioIngot"
+      },
+      {
+        "value": "CUSTOM:PalladioIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:PalladioIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:PalladioArmor.boots"
+    },
+    "name": "palladio_armor_boots_recipe",
+    "namespace": "mod"
+  }
+}

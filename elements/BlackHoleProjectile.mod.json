@@ -1,0 +1,25 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.AIR"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "disableGravity": true,
+    "power": 0.0,
+    "damage": 0.0,
+    "knockback": 0,
+    "entityModel": "ModelBlackHole",
+    "customModelTexture": "blackhole.png",
+    "modelWidth": 0.30000000000000004,
+    "modelHeight": 0.30000000000000004,
+    "onHitsBlock": {
+      "name": "BlackHoleProjectileProjectileHits"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "minecraft:condition",
+    "on_false": {
+      "type": "minecraft:model",
+      "model": "mythicrealms:item/shield_of_athena"
+    },
+    "on_true": {
+      "type": "minecraft:model",
+      "model": "mythicrealms:item/shield_of_athena_blocking"
+    },
+    "property": "minecraft:using_item"
+  }
+}

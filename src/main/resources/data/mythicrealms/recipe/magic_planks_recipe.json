@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "#mythicrealms:magic_logs"
+  ],
+  "result": {
+    "id": "mythicrealms:magic_planks",
+    "count": 4
+  }
+}

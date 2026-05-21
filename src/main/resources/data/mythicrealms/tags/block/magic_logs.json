@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mythicrealms:stripped_magic_wood",
+    "mythicrealms:magic_log",
+    "mythicrealms:magic_wood",
+    "mythicrealms:stripped_magic_log"
+  ]
+}

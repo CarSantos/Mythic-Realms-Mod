@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "demon_helmet",
+    "enableBody": true,
+    "textureBody": "demon_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "demon_leggings",
+    "enableBoots": true,
+    "textureBoots": "demon_boots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Demon Helmet",
+    "bodyName": "Demon Chestplate",
+    "leggingsName": "Demon Leggings",
+    "bootsName": "Demon Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelArmor_Demon",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "armor_demon.png",
+    "bodyModelName": "ModelArmor_Demon",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "leftPlate",
+    "armsModelPartR": "rightPlate",
+    "bodyModelTexture": "armor_demon.png",
+    "leggingsModelName": "ModelArmor_Demon",
+    "leggingsModelPartL": "leftLegging",
+    "leggingsModelPartR": "rightLegging",
+    "leggingsModelTexture": "armor_demon.png",
+    "bootsModelName": "ModelArmor_Demon",
+    "bootsModelPartL": "leftBoot",
+    "bootsModelPartR": "rightBoot",
+    "bootsModelTexture": "armor_demon.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": true
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": true
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": true
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": true
+    },
+    "maxDamage": 20,
+    "damageValueHelmet": 4,
+    "damageValueBody": 11,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 4,
+    "enchantability": 25,
+    "toughness": 1.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_netherite"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:DemonIngot"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": "mythicrealms:stripped_yggdrasil_log"
+  },
+  "result": {
+    "id": "mythicrealms:stripped_yggdrasil_wood",
+    "count": 3
+  }
+}

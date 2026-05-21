@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "mythicrealms:darkness_forest",
+    "mythicrealms:darkness_plains"
+  ],
+  "spawners": {
+    "type": "mythicrealms:vampire",
+    "weight": 50,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

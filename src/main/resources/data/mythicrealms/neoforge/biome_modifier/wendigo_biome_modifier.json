@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "mythicrealms:darkness_plains",
+    "dark_forest"
+  ],
+  "spawners": {
+    "type": "mythicrealms:wendigo",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

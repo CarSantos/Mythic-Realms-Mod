@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mythicrealms:block/magic_slab"
+    },
+    "type=top": {
+      "model": "mythicrealms:block/magic_slab_top"
+    },
+    "type=double": {
+      "model": "mythicrealms:block/magic_slab_full"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 79,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NONE",
+    "keyBindingName": "Highest Sound",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "HighestSoundEffect"
+    }
+  }
+}

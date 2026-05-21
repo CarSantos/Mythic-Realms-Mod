@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "tech_helmet",
+    "enableBody": true,
+    "textureBody": "tech_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "tech_armor",
+    "enableBoots": true,
+    "textureBoots": "tech_boots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Tech Helmet",
+    "bodyName": "Tech Chestplate",
+    "leggingsName": "Tech Leggings",
+    "bootsName": "Tech Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelTech_Nocturn_Armor",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "armor_tech.png",
+    "bodyModelName": "ModelTech_Nocturn_Armor",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "LeftPlate",
+    "armsModelPartR": "RightPlate",
+    "bodyModelTexture": "armor_tech.png",
+    "leggingsModelName": "ModelTech_Nocturn_Armor",
+    "leggingsModelPartL": "LeftLegging",
+    "leggingsModelPartR": "RightLegging",
+    "leggingsModelTexture": "armor_tech.png",
+    "bootsModelName": "ModelTech_Nocturn_Armor",
+    "bootsModelPartL": "LeftBoots",
+    "bootsModelPartR": "RightBoots",
+    "bootsModelTexture": "armor_tech.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 30,
+    "damageValueHelmet": 4,
+    "damageValueBody": 11,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 4,
+    "enchantability": 25,
+    "toughness": 3.0,
+    "knockbackResistance": 0.5,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ]
+  }
+}

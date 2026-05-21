@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/magic_log_top",
+    "up": "mythicrealms:block/magic_log_top",
+    "north": "mythicrealms:block/magic_log",
+    "east": "mythicrealms:block/magic_log",
+    "south": "mythicrealms:block/magic_log",
+    "west": "mythicrealms:block/magic_log",
+    "particle": "mythicrealms:block/magic_log_top"
+  },
+  "render_type": "solid"
+}

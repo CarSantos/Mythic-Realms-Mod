@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mythicrealms:block/yggdrasil_slab"
+    },
+    "type=top": {
+      "model": "mythicrealms:block/yggdrasil_slab_top"
+    },
+    "type=double": {
+      "model": "mythicrealms:block/yggdrasil_slab_full"
+    }
+  }
+}

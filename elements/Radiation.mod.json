@@ -1,0 +1,27 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Radiation",
+    "icon": "radiation",
+    "color": {
+      "value": -6697984,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false,
+    "isCuredbyHoney": false,
+    "modifiers": [],
+    "onActiveTick": {
+      "name": "RadiationOnEffectActiveTick"
+    },
+    "onMobRemoved": {
+      "name": "RadiationOnEntityDeath"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a b",
+    "acb",
+    "adb"
+  ],
+  "key": {
+    "a": "mythicrealms:anti_magnetic_rock",
+    "b": "mythicrealms:magnetic_rock",
+    "c": "mythicrealms:magnet",
+    "d": "minecraft:copper_block"
+  },
+  "result": {
+    "id": "mythicrealms:magnet_armor_chestplate",
+    "count": 1
+  }
+}

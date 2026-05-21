@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "mythicrealms:deepworld_forest",
+    "mythicrealms:mythic_forest",
+    "birch_forest",
+    "flower_forest",
+    "forest",
+    "old_growth_birch_forest"
+  ],
+  "spawners": {
+    "type": "mythicrealms:xochitl",
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

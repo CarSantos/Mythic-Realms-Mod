@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicrealms:meteor_magic_book"
+    },
+    "title": {
+      "translate": "advancements.meteor_magic_unlock.title"
+    },
+    "description": {
+      "translate": "advancements.meteor_magic_unlock.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "meteor_magic_unlock_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "mythicrealms:meteor_magic_book"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "mythicrealms:meteor_magic_unlock"
+}

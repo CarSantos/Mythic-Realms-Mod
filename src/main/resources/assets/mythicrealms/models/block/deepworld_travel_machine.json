@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/button_deep_travel",
+    "up": "mythicrealms:block/top_deep_travel",
+    "north": "mythicrealms:block/deep_travel",
+    "east": "mythicrealms:block/deep_travel",
+    "south": "mythicrealms:block/deep_travel",
+    "west": "mythicrealms:block/deep_travel",
+    "particle": "mythicrealms:block/button_deep_travel"
+  },
+  "render_type": "solid"
+}

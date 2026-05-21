@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "mythicrealms:darkness_forest",
+    "mythicrealms:darkness_plains",
+    "nether_wastes"
+  ],
+  "spawners": {
+    "type": "mythicrealms:demon",
+    "weight": 5,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

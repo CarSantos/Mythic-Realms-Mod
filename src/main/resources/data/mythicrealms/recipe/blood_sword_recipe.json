@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "mythicrealms:blood_ingot",
+    "b": "mythicrealms:blood_potions"
+  },
+  "result": {
+    "id": "mythicrealms:blood_sword",
+    "count": 1
+  }
+}

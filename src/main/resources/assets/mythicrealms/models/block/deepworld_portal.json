@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "mythicrealms:block/deep_portal",
+    "particle": "mythicrealms:block/deep_portal"
+  },
+  "render_type": "solid"
+}

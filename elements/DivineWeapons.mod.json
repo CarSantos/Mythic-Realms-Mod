@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Divine Weapons",
+    "icon": {
+      "value": "CUSTOM:ShieldOfAthena"
+    },
+    "showSearch": true
+  }
+}

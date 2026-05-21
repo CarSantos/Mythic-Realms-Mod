@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "mythicrealms:water_breath_magic_book"
+    },
+    "title": {
+      "translate": "advancements.water_breath_magic_unlock.title"
+    },
+    "description": {
+      "translate": "advancements.water_breath_magic_unlock.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "water_breath_magic_unlock_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "mythicrealms:water_breath_magic_book"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "mythicrealms:water_breath_magic_unlock"
+}

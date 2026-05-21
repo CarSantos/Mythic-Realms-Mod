@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "mythicrealms:venraid_scale",
+    "b": "mythicrealms:steel_sword"
+  },
+  "result": {
+    "id": "mythicrealms:venraid_sword",
+    "count": 1
+  }
+}

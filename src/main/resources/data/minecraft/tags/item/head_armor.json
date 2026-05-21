@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "mythicrealms:venraid_armor_helmet",
+    "mythicrealms:blood_armor_helmet",
+    "mythicrealms:samurai_armor_helmet",
+    "mythicrealms:demon_armor_helmet",
+    "mythicrealms:pharaoh_armor_helmet",
+    "mythicrealms:palladio_armor_helmet",
+    "mythicrealms:ninja_armor_helmet",
+    "mythicrealms:ent_armor_helmet",
+    "mythicrealms:magnet_armor_helmet",
+    "mythicrealms:angel_armor_helmet",
+    "mythicrealms:tech_armor_helmet"
+  ]
+}

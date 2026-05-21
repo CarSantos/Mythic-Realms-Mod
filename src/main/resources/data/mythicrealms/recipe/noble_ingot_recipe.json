@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key": {
+    "a": "mythicrealms:steel_ingot",
+    "b": "minecraft:coal_block",
+    "c": "mythicrealms:steel_plate"
+  },
+  "result": {
+    "id": "mythicrealms:noble_steel",
+    "count": 2
+  }
+}

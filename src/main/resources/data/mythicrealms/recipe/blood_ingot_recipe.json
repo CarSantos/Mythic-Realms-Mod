@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "b b",
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:blood_bottle",
+    "b": "mythicrealms:steel_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:blood_ingot",
+    "count": 4
+  }
+}

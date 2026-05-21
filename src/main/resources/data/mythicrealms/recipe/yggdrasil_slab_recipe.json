@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:yggdrasil_planks"
+  },
+  "result": {
+    "id": "mythicrealms:yggdrasil_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "b c",
+    " a "
+  ],
+  "key": {
+    "a": "mythicrealms:angel_feather",
+    "b": "mythicrealms:vibranium_ingot",
+    "c": "mythicrealms:titanium_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:angel_ingot",
+    "count": 1
+  }
+}

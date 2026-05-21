@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "mythicrealms:cave_magic_book",
+    "mythicrealms:stop_time_magic_book",
+    "mythicrealms:life_steal_magic_book",
+    "mythicrealms:soulforce_steal_magic_book",
+    "mythicrealms:sand_storm_magic_book",
+    "mythicrealms:ghost_mode_magic_book",
+    "mythicrealms:fire_ball_magic_book",
+    "mythicrealms:earthquake_magic_book",
+    "mythicrealms:dash_magic_book",
+    "mythicrealms:reflect_magic_book",
+    "mythicrealms:meteor_magic_book",
+    "mythicrealms:black_hole_magic_book",
+    "mythicrealms:expell_magic_book",
+    "mythicrealms:heal_magic_book",
+    "mythicrealms:thunder_magic_book",
+    "mythicrealms:highest_sound_magic_book",
+    "mythicrealms:vulcan_magic_book",
+    "mythicrealms:accelaration_magic_book",
+    "mythicrealms:ice_ball_magic_book",
+    "mythicrealms:detect_magic_book",
+    "mythicrealms:smoke_mode_magic_book",
+    "mythicrealms:necromancer_magic_book"
+  ]
+}

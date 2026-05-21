@@ -1,0 +1,253 @@
+/*
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
+package net.mcreator.mythicrealms.init;
+
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+
+import net.mcreator.mythicrealms.MythicrealmsMod;
+
+@EventBusSubscriber
+public class MythicrealmsModTabs {
+	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MythicrealmsMod.MODID);
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> KNOWLEDGE_OF_BOOK = REGISTRY.register("knowledge_of_book",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.knowledge_of_book")).icon(() -> new ItemStack(MythicrealmsModItems.ACCELARATION_MAGIC_BOOK.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(MythicrealmsModItems.ACCELARATION_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.BARRIER_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.BLACK_HOLE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.CAVE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.DASH_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.DETECT_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.EARTHQUAKE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.EXPELL_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.FIRE_BALL_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.GHOST_MODE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.HEAL_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.HIGHEST_SOUND_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.ICE_BALL_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.LIFE_STEAL_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.LIGHT_TRAVEL_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.METEOR_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.NECROMANCER_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.POISON_CLOUD_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.REFLECT_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.SAND_STORM_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.SMOKE_MODE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.SOULFORCE_STEAL_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.STOP_TIME_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.TEMPEST_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.THUNDER_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.VULCAN_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.WATER_BREATH_MAGIC_BOOK.get());
+			}).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ROLE_ITENS = REGISTRY.register("role_itens",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.role_itens")).icon(() -> new ItemStack(MythicrealmsModItems.PLAYER_ROLE.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(MythicrealmsModItems.GIANT_ROLE.get());
+				tabData.accept(MythicrealmsModItems.GUARDIAN_ROLE.get());
+				tabData.accept(MythicrealmsModItems.TANK_ROLE.get());
+				tabData.accept(MythicrealmsModItems.ASSASSIN_ROLE.get());
+				tabData.accept(MythicrealmsModItems.BARBARIAN_ROLE.get());
+				tabData.accept(MythicrealmsModItems.HUNTER_ROLE.get());
+				tabData.accept(MythicrealmsModItems.INVESTIGATOR_ROLE.get());
+				tabData.accept(MythicrealmsModItems.SOLDIER_ROLE.get());
+				tabData.accept(MythicrealmsModItems.DRUID_ROLE.get());
+				tabData.accept(MythicrealmsModItems.MONK_ROLE.get());
+				tabData.accept(MythicrealmsModItems.SUMMONER_ROLE.get());
+				tabData.accept(MythicrealmsModItems.WIZARD_ROLE.get());
+			}).withTabsBefore(KNOWLEDGE_OF_BOOK.getId()).build());
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DIVINE_WEAPONS = REGISTRY.register("divine_weapons",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.divine_weapons")).icon(() -> new ItemStack(MythicrealmsModItems.SHIELD_OF_ATHENA.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(MythicrealmsModItems.PLAYER_ROLE.get());
+				tabData.accept(MythicrealmsModItems.TANMAKU_SWORD.get());
+				tabData.accept(MythicrealmsModItems.BLOOD_SWORD.get());
+				tabData.accept(MythicrealmsModItems.EGYPTIAN_SWORD.get());
+				tabData.accept(MythicrealmsModItems.VENRAID_SWORD.get());
+				tabData.accept(MythicrealmsModItems.PUMPKIN_STAFF.get());
+				tabData.accept(MythicrealmsModItems.SHIELD_OF_ATHENA.get());
+				tabData.accept(MythicrealmsModItems.BOW_OF_APOLLO.get());
+			}).withSearchBar().withTabsBefore(ROLE_ITENS.getId()).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(MythicrealmsModBlocks.DEEPWORLD_TRAVEL_MACHINE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.ARMOR_FORGE.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(MythicrealmsModBlocks.BLOOD_LOG.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_WOOD.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.STRIPPED_BLOOD_LOG.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.STRIPPED_BLOOD_WOOD.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_PLANKS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_STAIRS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_SLAB.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_FENCE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_FENCE_GATE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_DOOR.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_TRAPDOOR.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_PRESSURE_PLATE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_BUTTON.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_LOG.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_WOOD.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.STRIPPED_MAGIC_LOG.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.STRIPPED_MAGIC_WOOD.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_PLANKS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_STAIRS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_SLAB.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_FENCE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_FENCE_GATE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_DOOR.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_TRAPDOOR.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_PRESSURE_PLATE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_BUTTON.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_LOG.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_WOOD.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.STRIPPED_YGGDRASIL_LOG.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.STRIPPED_YGGDRASIL_WOOD.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_PLANKS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_STAIRS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_SLAB.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_FENCE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_FENCE_GATE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_DOOR.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_TRAPDOOR.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_PRESSURE_PLATE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_BUTTON.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(MythicrealmsModItems.BLOOD_BOTTLE.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_POTIONS.get());
+			tabData.accept(MythicrealmsModItems.MANA_POTION.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(MythicrealmsModItems.STEEL_INGOT.get());
+			tabData.accept(MythicrealmsModItems.STEEL_PLATE.get());
+			tabData.accept(MythicrealmsModItems.REINFORCED_LEATHER.get());
+			tabData.accept(MythicrealmsModItems.NOBLE_STEEL.get());
+			tabData.accept(MythicrealmsModItems.RAW_ADAMANT.get());
+			tabData.accept(MythicrealmsModItems.ADAMANT_INGOT.get());
+			tabData.accept(MythicrealmsModItems.RAW_TITANIUM.get());
+			tabData.accept(MythicrealmsModItems.TITANIUM_INGOT.get());
+			tabData.accept(MythicrealmsModItems.RAW_VIBRANIUM.get());
+			tabData.accept(MythicrealmsModItems.VIBRANIUM_INGOT.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_INGOT.get());
+			tabData.accept(MythicrealmsModItems.VENRAID_SCALE.get());
+			tabData.accept(MythicrealmsModItems.URANIUM.get());
+			tabData.accept(MythicrealmsModItems.ENRICHED_URANIUM.get());
+			tabData.accept(MythicrealmsModItems.TANMAKE.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_LEATHER.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_POWDER.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_INGOT.get());
+			tabData.accept(MythicrealmsModItems.RAW_PALLADIO.get());
+			tabData.accept(MythicrealmsModItems.PALLADIO_INGOT.get());
+			tabData.accept(MythicrealmsModItems.ANGEL_FEATHER.get());
+			tabData.accept(MythicrealmsModItems.ANGEL_INGOT.get());
+			tabData.accept(MythicrealmsModItems.DEMON_SCALE.get());
+			tabData.accept(MythicrealmsModItems.DEMON_INGOT.get());
+			tabData.accept(MythicrealmsModItems.MANA_BOTTLE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.TITANIUM_ORE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.VIBRANIUM_ORE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_SAPLING.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_LEAVES.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.BLOOD_GRASS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.GHOST_MUSHROOM.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_SAPLING.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGIC_LEAVES.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.ANTI_MAGNETIC_ROCK.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.MAGNETIC_ROCK.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.LUNAR_BLOCK.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_LEAVES.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_SAPLING.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
+			tabData.accept(MythicrealmsModItems.STEEL_SWORD.get());
+			tabData.accept(MythicrealmsModItems.NINJA_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.NINJA_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.NINJA_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.NINJA_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.SAMURAI_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.SAMURAI_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.SAMURAI_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.SAMURAI_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.TECH_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.TECH_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.TECH_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.TECH_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.PHARAOH_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.PHARAOH_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.PHARAOH_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.PHARAOH_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.SCARAB_GEM.get());
+			tabData.accept(MythicrealmsModItems.VENRAID_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.VENRAID_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.VENRAID_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.VENRAID_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.MAGNET_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.MAGNET_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.MAGNET_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.MAGNET_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.ENT_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.ENT_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.ENT_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.ENT_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.DEMON_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.DEMON_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.DEMON_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.DEMON_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.PALLADIO_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.PALLADIO_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.PALLADIO_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.PALLADIO_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.ANGEL_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.ANGEL_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.ANGEL_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.ANGEL_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.TECH_GOOGLES_ITEM.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(MythicrealmsModItems.GHOST_HORSE_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.PANDEMIC_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.MUMMY_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.PHARAOH_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.VAMPIRE_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.DRACULA_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.HIPPOCAMPUS_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.YETI_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.KITSUNE_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.VENRAID_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.STURGEON_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.NIGHTMARE_HORSE_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.LAVA_GOLEM_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.ENT_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.JOKER_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.ANGEL_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.DEMON_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.WENDIGO_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(MythicrealmsModItems.MINERS_DREAM.get());
+			tabData.accept(MythicrealmsModItems.STEEL_PICKAXE.get());
+			tabData.accept(MythicrealmsModItems.STEEL_AXE.get());
+			tabData.accept(MythicrealmsModItems.STEEL_SHOVEL.get());
+			tabData.accept(MythicrealmsModItems.STEEL_HOE.get());
+			tabData.accept(MythicrealmsModItems.BACKPACK_ITEM.get());
+			tabData.accept(MythicrealmsModItems.MAGNET.get());
+			tabData.accept(MythicrealmsModItems.SOULFORCE_BOOK.get());
+			tabData.accept(MythicrealmsModItems.RELIGION_BOOK.get());
+			tabData.accept(MythicrealmsModItems.NECRO_BOOK.get());
+			tabData.accept(MythicrealmsModItems.ILLUMINATY_ITEM.get());
+		}
+	}
+}

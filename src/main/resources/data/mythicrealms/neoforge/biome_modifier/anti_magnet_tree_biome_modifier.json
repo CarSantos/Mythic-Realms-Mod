@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "mythicrealms:magnetic_cave",
+  "features": "mythicrealms:anti_magnet_tree",
+  "step": "surface_structures"
+}

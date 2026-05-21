@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_fence_gate_open",
+  "textures": {
+    "texture": "mythicrealms:block/magic_planks",
+    "particle": "mythicrealms:block/magic_planks"
+  },
+  "render_type": "solid"
+}

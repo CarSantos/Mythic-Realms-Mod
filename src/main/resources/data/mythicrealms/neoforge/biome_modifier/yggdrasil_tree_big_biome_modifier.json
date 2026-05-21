@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "mythicrealms:asgard",
+  "features": "mythicrealms:yggdrasil_tree_big",
+  "step": "surface_structures"
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 79,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.MAGMA"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": true,
+    "disableGravity": false,
+    "power": 1.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "modelWidth": 2.0,
+    "modelHeight": 2.0,
+    "onHitsBlock": {
+      "name": "MeteorProjectileHits"
+    },
+    "onHitsPlayer": {
+      "name": "MeteorProjectileHits"
+    },
+    "onHitsEntity": {
+      "name": "MeteorProjectileHits"
+    }
+  }
+}

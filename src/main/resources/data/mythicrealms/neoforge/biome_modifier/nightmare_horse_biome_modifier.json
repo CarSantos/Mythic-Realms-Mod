@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": "crimson_forest",
+  "spawners": {
+    "type": "mythicrealms:nightmare_horse",
+    "weight": 40,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

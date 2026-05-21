@@ -1,0 +1,13 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": [
+    "cherry_grove",
+    "mythicrealms:mythic_forest"
+  ],
+  "spawners": {
+    "type": "mythicrealms:kitsune",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

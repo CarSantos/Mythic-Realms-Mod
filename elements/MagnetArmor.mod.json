@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "magnet_helmet",
+    "enableBody": true,
+    "textureBody": "magnet_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "magnet_leggings",
+    "enableBoots": true,
+    "textureBoots": "magnet_boots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Magnet Helmet",
+    "bodyName": "Magnet Chestplate",
+    "leggingsName": "Magnet Leggings",
+    "bootsName": "Magnet Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelMagnet_Armor",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "magnet_armor.png",
+    "bodyModelName": "ModelMagnet_Armor",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "leftPlate",
+    "armsModelPartR": "rightPlate",
+    "bodyModelTexture": "magnet_armor.png",
+    "leggingsModelName": "ModelMagnet_Armor",
+    "leggingsModelPartL": "leftLegging",
+    "leggingsModelPartR": "rightLegging",
+    "leggingsModelTexture": "magnet_armor.png",
+    "bootsModelName": "ModelMagnet_Armor",
+    "bootsModelPartL": "leftBoot",
+    "bootsModelPartR": "rightBoot",
+    "bootsModelTexture": "magnet_armor.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 30,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 25,
+    "toughness": 0.0,
+    "knockbackResistance": 0.19999999999999998,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Magnet"
+      }
+    ]
+  }
+}

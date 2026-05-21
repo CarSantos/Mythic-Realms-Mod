@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:blood_planks",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "mythicrealms:blood_fence",
+    "count": 3
+  }
+}

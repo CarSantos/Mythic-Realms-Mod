@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/egyptian_sword",
+  "textures": {
+    "0": "mythicrealms:block/egyptiansword",
+    "particle": "mythicrealms:item/steel_sword"
+  }
+}

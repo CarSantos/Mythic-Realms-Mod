@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:vibranium_ingot",
+    "b": "mythicrealms:magnet_armor_leggings"
+  },
+  "result": {
+    "id": "mythicrealms:tech_armor_leggings",
+    "count": 1
+  }
+}

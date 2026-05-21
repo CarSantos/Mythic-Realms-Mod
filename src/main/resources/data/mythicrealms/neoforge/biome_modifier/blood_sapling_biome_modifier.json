@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "mythicrealms:darkness_forest",
+  "features": "mythicrealms:blood_sapling",
+  "step": "vegetal_decoration"
+}

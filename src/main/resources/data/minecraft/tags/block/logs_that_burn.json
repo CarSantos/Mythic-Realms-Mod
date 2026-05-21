@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#mythicrealms:magic_logs",
+      "required": false
+    },
+    {
+      "id": "#mythicrealms:blood_logs",
+      "required": false
+    },
+    {
+      "id": "#mythicrealms:yggdrasil_logs",
+      "required": false
+    }
+  ]
+}

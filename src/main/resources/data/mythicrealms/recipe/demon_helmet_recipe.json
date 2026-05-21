@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:demon_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:demon_armor_helmet",
+    "count": 1
+  }
+}

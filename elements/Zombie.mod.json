@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Plague",
+    "icon": "zombie",
+    "color": {
+      "value": -13408768,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "HARMFUL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ARMOR"
+        },
+        "amount": 1.0,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.5,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": -0.5,
+        "operation": "ADD_MULTIPLIED_TOTAL"
+      }
+    ],
+    "onActiveTick": {
+      "name": "ZombieOnEffectActiveTick"
+    },
+    "onMobRemoved": {
+      "name": "ZombieOnEntityDeath"
+    }
+  }
+}

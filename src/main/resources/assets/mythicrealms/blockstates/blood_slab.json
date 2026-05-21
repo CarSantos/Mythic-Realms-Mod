@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mythicrealms:block/blood_slab"
+    },
+    "type=top": {
+      "model": "mythicrealms:block/blood_slab_top"
+    },
+    "type=double": {
+      "model": "mythicrealms:block/blood_slab_full"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "_fv": 79,
+  "_type": "curiosbauble",
+  "definition": {
+    "item": "Magnet",
+    "slotType": "BACK",
+    "slotAmount": 1,
+    "addSlot": true,
+    "enderMask": false,
+    "friendlyPigs": false,
+    "snowWalk": false,
+    "equipSound": {
+      "value": ""
+    },
+    "hasModel": true,
+    "baubleModel": "ModelMagnet_Propulsor",
+    "baubleModelTexture": "magnet_propulsor.png",
+    "curioTick": {
+      "name": "MagnetPropulsorWhileBaubleIsEquippedTick"
+    },
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "Empty",
+    "armsModelPartR": "Empty",
+    "leggingsModelPartL": "Empty",
+    "leggingsModelPartR": "Empty",
+    "disabledToggles": [
+      "RING"
+    ]
+  }
+}

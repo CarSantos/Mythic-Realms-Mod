@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mythicrealms:dracula_castle",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 16,
+    "salt": 1425948003
+  }
+}

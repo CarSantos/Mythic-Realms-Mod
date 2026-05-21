@@ -1,0 +1,11 @@
+{
+  "_fv": 79,
+  "_type": "tab",
+  "definition": {
+    "name": "Knowledge Of Book",
+    "icon": {
+      "value": "CUSTOM:AccelarationMagicBook"
+    },
+    "showSearch": false
+  }
+}

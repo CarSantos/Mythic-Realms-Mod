@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "mythicrealms:block/blood_trapdoor",
+    "bottom": "mythicrealms:block/blood_trapdoor",
+    "top": "mythicrealms:block/blood_trapdoor",
+    "side": "mythicrealms:block/blood_trapdoor"
+  },
+  "render_type": "solid"
+}

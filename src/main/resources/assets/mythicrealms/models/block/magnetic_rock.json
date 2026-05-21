@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/magnet1",
+    "up": "mythicrealms:block/magnet1",
+    "north": "mythicrealms:block/magnet1",
+    "east": "mythicrealms:block/magnet1",
+    "south": "mythicrealms:block/magnet1",
+    "west": "mythicrealms:block/magnet1",
+    "particle": "mythicrealms:block/magnet1"
+  },
+  "render_type": "solid"
+}

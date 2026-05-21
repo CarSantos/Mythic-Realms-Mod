@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mythicrealms:block/blood_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mythicrealms:block/blood_log"
+    },
+    "axis=z": {
+      "model": "mythicrealms:block/blood_log",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "mythicrealms:steel_sword",
+    "b": "mythicrealms:deleted_mod_element"
+  },
+  "result": {
+    "id": "mythicrealms:tanmaku_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "mythicrealms:mythic_forest",
+  "features": "mythicrealms:magic_tree_big",
+  "step": "surface_structures"
+}

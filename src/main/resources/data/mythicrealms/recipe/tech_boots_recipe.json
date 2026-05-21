@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:vibranium_ingot",
+    "b": "mythicrealms:magnet_armor_boots"
+  },
+  "result": {
+    "id": "mythicrealms:tech_armor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "description": {
+    "translate": "enchantment.mythicrealms.curse_of_tree"
+  },
+  "supported_items": [
+    "mythicrealms:steel_sword",
+    "minecraft:wooden_sword",
+    "minecraft:stone_sword",
+    "minecraft:iron_sword",
+    "minecraft:golden_sword",
+    "minecraft:diamond_sword",
+    "minecraft:netherite_sword"
+  ],
+  "weight": 10,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 6,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 16,
+  "slots": [
+    "any"
+  ],
+  "exclusive_set": [
+    "fire_aspect",
+    "mythicrealms:life_steal"
+  ]
+}

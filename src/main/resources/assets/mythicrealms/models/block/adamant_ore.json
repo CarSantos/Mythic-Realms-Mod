@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/adamantore",
+    "up": "mythicrealms:block/adamantore",
+    "north": "mythicrealms:block/adamantore",
+    "east": "mythicrealms:block/adamantore",
+    "south": "mythicrealms:block/adamantore",
+    "west": "mythicrealms:block/adamantore",
+    "particle": "mythicrealms:block/adamantore"
+  },
+  "render_type": "solid"
+}

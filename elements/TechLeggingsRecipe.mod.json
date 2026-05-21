@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": "CUSTOM:MagnetArmor.legs"
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:VibraniumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TechArmor.legs"
+    },
+    "name": "tech_leggings_recipe",
+    "namespace": "mod"
+  }
+}

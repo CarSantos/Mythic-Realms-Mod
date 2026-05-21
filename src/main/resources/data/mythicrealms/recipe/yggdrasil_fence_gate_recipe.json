@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_fence_gate",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "aba"
+  ],
+  "key": {
+    "a": "minecraft:stick",
+    "b": "mythicrealms:yggdrasil_planks"
+  },
+  "result": {
+    "id": "mythicrealms:yggdrasil_fence_gate",
+    "count": 1
+  }
+}
