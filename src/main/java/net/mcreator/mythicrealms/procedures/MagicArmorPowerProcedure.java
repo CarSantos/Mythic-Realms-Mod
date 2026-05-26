@@ -36,7 +36,7 @@ public class MagicArmorPowerProcedure {
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == MythicrealmsModItems.MAGIC_ARMOR_BOOTS.get()) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce + 1;
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce + 0.1;
 				_vars.markSyncDirty();
 			}
 			if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce < 1000) {
