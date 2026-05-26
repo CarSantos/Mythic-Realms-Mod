@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:star_dust",
+    "b": "mythicrealms:palladio_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:oricalc",
+    "count": 1
+  }
+}

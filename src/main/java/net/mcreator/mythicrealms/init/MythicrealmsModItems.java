@@ -272,6 +272,7 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_BOOTS;
+	public static final DeferredItem<Item> ORICALC;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -517,6 +518,7 @@ public class MythicrealmsModItems {
 		WENDIGO_ARMOR_ARMOR_CHESTPLATE = register("wendigo_armor_armor_chestplate", WendigoArmorArmorItem.Chestplate::new);
 		WENDIGO_ARMOR_ARMOR_LEGGINGS = register("wendigo_armor_armor_leggings", WendigoArmorArmorItem.Leggings::new);
 		WENDIGO_ARMOR_ARMOR_BOOTS = register("wendigo_armor_armor_boots", WendigoArmorArmorItem.Boots::new);
+		ORICALC = register("oricalc", OricalcItem::new);
 	}
 
 	// Start of user code block custom items

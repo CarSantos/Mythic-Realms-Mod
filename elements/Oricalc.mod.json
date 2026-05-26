@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "naniteingot",
+    "texture": "oricalc",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Nanite",
+    "name": "Oricalc",
     "rarity": "COMMON",
     "creativeTabs": [
       {

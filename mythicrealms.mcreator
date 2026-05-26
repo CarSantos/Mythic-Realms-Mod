@@ -11522,6 +11522,35 @@
         ]
       },
       "path": "~/Item/Armors/Wendigo Armor"
+    },
+    {
+      "name": "Oricalc",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oricalc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/OricalcItem.java",
+          "src/main/resources/assets/mythicrealms/items/oricalc.json",
+          "src/main/resources/assets/mythicrealms/models/item/oricalc.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Oricalc"
+    },
+    {
+      "name": "OricalcRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oricalc_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/oricalc_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/oricalc_recipe.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Oricalc"
     }
   ],
   "variable_elements": [
@@ -13750,6 +13779,7 @@
       "RawVibranium",
       "VibraniumIngot",
       "BloodIngot",
+      "WendigoBone",
       "VenraidScale",
       "Uranium",
       "EnrichedUranium",
@@ -13766,12 +13796,13 @@
       "ManaBottle",
       "StarDust",
       "Mythrill",
-      "UltimateIngot",
-      "Nanos",
-      "ActivedNano",
       "Glacite",
       "Flamite",
-      "WendigoBone"
+      "Nanite",
+      "Nanos",
+      "ActivedNano",
+      "UltimateIngot",
+      "Oricalc"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -13796,9 +13827,11 @@
       "NinjaArmor",
       "SamuraiArmor",
       "TechArmor",
+      "WendigoArmorArmor",
       "BloodArmor",
       "PharaohArmor",
       "ScarabGem",
+      "XochitlArmor",
       "VenraidArmor",
       "MagnetArmor",
       "EntArmor",
@@ -13806,9 +13839,7 @@
       "PalladioArmor",
       "AngelArmor",
       "TechGooglesItem",
-      "NanoArmor",
-      "XochitlArmor",
-      "WendigoArmorArmor"
+      "NanoArmor"
     ],
     "MISC": [
       "GhostHorse",
@@ -14350,7 +14381,8 @@
       "item.mythicrealms.wendigo_armor_armor_chestplate": "Wendigo Chestplate",
       "item.mythicrealms.wendigo_armor_armor_boots": "Wendigo Boots",
       "item.mythicrealms.wendigo_armor_armor_helmet": "Wendigo Helmet",
-      "item.mythicrealms.wendigo_armor_armor_leggings": "Wendigo Leggings"
+      "item.mythicrealms.wendigo_armor_armor_leggings": "Wendigo Leggings",
+      "item.mythicrealms.oricalc": "Oricalc"
     }
   },
   "metadata": {
@@ -14483,7 +14515,8 @@
       "Glacite": "armorforge:default",
       "Flamite": "armorforge:default",
       "Nanite": "armorforge:default",
-      "WendigoBone": "armorforge:default"
+      "WendigoBone": "armorforge:default",
+      "Oricalc": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -14580,7 +14613,8 @@
       "Glacite": "All perspectives",
       "Flamite": "All perspectives",
       "Nanite": "All perspectives",
-      "WendigoBone": "All perspectives"
+      "WendigoBone": "All perspectives",
+      "Oricalc": "All perspectives"
     }
   },
   "foldersRoot": {
