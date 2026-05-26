@@ -7588,19 +7588,6 @@
       "path": "~/System/Magic/Magic Powers/00 Elements/Block"
     },
     {
-      "name": "BarrierMagicUnlock",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "barrier_magic_unlock",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/mythicrealms/advancement/barrier_magic_unlock.json"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Barrier"
-    },
-    {
       "name": "CrystalOnTickUpdate",
       "type": "procedure",
       "compiles": true,
@@ -11751,6 +11738,45 @@
         ]
       },
       "path": "~/System/Magic/Magic Powers/00 Elements/Block"
+    },
+    {
+      "name": "BarrierMagicUnlock",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barrier_magic_unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/barrier_magic_unlock.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Barrier"
+    },
+    {
+      "name": "FireWaveMagicUnlock",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_wave_magic_unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/fire_wave_magic_unlock.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Fire Wave"
+    },
+    {
+      "name": "SubstituteMagicUnlock",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "substitute_magic_unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/substitute_magic_unlock.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Substitute"
     }
   ],
   "variable_elements": [
@@ -14415,8 +14441,6 @@
       "item_group.mythicrealms.knowledge_of_book": "Knowledge Of Book",
       "item.mythicrealms.barrier_magic_book.description_0": "Barrier Magic Book",
       "item.mythicrealms.barrier_magic_book": "Book of Knowledge",
-      "advancements.barrier_magic_unlock.descr": "Now Is Possible For You Use Barrier Magic",
-      "advancements.barrier_magic_unlock.title": "Barrier Magic Unlock",
       "item_group.mythicrealms.divine_weapons": "Divine Weapons",
       "item.mythicrealms.blood_sword": "Blood Sword",
       "item.mythicrealms.backpack_item": "Backpack",
@@ -14602,7 +14626,13 @@
       "item.mythicrealms.substitute_magic_book": "Book of Knowledge",
       "item.mythicrealms.substitute_magic_book.description_0": "Substitute Magic Book",
       "item.mythicrealms.fire_wave_magic_book": "Book of Knowledge",
-      "item.mythicrealms.fire_wave_magic_book.description_0": "Fire Wave Magic Book"
+      "item.mythicrealms.fire_wave_magic_book.description_0": "Fire Wave Magic Book",
+      "advancements.barrier_magic_unlock.descr": "Now Is Possible For You Use Barrier Magic",
+      "advancements.barrier_magic_unlock.title": "Accelaration Magic Unlock",
+      "advancements.fire_wave_magic_unlock.title": "Fire Wave Magic Unlock",
+      "advancements.fire_wave_magic_unlock.descr": "Now Is Possible For You Use Fire Wave Magic",
+      "advancements.substitute_magic_unlock.title": "Substitute Magic Unlock",
+      "advancements.substitute_magic_unlock.descr": "Now Is Possible For You Use Substitute Magic"
     }
   },
   "metadata": {

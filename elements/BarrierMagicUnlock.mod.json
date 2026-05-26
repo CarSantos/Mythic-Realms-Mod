@@ -2,10 +2,10 @@
   "_fv": 79,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Barrier Magic Unlock",
+    "achievementName": "Accelaration Magic Unlock",
     "achievementDescription": "Now Is Possible For You Use Barrier Magic",
     "achievementIcon": {
-      "value": "CUSTOM:BarrierMagicBook"
+      "value": "CUSTOM:AccelarationMagicBook"
     },
     "background": "Default",
     "disableDisplay": false,
