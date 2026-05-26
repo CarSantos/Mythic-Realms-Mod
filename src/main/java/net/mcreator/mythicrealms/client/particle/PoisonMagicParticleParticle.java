@@ -31,6 +31,7 @@ public class PoisonMagicParticleParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.3f, 0.3f);
+		this.quadSize *= 1.2f;
 		this.lifetime = 7;
 		this.gravity = 0f;
 		this.hasPhysics = true;

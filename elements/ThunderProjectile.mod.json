@@ -18,6 +18,15 @@
     "customModelTexture": "",
     "modelWidth": 0.5,
     "modelHeight": 0.5,
+    "onHitsBlock": {
+      "name": "ThunderHits"
+    },
+    "onHitsPlayer": {
+      "name": "ThunderHits"
+    },
+    "onHitsEntity": {
+      "name": "ThunderHits"
+    },
     "onFlyingTick": {
       "name": "ThunderProjectileWhileProjectileFlyingTick"
     }

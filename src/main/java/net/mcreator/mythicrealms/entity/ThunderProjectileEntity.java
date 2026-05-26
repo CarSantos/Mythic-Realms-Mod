@@ -1,6 +1,8 @@
 package net.mcreator.mythicrealms.entity;
 
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -8,6 +10,7 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -19,6 +22,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.mythicrealms.procedures.ThunderProjectileWhileProjectileFlyingTickProcedure;
+import net.mcreator.mythicrealms.procedures.ThunderHitsProcedure;
 import net.mcreator.mythicrealms.init.MythicrealmsModEntities;
 
 import javax.annotation.Nullable;
@@ -77,6 +81,24 @@ public class ThunderProjectileEntity extends AbstractArrow implements ItemSuppli
 		} else { // knockback might be set by firedFromWeapon passed into constructor
 			super.doKnockback(livingEntity, damageSource);
 		}
+	}
+
+	@Override
+	public void playerTouch(Player entity) {
+		super.playerTouch(entity);
+		ThunderHitsProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		ThunderHitsProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
+	public void onHitBlock(BlockHitResult blockHitResult) {
+		super.onHitBlock(blockHitResult);
+		ThunderHitsProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override

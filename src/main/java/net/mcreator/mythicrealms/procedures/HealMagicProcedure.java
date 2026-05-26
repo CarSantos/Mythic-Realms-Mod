@@ -37,6 +37,10 @@ public class HealMagicProcedure {
 			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.COMPOSTER, x, y, z, 32, 2, 3, 2, 1);
+			for (int index0 = 0; index0 < 20; index0++) {
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.HEART, (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0, 3, 0, 0.5);
+			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);

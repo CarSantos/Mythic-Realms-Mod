@@ -18,6 +18,8 @@ import net.minecraft.commands.arguments.EntityAnchorArgument;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
 
+import java.util.Comparator;
+
 public class EarthquakeMagicProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
@@ -28,14 +30,20 @@ public class EarthquakeMagicProcedure {
 				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 100;
 				_vars.markSyncDirty();
 			}
-			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 4), (y + 4), (z + 4), (x - 4), (y - 4), (z - 4)))) {
-				entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3(x, y, z));
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 160, 4, 2, 4, 1);
-				entityiterator.setDeltaMovement(new Vec3((entityiterator.getLookAngle().x * 6), (entityiterator.getLookAngle().y * 6), (entityiterator.getLookAngle().z * 6)));
-				entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
-				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 200, 2, false, false));
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 160, 4, 2, 4, 1);
+			{
+				final Vec3 _center = new Vec3(x, y, z);
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(13 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+					if (!(entityiterator == entity)) {
+						entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())));
+						entityiterator.setDeltaMovement(new Vec3((Math.sin(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-8)), (Math.sin(entityiterator.getXRot() * (-1)) * (-1)),
+								(Math.cos(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-8))));
+						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 200, 2, false, false));
+					}
+				}
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())

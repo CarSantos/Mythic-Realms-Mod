@@ -9,7 +9,12 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -48,7 +53,11 @@ public class VulcanEffectProcedure {
 				entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3(x, y, z));
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.FIRE_MAGIC_PARTICLE.get()), x, y, z, 50, 2, 2, 2, 1);
-				entityiterator.setDeltaMovement(new Vec3((entity.getLookAngle().x * 2), (entity.getLookAngle().y * 2), (entity.getLookAngle().z * 2)));
+				entityiterator.setDeltaMovement(new Vec3((Math.sin(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-3)), (Math.sin(entityiterator.getXRot() * (-1)) * (-2)),
+						(Math.cos(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-3))));
+				entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
+				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 200, 2, false, false));
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())

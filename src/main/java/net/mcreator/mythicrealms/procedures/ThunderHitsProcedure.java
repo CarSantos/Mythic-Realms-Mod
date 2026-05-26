@@ -17,6 +17,6 @@ public class ThunderHitsProcedure {
 			_level.addFreshEntity(entityToSpawn);
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CRIT, x, y, z, 20, 2, 2, 2, 1);
+			_level.sendParticles(ParticleTypes.CRIT, x, y, z, 20, 0, 2, 0, 1);
 	}
 }

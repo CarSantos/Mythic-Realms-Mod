@@ -2610,20 +2610,6 @@
       "path": "~/System/Magic/Magic Powers/SoulforceSteal"
     },
     {
-      "name": "SoulMagicParticle",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soul_magic_particle",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mythicrealms/particles/soul_magic_particle.json",
-          "src/main/java/net/mcreator/mythicrealms/client/particle/SoulMagicParticleParticle.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/00 Elements/Particles"
-    },
-    {
       "name": "SandMagic",
       "type": "procedure",
       "compiles": true,
@@ -11206,7 +11192,8 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/crystal_barrier_block_biome_modifier.json",
           "src/main/resources/assets/mythicrealms/models/block/crystal_barrier_block.json"
         ]
-      }
+      },
+      "path": "~/World Gen/Biome/Overworld"
     },
     {
       "name": "Glacite",
@@ -11660,6 +11647,56 @@
         ]
       },
       "path": "~/System/Magic/Magic Powers/Magic Armor"
+    },
+    {
+      "name": "SubstituteMagic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "substitute_magic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SubstituteMagicProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Substitute"
+    },
+    {
+      "name": "SubstituteMagicBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "substitute_magic_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/SubstituteMagicBookItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/substitute_magic_book.json",
+          "src/main/resources/assets/mythicrealms/items/substitute_magic_book.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/00 Elements/Block"
     }
   ],
   "variable_elements": [
@@ -14021,7 +14058,8 @@
       "ThunderMagicBook",
       "VulcanMagicBook",
       "WaterBreathMagicBook",
-      "MagicArmorMagicBook"
+      "MagicArmorMagicBook",
+      "SubstituteMagicBook"
     ],
     "CUSTOM:RoleItens": [
       "GiantRole",
@@ -14505,7 +14543,9 @@
       "item.mythicrealms.magic_armor_magic_book.description_0": "Magic Armor Book",
       "item.mythicrealms.magic_armor_magic_book": "Book of Knowledge",
       "advancements.magic_armor_magic_unlock.title": "Magic Armor Magic Unlock",
-      "advancements.magic_armor_magic_unlock.descr": "Now Is Possible For You Make A Magic Armor"
+      "advancements.magic_armor_magic_unlock.descr": "Now Is Possible For You Make A Magic Armor",
+      "item.mythicrealms.substitute_magic_book": "Book of Knowledge",
+      "item.mythicrealms.substitute_magic_book.description_0": "Substitute Magic Book"
     }
   },
   "metadata": {
@@ -14640,7 +14680,8 @@
       "Nanite": "armorforge:default",
       "WendigoBone": "armorforge:default",
       "Oricalc": "armorforge:default",
-      "MagicArmorMagicBook": "armorforge:default"
+      "MagicArmorMagicBook": "armorforge:default",
+      "SubstituteMagicBook": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -14739,7 +14780,8 @@
       "Nanite": "All perspectives",
       "WendigoBone": "All perspectives",
       "Oricalc": "All perspectives",
-      "MagicArmorMagicBook": "All perspectives"
+      "MagicArmorMagicBook": "All perspectives",
+      "SubstituteMagicBook": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -15417,6 +15459,10 @@
                   },
                   {
                     "name": "Magic Armor",
+                    "children": []
+                  },
+                  {
+                    "name": "Substitute",
                     "children": []
                   }
                 ]

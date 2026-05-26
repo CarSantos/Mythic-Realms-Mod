@@ -9,10 +9,9 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
-import net.mcreator.mythicrealms.init.MythicrealmsModParticleTypes;
 
 import java.util.Comparator;
 
@@ -34,8 +33,10 @@ public class SoulforceStealMagicProcedure {
 						_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce + 100;
 						_vars.markSyncDirty();
 					}
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.SOUL_MAGIC_PARTICLE.get()), x, y, z, 640, 16, 4, 16, 1);
+					for (int index0 = 0; index0 < 400; index0++) {
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.REVERSE_PORTAL, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 20, 0, 3, 0, 0.5);
+					}
 				}
 				if (!(entityiterator instanceof Player)) {
 					{
@@ -49,10 +50,16 @@ public class SoulforceStealMagicProcedure {
 						_vars.markSyncDirty();
 					}
 					entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 4);
-					if (world instanceof ServerLevel _level)
-						_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.SOUL_MAGIC_PARTICLE.get()), x, y, z, 320, 16, 4, 16, 1);
+					for (int index1 = 0; index1 < 200; index1++) {
+						if (world instanceof ServerLevel _level)
+							_level.sendParticles(ParticleTypes.REVERSE_PORTAL, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 20, 0, 3, 0, 0.5);
+					}
 				}
 			}
+		}
+		for (int index2 = 0; index2 < 200; index2++) {
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.PORTAL, (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0, 3, 0, 0.5);
 		}
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack, 100);

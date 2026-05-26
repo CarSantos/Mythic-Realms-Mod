@@ -12,7 +12,9 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
 
@@ -36,6 +38,10 @@ public class LifeStealMagicProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(
 						new MobEffectInstance(MobEffects.REGENERATION, (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.REGENERATION) ? _livEnt.getEffect(MobEffects.REGENERATION).getDuration() : 0) + 200, 1, false, false));
+			for (int index0 = 0; index0 < 100; index0++) {
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.COMPOSTER, (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0, 3, 0, 0.5);
+			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), false);

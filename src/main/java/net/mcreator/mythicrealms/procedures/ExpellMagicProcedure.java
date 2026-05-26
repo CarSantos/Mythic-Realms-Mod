@@ -5,7 +5,10 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.server.level.ServerLevel;
@@ -14,6 +17,8 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
+
+import java.util.Comparator;
 
 public class ExpellMagicProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -25,12 +30,20 @@ public class ExpellMagicProcedure {
 				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 50;
 				_vars.markSyncDirty();
 			}
-			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 6), (y + 6), (z + 6), (x - 6), (y - 6), (z - 6)))) {
-				entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3(x, y, z));
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 160, 4, 2, 4, 1);
-				entityiterator.setDeltaMovement(new Vec3((entityiterator.getLookAngle().x * 8), (entityiterator.getLookAngle().y * 4), (entityiterator.getLookAngle().z * 8)));
-				entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 160, 4, 2, 4, 1);
+			{
+				final Vec3 _center = new Vec3(x, y, z);
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+					if (!(entityiterator == entity)) {
+						entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())));
+						entityiterator.setDeltaMovement(new Vec3((Math.sin(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-20)), (Math.sin(entityiterator.getXRot() * (-1)) * 0),
+								(Math.cos(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-20))));
+						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
+						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+							_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 200, 2, false, false));
+					}
+				}
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
