@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "mythicrealms:block/lunarcobblestone",
+    "bottom": "mythicrealms:block/lunarcobblestone",
+    "top": "mythicrealms:block/lunarcobblestone",
+    "side": "mythicrealms:block/lunarcobblestone"
+  },
+  "render_type": "solid"
+}

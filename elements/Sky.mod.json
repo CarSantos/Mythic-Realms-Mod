@@ -4,12 +4,15 @@
   "definition": {
     "biomesInDimension": [
       {
+        "value": "CUSTOM:Asgard"
+      },
+      {
         "value": "CUSTOM:MythicForest"
       }
     ],
     "worldGenType": "End like gen",
     "mainFillerBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:SkiesStone"
     },
     "fluidBlock": {
       "value": "Blocks.WATER"

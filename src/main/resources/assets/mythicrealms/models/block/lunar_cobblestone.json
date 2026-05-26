@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/lunarcobblestone",
+    "up": "mythicrealms:block/lunarcobblestone",
+    "north": "mythicrealms:block/lunarcobblestone",
+    "east": "mythicrealms:block/lunarcobblestone",
+    "south": "mythicrealms:block/lunarcobblestone",
+    "west": "mythicrealms:block/lunarcobblestone",
+    "particle": "mythicrealms:block/lunarcobblestone"
+  },
+  "render_type": "solid"
+}

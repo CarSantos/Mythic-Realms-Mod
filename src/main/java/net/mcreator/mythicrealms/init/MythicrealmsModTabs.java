@@ -82,6 +82,7 @@ public class MythicrealmsModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.DEEPWORLD_TRAVEL_MACHINE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.ARMOR_FORGE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.PEDESTAL.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.BLOOD_LOG.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.BLOOD_WOOD.get().asItem());
@@ -122,6 +123,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_TRAPDOOR.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_PRESSURE_PLATE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_BUTTON.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.LUNAR_COBBLESTONE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(MythicrealmsModItems.BLOOD_BOTTLE.get());
 			tabData.accept(MythicrealmsModItems.BLOOD_POTIONS.get());
@@ -153,6 +155,9 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.DEMON_INGOT.get());
 			tabData.accept(MythicrealmsModItems.MANA_BOTTLE.get());
 			tabData.accept(MythicrealmsModItems.STAR_DUST.get());
+			tabData.accept(MythicrealmsModItems.MYTHRILL.get());
+			tabData.accept(MythicrealmsModItems.ULTIMATE_INGOT.get());
+			tabData.accept(MythicrealmsModItems.NANOS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
@@ -218,6 +223,10 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.ANGEL_ARMOR_LEGGINGS.get());
 			tabData.accept(MythicrealmsModItems.ANGEL_ARMOR_BOOTS.get());
 			tabData.accept(MythicrealmsModItems.TECH_GOOGLES_ITEM.get());
+			tabData.accept(MythicrealmsModItems.NANO_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.NANO_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.NANO_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.NANO_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MythicrealmsModItems.GHOST_HORSE_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.PANDEMIC_SPAWN_EGG.get());

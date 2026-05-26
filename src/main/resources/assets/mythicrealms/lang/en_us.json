@@ -413,5 +413,22 @@
   "biome.mythicrealms.desert_of_dead_star": "Desert Of Dead Star",
   "item.mythicrealms.toxic_sand": "Toxic Sand",
   "biome.mythicrealms.toxic_biome": "Toxic Plains",
-  "key.mythicrealms.water_breath_key": "Water Breath Key"
+  "key.mythicrealms.water_breath_key": "Water Breath Key",
+  "item.mythicrealms.mythrill": "Mythrill",
+  "item.mythicrealms.skies_stone": "Skies Stone",
+  "item.mythicrealms.mythrill_ore": "Mythrill Ore",
+  "item.mythicrealms.skies_grass": "Skies Grass",
+  "item.mythicrealms.skies_stone_bricks": "Skies Stone",
+  "item.mythicrealms.toxic_slime": "Toxic Slime",
+  "item.mythicrealms.ultimate_ingot": "Ultimate Ingot",
+  "item.mythicrealms.nanos": "Nano\u0027s",
+  "item.mythicrealms.pedestal": "Pedestal",
+  "item.mythicrealms.lunar_cobblestone": "Lunar Cobblestone",
+  "item.mythicrealms.lunar_cobble_slab": "Lunar Cobble Slab",
+  "item.mythicrealms.centrifugadora": "Centrifugadora",
+  "gui.mythicrealms.pedestal_gui.button_rit": "RIT",
+  "item.mythicrealms.nano_armor_boots": "Nano \u0027s Boots",
+  "item.mythicrealms.nano_armor_helmet": "Nano\u0027s Helmet",
+  "item.mythicrealms.nano_armor_leggings": "Nano\u0027s Leggings",
+  "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate"
 }

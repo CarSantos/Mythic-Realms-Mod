@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/mythrillore",
+    "up": "mythicrealms:block/mythrillore",
+    "north": "mythicrealms:block/mythrillore",
+    "east": "mythicrealms:block/mythrillore",
+    "south": "mythicrealms:block/mythrillore",
+    "west": "mythicrealms:block/mythrillore",
+    "particle": "mythicrealms:block/mythrillore"
+  },
+  "render_type": "solid"
+}

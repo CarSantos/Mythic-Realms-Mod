@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/skies_grass",
+    "up": "mythicrealms:block/skies_grass",
+    "north": "mythicrealms:block/skies_grass",
+    "east": "mythicrealms:block/skies_grass",
+    "south": "mythicrealms:block/skies_grass",
+    "west": "mythicrealms:block/skies_grass",
+    "particle": "mythicrealms:block/skies_grass"
+  },
+  "render_type": "solid"
+}

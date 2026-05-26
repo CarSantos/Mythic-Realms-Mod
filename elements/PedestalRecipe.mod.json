@@ -1,0 +1,59 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:ManaPotion"
+      },
+      {
+        "value": "CUSTOM:YggdrasilWood"
+      },
+      {
+        "value": "CUSTOM:LunarCobbleSlab"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:LunarCobbleSlab"
+      },
+      {
+        "value": "CUSTOM:LunarCobbleSlab"
+      },
+      {
+        "value": "CUSTOM:LunarCobbleSlab"
+      },
+      {
+        "value": "CUSTOM:ManaPotion"
+      },
+      {
+        "value": "CUSTOM:YggdrasilWood"
+      },
+      {
+        "value": "CUSTOM:ManaPotion"
+      },
+      {
+        "value": "CUSTOM:LunarCobbleSlab"
+      },
+      {
+        "value": "CUSTOM:LunarCobbleSlab"
+      },
+      {
+        "value": "CUSTOM:LunarCobbleSlab"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Pedestal"
+    },
+    "name": "pedestal_recipe",
+    "namespace": "mod"
+  }
+}

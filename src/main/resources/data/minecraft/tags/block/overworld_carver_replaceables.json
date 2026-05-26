@@ -1,8 +1,10 @@
 {
   "replace": false,
   "values": [
+    "mythicrealms:skies_grass",
     "minecraft:grass_block",
     "minecraft:dirt",
+    "mythicrealms:skies_stone",
     "minecraft:stone",
     "minecraft:snow",
     "mythicrealms:lunar_block",

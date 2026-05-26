@@ -77,6 +77,13 @@ public class MythicrealmsModBlocks {
 	public static final DeferredBlock<Block> URANIUM_BLOCK;
 	public static final DeferredBlock<Block> SAND_OF_STAR;
 	public static final DeferredBlock<Block> TOXIC_SAND;
+	public static final DeferredBlock<Block> SKIES_STONE;
+	public static final DeferredBlock<Block> MYTHRILL_ORE;
+	public static final DeferredBlock<Block> SKIES_GRASS;
+	public static final DeferredBlock<Block> SKIES_STONE_BRICKS;
+	public static final DeferredBlock<Block> PEDESTAL;
+	public static final DeferredBlock<Block> LUNAR_COBBLESTONE;
+	public static final DeferredBlock<Block> LUNAR_COBBLE_SLAB;
 	static {
 		TITANIUM_ORE = register("titanium_ore", TitaniumOreBlock::new);
 		VIBRANIUM_ORE = register("vibranium_ore", VibraniumOreBlock::new);
@@ -139,6 +146,13 @@ public class MythicrealmsModBlocks {
 		URANIUM_BLOCK = register("uranium_block", UraniumBlockBlock::new);
 		SAND_OF_STAR = register("sand_of_star", SandOfStarBlock::new);
 		TOXIC_SAND = register("toxic_sand", ToxicSandBlock::new);
+		SKIES_STONE = register("skies_stone", SkiesStoneBlock::new);
+		MYTHRILL_ORE = register("mythrill_ore", MythrillOreBlock::new);
+		SKIES_GRASS = register("skies_grass", SkiesGrassBlock::new);
+		SKIES_STONE_BRICKS = register("skies_stone_bricks", SkiesStoneBricksBlock::new);
+		PEDESTAL = register("pedestal", PedestalBlock::new);
+		LUNAR_COBBLESTONE = register("lunar_cobblestone", LunarCobblestoneBlock::new);
+		LUNAR_COBBLE_SLAB = register("lunar_cobble_slab", LunarCobbleSlabBlock::new);
 	}
 
 	// Start of user code block custom blocks

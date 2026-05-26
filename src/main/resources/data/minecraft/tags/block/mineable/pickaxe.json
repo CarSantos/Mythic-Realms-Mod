@@ -2,8 +2,11 @@
   "replace": false,
   "values": [
     "mythicrealms:titanium_ore",
+    "mythicrealms:skies_stone_bricks",
     "mythicrealms:adamant_ore",
+    "mythicrealms:skies_stone",
     "mythicrealms:uranium_block",
-    "mythicrealms:vibranium_ore"
+    "mythicrealms:vibranium_ore",
+    "mythicrealms:mythrill_ore"
   ]
 }

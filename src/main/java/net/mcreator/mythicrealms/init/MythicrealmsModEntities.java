@@ -116,6 +116,8 @@ public class MythicrealmsModEntities {
 			EntityType.Builder.<XochitlEntity>of(XochitlEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<ToxicSlimeProjetileEntity>> TOXIC_SLIME_PROJETILE = register("toxic_slime_projetile",
+			EntityType.Builder.<ToxicSlimeProjetileEntity>of(ToxicSlimeProjetileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

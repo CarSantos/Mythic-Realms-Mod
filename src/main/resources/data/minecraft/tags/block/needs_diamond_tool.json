@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "mythicrealms:titanium_ore",
-    "mythicrealms:vibranium_ore"
+    "mythicrealms:vibranium_ore",
+    "mythicrealms:mythrill_ore"
   ]
 }

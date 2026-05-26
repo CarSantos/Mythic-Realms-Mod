@@ -1,5 +1,10 @@
 package net.mcreator.mythicrealms.procedures;
 
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.bus.api.Event;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -14,15 +19,27 @@ import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.core.BlockPos;
 
+import javax.annotation.Nullable;
+
 import java.util.Set;
 
+@EventBusSubscriber
 public class DeepworldTravelProcedure {
+	@SubscribeEvent
+	public static void onPlayerTick(PlayerTickEvent.Post event) {
+		execute(event, event.getEntity());
+	}
+
 	public static void execute(Entity entity) {
+		execute(null, entity);
+	}
+
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity instanceof ServerPlayer _player)
+		if ((entity.level().dimension()) == Level.OVERWORLD && ((entity instanceof ServerPlayer _player)
 				? (_player.getRespawnConfig() != null && (_player.getRespawnConfig().dimension().equals(_player.level().dimension())) ? _player.getRespawnConfig().pos().getY() : _player.level().getLevelData().getSpawnPos().getY())
-				: 0) == -66 && (entity.level().dimension()) == Level.OVERWORLD) {
+				: 0) == -70) {
 			if (entity instanceof ServerPlayer _player && _player.level() instanceof ServerLevel _serverLevel) {
 				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, ResourceLocation.parse("mythicrealms:deepworld"));
 				if (_player.level().dimension() == destinationType)

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:lunar_cobblestone"
+  },
+  "result": {
+    "id": "mythicrealms:lunar_cobble_slab",
+    "count": 6
+  }
+}

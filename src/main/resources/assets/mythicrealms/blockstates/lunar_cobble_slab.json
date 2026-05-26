@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mythicrealms:block/lunar_cobble_slab"
+    },
+    "type=top": {
+      "model": "mythicrealms:block/lunar_cobble_slab_top"
+    },
+    "type=double": {
+      "model": "mythicrealms:block/lunar_cobble_slab_full"
+    }
+  }
+}

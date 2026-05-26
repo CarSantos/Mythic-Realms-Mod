@@ -4,13 +4,13 @@
   "definition": {
     "name": "Asgard",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:SkiesGrass"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:SkiesStone"
     },
     "underwaterBlock": {
-      "value": "Blocks.GRAVEL"
+      "value": "CUSTOM:SkiesStone"
     },
     "grassColor": {
       "value": -2892273,

@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 6,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:LunarCobblestone"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:LunarCobblestone"
+      },
+      {
+        "value": "CUSTOM:LunarCobblestone"
+      },
+      {
+        "value": "CUSTOM:LunarCobblestone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LunarCobbleSlab"
+    },
+    "name": "lunar_cobbleslab_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "_fv": 79,
+  "_type": "humanoidmodel",
+  "definition": {
+    "modelName": "ModelArmor_Nano",
+    "helmetModelPart": "Head",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Left",
+    "armsModelPartR": "Right",
+    "leggingsModelPartL": "Left",
+    "leggingsModelPartR": "Right"
+  }
+}

@@ -60,6 +60,7 @@ public class MythicrealmsMod {
 			modEventBus.addListener(MythicrealmsModCuriosRenderers::registerRenderers);
 		}
 		MythicrealmsModBlocks.REGISTRY.register(modEventBus);
+		MythicrealmsModBlockEntities.REGISTRY.register(modEventBus);
 		MythicrealmsModItems.REGISTRY.register(modEventBus);
 		MythicrealmsModEntities.REGISTRY.register(modEventBus);
 		MythicrealmsModTabs.REGISTRY.register(modEventBus);

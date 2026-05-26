@@ -4134,7 +4134,7 @@
           "src/main/resources/assets/mythicrealms/models/item/lunar_block.json"
         ]
       },
-      "path": "~/World Gen/Biome/Moon"
+      "path": "~/World Gen/Biome/Moon/Block"
     },
     {
       "name": "LunarPlains",
@@ -5565,37 +5565,6 @@
         ]
       },
       "path": "~/World Gen/Structures/Mushroom House"
-    },
-    {
-      "name": "DeepworldPlayerEntersDimension",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepworld_player_enters_dimension",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/DeepworldPlayerEntersDimensionProcedure.java"
-        ]
-      },
-      "path": "~/World Gen/Dimension/DeepWorld"
     },
     {
       "name": "DeepworldOcean",
@@ -9023,25 +8992,6 @@
       "path": "~/Item/Food/Mana Potion"
     },
     {
-      "name": "ManaPotionPlayerFinishesUsingItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mana_potion_player_finishes_using_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/ManaPotionPlayerFinishesUsingItemProcedure.java"
-        ]
-      },
-      "path": "~/Item/Food/Mana Potion"
-    },
-    {
       "name": "ModDisplayGui",
       "type": "gui",
       "compiles": true,
@@ -10425,7 +10375,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/ToxicSandEntityWalksOnTheBlockProcedure.java"
         ]
       },
-      "path": "~/World Gen/Biome/Overworld/ToxicPlains"
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains/Block"
     },
     {
       "name": "ToxicSand",
@@ -10443,7 +10393,7 @@
           "src/main/resources/assets/mythicrealms/models/block/toxic_sand.json"
         ]
       },
-      "path": "~/World Gen/Biome/Overworld/ToxicPlains"
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains/Block"
     },
     {
       "name": "ToxicBiome",
@@ -10545,6 +10495,493 @@
         ]
       },
       "path": "~/System"
+    },
+    {
+      "name": "Mythrill",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythrill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/MythrillItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/mythrill.json",
+          "src/main/resources/assets/mythicrealms/items/mythrill.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Mythrill"
+    },
+    {
+      "name": "SkiesStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skies_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/skies_stone.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/skies_stone.json",
+          "src/main/java/net/mcreator/mythicrealms/block/SkiesStoneBlock.java",
+          "src/main/resources/assets/mythicrealms/blockstates/skies_stone.json",
+          "src/main/resources/assets/mythicrealms/models/block/skies_stone.json",
+          "src/main/resources/assets/mythicrealms/models/item/skies_stone.json"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky/Blocks"
+    },
+    {
+      "name": "MythrillOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mythrill_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/block/MythrillOreBlock.java",
+          "src/main/resources/assets/mythicrealms/models/item/mythrill_ore.json",
+          "src/main/resources/assets/mythicrealms/blockstates/mythrill_ore.json",
+          "src/main/resources/assets/mythicrealms/items/mythrill_ore.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/mythrill_ore.json",
+          "src/main/resources/assets/mythicrealms/models/block/mythrill_ore.json",
+          "src/main/resources/data/mythicrealms/worldgen/configured_feature/mythrill_ore.json",
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/mythrill_ore_biome_modifier.json",
+          "src/main/resources/data/mythicrealms/worldgen/placed_feature/mythrill_ore.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Mythrill"
+    },
+    {
+      "name": "SkiesGrass",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skies_grass",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/skies_grass.json",
+          "src/main/resources/assets/mythicrealms/models/block/skies_grass.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/skies_grass.json",
+          "src/main/resources/assets/mythicrealms/blockstates/skies_grass.json",
+          "src/main/java/net/mcreator/mythicrealms/block/SkiesGrassBlock.java",
+          "src/main/resources/assets/mythicrealms/items/skies_grass.json"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky/Blocks"
+    },
+    {
+      "name": "SkiesStoneBricks",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skies_stone_bricks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/block/SkiesStoneBricksBlock.java",
+          "src/main/resources/assets/mythicrealms/models/item/skies_stone_bricks.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/skies_stone_bricks.json",
+          "src/main/resources/assets/mythicrealms/items/skies_stone_bricks.json",
+          "src/main/resources/assets/mythicrealms/blockstates/skies_stone_bricks.json",
+          "src/main/resources/assets/mythicrealms/models/block/skies_stone_bricks.json"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky/Blocks"
+    },
+    {
+      "name": "SkiesStoneBricksRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skies_stone_bricks_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/skies_stone_bricks_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/skies_stone_bricks_recipe.json"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky/Blocks"
+    },
+    {
+      "name": "ManaPotionCraft",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_potion_craft",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ManaPotionCraftProcedure.java"
+        ]
+      },
+      "path": "~/Item/Food/Mana Potion"
+    },
+    {
+      "name": "ManaBottleRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_bottle_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/mana_bottle_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/mana_bottle_recipe.json"
+        ]
+      },
+      "path": "~/Item/Food/Mana Potion"
+    },
+    {
+      "name": "ToxicSlimeProjetileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_slime_projetile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ToxicSlimeProjetileProjectileHitsLivingEntityProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains/Block/ToxicSlime"
+    },
+    {
+      "name": "ToxicSlimeProjetile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_slime_projetile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/entity/ToxicSlimeProjetileEntity.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains/Block/ToxicSlime"
+    },
+    {
+      "name": "ToxicSlime",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_slime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/ToxicSlimeItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/toxic_slime.json",
+          "src/main/resources/assets/mythicrealms/items/toxic_slime.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains/Block/ToxicSlime"
+    },
+    {
+      "name": "ToxicSlimeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_slime_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ToxicSlimeRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains/Block/ToxicSlime"
+    },
+    {
+      "name": "ToxicSlimeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxic_slime_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/toxic_slime_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/toxic_slime_recipe.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/ToxicPlains/Block/ToxicSlime"
+    },
+    {
+      "name": "UltimateIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/ultimate_ingot.json",
+          "src/main/java/net/mcreator/mythicrealms/item/UltimateIngotItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/ultimate_ingot.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Ultimate Ingot"
+    },
+    {
+      "name": "UltimateIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ultimate_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/ultimate_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Ultimate Ingot"
+    },
+    {
+      "name": "Nanos",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nanos",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/nanos.json",
+          "src/main/resources/assets/mythicrealms/models/item/nanos.json",
+          "src/main/java/net/mcreator/mythicrealms/item/NanosItem.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Nanos"
+    },
+    {
+      "name": "Pedestal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pedestal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/block/PedestalBlock.java",
+          "src/main/resources/assets/mythicrealms/models/item/pedestal.json",
+          "src/main/java/net/mcreator/mythicrealms/block/entity/PedestalBlockEntity.java",
+          "src/main/resources/assets/mythicrealms/items/pedestal.json",
+          "src/main/resources/assets/mythicrealms/models/block/pedestal.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/pedestal.json",
+          "src/main/resources/assets/mythicrealms/blockstates/pedestal.json"
+        ]
+      },
+      "path": "~/Item/Utility/Pedestal"
+    },
+    {
+      "name": "LunarCobblestone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lunar_cobblestone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/blockstates/lunar_cobblestone.json",
+          "src/main/resources/assets/mythicrealms/models/block/lunar_cobblestone.json",
+          "src/main/resources/assets/mythicrealms/items/lunar_cobblestone.json",
+          "src/main/java/net/mcreator/mythicrealms/block/LunarCobblestoneBlock.java",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/lunar_cobblestone.json",
+          "src/main/resources/assets/mythicrealms/models/item/lunar_cobblestone.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Moon/Block"
+    },
+    {
+      "name": "LunarCobbleSlab",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lunar_cobble_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/blockstates/lunar_cobble_slab.json",
+          "src/main/resources/assets/mythicrealms/models/block/lunar_cobble_slab.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/lunar_cobble_slab.json",
+          "src/main/resources/assets/mythicrealms/models/item/lunar_cobble_slab.json",
+          "src/main/resources/assets/mythicrealms/models/block/lunar_cobble_slab_top.json",
+          "src/main/resources/assets/mythicrealms/items/lunar_cobble_slab.json",
+          "src/main/resources/assets/mythicrealms/models/block/lunar_cobble_slab_full.json",
+          "src/main/java/net/mcreator/mythicrealms/block/LunarCobbleSlabBlock.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Moon/Block"
+    },
+    {
+      "name": "LunarCobbleslabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lunar_cobbleslab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/lunar_cobbleslab_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/lunar_cobbleslab_recipe.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Moon/Block"
+    },
+    {
+      "name": "PedestalRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pedestal_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/pedestal_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/pedestal_recipe.json"
+        ]
+      },
+      "path": "~/Item/Utility/Pedestal"
+    },
+    {
+      "name": "PedestalGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pedestal_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/client/gui/PedestalGUIScreen.java",
+          "src/main/java/net/mcreator/mythicrealms/network/PedestalGUIButtonMessage.java",
+          "src/main/java/net/mcreator/mythicrealms/world/inventory/PedestalGUIMenu.java"
+        ]
+      },
+      "path": "~/Item/Utility/Pedestal"
+    },
+    {
+      "name": "PedestalOnTickUpdateRecipes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pedestal_on_tick_update_recipes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/PedestalOnTickUpdateRecipesProcedure.java"
+        ]
+      },
+      "path": "~/Item/Utility/Pedestal"
+    },
+    {
+      "name": "NanoArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/NanoArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "NanoModel",
+      "type": "humanoidmodel",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_model",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "NanoArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/nano_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/equipment/nano_armor.json",
+          "src/main/resources/assets/mythicrealms/items/nano_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/nano_armor_helmet.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/NanoArmorArmor.java",
+          "src/main/java/net/mcreator/mythicrealms/item/NanoArmorItem.java",
+          "src/main/resources/assets/mythicrealms/items/nano_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/models/item/nano_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/items/nano_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/models/item/nano_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/models/item/nano_armor_leggings.json"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "NanoArmorVisual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_armor_visual",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/NanoArmorVisualProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
     }
   ],
   "variable_elements": [
@@ -10594,6 +11031,8 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~CUSTOM:SkiesStone",
+      "~CUSTOM:SkiesGrass",
       "~Blocks.SANDSTONE#0",
       "~Blocks.SAND#0",
       "~Blocks.SNOW_LAYER",
@@ -10616,12 +11055,16 @@
       "~CUSTOM:LifeSteal"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SkiesStoneBricks",
+      "~CUSTOM:MythrillOre",
+      "~CUSTOM:SkiesStone",
       "~CUSTOM:UraniumBlock",
       "~CUSTOM:AdamantOre",
       "~CUSTOM:VibraniumOre",
       "~CUSTOM:TitaniumOre"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:MythrillOre",
       "~CUSTOM:VibraniumOre",
       "~CUSTOM:TitaniumOre"
     ],
@@ -10798,6 +11241,7 @@
       "~CUSTOM:BloodStairs"
     ],
     "BLOCKS:minecraft:slabs": [
+      "~CUSTOM:LunarCobbleSlab",
       "~CUSTOM:YggdrasilSlab",
       "~CUSTOM:MagicSlab",
       "~CUSTOM:BloodSlab"
@@ -10871,6 +11315,7 @@
       "~CUSTOM:DeepworldOcean"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:NanoArmor.helmet",
       "~CUSTOM:PalladioArmor.helmet",
       "~CUSTOM:MagnetArmor.helmet",
       "~CUSTOM:EntArmor.helmet",
@@ -10884,6 +11329,7 @@
       "~CUSTOM:BloodArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:NanoArmor.body",
       "~CUSTOM:PalladioArmor.body",
       "~CUSTOM:MagnetArmor.body",
       "~CUSTOM:EntArmor.body",
@@ -10897,6 +11343,7 @@
       "~CUSTOM:BloodArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:NanoArmor.legs",
       "~CUSTOM:PalladioArmor.legs",
       "~CUSTOM:MagnetArmor.legs",
       "~CUSTOM:EntArmor.legs",
@@ -10910,6 +11357,7 @@
       "~CUSTOM:BloodArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:NanoArmor.boots",
       "~CUSTOM:PalladioArmor.boots",
       "~CUSTOM:MagnetArmor.boots",
       "~CUSTOM:EntArmor.boots",
@@ -12646,6 +13094,17 @@
     ],
     "BIOMES:minecraft:has_structure/village_desert": [
       "~CUSTOM:DesertOfDeadStar"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~CUSTOM:SkiesGrass"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:SkiesStoneBricks",
+      "~CUSTOM:SkiesGrass",
+      "~CUSTOM:SkiesStone"
+    ],
+    "ITEMS:mythicrealms:nano_armor_repair_items": [
+      "~CUSTOM:Nanos"
     ]
   },
   "tab_element_order": {
@@ -12675,7 +13134,10 @@
       "DemonScale",
       "DemonIngot",
       "ManaBottle",
-      "StarDust"
+      "StarDust",
+      "Mythrill",
+      "UltimateIngot",
+      "Nanos"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -12709,7 +13171,8 @@
       "DemonArmor",
       "PalladioArmor",
       "AngelArmor",
-      "TechGooglesItem"
+      "TechGooglesItem",
+      "NanoArmor"
     ],
     "MISC": [
       "GhostHorse",
@@ -13219,7 +13682,24 @@
       "biome.mythicrealms.desert_of_dead_star": "Desert Of Dead Star",
       "item.mythicrealms.toxic_sand": "Toxic Sand",
       "biome.mythicrealms.toxic_biome": "Toxic Plains",
-      "key.mythicrealms.water_breath_key": "Water Breath Key"
+      "key.mythicrealms.water_breath_key": "Water Breath Key",
+      "item.mythicrealms.mythrill": "Mythrill",
+      "item.mythicrealms.skies_stone": "Skies Stone",
+      "item.mythicrealms.mythrill_ore": "Mythrill Ore",
+      "item.mythicrealms.skies_grass": "Skies Grass",
+      "item.mythicrealms.skies_stone_bricks": "Skies Stone",
+      "item.mythicrealms.toxic_slime": "Toxic Slime",
+      "item.mythicrealms.ultimate_ingot": "Ultimate Ingot",
+      "item.mythicrealms.nanos": "Nano\u0027s",
+      "item.mythicrealms.pedestal": "Pedestal",
+      "item.mythicrealms.lunar_cobblestone": "Lunar Cobblestone",
+      "item.mythicrealms.lunar_cobble_slab": "Lunar Cobble Slab",
+      "item.mythicrealms.centrifugadora": "Centrifugadora",
+      "gui.mythicrealms.pedestal_gui.button_rit": "RIT",
+      "item.mythicrealms.nano_armor_boots": "Nano \u0027s Boots",
+      "item.mythicrealms.nano_armor_helmet": "Nano\u0027s Helmet",
+      "item.mythicrealms.nano_armor_leggings": "Nano\u0027s Leggings",
+      "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate"
     }
   },
   "metadata": {
@@ -13236,12 +13716,14 @@
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModScreens.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModMenus.java",
       "src/main/java/net/mcreator/mythicrealms/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModHumanoidModels.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModKeyMappings.java",
       "src/main/resources/data/neoforge/data_maps/entity_type/monster_room_mobs.json",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModParticleTypes.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModParticles.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModMobEffects.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModBlocks.java",
+      "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModBlockEntities.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModItems.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModEntities.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModEntityRenderers.java",
@@ -13340,7 +13822,11 @@
       "XochitlPowder": "armorforge:default",
       "XochitlLeather": "armorforge:default",
       "XochitlIngot": "armorforge:default",
-      "StarDust": "armorforge:default"
+      "StarDust": "armorforge:default",
+      "Mythrill": "armorforge:default",
+      "ToxicSlime": "armorforge:default",
+      "UltimateIngot": "armorforge:default",
+      "Nanos": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -13427,7 +13913,11 @@
       "XochitlPowder": "All perspectives",
       "XochitlLeather": "All perspectives",
       "XochitlIngot": "All perspectives",
-      "StarDust": "All perspectives"
+      "StarDust": "All perspectives",
+      "Mythrill": "All perspectives",
+      "ToxicSlime": "All perspectives",
+      "UltimateIngot": "All perspectives",
+      "Nanos": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -13449,7 +13939,12 @@
               },
               {
                 "name": "Sky",
-                "children": []
+                "children": [
+                  {
+                    "name": "Blocks",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -13458,7 +13953,12 @@
             "children": [
               {
                 "name": "Moon",
-                "children": []
+                "children": [
+                  {
+                    "name": "Block",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "Deepworld",
@@ -13500,7 +14000,17 @@
                   },
                   {
                     "name": "ToxicPlains",
-                    "children": []
+                    "children": [
+                      {
+                        "name": "Block",
+                        "children": [
+                          {
+                            "name": "ToxicSlime",
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ]
               },
@@ -13699,6 +14209,22 @@
               {
                 "name": "Xochitl Leather",
                 "children": []
+              },
+              {
+                "name": "Mythrill",
+                "children": []
+              },
+              {
+                "name": "Ultimate Ingot",
+                "children": []
+              },
+              {
+                "name": "Nanos",
+                "children": []
+              },
+              {
+                "name": "Oricalc",
+                "children": []
               }
             ]
           },
@@ -13751,6 +14277,10 @@
               },
               {
                 "name": "PalladinArmor",
+                "children": []
+              },
+              {
+                "name": "Nano Armor",
                 "children": []
               }
             ]
@@ -13846,6 +14376,10 @@
               },
               {
                 "name": "Wiki",
+                "children": []
+              },
+              {
+                "name": "Pedestal",
                 "children": []
               }
             ]

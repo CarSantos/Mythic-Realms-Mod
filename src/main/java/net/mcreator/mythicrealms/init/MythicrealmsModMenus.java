@@ -17,6 +17,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.mythicrealms.world.inventory.RoleGUIMenu;
+import net.mcreator.mythicrealms.world.inventory.PedestalGUIMenu;
 import net.mcreator.mythicrealms.world.inventory.ModDisplayGuiMenu;
 import net.mcreator.mythicrealms.world.inventory.BackpackMenu;
 import net.mcreator.mythicrealms.network.MenuStateUpdateMessage;
@@ -29,6 +30,7 @@ public class MythicrealmsModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<RoleGUIMenu>> ROLE_GUI = REGISTRY.register("role_gui", () -> IMenuTypeExtension.create(RoleGUIMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<BackpackMenu>> BACKPACK = REGISTRY.register("backpack", () -> IMenuTypeExtension.create(BackpackMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<ModDisplayGuiMenu>> MOD_DISPLAY_GUI = REGISTRY.register("mod_display_gui", () -> IMenuTypeExtension.create(ModDisplayGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<PedestalGUIMenu>> PEDESTAL_GUI = REGISTRY.register("pedestal_gui", () -> IMenuTypeExtension.create(PedestalGUIMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

@@ -1,0 +1,9 @@
+{
+  "parent": "mythicrealms:custom/pedestal",
+  "textures": {
+    "all": "mythicrealms:block/pedestal",
+    "particle": "mythicrealms:block/pedestal",
+    "0": "mythicrealms:block/pedestal"
+  },
+  "render_type": "solid"
+}

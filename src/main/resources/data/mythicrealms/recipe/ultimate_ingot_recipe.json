@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "cde",
+    "afa"
+  ],
+  "key": {
+    "a": "mythicrealms:nanos",
+    "b": "mythicrealms:titanium_ingot",
+    "c": "mythicrealms:vibranium_ingot",
+    "d": "mythicrealms:enriched_uranium",
+    "e": "mythicrealms:palladio_ingot",
+    "f": "mythicrealms:adamant_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:ultimate_ingot",
+    "count": 1
+  }
+}

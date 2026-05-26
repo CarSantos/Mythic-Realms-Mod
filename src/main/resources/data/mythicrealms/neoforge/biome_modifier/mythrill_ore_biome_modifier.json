@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "mythicrealms:asgard",
+  "features": "mythicrealms:mythrill_ore",
+  "step": "underground_ores"
+}

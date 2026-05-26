@@ -243,6 +243,21 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> STAR_DUST;
 	public static final DeferredItem<Item> SAND_OF_STAR;
 	public static final DeferredItem<Item> TOXIC_SAND;
+	public static final DeferredItem<Item> MYTHRILL;
+	public static final DeferredItem<Item> SKIES_STONE;
+	public static final DeferredItem<Item> MYTHRILL_ORE;
+	public static final DeferredItem<Item> SKIES_GRASS;
+	public static final DeferredItem<Item> SKIES_STONE_BRICKS;
+	public static final DeferredItem<Item> TOXIC_SLIME;
+	public static final DeferredItem<Item> ULTIMATE_INGOT;
+	public static final DeferredItem<Item> NANOS;
+	public static final DeferredItem<Item> PEDESTAL;
+	public static final DeferredItem<Item> LUNAR_COBBLESTONE;
+	public static final DeferredItem<Item> LUNAR_COBBLE_SLAB;
+	public static final DeferredItem<Item> NANO_ARMOR_HELMET;
+	public static final DeferredItem<Item> NANO_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> NANO_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> NANO_ARMOR_BOOTS;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -459,6 +474,21 @@ public class MythicrealmsModItems {
 		STAR_DUST = register("star_dust", StarDustItem::new);
 		SAND_OF_STAR = block(MythicrealmsModBlocks.SAND_OF_STAR);
 		TOXIC_SAND = block(MythicrealmsModBlocks.TOXIC_SAND);
+		MYTHRILL = register("mythrill", MythrillItem::new);
+		SKIES_STONE = block(MythicrealmsModBlocks.SKIES_STONE);
+		MYTHRILL_ORE = block(MythicrealmsModBlocks.MYTHRILL_ORE);
+		SKIES_GRASS = block(MythicrealmsModBlocks.SKIES_GRASS);
+		SKIES_STONE_BRICKS = block(MythicrealmsModBlocks.SKIES_STONE_BRICKS);
+		TOXIC_SLIME = register("toxic_slime", ToxicSlimeItem::new);
+		ULTIMATE_INGOT = register("ultimate_ingot", UltimateIngotItem::new);
+		NANOS = register("nanos", NanosItem::new);
+		PEDESTAL = block(MythicrealmsModBlocks.PEDESTAL);
+		LUNAR_COBBLESTONE = block(MythicrealmsModBlocks.LUNAR_COBBLESTONE);
+		LUNAR_COBBLE_SLAB = block(MythicrealmsModBlocks.LUNAR_COBBLE_SLAB);
+		NANO_ARMOR_HELMET = register("nano_armor_helmet", NanoArmorItem.Helmet::new);
+		NANO_ARMOR_CHESTPLATE = register("nano_armor_chestplate", NanoArmorItem.Chestplate::new);
+		NANO_ARMOR_LEGGINGS = register("nano_armor_leggings", NanoArmorItem.Leggings::new);
+		NANO_ARMOR_BOOTS = register("nano_armor_boots", NanoArmorItem.Boots::new);
 	}
 
 	// Start of user code block custom items

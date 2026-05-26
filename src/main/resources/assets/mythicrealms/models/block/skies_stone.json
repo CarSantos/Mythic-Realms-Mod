@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/skystone",
+    "up": "mythicrealms:block/skystone",
+    "north": "mythicrealms:block/skystone",
+    "east": "mythicrealms:block/skystone",
+    "south": "mythicrealms:block/skystone",
+    "west": "mythicrealms:block/skystone",
+    "particle": "mythicrealms:block/skystone"
+  },
+  "render_type": "solid"
+}
