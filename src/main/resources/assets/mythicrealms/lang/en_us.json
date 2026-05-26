@@ -456,5 +456,7 @@
   "advancements.magic_armor_magic_unlock.title": "Magic Armor Magic Unlock",
   "advancements.magic_armor_magic_unlock.descr": "Now Is Possible For You Make A Magic Armor",
   "item.mythicrealms.substitute_magic_book": "Book of Knowledge",
-  "item.mythicrealms.substitute_magic_book.description_0": "Substitute Magic Book"
+  "item.mythicrealms.substitute_magic_book.description_0": "Substitute Magic Book",
+  "item.mythicrealms.fire_wave_magic_book": "Book of Knowledge",
+  "item.mythicrealms.fire_wave_magic_book.description_0": "Fire Wave Magic Book"
 }

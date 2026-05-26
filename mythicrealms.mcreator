@@ -11697,6 +11697,60 @@
         ]
       },
       "path": "~/System/Magic/Magic Powers/00 Elements/Block"
+    },
+    {
+      "name": "FireWaveMagic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_wave_magic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/FireWaveMagicProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Fire Wave"
+    },
+    {
+      "name": "FireWaveMagicBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_wave_magic_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/FireWaveMagicBookItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/fire_wave_magic_book.json",
+          "src/main/resources/assets/mythicrealms/items/fire_wave_magic_book.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/00 Elements/Block"
     }
   ],
   "variable_elements": [
@@ -14059,7 +14113,8 @@
       "VulcanMagicBook",
       "WaterBreathMagicBook",
       "MagicArmorMagicBook",
-      "SubstituteMagicBook"
+      "SubstituteMagicBook",
+      "FireWaveMagicBook"
     ],
     "CUSTOM:RoleItens": [
       "GiantRole",
@@ -14545,7 +14600,9 @@
       "advancements.magic_armor_magic_unlock.title": "Magic Armor Magic Unlock",
       "advancements.magic_armor_magic_unlock.descr": "Now Is Possible For You Make A Magic Armor",
       "item.mythicrealms.substitute_magic_book": "Book of Knowledge",
-      "item.mythicrealms.substitute_magic_book.description_0": "Substitute Magic Book"
+      "item.mythicrealms.substitute_magic_book.description_0": "Substitute Magic Book",
+      "item.mythicrealms.fire_wave_magic_book": "Book of Knowledge",
+      "item.mythicrealms.fire_wave_magic_book.description_0": "Fire Wave Magic Book"
     }
   },
   "metadata": {
@@ -14681,7 +14738,8 @@
       "WendigoBone": "armorforge:default",
       "Oricalc": "armorforge:default",
       "MagicArmorMagicBook": "armorforge:default",
-      "SubstituteMagicBook": "armorforge:default"
+      "SubstituteMagicBook": "armorforge:default",
+      "FireWaveMagicBook": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -14781,7 +14839,8 @@
       "WendigoBone": "All perspectives",
       "Oricalc": "All perspectives",
       "MagicArmorMagicBook": "All perspectives",
-      "SubstituteMagicBook": "All perspectives"
+      "SubstituteMagicBook": "All perspectives",
+      "FireWaveMagicBook": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -15463,6 +15522,10 @@
                   },
                   {
                     "name": "Substitute",
+                    "children": []
+                  },
+                  {
+                    "name": "Fire Wave",
                     "children": []
                   }
                 ]
