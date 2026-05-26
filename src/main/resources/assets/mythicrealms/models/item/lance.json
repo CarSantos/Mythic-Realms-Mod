@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/lance",
+  "textures": {
+    "0": "mythicrealms:block/lance",
+    "particle": "mythicrealms:item/steel_sword"
+  }
+}

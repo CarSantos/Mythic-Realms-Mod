@@ -30,7 +30,7 @@ public class FireWaveMagicProcedure {
 				_level.sendParticles(ParticleTypes.FLAME, x, y, z, 800, 4, 2, 4, 1);
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 3);
 					entityiterator.igniteForSeconds(10);
 				}

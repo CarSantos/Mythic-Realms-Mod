@@ -280,6 +280,8 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> MAGIC_ARMOR_MAGIC_BOOK;
 	public static final DeferredItem<Item> SUBSTITUTE_MAGIC_BOOK;
 	public static final DeferredItem<Item> FIRE_WAVE_MAGIC_BOOK;
+	public static final DeferredItem<Item> FLY_MAGIC_BOOK;
+	public static final DeferredItem<Item> LANCE;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -533,6 +535,8 @@ public class MythicrealmsModItems {
 		MAGIC_ARMOR_MAGIC_BOOK = register("magic_armor_magic_book", MagicArmorMagicBookItem::new);
 		SUBSTITUTE_MAGIC_BOOK = register("substitute_magic_book", SubstituteMagicBookItem::new);
 		FIRE_WAVE_MAGIC_BOOK = register("fire_wave_magic_book", FireWaveMagicBookItem::new);
+		FLY_MAGIC_BOOK = register("fly_magic_book", FlyMagicBookItem::new);
+		LANCE = register("lance", LanceItem::new);
 	}
 
 	// Start of user code block custom items

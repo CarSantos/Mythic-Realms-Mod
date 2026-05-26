@@ -462,5 +462,10 @@
   "advancements.fire_wave_magic_unlock.title": "Fire Wave Magic Unlock",
   "advancements.fire_wave_magic_unlock.descr": "Now Is Possible For You Use Fire Wave Magic",
   "advancements.substitute_magic_unlock.title": "Substitute Magic Unlock",
-  "advancements.substitute_magic_unlock.descr": "Now Is Possible For You Use Substitute Magic"
+  "advancements.substitute_magic_unlock.descr": "Now Is Possible For You Use Substitute Magic",
+  "item.mythicrealms.fly_magic_book": "Book of Knowledge",
+  "item.mythicrealms.fly_magic_book.description_0": "Fly Magic Book",
+  "advancements.fly_magic_unlock.title": "Fly Magic Unlock",
+  "advancements.fly_magic_unlock.descr": "Now Is Possible For You Use Fly Magic",
+  "item.mythicrealms.lance": "Lance"
 }

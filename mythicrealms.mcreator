@@ -11777,6 +11777,144 @@
         ]
       },
       "path": "~/System/Magic/Magic Powers/Substitute"
+    },
+    {
+      "name": "ManaFlamethowerCanUseRangedItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_flamethower_can_use_ranged_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ManaFlamethowerCanUseRangedItemProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/01 Guns/Mana Flamethower"
+    },
+    {
+      "name": "FlyMagic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_magic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/FlyMagicProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Fly"
+    },
+    {
+      "name": "FlyMagicBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_magic_book",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/fly_magic_book.json",
+          "src/main/java/net/mcreator/mythicrealms/item/FlyMagicBookItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/fly_magic_book.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/00 Elements/Block"
+    },
+    {
+      "name": "FlyMagicUnlock",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fly_magic_unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/fly_magic_unlock.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Fly"
+    },
+    {
+      "name": "Lance",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lance",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/lance.json",
+          "src/main/resources/assets/mythicrealms/models/item/lance.json",
+          "src/main/java/net/mcreator/mythicrealms/item/LanceItem.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Lance"
+    },
+    {
+      "name": "LanceRightClick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lance_right_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/LanceRightClickProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Lance"
+    },
+    {
+      "name": "LanceRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lance_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/lance_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/lance_recipe.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Lance"
     }
   ],
   "variable_elements": [
@@ -11880,6 +12018,7 @@
       "~CUSTOM:SteelIngot"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Lance",
       "~CUSTOM:EgyptianSword",
       "~CUSTOM:TanmakuSword",
       "~CUSTOM:VenraidSword",
@@ -13994,6 +14133,9 @@
     ],
     "ITEMS:mythicrealms:wendigo_armor_armor_repair_items": [
       "~CUSTOM:WendigoBone"
+    ],
+    "ITEMS:mythicrealms:lance_repair_items": [
+      "~CUSTOM:TitaniumIngot"
     ]
   },
   "tab_element_order": {
@@ -14140,7 +14282,8 @@
       "WaterBreathMagicBook",
       "MagicArmorMagicBook",
       "SubstituteMagicBook",
-      "FireWaveMagicBook"
+      "FireWaveMagicBook",
+      "FlyMagicBook"
     ],
     "CUSTOM:RoleItens": [
       "GiantRole",
@@ -14164,7 +14307,8 @@
       "VenraidSword",
       "PumpkinStaff",
       "ShieldOfAthena",
-      "BowOfApollo"
+      "BowOfApollo",
+      "Lance"
     ]
   },
   "language_map": {
@@ -14632,7 +14776,12 @@
       "advancements.fire_wave_magic_unlock.title": "Fire Wave Magic Unlock",
       "advancements.fire_wave_magic_unlock.descr": "Now Is Possible For You Use Fire Wave Magic",
       "advancements.substitute_magic_unlock.title": "Substitute Magic Unlock",
-      "advancements.substitute_magic_unlock.descr": "Now Is Possible For You Use Substitute Magic"
+      "advancements.substitute_magic_unlock.descr": "Now Is Possible For You Use Substitute Magic",
+      "item.mythicrealms.fly_magic_book": "Book of Knowledge",
+      "item.mythicrealms.fly_magic_book.description_0": "Fly Magic Book",
+      "advancements.fly_magic_unlock.title": "Fly Magic Unlock",
+      "advancements.fly_magic_unlock.descr": "Now Is Possible For You Use Fly Magic",
+      "item.mythicrealms.lance": "Lance"
     }
   },
   "metadata": {
@@ -14769,7 +14918,9 @@
       "Oricalc": "armorforge:default",
       "MagicArmorMagicBook": "armorforge:default",
       "SubstituteMagicBook": "armorforge:default",
-      "FireWaveMagicBook": "armorforge:default"
+      "FireWaveMagicBook": "armorforge:default",
+      "ManaFlamethower": "armorforge:default",
+      "FlyMagicBook": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -14870,7 +15021,9 @@
       "Oricalc": "All perspectives",
       "MagicArmorMagicBook": "All perspectives",
       "SubstituteMagicBook": "All perspectives",
-      "FireWaveMagicBook": "All perspectives"
+      "FireWaveMagicBook": "All perspectives",
+      "ManaFlamethower": "All perspectives",
+      "FlyMagicBook": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -15288,6 +15441,19 @@
               {
                 "name": "Egyptian Sword",
                 "children": []
+              },
+              {
+                "name": "01 Guns",
+                "children": [
+                  {
+                    "name": "Mana Flamethower",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Lance",
+                "children": []
               }
             ]
           },
@@ -15556,6 +15722,10 @@
                   },
                   {
                     "name": "Fire Wave",
+                    "children": []
+                  },
+                  {
+                    "name": "Fly",
                     "children": []
                   }
                 ]

@@ -52,6 +52,7 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_MAGIC_BOOK.get());
 				tabData.accept(MythicrealmsModItems.SUBSTITUTE_MAGIC_BOOK.get());
 				tabData.accept(MythicrealmsModItems.FIRE_WAVE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.FLY_MAGIC_BOOK.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ROLE_ITENS = REGISTRY.register("role_itens",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.role_itens")).icon(() -> new ItemStack(MythicrealmsModItems.PLAYER_ROLE.get())).displayItems((parameters, tabData) -> {
@@ -78,6 +79,7 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.PUMPKIN_STAFF.get());
 				tabData.accept(MythicrealmsModItems.SHIELD_OF_ATHENA.get());
 				tabData.accept(MythicrealmsModItems.BOW_OF_APOLLO.get());
+				tabData.accept(MythicrealmsModItems.LANCE.get());
 			}).withSearchBar().withTabsBefore(ROLE_ITENS.getId()).build());
 
 	@SubscribeEvent
