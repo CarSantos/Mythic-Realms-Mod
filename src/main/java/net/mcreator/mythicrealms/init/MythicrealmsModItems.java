@@ -273,6 +273,11 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_BOOTS;
 	public static final DeferredItem<Item> ORICALC;
+	public static final DeferredItem<Item> MAGIC_ARMOR_HELMET;
+	public static final DeferredItem<Item> MAGIC_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> MAGIC_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> MAGIC_ARMOR_BOOTS;
+	public static final DeferredItem<Item> MAGIC_ARMOR_MAGIC_BOOK;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -519,6 +524,11 @@ public class MythicrealmsModItems {
 		WENDIGO_ARMOR_ARMOR_LEGGINGS = register("wendigo_armor_armor_leggings", WendigoArmorArmorItem.Leggings::new);
 		WENDIGO_ARMOR_ARMOR_BOOTS = register("wendigo_armor_armor_boots", WendigoArmorArmorItem.Boots::new);
 		ORICALC = register("oricalc", OricalcItem::new);
+		MAGIC_ARMOR_HELMET = register("magic_armor_helmet", MagicArmorItem.Helmet::new);
+		MAGIC_ARMOR_CHESTPLATE = register("magic_armor_chestplate", MagicArmorItem.Chestplate::new);
+		MAGIC_ARMOR_LEGGINGS = register("magic_armor_leggings", MagicArmorItem.Leggings::new);
+		MAGIC_ARMOR_BOOTS = register("magic_armor_boots", MagicArmorItem.Boots::new);
+		MAGIC_ARMOR_MAGIC_BOOK = register("magic_armor_magic_book", MagicArmorMagicBookItem::new);
 	}
 
 	// Start of user code block custom items

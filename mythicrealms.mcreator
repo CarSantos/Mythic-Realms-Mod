@@ -11551,6 +11551,115 @@
         ]
       },
       "path": "~/Item/Ingot/Oricalc"
+    },
+    {
+      "name": "MagicArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/magic_armor_chestplate.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/MagicArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/items/magic_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/items/magic_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/models/item/magic_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/items/magic_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/items/magic_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/magic_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/equipment/magic_armor.json",
+          "src/main/java/net/mcreator/mythicrealms/item/MagicArmorItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/magic_armor_leggings.json"
+        ]
+      },
+      "path": "~/Item/Armors/MagicArmor"
+    },
+    {
+      "name": "MagicArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MagicArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/MagicArmor"
+    },
+    {
+      "name": "MagicArmorEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_armor_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MagicArmorEffectProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Magic Armor"
+    },
+    {
+      "name": "MagicArmorMagicBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_armor_magic_book",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/MagicArmorMagicBookItem.java",
+          "src/main/resources/assets/mythicrealms/items/magic_armor_magic_book.json",
+          "src/main/resources/assets/mythicrealms/models/item/magic_armor_magic_book.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/00 Elements/Block"
+    },
+    {
+      "name": "MagicArmorMagicUnlock",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_armor_magic_unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/magic_armor_magic_unlock.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Magic Armor"
     }
   ],
   "variable_elements": [
@@ -11888,6 +11997,7 @@
       "~CUSTOM:DeepworldOcean"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:MagicArmor.helmet",
       "~CUSTOM:WendigoArmorArmor.helmet",
       "~CUSTOM:XochitlArmor.helmet",
       "~CUSTOM:NanoArmor.helmet",
@@ -11904,6 +12014,7 @@
       "~CUSTOM:BloodArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:MagicArmor.body",
       "~CUSTOM:WendigoArmorArmor.body",
       "~CUSTOM:XochitlArmor.body",
       "~CUSTOM:NanoArmor.body",
@@ -11920,6 +12031,7 @@
       "~CUSTOM:BloodArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:MagicArmor.legs",
       "~CUSTOM:WendigoArmorArmor.legs",
       "~CUSTOM:XochitlArmor.legs",
       "~CUSTOM:NanoArmor.legs",
@@ -11936,6 +12048,7 @@
       "~CUSTOM:BloodArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:MagicArmor.boots",
       "~CUSTOM:WendigoArmorArmor.boots",
       "~CUSTOM:XochitlArmor.boots",
       "~CUSTOM:NanoArmor.boots",
@@ -13839,7 +13952,8 @@
       "PalladioArmor",
       "AngelArmor",
       "TechGooglesItem",
-      "NanoArmor"
+      "NanoArmor",
+      "MagicArmor"
     ],
     "MISC": [
       "GhostHorse",
@@ -13906,7 +14020,8 @@
       "TempestMagicBook",
       "ThunderMagicBook",
       "VulcanMagicBook",
-      "WaterBreathMagicBook"
+      "WaterBreathMagicBook",
+      "MagicArmorMagicBook"
     ],
     "CUSTOM:RoleItens": [
       "GiantRole",
@@ -14382,7 +14497,15 @@
       "item.mythicrealms.wendigo_armor_armor_boots": "Wendigo Boots",
       "item.mythicrealms.wendigo_armor_armor_helmet": "Wendigo Helmet",
       "item.mythicrealms.wendigo_armor_armor_leggings": "Wendigo Leggings",
-      "item.mythicrealms.oricalc": "Oricalc"
+      "item.mythicrealms.oricalc": "Oricalc",
+      "item.mythicrealms.magic_armor_helmet": "Magic Helmet",
+      "item.mythicrealms.magic_armor_leggings": "Magic Leggings",
+      "item.mythicrealms.magic_armor_chestplate": "Magic Robe",
+      "item.mythicrealms.magic_armor_boots": "Magic Boots",
+      "item.mythicrealms.magic_armor_magic_book.description_0": "Magic Armor Book",
+      "item.mythicrealms.magic_armor_magic_book": "Book of Knowledge",
+      "advancements.magic_armor_magic_unlock.title": "Magic Armor Magic Unlock",
+      "advancements.magic_armor_magic_unlock.descr": "Now Is Possible For You Make A Magic Armor"
     }
   },
   "metadata": {
@@ -14516,7 +14639,8 @@
       "Flamite": "armorforge:default",
       "Nanite": "armorforge:default",
       "WendigoBone": "armorforge:default",
-      "Oricalc": "armorforge:default"
+      "Oricalc": "armorforge:default",
+      "MagicArmorMagicBook": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -14614,7 +14738,8 @@
       "Flamite": "All perspectives",
       "Nanite": "All perspectives",
       "WendigoBone": "All perspectives",
-      "Oricalc": "All perspectives"
+      "Oricalc": "All perspectives",
+      "MagicArmorMagicBook": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -14991,6 +15116,10 @@
               {
                 "name": "Wendigo Armor",
                 "children": []
+              },
+              {
+                "name": "MagicArmor",
+                "children": []
               }
             ]
           },
@@ -15284,6 +15413,10 @@
                   },
                   {
                     "name": "Barrier",
+                    "children": []
+                  },
+                  {
+                    "name": "Magic Armor",
                     "children": []
                   }
                 ]

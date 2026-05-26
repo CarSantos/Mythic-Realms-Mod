@@ -15,6 +15,7 @@ public class MythicrealmsModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(ModelHippocampus.LAYER_LOCATION, ModelHippocampus::createBodyLayer);
+		event.registerLayerDefinition(ModelMagic_Armor.LAYER_LOCATION, ModelMagic_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelDemon.LAYER_LOCATION, ModelDemon::createBodyLayer);
 		event.registerLayerDefinition(ModelLava_Golem.LAYER_LOCATION, ModelLava_Golem::createBodyLayer);
 		event.registerLayerDefinition(ModelJoker.LAYER_LOCATION, ModelJoker::createBodyLayer);

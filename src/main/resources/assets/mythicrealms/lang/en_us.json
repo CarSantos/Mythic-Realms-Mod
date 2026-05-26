@@ -446,5 +446,13 @@
   "item.mythicrealms.wendigo_armor_armor_boots": "Wendigo Boots",
   "item.mythicrealms.wendigo_armor_armor_helmet": "Wendigo Helmet",
   "item.mythicrealms.wendigo_armor_armor_leggings": "Wendigo Leggings",
-  "item.mythicrealms.oricalc": "Oricalc"
+  "item.mythicrealms.oricalc": "Oricalc",
+  "item.mythicrealms.magic_armor_helmet": "Magic Helmet",
+  "item.mythicrealms.magic_armor_leggings": "Magic Leggings",
+  "item.mythicrealms.magic_armor_chestplate": "Magic Robe",
+  "item.mythicrealms.magic_armor_boots": "Magic Boots",
+  "item.mythicrealms.magic_armor_magic_book.description_0": "Magic Armor Book",
+  "item.mythicrealms.magic_armor_magic_book": "Book of Knowledge",
+  "advancements.magic_armor_magic_unlock.title": "Magic Armor Magic Unlock",
+  "advancements.magic_armor_magic_unlock.descr": "Now Is Possible For You Make A Magic Armor"
 }

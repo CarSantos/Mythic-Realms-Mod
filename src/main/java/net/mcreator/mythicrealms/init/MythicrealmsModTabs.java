@@ -49,6 +49,7 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.THUNDER_MAGIC_BOOK.get());
 				tabData.accept(MythicrealmsModItems.VULCAN_MAGIC_BOOK.get());
 				tabData.accept(MythicrealmsModItems.WATER_BREATH_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_MAGIC_BOOK.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ROLE_ITENS = REGISTRY.register("role_itens",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.role_itens")).icon(() -> new ItemStack(MythicrealmsModItems.PLAYER_ROLE.get())).displayItems((parameters, tabData) -> {
@@ -240,6 +241,10 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.NANO_ARMOR_CHESTPLATE.get());
 			tabData.accept(MythicrealmsModItems.NANO_ARMOR_LEGGINGS.get());
 			tabData.accept(MythicrealmsModItems.NANO_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MythicrealmsModItems.GHOST_HORSE_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.PANDEMIC_SPAWN_EGG.get());
