@@ -9,6 +9,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.mythicrealms.client.model.Modelplayermodel;
 import net.mcreator.mythicrealms.client.model.ModelArmor_Nano;
 
 import java.util.Map;
@@ -18,14 +19,21 @@ import java.util.Collections;
 @EventBusSubscriber(Dist.CLIENT)
 public class MythicrealmsModHumanoidModels {
 	public static PlayerModel NANO_MODEL;
+	public static PlayerModel PLAYER_BASE;
 
 	@SubscribeEvent
 	public static void initModels(EntityRenderersEvent.AddLayers event) {
 		ModelArmor_Nano nano_model_temp = new ModelArmor_Nano(Minecraft.getInstance().getEntityModels().bakeLayer(ModelArmor_Nano.LAYER_LOCATION));
 		NANO_MODEL = new PlayerModel(new ModelPart(Collections.emptyList(),
 				Map.of("head", new ModelPart(Collections.emptyList(), Map.of("head", nano_model_temp.Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()))), "body", getPlayerPart(nano_model_temp.Body, "jacket"), "left_arm",
-						getPlayerPart(nano_model_temp.Left, "left_sleeve"), "right_arm", getPlayerPart(nano_model_temp.Right, "right_sleeve"), "left_leg", getPlayerPart(nano_model_temp.Left, "left_pants"), "right_leg",
-						getPlayerPart(nano_model_temp.Right, "right_pants"))),
+						getPlayerPart(nano_model_temp.LeftArm, "left_sleeve"), "right_arm", getPlayerPart(nano_model_temp.RIghtArm, "right_sleeve"), "left_leg", getPlayerPart(nano_model_temp.LeftLeg, "left_pants"), "right_leg",
+						getPlayerPart(nano_model_temp.RightLeg, "right_pants"))),
+				false);
+		Modelplayermodel player_base_temp = new Modelplayermodel(Minecraft.getInstance().getEntityModels().bakeLayer(Modelplayermodel.LAYER_LOCATION));
+		PLAYER_BASE = new PlayerModel(new ModelPart(Collections.emptyList(),
+				Map.of("head", new ModelPart(Collections.emptyList(), Map.of("head", player_base_temp.Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()))), "body", getPlayerPart(player_base_temp.Body, "jacket"), "left_arm",
+						getPlayerPart(player_base_temp.LeftArm, "left_sleeve"), "right_arm", getPlayerPart(player_base_temp.RightArm, "right_sleeve"), "left_leg", getPlayerPart(player_base_temp.LeftLeg, "left_pants"), "right_leg",
+						getPlayerPart(player_base_temp.RightLeg, "right_pants"))),
 				false);
 	}
 

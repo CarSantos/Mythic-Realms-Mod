@@ -258,6 +258,7 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> NANO_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> NANO_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> NANO_ARMOR_BOOTS;
+	public static final DeferredItem<Item> ACTIVED_NANO;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -489,6 +490,7 @@ public class MythicrealmsModItems {
 		NANO_ARMOR_CHESTPLATE = register("nano_armor_chestplate", NanoArmorItem.Chestplate::new);
 		NANO_ARMOR_LEGGINGS = register("nano_armor_leggings", NanoArmorItem.Leggings::new);
 		NANO_ARMOR_BOOTS = register("nano_armor_boots", NanoArmorItem.Boots::new);
+		ACTIVED_NANO = register("actived_nano", ActivedNanoItem::new);
 	}
 
 	// Start of user code block custom items

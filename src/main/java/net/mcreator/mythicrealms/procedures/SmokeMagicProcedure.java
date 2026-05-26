@@ -45,7 +45,6 @@ public class SmokeMagicProcedure {
 						_player.getAbilities().flying = true;
 						_player.onUpdateAbilities();
 					}
-					entity.setInvisible(true);
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.WHITE_SMOKE, x, y, z, 16, 1, 2, 1, 1);
 					{
@@ -54,7 +53,6 @@ public class SmokeMagicProcedure {
 						_vars.markSyncDirty();
 					}
 				} else if (getEntityGameType(entity) == GameType.CREATIVE) {
-					entity.setInvisible(false);
 					if (entity instanceof Player _player) {
 						_player.getAbilities().flying = true;
 						_player.onUpdateAbilities();
@@ -62,7 +60,6 @@ public class SmokeMagicProcedure {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
 						_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 				} else {
-					entity.setInvisible(false);
 					if (entity instanceof Player _player) {
 						_player.getAbilities().flying = false;
 						_player.onUpdateAbilities();

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:actived_nano",
+    "b": "mythicrealms:tech_armor_helmet"
+  },
+  "result": {
+    "id": "mythicrealms:nano_armor_helmet",
+    "count": 1
+  }
+}

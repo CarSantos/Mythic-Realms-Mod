@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:actived_nano",
+    "b": "mythicrealms:tech_armor_leggings"
+  },
+  "result": {
+    "id": "mythicrealms:nano_armor_leggings",
+    "count": 1
+  }
+}

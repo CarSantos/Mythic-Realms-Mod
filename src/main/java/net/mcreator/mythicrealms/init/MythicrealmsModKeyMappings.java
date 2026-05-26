@@ -107,6 +107,7 @@ public class MythicrealmsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping EXPOSE_ARMOR = new KeyMapping("key.mythicrealms.expose_armor", GLFW.GLFW_KEY_UNKNOWN, "key.categories.misc");
 	private static long GHOST_KEY_LASTPRESS = 0;
 	private static long SMOKE_KEY_LASTPRESS = 0;
 
@@ -118,6 +119,7 @@ public class MythicrealmsModKeyMappings {
 		event.register(SMOKE_KEY);
 		event.register(ACCELARATION_KEY);
 		event.register(WATER_BREATH_KEY);
+		event.register(EXPOSE_ARMOR);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)

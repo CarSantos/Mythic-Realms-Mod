@@ -158,6 +158,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.MYTHRILL.get());
 			tabData.accept(MythicrealmsModItems.ULTIMATE_INGOT.get());
 			tabData.accept(MythicrealmsModItems.NANOS.get());
+			tabData.accept(MythicrealmsModItems.ACTIVED_NANO.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());

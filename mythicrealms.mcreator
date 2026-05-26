@@ -10982,6 +10982,250 @@
         ]
       },
       "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "ActivedNano",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "actived_nano",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/ActivedNanoItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/actived_nano.json",
+          "src/main/resources/assets/mythicrealms/items/actived_nano.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Nanos"
+    },
+    {
+      "name": "ActivedNanoRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "actived_nano_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/actived_nano_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/actived_nano_recipe.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Nanos"
+    },
+    {
+      "name": "NanoHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/nano_helmet_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/nano_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "NanoChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/nano_chestplate_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/nano_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "NanoLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/nano_leggings_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/nano_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "NanoBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nano_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/nano_boots_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/nano_boots_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "ExposeArmor",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "expose_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/network/ExposeArmorMessage.java"
+        ]
+      },
+      "path": "~/Item/Armors/Nano Armor"
+    },
+    {
+      "name": "SmokeMagicVisual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke_magic_visual",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entityModel",
+            "type": "model"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SmokeMagicVisualProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Smoke Mode"
+    },
+    {
+      "name": "ZombieVisual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombie_visual",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "entityModel",
+            "type": "model"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ZombieVisualProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Zombie"
+    },
+    {
+      "name": "PlayerBase",
+      "type": "humanoidmodel",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_base",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/System"
+    },
+    {
+      "name": "VampireVisual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_visual",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/VampireVisualProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Vampire"
+    },
+    {
+      "name": "PlagueVisual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plague_visual",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/PlagueVisualProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Plague"
+    },
+    {
+      "name": "VisualRestore",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "visual_restore",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entityModel",
+            "type": "model"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/VisualRestoreProcedure.java"
+        ]
+      },
+      "path": "~/System"
     }
   ],
   "variable_elements": [
@@ -13137,7 +13381,8 @@
       "StarDust",
       "Mythrill",
       "UltimateIngot",
-      "Nanos"
+      "Nanos",
+      "ActivedNano"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -13699,7 +13944,9 @@
       "item.mythicrealms.nano_armor_boots": "Nano \u0027s Boots",
       "item.mythicrealms.nano_armor_helmet": "Nano\u0027s Helmet",
       "item.mythicrealms.nano_armor_leggings": "Nano\u0027s Leggings",
-      "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate"
+      "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate",
+      "item.mythicrealms.actived_nano": "Actived Nano",
+      "key.mythicrealms.expose_armor": "Expose Armor"
     }
   },
   "metadata": {
@@ -13826,7 +14073,8 @@
       "Mythrill": "armorforge:default",
       "ToxicSlime": "armorforge:default",
       "UltimateIngot": "armorforge:default",
-      "Nanos": "armorforge:default"
+      "Nanos": "armorforge:default",
+      "ActivedNano": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -13917,7 +14165,8 @@
       "Mythrill": "All perspectives",
       "ToxicSlime": "All perspectives",
       "UltimateIngot": "All perspectives",
-      "Nanos": "All perspectives"
+      "Nanos": "All perspectives",
+      "ActivedNano": "All perspectives"
     }
   },
   "foldersRoot": {

@@ -430,5 +430,7 @@
   "item.mythicrealms.nano_armor_boots": "Nano \u0027s Boots",
   "item.mythicrealms.nano_armor_helmet": "Nano\u0027s Helmet",
   "item.mythicrealms.nano_armor_leggings": "Nano\u0027s Leggings",
-  "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate"
+  "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate",
+  "item.mythicrealms.actived_nano": "Actived Nano",
+  "key.mythicrealms.expose_armor": "Expose Armor"
 }
