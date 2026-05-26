@@ -37,7 +37,6 @@ public class MythicrealmsModBlocks {
 	public static final DeferredBlock<Block> BLOOD_PRESSURE_PLATE;
 	public static final DeferredBlock<Block> BLOOD_BUTTON;
 	public static final DeferredBlock<Block> BLOOD_SAPLING;
-	public static final DeferredBlock<Block> ARMOR_FORGE;
 	public static final DeferredBlock<Block> GHOST_MUSHROOM;
 	public static final DeferredBlock<Block> BLOOD_GRASS;
 	public static final DeferredBlock<Block> MAGIC_SAPLING;
@@ -108,7 +107,6 @@ public class MythicrealmsModBlocks {
 		BLOOD_PRESSURE_PLATE = register("blood_pressure_plate", BloodPressurePlateBlock::new);
 		BLOOD_BUTTON = register("blood_button", BloodButtonBlock::new);
 		BLOOD_SAPLING = register("blood_sapling", BloodSaplingBlock::new);
-		ARMOR_FORGE = register("armor_forge", ArmorForgeBlock::new);
 		GHOST_MUSHROOM = register("ghost_mushroom", GhostMushroomBlock::new);
 		BLOOD_GRASS = register("blood_grass", BloodGrassBlock::new);
 		MAGIC_SAPLING = register("magic_sapling", MagicSaplingBlock::new);

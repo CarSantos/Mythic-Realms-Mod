@@ -23,6 +23,6 @@ public class IlluminatyItemRightclickedProcedure {
 			_level.addFreshEntity(entityToSpawn);
 		}
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 1000);
+			_player.getCooldowns().addCooldown(itemstack, 6000);
 	}
 }

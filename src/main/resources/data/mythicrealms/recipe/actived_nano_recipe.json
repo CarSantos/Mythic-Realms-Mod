@@ -2,12 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "abc"
+    " a ",
+    "bcd"
   ],
   "key": {
-    "a": "minecraft:gold_ingot",
-    "b": "mythicrealms:nanos",
-    "c": "mythicrealms:titanium_ingot"
+    "a": "minecraft:diamond",
+    "b": "minecraft:gold_ingot",
+    "c": "mythicrealms:nanos",
+    "d": "minecraft:emerald"
   },
   "result": {
     "id": "mythicrealms:actived_nano",

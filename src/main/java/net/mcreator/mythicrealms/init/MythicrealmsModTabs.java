@@ -81,7 +81,6 @@ public class MythicrealmsModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.DEEPWORLD_TRAVEL_MACHINE.get().asItem());
-			tabData.accept(MythicrealmsModBlocks.ARMOR_FORGE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.PEDESTAL.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.BLOOD_LOG.get().asItem());
@@ -161,6 +160,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.ACTIVED_NANO.get());
 			tabData.accept(MythicrealmsModItems.GLACITE.get());
 			tabData.accept(MythicrealmsModItems.FLAMITE.get());
+			tabData.accept(MythicrealmsModItems.WENDIGO_BONE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
@@ -230,6 +230,14 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.NANO_ARMOR_CHESTPLATE.get());
 			tabData.accept(MythicrealmsModItems.NANO_ARMOR_LEGGINGS.get());
 			tabData.accept(MythicrealmsModItems.NANO_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.XOCHITL_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.WENDIGO_ARMOR_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.WENDIGO_ARMOR_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.WENDIGO_ARMOR_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.WENDIGO_ARMOR_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MythicrealmsModItems.GHOST_HORSE_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.PANDEMIC_SPAWN_EGG.get());

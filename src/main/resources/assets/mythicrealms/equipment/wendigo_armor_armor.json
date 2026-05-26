@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mythicrealms:wendigo_armor_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mythicrealms:wendigo_armor_armor"
+      }
+    ]
+  }
+}

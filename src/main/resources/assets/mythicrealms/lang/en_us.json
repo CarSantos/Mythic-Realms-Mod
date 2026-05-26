@@ -198,7 +198,6 @@
   "item.mythicrealms.samurai_armor_chestplate": "Samurai Chestplate",
   "item.mythicrealms.samurai_armor_helmet": "Samurai Helmet",
   "item.mythicrealms.samurai_armor_boots": "Samurai Boots",
-  "item.mythicrealms.armor_forge": "Armor Forge",
   "item.mythicrealms.ghost_mushroom": "Ghost Mushroom",
   "item.mythicrealms.blood_grass": "Blood Grass",
   "entity.mythicrealms.mummy": "Mummy",
@@ -436,5 +435,15 @@
   "item.mythicrealms.glacite": "Glacite",
   "item.mythicrealms.glacite_ore": "Glacite Ore",
   "item.mythicrealms.flamite_ore": "Glacite Ore",
-  "item.mythicrealms.flamite": "Glacite"
+  "item.mythicrealms.flamite": "Glacite",
+  "item.mythicrealms.nanite": "Nanite",
+  "item.mythicrealms.xochitl_armor_helmet": "Xochitl Helmet",
+  "item.mythicrealms.xochitl_armor_leggings": "Xochitl Leggings",
+  "item.mythicrealms.xochitl_armor_chestplate": "Xochitl Chestplate",
+  "item.mythicrealms.xochitl_armor_boots": "Xochitl Boots",
+  "item.mythicrealms.wendigo_bone": "Wendigo Bone",
+  "item.mythicrealms.wendigo_armor_armor_chestplate": "Wendigo Chestplate",
+  "item.mythicrealms.wendigo_armor_armor_boots": "Wendigo Boots",
+  "item.mythicrealms.wendigo_armor_armor_helmet": "Wendigo Helmet",
+  "item.mythicrealms.wendigo_armor_armor_leggings": "Wendigo Leggings"
 }

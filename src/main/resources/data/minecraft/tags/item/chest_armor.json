@@ -1,16 +1,18 @@
 {
   "replace": false,
   "values": [
-    "mythicrealms:demon_armor_chestplate",
-    "mythicrealms:blood_armor_chestplate",
     "mythicrealms:ent_armor_chestplate",
+    "mythicrealms:wendigo_armor_armor_chestplate",
     "mythicrealms:nano_armor_chestplate",
-    "mythicrealms:tech_armor_chestplate",
-    "mythicrealms:pharaoh_armor_chestplate",
-    "mythicrealms:angel_armor_chestplate",
+    "mythicrealms:xochitl_armor_chestplate",
     "mythicrealms:ninja_armor_chestplate",
     "mythicrealms:palladio_armor_chestplate",
     "mythicrealms:venraid_armor_chestplate",
+    "mythicrealms:demon_armor_chestplate",
+    "mythicrealms:blood_armor_chestplate",
+    "mythicrealms:tech_armor_chestplate",
+    "mythicrealms:pharaoh_armor_chestplate",
+    "mythicrealms:angel_armor_chestplate",
     "mythicrealms:magnet_armor_chestplate",
     "mythicrealms:samurai_armor_chestplate"
   ]

@@ -23,7 +23,7 @@ public class PedestalOnTickUpdateRecipesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double previousRecipe = 0;
 		double fireHeight = 0;
-		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == MythicrealmsModItems.VIBRANIUM_INGOT.get()
+		if ((itemFromBlockInventory(world, BlockPos.containing(x, y, z), 1).copy()).getItem() == MythicrealmsModItems.NANITE.get()
 				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 2).copy()).getItem() == MythicrealmsModItems.STAR_DUST.get()
 				&& (itemFromBlockInventory(world, BlockPos.containing(x, y, z), 3).copy()).getItem() == MythicrealmsModItems.ENRICHED_URANIUM.get()) {
 			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {

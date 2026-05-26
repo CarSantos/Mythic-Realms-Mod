@@ -5805,24 +5805,6 @@
       "path": "~/Item/Armors/SamuraiArmor"
     },
     {
-      "name": "ArmorForge",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "armor_forge",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mythicrealms/models/item/armor_forge.json",
-          "src/main/resources/assets/mythicrealms/models/block/armor_forge.json",
-          "src/main/java/net/mcreator/mythicrealms/block/ArmorForgeBlock.java",
-          "src/main/resources/assets/mythicrealms/items/armor_forge.json",
-          "src/main/resources/data/mythicrealms/loot_table/blocks/armor_forge.json",
-          "src/main/resources/assets/mythicrealms/blockstates/armor_forge.json"
-        ]
-      },
-      "path": "~/Item/Utility/ArmorForge"
-    },
-    {
       "name": "GhostMushroom",
       "type": "plant",
       "compiles": true,
@@ -11297,6 +11279,249 @@
         ]
       },
       "path": "~/Item/Ingot/Crystal"
+    },
+    {
+      "name": "Nanite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nanite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/nanite.json",
+          "src/main/resources/assets/mythicrealms/items/nanite.json",
+          "src/main/java/net/mcreator/mythicrealms/item/NaniteItem.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Nanos"
+    },
+    {
+      "name": "NaniteRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nanite_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/nanite_recipe.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Nanos"
+    },
+    {
+      "name": "XochitlArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xochitl_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/equipment/xochitl_armor.json",
+          "src/main/resources/assets/mythicrealms/models/item/xochitl_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/models/item/xochitl_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/items/xochitl_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/items/xochitl_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/items/xochitl_armor_boots.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/XochitlArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/items/xochitl_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/models/item/xochitl_armor_leggings.json",
+          "src/main/java/net/mcreator/mythicrealms/item/XochitlArmorItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/xochitl_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Item/Armors/Xochitl Armor"
+    },
+    {
+      "name": "XochitlHelmet",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xochitl_helmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/xochitl_helmet.json",
+          "src/main/resources/data/mythicrealms/recipe/xochitl_helmet.json"
+        ]
+      },
+      "path": "~/Item/Armors/Xochitl Armor"
+    },
+    {
+      "name": "XochitlChest",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xochitl_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/xochitl_chest.json",
+          "src/main/resources/data/mythicrealms/recipe/xochitl_chest.json"
+        ]
+      },
+      "path": "~/Item/Armors/Xochitl Armor"
+    },
+    {
+      "name": "XochitlLeg",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xochitl_leg",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/xochitl_leg.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/xochitl_leg.json"
+        ]
+      },
+      "path": "~/Item/Armors/Xochitl Armor"
+    },
+    {
+      "name": "XochitlBoots",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xochitl_boots",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/xochitl_boots.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/xochitl_boots.json"
+        ]
+      },
+      "path": "~/Item/Armors/Xochitl Armor"
+    },
+    {
+      "name": "XochitlArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xochitl_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/XochitlArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/Xochitl Armor"
+    },
+    {
+      "name": "WendigoArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendigo_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/WendigoArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/Wendigo Armor"
+    },
+    {
+      "name": "WendigoBone",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendigo_bone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/wendigo_bone.json",
+          "src/main/resources/assets/mythicrealms/items/wendigo_bone.json",
+          "src/main/java/net/mcreator/mythicrealms/item/WendigoBoneItem.java"
+        ]
+      },
+      "path": "~/Item/Armors/Wendigo Armor"
+    },
+    {
+      "name": "WendigoArmorArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendigo_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/wendigo_armor_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/items/wendigo_armor_armor_leggings.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/WendigoArmorArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/equipment/wendigo_armor_armor.json",
+          "src/main/resources/assets/mythicrealms/items/wendigo_armor_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/items/wendigo_armor_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/models/item/wendigo_armor_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/wendigo_armor_armor_boots.json",
+          "src/main/java/net/mcreator/mythicrealms/item/WendigoArmorArmorItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/wendigo_armor_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/models/item/wendigo_armor_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Item/Armors/Wendigo Armor"
+    },
+    {
+      "name": "WendigoArmorArmorHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendigo_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/wendigo_armor_armor_helmet_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Wendigo Armor"
+    },
+    {
+      "name": "WendigoArmorArmorChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendigo_armor_armor_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/wendigo_armor_armor_chestplate_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Wendigo Armor"
+    },
+    {
+      "name": "WendigoArmorArmorLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendigo_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/wendigo_armor_armor_leggings_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Wendigo Armor"
+    },
+    {
+      "name": "WendigoArmorArmorBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wendigo_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/wendigo_armor_armor_boots_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/Wendigo Armor"
     }
   ],
   "variable_elements": [
@@ -11634,6 +11859,8 @@
       "~CUSTOM:DeepworldOcean"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:WendigoArmorArmor.helmet",
+      "~CUSTOM:XochitlArmor.helmet",
       "~CUSTOM:NanoArmor.helmet",
       "~CUSTOM:PalladioArmor.helmet",
       "~CUSTOM:MagnetArmor.helmet",
@@ -11648,6 +11875,8 @@
       "~CUSTOM:BloodArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:WendigoArmorArmor.body",
+      "~CUSTOM:XochitlArmor.body",
       "~CUSTOM:NanoArmor.body",
       "~CUSTOM:PalladioArmor.body",
       "~CUSTOM:MagnetArmor.body",
@@ -11662,6 +11891,8 @@
       "~CUSTOM:BloodArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:WendigoArmorArmor.legs",
+      "~CUSTOM:XochitlArmor.legs",
       "~CUSTOM:NanoArmor.legs",
       "~CUSTOM:PalladioArmor.legs",
       "~CUSTOM:MagnetArmor.legs",
@@ -11676,6 +11907,8 @@
       "~CUSTOM:BloodArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:WendigoArmorArmor.boots",
+      "~CUSTOM:XochitlArmor.boots",
       "~CUSTOM:NanoArmor.boots",
       "~CUSTOM:PalladioArmor.boots",
       "~CUSTOM:MagnetArmor.boots",
@@ -11744,168 +11977,241 @@
       "~CUSTOM:VenraidScale"
     ],
     "ITEMS:minecraft:random": [
-      "CUSTOM:AccelarationMagicBook",
-      "CUSTOM:AdamantIngot",
-      "CUSTOM:AdamantOre",
-      "CUSTOM:AngelArmor.boots",
-      "CUSTOM:AngelArmor.body",
-      "CUSTOM:AngelArmor.helmet",
-      "CUSTOM:AngelArmor.legs",
-      "CUSTOM:AngelFeather",
-      "CUSTOM:AngelIngot",
-      "CUSTOM:ArmorForge",
-      "CUSTOM:AssassinRole",
-      "CUSTOM:BackpackItem",
-      "CUSTOM:Bandage",
-      "CUSTOM:BarbarianRole",
-      "CUSTOM:BarrierMagicBook",
-      "CUSTOM:BlackHoleMagicBook",
-      "CUSTOM:BloodArmor.boots",
-      "CUSTOM:BloodArmor.body",
-      "CUSTOM:BloodArmor.helmet",
-      "CUSTOM:BloodArmor.legs",
-      "CUSTOM:BloodBottle",
-      "CUSTOM:BloodButton",
-      "CUSTOM:BloodDoor",
-      "CUSTOM:BloodFence",
-      "CUSTOM:BloodFenceGate",
-      "CUSTOM:BloodGrass",
-      "CUSTOM:BloodIngot",
-      "CUSTOM:BloodLeaves",
-      "CUSTOM:BloodLog",
-      "CUSTOM:BloodPlanks",
-      "CUSTOM:BloodPotions",
-      "CUSTOM:BloodPressurePlate",
-      "CUSTOM:BloodSapling",
-      "CUSTOM:BloodSlab",
-      "CUSTOM:BloodStairs",
-      "CUSTOM:BloodSword",
-      "CUSTOM:BloodTrapdoor",
-      "CUSTOM:BloodWood",
-      "CUSTOM:BowOfApollo",
-      "CUSTOM:CaveMagicBook",
-      "CUSTOM:DashMagicBook",
-      "CUSTOM:DeepworldPortal",
-      "CUSTOM:DeepworldTravelMachine",
-      "CUSTOM:DemonArmor.boots",
-      "CUSTOM:DemonArmor.body",
-      "CUSTOM:DemonArmor.helmet",
-      "CUSTOM:DemonArmor.legs",
-      "CUSTOM:DemonIngot",
-      "CUSTOM:DemonScale",
-      "CUSTOM:DetectMagicBook",
-      "CUSTOM:Dracula.spawn_egg",
-      "CUSTOM:DruidRole",
-      "CUSTOM:EarthquakeMagicBook",
-      "CUSTOM:Ent.spawn_egg",
-      "CUSTOM:EntArmor.boots",
-      "CUSTOM:EntArmor.body",
-      "CUSTOM:EntArmor.helmet",
-      "CUSTOM:EntArmor.legs",
-      "CUSTOM:ExpellMagicBook",
-      "CUSTOM:FireBallMagicBook",
-      "CUSTOM:GhostHorse.spawn_egg",
-      "CUSTOM:GhostModeMagicBook",
-      "CUSTOM:GhostMushroom",
+      "CUSTOM:TankRole",
       "CUSTOM:GiantRole",
       "CUSTOM:GuardianRole",
-      "CUSTOM:HealMagicBook",
-      "CUSTOM:HighestSoundMagicBook",
-      "CUSTOM:Hippocampus.spawn_egg",
-      "CUSTOM:HunterRole",
-      "CUSTOM:IceBallMagicBook",
-      "CUSTOM:InvestigatorRole",
-      "CUSTOM:Joker.spawn_egg",
-      "CUSTOM:Kitsune.spawn_egg",
-      "CUSTOM:LavaGolem.spawn_egg",
-      "CUSTOM:LifeStealMagicBook",
-      "CUSTOM:LightTravelMagicBook",
-      "CUSTOM:LunarBlock",
-      "CUSTOM:MagicButton",
-      "CUSTOM:MagicDoor",
-      "CUSTOM:MagicFence",
-      "CUSTOM:MagicFenceGate",
-      "CUSTOM:MagicLeaves",
-      "CUSTOM:MagicLog",
-      "CUSTOM:MagicPlanks",
-      "CUSTOM:MagicPressurePlate",
-      "CUSTOM:MagicSapling",
-      "CUSTOM:MagicSlab",
-      "CUSTOM:MagicStairs",
-      "CUSTOM:MagicTrapdoor",
-      "CUSTOM:MagicWood",
-      "CUSTOM:MeteorMagicBook",
-      "CUSTOM:MinersDream",
-      "CUSTOM:MonkRole",
-      "CUSTOM:Mummy.spawn_egg",
-      "CUSTOM:NecroBook",
-      "CUSTOM:NecromancerMagicBook",
-      "CUSTOM:NightmareHorse.spawn_egg",
-      "CUSTOM:NinjaArmor.boots",
-      "CUSTOM:NinjaArmor.body",
-      "CUSTOM:NinjaArmor.helmet",
-      "CUSTOM:NinjaArmor.legs",
-      "CUSTOM:NobleSteel",
-      "CUSTOM:Pandemic.spawn_egg",
-      "CUSTOM:Pharaoh.spawn_egg",
-      "CUSTOM:PharaohArmor.boots",
-      "CUSTOM:PharaohArmor.body",
-      "CUSTOM:PharaohArmor.helmet",
-      "CUSTOM:PharaohArmor.legs",
-      "CUSTOM:PlayerRole",
-      "CUSTOM:PoisonCloudMagicBook",
-      "CUSTOM:PumpkinStaff",
-      "CUSTOM:ReflectMagicBook",
-      "CUSTOM:ReinforcedLeather",
-      "CUSTOM:ReligionBook",
-      "CUSTOM:SamuraiArmor.boots",
-      "CUSTOM:SamuraiArmor.body",
-      "CUSTOM:SamuraiArmor.helmet",
-      "CUSTOM:SamuraiArmor.legs",
-      "CUSTOM:SandStormMagicBook",
-      "CUSTOM:ScarabGem",
-      "CUSTOM:ShieldOfAthena",
-      "CUSTOM:SmokeModeMagicBook",
+      "CUSTOM:BarbarianRole",
+      "CUSTOM:AssassinRole",
       "CUSTOM:SoldierRole",
-      "CUSTOM:SoulforceBook",
-      "CUSTOM:SoulforceStealMagicBook",
-      "CUSTOM:SteelAxe",
-      "CUSTOM:SteelHoe",
-      "CUSTOM:SteelIngot",
-      "CUSTOM:SteelPickaxe",
-      "CUSTOM:SteelPlate",
-      "CUSTOM:SteelShovel",
-      "CUSTOM:SteelSword",
-      "CUSTOM:StopTimeMagicBook",
-      "CUSTOM:StrippedBloodLog",
-      "CUSTOM:StrippedBloodWood",
-      "CUSTOM:StrippedMagicLog",
-      "CUSTOM:StrippedMagicWood",
-      "CUSTOM:Sturgeon.spawn_egg",
+      "CUSTOM:InvestigatorRole",
+      "CUSTOM:HunterRole",
+      "CUSTOM:MonkRole",
+      "CUSTOM:WizardRole",
       "CUSTOM:SummonerRole",
-      "CUSTOM:TankRole",
-      "CUSTOM:TechArmor.boots",
-      "CUSTOM:TechArmor.body",
-      "CUSTOM:TechArmor.helmet",
-      "CUSTOM:TechArmor.legs",
-      "CUSTOM:TempestMagicBook",
-      "CUSTOM:ThunderMagicBook",
+      "CUSTOM:DruidRole",
+      "CUSTOM:SteelIngot",
+      "CUSTOM:SteelPlate",
       "CUSTOM:TitaniumIngot",
       "CUSTOM:TitaniumOre",
-      "CUSTOM:Vampire.spawn_egg",
-      "CUSTOM:Venraid.spawn_egg",
-      "CUSTOM:VenraidArmor.boots",
-      "CUSTOM:VenraidArmor.body",
-      "CUSTOM:VenraidArmor.helmet",
-      "CUSTOM:VenraidArmor.legs",
-      "CUSTOM:VenraidScale",
-      "CUSTOM:VenraidSword",
-      "CUSTOM:VibraniumIngot",
       "CUSTOM:VibraniumOre",
+      "CUSTOM:VibraniumIngot",
+      "CUSTOM:SteelPickaxe",
+      "CUSTOM:SteelAxe",
+      "CUSTOM:SteelSword",
+      "CUSTOM:SteelShovel",
+      "CUSTOM:SteelHoe",
+      "CUSTOM:AdamantOre",
+      "CUSTOM:AdamantIngot",
+      "CUSTOM:GhostHorse.spawn_egg",
+      "CUSTOM:NightmareHorse.spawn_egg",
+      "CUSTOM:Hippocampus.spawn_egg",
+      "CUSTOM:MinersDream",
+      "CUSTOM:CaveMagicBook",
+      "CUSTOM:DashMagicBook",
+      "CUSTOM:EarthquakeMagicBook",
+      "CUSTOM:FireBallMagicBook",
+      "CUSTOM:GhostModeMagicBook",
+      "CUSTOM:HealMagicBook",
+      "CUSTOM:IceBallMagicBook",
+      "CUSTOM:LifeStealMagicBook",
+      "CUSTOM:MeteorMagicBook",
+      "CUSTOM:NecromancerMagicBook",
+      "CUSTOM:SandStormMagicBook",
+      "CUSTOM:SmokeModeMagicBook",
+      "CUSTOM:SoulforceStealMagicBook",
+      "CUSTOM:StopTimeMagicBook",
+      "CUSTOM:ThunderMagicBook",
+      "CUSTOM:HighestSoundMagicBook",
+      "CUSTOM:AccelarationMagicBook",
+      "CUSTOM:ExpellMagicBook",
+      "CUSTOM:DetectMagicBook",
       "CUSTOM:VulcanMagicBook",
+      "CUSTOM:BlackHoleMagicBook",
+      "CUSTOM:ReflectMagicBook",
+      "CUSTOM:DeepworldTravelMachine",
+      "CUSTOM:DeepworldPortal",
+      "CUSTOM:LunarBlock",
+      "CUSTOM:PoisonCloudMagicBook",
+      "CUSTOM:LightTravelMagicBook",
       "CUSTOM:WaterBreathMagicBook",
-      "CUSTOM:WizardRole",
+      "CUSTOM:Pandemic.spawn_egg",
       "CUSTOM:Yeti.spawn_egg",
+      "CUSTOM:Joker.spawn_egg",
+      "CUSTOM:Vampire.spawn_egg",
+      "CUSTOM:BloodLog",
+      "CUSTOM:BloodWood",
+      "CUSTOM:StrippedBloodLog",
+      "CUSTOM:StrippedBloodWood",
+      "CUSTOM:BloodPlanks",
+      "CUSTOM:BloodLeaves",
+      "CUSTOM:BloodStairs",
+      "CUSTOM:BloodSlab",
+      "CUSTOM:BloodFence",
+      "CUSTOM:BloodFenceGate",
+      "CUSTOM:BloodDoor",
+      "CUSTOM:BloodTrapdoor",
+      "CUSTOM:BloodPressurePlate",
+      "CUSTOM:BloodButton",
+      "CUSTOM:BloodSapling",
+      "CUSTOM:BloodBottle",
+      "CUSTOM:BloodIngot",
+      "CUSTOM:Dracula.spawn_egg",
+      "CUSTOM:BloodPotions",
+      "CUSTOM:LavaGolem.spawn_egg",
+      "CUSTOM:BloodArmor.helmet",
+      "CUSTOM:BloodArmor.body",
+      "CUSTOM:BloodArmor.legs",
+      "CUSTOM:BloodArmor.boots",
+      "CUSTOM:NobleSteel",
+      "CUSTOM:SamuraiArmor.helmet",
+      "CUSTOM:SamuraiArmor.body",
+      "CUSTOM:SamuraiArmor.legs",
+      "CUSTOM:SamuraiArmor.boots",
+      "CUSTOM:GhostMushroom",
+      "CUSTOM:BloodGrass",
+      "CUSTOM:Mummy.spawn_egg",
+      "CUSTOM:Pharaoh.spawn_egg",
+      "CUSTOM:Ent.spawn_egg",
+      "CUSTOM:Kitsune.spawn_egg",
+      "CUSTOM:Sturgeon.spawn_egg",
+      "CUSTOM:Venraid.spawn_egg",
+      "CUSTOM:VenraidScale",
+      "CUSTOM:VenraidArmor.helmet",
+      "CUSTOM:VenraidArmor.body",
+      "CUSTOM:VenraidArmor.legs",
+      "CUSTOM:VenraidArmor.boots",
+      "CUSTOM:Bandage",
+      "CUSTOM:PharaohArmor.helmet",
+      "CUSTOM:PharaohArmor.body",
+      "CUSTOM:PharaohArmor.legs",
+      "CUSTOM:PharaohArmor.boots",
+      "CUSTOM:ScarabGem",
+      "CUSTOM:TechArmor.helmet",
+      "CUSTOM:TechArmor.body",
+      "CUSTOM:TechArmor.legs",
+      "CUSTOM:TechArmor.boots",
+      "CUSTOM:NinjaArmor.helmet",
+      "CUSTOM:NinjaArmor.body",
+      "CUSTOM:NinjaArmor.legs",
+      "CUSTOM:NinjaArmor.boots",
+      "CUSTOM:ReinforcedLeather",
+      "CUSTOM:AngelFeather",
+      "CUSTOM:AngelIngot",
+      "CUSTOM:AngelArmor.helmet",
+      "CUSTOM:AngelArmor.body",
+      "CUSTOM:AngelArmor.legs",
+      "CUSTOM:AngelArmor.boots",
+      "CUSTOM:DemonArmor.helmet",
+      "CUSTOM:DemonArmor.body",
+      "CUSTOM:DemonArmor.legs",
+      "CUSTOM:DemonArmor.boots",
+      "CUSTOM:DemonScale",
+      "CUSTOM:DemonIngot",
+      "CUSTOM:EntArmor.helmet",
+      "CUSTOM:EntArmor.body",
+      "CUSTOM:EntArmor.legs",
+      "CUSTOM:EntArmor.boots",
+      "CUSTOM:MagicSapling",
+      "CUSTOM:MagicLog",
+      "CUSTOM:MagicWood",
+      "CUSTOM:StrippedMagicLog",
+      "CUSTOM:StrippedMagicWood",
+      "CUSTOM:MagicPlanks",
+      "CUSTOM:MagicLeaves",
+      "CUSTOM:MagicStairs",
+      "CUSTOM:MagicSlab",
+      "CUSTOM:MagicFence",
+      "CUSTOM:MagicFenceGate",
+      "CUSTOM:MagicDoor",
+      "CUSTOM:MagicTrapdoor",
+      "CUSTOM:MagicPressurePlate",
+      "CUSTOM:MagicButton",
+      "CUSTOM:TempestMagicBook",
+      "CUSTOM:BarrierMagicBook",
+      "CUSTOM:BloodSword",
+      "CUSTOM:BackpackItem",
+      "CUSTOM:ShieldOfAthena",
+      "CUSTOM:BowOfApollo",
+      "CUSTOM:PumpkinStaff",
+      "CUSTOM:PlayerRole",
+      "CUSTOM:VenraidSword",
+      "CUSTOM:NecroBook",
+      "CUSTOM:ReligionBook",
+      "CUSTOM:SoulforceBook",
+      "CUSTOM:IlluminatyItem",
+      "CUSTOM:TanmakuSword",
+      "CUSTOM:EgyptianSword",
+      "CUSTOM:Tanmake",
+      "CUSTOM:Magnet",
+      "CUSTOM:MagneticRock",
+      "CUSTOM:AntiMagneticRock",
+      "CUSTOM:MagnetArmor.helmet",
+      "CUSTOM:MagnetArmor.body",
+      "CUSTOM:MagnetArmor.legs",
+      "CUSTOM:MagnetArmor.boots",
+      "CUSTOM:PalladioBlock",
+      "CUSTOM:PalladioIngot",
+      "CUSTOM:RawPalladio",
+      "CUSTOM:RawAdamant",
+      "CUSTOM:RawTitanium",
+      "CUSTOM:RawVibranium",
+      "CUSTOM:ManaPotion",
+      "CUSTOM:ManaBottle",
+      "CUSTOM:Angel.spawn_egg",
+      "CUSTOM:Demon.spawn_egg",
+      "CUSTOM:YggdrasilLog",
+      "CUSTOM:YggdrasilWood",
+      "CUSTOM:StrippedYggdrasilLog",
+      "CUSTOM:StrippedYggdrasilWood",
+      "CUSTOM:YggdrasilPlanks",
+      "CUSTOM:YggdrasilLeaves",
+      "CUSTOM:YggdrasilStairs",
+      "CUSTOM:YggdrasilSlab",
+      "CUSTOM:YggdrasilFence",
+      "CUSTOM:YggdrasilFenceGate",
+      "CUSTOM:YggdrasilDoor",
+      "CUSTOM:YggdrasilTrapdoor",
+      "CUSTOM:YggdrasilPressurePlate",
+      "CUSTOM:YggdrasilButton",
+      "CUSTOM:YggdrasilSapling",
+      "CUSTOM:Wendigo.spawn_egg",
+      "CUSTOM:TechGooglesItem",
+      "CUSTOM:PalladioArmor.helmet",
+      "CUSTOM:PalladioArmor.body",
+      "CUSTOM:PalladioArmor.legs",
+      "CUSTOM:PalladioArmor.boots",
+      "CUSTOM:Uranium",
+      "CUSTOM:UraniumBlock",
+      "CUSTOM:EnrichedUranium",
+      "CUSTOM:XochitlPowder",
+      "CUSTOM:XochitlLeather",
+      "CUSTOM:XochitlIngot",
+      "CUSTOM:Xochitl.spawn_egg",
+      "CUSTOM:StarDust",
+      "CUSTOM:SandOfStar",
+      "CUSTOM:ToxicSand",
+      "CUSTOM:Mythrill",
+      "CUSTOM:SkiesStone",
+      "CUSTOM:MythrillOre",
+      "CUSTOM:SkiesGrass",
+      "CUSTOM:SkiesStoneBricks",
+      "CUSTOM:ToxicSlime",
+      "CUSTOM:UltimateIngot",
+      "CUSTOM:Nanos",
+      "CUSTOM:Pedestal",
+      "CUSTOM:LunarCobblestone",
+      "CUSTOM:LunarCobbleSlab",
+      "CUSTOM:NanoArmor.helmet",
+      "CUSTOM:NanoArmor.body",
+      "CUSTOM:NanoArmor.legs",
+      "CUSTOM:NanoArmor.boots",
+      "CUSTOM:ActivedNano",
+      "CUSTOM:CrystalBarrierBlock",
+      "CUSTOM:Glacite",
+      "CUSTOM:GlaciteOre",
+      "CUSTOM:FlamiteOre",
+      "CUSTOM:Flamite",
+      "CUSTOM:Nanite",
       "Blocks.AIR",
       "Blocks.STONE#0",
       "Blocks.NORMAL_STONE_STAIRS",
@@ -13423,6 +13729,12 @@
     ],
     "ITEMS:mythicrealms:nano_armor_repair_items": [
       "~CUSTOM:Nanos"
+    ],
+    "ITEMS:mythicrealms:xochitl_armor_repair_items": [
+      "~CUSTOM:XochitlIngot"
+    ],
+    "ITEMS:mythicrealms:wendigo_armor_armor_repair_items": [
+      "~CUSTOM:WendigoBone"
     ]
   },
   "tab_element_order": {
@@ -13458,7 +13770,8 @@
       "Nanos",
       "ActivedNano",
       "Glacite",
-      "Flamite"
+      "Flamite",
+      "WendigoBone"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -13493,7 +13806,9 @@
       "PalladioArmor",
       "AngelArmor",
       "TechGooglesItem",
-      "NanoArmor"
+      "NanoArmor",
+      "XochitlArmor",
+      "WendigoArmorArmor"
     ],
     "MISC": [
       "GhostHorse",
@@ -13788,7 +14103,6 @@
       "item.mythicrealms.samurai_armor_chestplate": "Samurai Chestplate",
       "item.mythicrealms.samurai_armor_helmet": "Samurai Helmet",
       "item.mythicrealms.samurai_armor_boots": "Samurai Boots",
-      "item.mythicrealms.armor_forge": "Armor Forge",
       "item.mythicrealms.ghost_mushroom": "Ghost Mushroom",
       "item.mythicrealms.blood_grass": "Blood Grass",
       "entity.mythicrealms.mummy": "Mummy",
@@ -14026,7 +14340,17 @@
       "item.mythicrealms.glacite": "Glacite",
       "item.mythicrealms.glacite_ore": "Glacite Ore",
       "item.mythicrealms.flamite_ore": "Glacite Ore",
-      "item.mythicrealms.flamite": "Glacite"
+      "item.mythicrealms.flamite": "Glacite",
+      "item.mythicrealms.nanite": "Nanite",
+      "item.mythicrealms.xochitl_armor_helmet": "Xochitl Helmet",
+      "item.mythicrealms.xochitl_armor_leggings": "Xochitl Leggings",
+      "item.mythicrealms.xochitl_armor_chestplate": "Xochitl Chestplate",
+      "item.mythicrealms.xochitl_armor_boots": "Xochitl Boots",
+      "item.mythicrealms.wendigo_bone": "Wendigo Bone",
+      "item.mythicrealms.wendigo_armor_armor_chestplate": "Wendigo Chestplate",
+      "item.mythicrealms.wendigo_armor_armor_boots": "Wendigo Boots",
+      "item.mythicrealms.wendigo_armor_armor_helmet": "Wendigo Helmet",
+      "item.mythicrealms.wendigo_armor_armor_leggings": "Wendigo Leggings"
     }
   },
   "metadata": {
@@ -14157,7 +14481,9 @@
       "ActivedNano": "armorforge:default",
       "Crystal": "armorforge:default",
       "Glacite": "armorforge:default",
-      "Flamite": "armorforge:default"
+      "Flamite": "armorforge:default",
+      "Nanite": "armorforge:default",
+      "WendigoBone": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -14252,7 +14578,9 @@
       "ActivedNano": "All perspectives",
       "Crystal": "All perspectives",
       "Glacite": "All perspectives",
-      "Flamite": "All perspectives"
+      "Flamite": "All perspectives",
+      "Nanite": "All perspectives",
+      "WendigoBone": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -14621,6 +14949,14 @@
               {
                 "name": "Nano Armor",
                 "children": []
+              },
+              {
+                "name": "Xochitl Armor",
+                "children": []
+              },
+              {
+                "name": "Wendigo Armor",
+                "children": []
               }
             ]
           },
@@ -14687,10 +15023,6 @@
               },
               {
                 "name": "DeepworldTravelMachine",
-                "children": []
-              },
-              {
-                "name": "ArmorForge",
                 "children": []
               },
               {

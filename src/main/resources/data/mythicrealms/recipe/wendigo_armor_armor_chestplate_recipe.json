@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:wendigo_bone"
+  },
+  "result": {
+    "id": "mythicrealms:wendigo_armor_armor_chestplate",
+    "count": 1
+  }
+}

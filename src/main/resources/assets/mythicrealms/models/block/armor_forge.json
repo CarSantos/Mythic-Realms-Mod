@@ -1,9 +1,0 @@
-{
-  "parent": "mythicrealms:custom/armorforge",
-  "textures": {
-    "all": "mythicrealms:block/armorforge",
-    "particle": "mythicrealms:block/armorforge",
-    "0": "mythicrealms:block/armorforge"
-  },
-  "render_type": "solid"
-}

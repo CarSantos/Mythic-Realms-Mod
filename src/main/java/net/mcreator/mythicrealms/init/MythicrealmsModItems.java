@@ -118,7 +118,6 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> SAMURAI_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> SAMURAI_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> SAMURAI_ARMOR_BOOTS;
-	public static final DeferredItem<Item> ARMOR_FORGE;
 	public static final DeferredItem<Item> GHOST_MUSHROOM;
 	public static final DeferredItem<Item> BLOOD_GRASS;
 	public static final DeferredItem<Item> MUMMY_SPAWN_EGG;
@@ -263,6 +262,16 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> GLACITE_ORE;
 	public static final DeferredItem<Item> FLAMITE_ORE;
 	public static final DeferredItem<Item> FLAMITE;
+	public static final DeferredItem<Item> NANITE;
+	public static final DeferredItem<Item> XOCHITL_ARMOR_HELMET;
+	public static final DeferredItem<Item> XOCHITL_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> XOCHITL_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> XOCHITL_ARMOR_BOOTS;
+	public static final DeferredItem<Item> WENDIGO_BONE;
+	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_HELMET;
+	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> WENDIGO_ARMOR_ARMOR_BOOTS;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -354,7 +363,6 @@ public class MythicrealmsModItems {
 		SAMURAI_ARMOR_CHESTPLATE = register("samurai_armor_chestplate", SamuraiArmorItem.Chestplate::new);
 		SAMURAI_ARMOR_LEGGINGS = register("samurai_armor_leggings", SamuraiArmorItem.Leggings::new);
 		SAMURAI_ARMOR_BOOTS = register("samurai_armor_boots", SamuraiArmorItem.Boots::new);
-		ARMOR_FORGE = block(MythicrealmsModBlocks.ARMOR_FORGE);
 		GHOST_MUSHROOM = block(MythicrealmsModBlocks.GHOST_MUSHROOM, new Item.Properties().fireResistant());
 		BLOOD_GRASS = block(MythicrealmsModBlocks.BLOOD_GRASS);
 		MUMMY_SPAWN_EGG = register("mummy_spawn_egg", properties -> new SpawnEggItem(MythicrealmsModEntities.MUMMY.get(), properties));
@@ -499,6 +507,16 @@ public class MythicrealmsModItems {
 		GLACITE_ORE = block(MythicrealmsModBlocks.GLACITE_ORE);
 		FLAMITE_ORE = block(MythicrealmsModBlocks.FLAMITE_ORE);
 		FLAMITE = register("flamite", FlamiteItem::new);
+		NANITE = register("nanite", NaniteItem::new);
+		XOCHITL_ARMOR_HELMET = register("xochitl_armor_helmet", XochitlArmorItem.Helmet::new);
+		XOCHITL_ARMOR_CHESTPLATE = register("xochitl_armor_chestplate", XochitlArmorItem.Chestplate::new);
+		XOCHITL_ARMOR_LEGGINGS = register("xochitl_armor_leggings", XochitlArmorItem.Leggings::new);
+		XOCHITL_ARMOR_BOOTS = register("xochitl_armor_boots", XochitlArmorItem.Boots::new);
+		WENDIGO_BONE = register("wendigo_bone", WendigoBoneItem::new);
+		WENDIGO_ARMOR_ARMOR_HELMET = register("wendigo_armor_armor_helmet", WendigoArmorArmorItem.Helmet::new);
+		WENDIGO_ARMOR_ARMOR_CHESTPLATE = register("wendigo_armor_armor_chestplate", WendigoArmorArmorItem.Chestplate::new);
+		WENDIGO_ARMOR_ARMOR_LEGGINGS = register("wendigo_armor_armor_leggings", WendigoArmorArmorItem.Leggings::new);
+		WENDIGO_ARMOR_ARMOR_BOOTS = register("wendigo_armor_armor_boots", WendigoArmorArmorItem.Boots::new);
 	}
 
 	// Start of user code block custom items

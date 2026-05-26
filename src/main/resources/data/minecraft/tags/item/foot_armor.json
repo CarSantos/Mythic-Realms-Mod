@@ -2,16 +2,18 @@
   "replace": false,
   "values": [
     "mythicrealms:palladio_armor_boots",
+    "mythicrealms:wendigo_armor_armor_boots",
     "mythicrealms:tech_armor_boots",
-    "mythicrealms:pharaoh_armor_boots",
     "mythicrealms:samurai_armor_boots",
     "mythicrealms:demon_armor_boots",
     "mythicrealms:angel_armor_boots",
     "mythicrealms:nano_armor_boots",
     "mythicrealms:magnet_armor_boots",
     "mythicrealms:venraid_armor_boots",
-    "mythicrealms:blood_armor_boots",
     "mythicrealms:ninja_armor_boots",
-    "mythicrealms:ent_armor_boots"
+    "mythicrealms:ent_armor_boots",
+    "mythicrealms:pharaoh_armor_boots",
+    "mythicrealms:xochitl_armor_boots",
+    "mythicrealms:blood_armor_boots"
   ]
 }

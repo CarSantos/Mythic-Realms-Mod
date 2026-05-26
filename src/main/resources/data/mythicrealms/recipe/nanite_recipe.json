@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "adc",
+    "aec"
+  ],
+  "key": {
+    "a": "mythicrealms:flamite",
+    "b": "mythicrealms:vibranium_ingot",
+    "c": "mythicrealms:glacite",
+    "d": "mythicrealms:adamant_ingot",
+    "e": "mythicrealms:titanium_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:nanite",
+    "count": 1
+  }
+}

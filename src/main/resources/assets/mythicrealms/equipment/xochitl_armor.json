@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mythicrealms:xochitl_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mythicrealms:xochitl_armor"
+      }
+    ]
+  }
+}

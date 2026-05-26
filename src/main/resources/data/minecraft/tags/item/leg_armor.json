@@ -1,17 +1,19 @@
 {
   "replace": false,
   "values": [
+    "mythicrealms:wendigo_armor_armor_leggings",
+    "mythicrealms:ent_armor_leggings",
+    "mythicrealms:palladio_armor_leggings",
+    "mythicrealms:ninja_armor_leggings",
+    "mythicrealms:pharaoh_armor_leggings",
     "mythicrealms:demon_armor_leggings",
     "mythicrealms:blood_armor_leggings",
-    "mythicrealms:ent_armor_leggings",
     "mythicrealms:venraid_armor_leggings",
     "mythicrealms:angel_armor_leggings",
     "mythicrealms:tech_armor_leggings",
     "mythicrealms:samurai_armor_leggings",
     "mythicrealms:magnet_armor_leggings",
-    "mythicrealms:palladio_armor_leggings",
-    "mythicrealms:ninja_armor_leggings",
     "mythicrealms:nano_armor_leggings",
-    "mythicrealms:pharaoh_armor_leggings"
+    "mythicrealms:xochitl_armor_leggings"
   ]
 }

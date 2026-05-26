@@ -31,9 +31,11 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(Modelwendigo.LAYER_LOCATION, Modelwendigo::createBodyLayer);
 		event.registerLayerDefinition(ModelMagnet_Propulsor.LAYER_LOCATION, ModelMagnet_Propulsor::createBodyLayer);
 		event.registerLayerDefinition(ModelNightmareHorse.LAYER_LOCATION, ModelNightmareHorse::createBodyLayer);
+		event.registerLayerDefinition(ModelWendigo_Armor.LAYER_LOCATION, ModelWendigo_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelPandemic.LAYER_LOCATION, ModelPandemic::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_pharaoh.LAYER_LOCATION, ModelArmor_pharaoh::createBodyLayer);
 		event.registerLayerDefinition(ModelSturgeon.LAYER_LOCATION, ModelSturgeon::createBodyLayer);
+		event.registerLayerDefinition(ModelXochitl_Armor.LAYER_LOCATION, ModelXochitl_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelVampire.LAYER_LOCATION, ModelVampire::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Ent.LAYER_LOCATION, ModelArmor_Ent::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Samurai.LAYER_LOCATION, ModelArmor_Samurai::createBodyLayer);

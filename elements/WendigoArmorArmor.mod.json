@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "wendigohelmet",
+    "enableBody": true,
+    "textureBody": "wendigochest",
+    "enableLeggings": true,
+    "textureLeggings": "wendigoarmor_leggings",
+    "enableBoots": true,
+    "textureBoots": "wendigo_boots",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Wendigo Helmet",
+    "bodyName": "Wendigo Chestplate",
+    "leggingsName": "Wendigo Leggings",
+    "bootsName": "Wendigo Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelWendigo_Armor",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "wendigo_armor.png",
+    "bodyModelName": "ModelWendigo_Armor",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "leftPlate",
+    "armsModelPartR": "rightPlate",
+    "bodyModelTexture": "wendigo_armor.png",
+    "leggingsModelName": "ModelWendigo_Armor",
+    "leggingsModelPartL": "leftLegging",
+    "leggingsModelPartR": "rightLegging",
+    "leggingsModelTexture": "wendigo_armor.png",
+    "bootsModelName": "ModelWendigo_Armor",
+    "bootsModelPartL": "leftBoot",
+    "bootsModelPartR": "rightBoot",
+    "bootsModelTexture": "wendigo_armor.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 32,
+    "damageValueHelmet": 5,
+    "damageValueBody": 10,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 5,
+    "enchantability": 30,
+    "toughness": 0.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:WendigoBone"
+      }
+    ]
+  }
+}
