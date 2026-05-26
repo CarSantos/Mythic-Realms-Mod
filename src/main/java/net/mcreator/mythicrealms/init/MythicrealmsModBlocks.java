@@ -55,7 +55,6 @@ public class MythicrealmsModBlocks {
 	public static final DeferredBlock<Block> MAGIC_TRAPDOOR;
 	public static final DeferredBlock<Block> MAGIC_PRESSURE_PLATE;
 	public static final DeferredBlock<Block> MAGIC_BUTTON;
-	public static final DeferredBlock<Block> CRYSTAL;
 	public static final DeferredBlock<Block> MAGNETIC_ROCK;
 	public static final DeferredBlock<Block> ANTI_MAGNETIC_ROCK;
 	public static final DeferredBlock<Block> PALLADIO_BLOCK;
@@ -84,6 +83,9 @@ public class MythicrealmsModBlocks {
 	public static final DeferredBlock<Block> PEDESTAL;
 	public static final DeferredBlock<Block> LUNAR_COBBLESTONE;
 	public static final DeferredBlock<Block> LUNAR_COBBLE_SLAB;
+	public static final DeferredBlock<Block> CRYSTAL_BARRIER_BLOCK;
+	public static final DeferredBlock<Block> GLACITE_ORE;
+	public static final DeferredBlock<Block> FLAMITE_ORE;
 	static {
 		TITANIUM_ORE = register("titanium_ore", TitaniumOreBlock::new);
 		VIBRANIUM_ORE = register("vibranium_ore", VibraniumOreBlock::new);
@@ -124,7 +126,6 @@ public class MythicrealmsModBlocks {
 		MAGIC_TRAPDOOR = register("magic_trapdoor", MagicTrapdoorBlock::new);
 		MAGIC_PRESSURE_PLATE = register("magic_pressure_plate", MagicPressurePlateBlock::new);
 		MAGIC_BUTTON = register("magic_button", MagicButtonBlock::new);
-		CRYSTAL = register("crystal", CrystalBlock::new);
 		MAGNETIC_ROCK = register("magnetic_rock", MagneticRockBlock::new);
 		ANTI_MAGNETIC_ROCK = register("anti_magnetic_rock", AntiMagneticRockBlock::new);
 		PALLADIO_BLOCK = register("palladio_block", PalladioBlockBlock::new);
@@ -153,6 +154,9 @@ public class MythicrealmsModBlocks {
 		PEDESTAL = register("pedestal", PedestalBlock::new);
 		LUNAR_COBBLESTONE = register("lunar_cobblestone", LunarCobblestoneBlock::new);
 		LUNAR_COBBLE_SLAB = register("lunar_cobble_slab", LunarCobbleSlabBlock::new);
+		CRYSTAL_BARRIER_BLOCK = register("crystal_barrier_block", CrystalBarrierBlockBlock::new);
+		GLACITE_ORE = register("glacite_ore", GlaciteOreBlock::new);
+		FLAMITE_ORE = register("flamite_ore", FlamiteOreBlock::new);
 	}
 
 	// Start of user code block custom blocks

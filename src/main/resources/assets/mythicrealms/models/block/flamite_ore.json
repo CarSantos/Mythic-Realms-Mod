@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/flamiteblock",
+    "up": "mythicrealms:block/flamiteblock",
+    "north": "mythicrealms:block/flamiteblock",
+    "east": "mythicrealms:block/flamiteblock",
+    "south": "mythicrealms:block/flamiteblock",
+    "west": "mythicrealms:block/flamiteblock",
+    "particle": "mythicrealms:block/flamiteblock"
+  },
+  "render_type": "solid"
+}

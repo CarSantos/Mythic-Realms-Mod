@@ -1,5 +1,5 @@
 {
-  "parent": "mythicrealms:block/crystal",
+  "parent": "mythicrealms:block/flamite_ore",
   "display": {
     "thirdperson": {
       "rotation": [

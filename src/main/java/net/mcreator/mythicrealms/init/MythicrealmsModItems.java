@@ -179,7 +179,6 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> MAGIC_PRESSURE_PLATE;
 	public static final DeferredItem<Item> MAGIC_BUTTON;
 	public static final DeferredItem<Item> TEMPEST_MAGIC_BOOK;
-	public static final DeferredItem<Item> CRYSTAL;
 	public static final DeferredItem<Item> BARRIER_MAGIC_BOOK;
 	public static final DeferredItem<Item> BLOOD_SWORD;
 	public static final DeferredItem<Item> BACKPACK_ITEM;
@@ -259,6 +258,11 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> NANO_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> NANO_ARMOR_BOOTS;
 	public static final DeferredItem<Item> ACTIVED_NANO;
+	public static final DeferredItem<Item> CRYSTAL_BARRIER_BLOCK;
+	public static final DeferredItem<Item> GLACITE;
+	public static final DeferredItem<Item> GLACITE_ORE;
+	public static final DeferredItem<Item> FLAMITE_ORE;
+	public static final DeferredItem<Item> FLAMITE;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -411,7 +415,6 @@ public class MythicrealmsModItems {
 		MAGIC_PRESSURE_PLATE = block(MythicrealmsModBlocks.MAGIC_PRESSURE_PLATE);
 		MAGIC_BUTTON = block(MythicrealmsModBlocks.MAGIC_BUTTON);
 		TEMPEST_MAGIC_BOOK = register("tempest_magic_book", TempestMagicBookItem::new);
-		CRYSTAL = block(MythicrealmsModBlocks.CRYSTAL, new Item.Properties().fireResistant());
 		BARRIER_MAGIC_BOOK = register("barrier_magic_book", BarrierMagicBookItem::new);
 		BLOOD_SWORD = register("blood_sword", BloodSwordItem::new);
 		BACKPACK_ITEM = register("backpack_item", BackpackItemItem::new);
@@ -491,6 +494,11 @@ public class MythicrealmsModItems {
 		NANO_ARMOR_LEGGINGS = register("nano_armor_leggings", NanoArmorItem.Leggings::new);
 		NANO_ARMOR_BOOTS = register("nano_armor_boots", NanoArmorItem.Boots::new);
 		ACTIVED_NANO = register("actived_nano", ActivedNanoItem::new);
+		CRYSTAL_BARRIER_BLOCK = block(MythicrealmsModBlocks.CRYSTAL_BARRIER_BLOCK, new Item.Properties().fireResistant());
+		GLACITE = register("glacite", GlaciteItem::new);
+		GLACITE_ORE = block(MythicrealmsModBlocks.GLACITE_ORE);
+		FLAMITE_ORE = block(MythicrealmsModBlocks.FLAMITE_ORE);
+		FLAMITE = register("flamite", FlamiteItem::new);
 	}
 
 	// Start of user code block custom items

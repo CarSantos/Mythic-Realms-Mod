@@ -12,8 +12,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.mythicrealms.procedures.CrystalOnTickUpdateProcedure;
 
-public class CrystalBlock extends Block {
-	public CrystalBlock(BlockBehaviour.Properties properties) {
+public class CrystalBarrierBlockBlock extends Block {
+	public CrystalBarrierBlockBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.GRAVEL).strength(-1, 3600000).lightLevel(s -> 3));
 	}
 

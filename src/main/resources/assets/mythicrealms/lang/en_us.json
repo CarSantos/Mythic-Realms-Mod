@@ -270,7 +270,6 @@
   "advancements.tempest_magic_unlock.descr": "Now Is Possible For You Use Tempest Magic",
   "advancements.tempest_magic_unlock.title": "Tempest Magic Unlock",
   "item_group.mythicrealms.knowledge_of_book": "Knowledge Of Book",
-  "item.mythicrealms.crystal": "Crystal",
   "item.mythicrealms.barrier_magic_book.description_0": "Barrier Magic Book",
   "item.mythicrealms.barrier_magic_book": "Book of Knowledge",
   "advancements.barrier_magic_unlock.descr": "Now Is Possible For You Use Barrier Magic",
@@ -432,5 +431,10 @@
   "item.mythicrealms.nano_armor_leggings": "Nano\u0027s Leggings",
   "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate",
   "item.mythicrealms.actived_nano": "Actived Nano",
-  "key.mythicrealms.expose_armor": "Expose Armor"
+  "key.mythicrealms.expose_armor": "Expose Armor",
+  "item.mythicrealms.crystal_barrier_block": "Crystal",
+  "item.mythicrealms.glacite": "Glacite",
+  "item.mythicrealms.glacite_ore": "Glacite Ore",
+  "item.mythicrealms.flamite_ore": "Glacite Ore",
+  "item.mythicrealms.flamite": "Glacite"
 }

@@ -7566,27 +7566,6 @@
       "path": "~/System/Magic"
     },
     {
-      "name": "Crystal",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystal",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/mythicrealms/worldgen/placed_feature/crystal.json",
-          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/crystal_biome_modifier.json",
-          "src/main/resources/assets/mythicrealms/blockstates/crystal.json",
-          "src/main/resources/assets/mythicrealms/models/block/crystal.json",
-          "src/main/resources/data/mythicrealms/worldgen/configured_feature/crystal.json",
-          "src/main/resources/assets/mythicrealms/items/crystal.json",
-          "src/main/java/net/mcreator/mythicrealms/block/CrystalBlock.java",
-          "src/main/resources/data/mythicrealms/loot_table/blocks/crystal.json",
-          "src/main/resources/assets/mythicrealms/models/item/crystal.json"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Barrier"
-    },
-    {
       "name": "BarrierEffect",
       "type": "procedure",
       "compiles": true,
@@ -11226,6 +11205,98 @@
         ]
       },
       "path": "~/System"
+    },
+    {
+      "name": "CrystalBarrierBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_barrier_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/worldgen/placed_feature/crystal_barrier_block.json",
+          "src/main/resources/assets/mythicrealms/blockstates/crystal_barrier_block.json",
+          "src/main/resources/assets/mythicrealms/models/item/crystal_barrier_block.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/crystal_barrier_block.json",
+          "src/main/resources/data/mythicrealms/worldgen/configured_feature/crystal_barrier_block.json",
+          "src/main/resources/assets/mythicrealms/items/crystal_barrier_block.json",
+          "src/main/java/net/mcreator/mythicrealms/block/CrystalBarrierBlockBlock.java",
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/crystal_barrier_block_biome_modifier.json",
+          "src/main/resources/assets/mythicrealms/models/block/crystal_barrier_block.json"
+        ]
+      }
+    },
+    {
+      "name": "Glacite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glacite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/glacite.json",
+          "src/main/java/net/mcreator/mythicrealms/item/GlaciteItem.java",
+          "src/main/resources/assets/mythicrealms/items/glacite.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Crystal"
+    },
+    {
+      "name": "GlaciteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glacite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/glacite_ore_biome_modifier.json",
+          "src/main/resources/data/mythicrealms/worldgen/configured_feature/glacite_ore.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/glacite_ore.json",
+          "src/main/resources/data/mythicrealms/worldgen/placed_feature/glacite_ore.json",
+          "src/main/resources/assets/mythicrealms/models/block/glacite_ore.json",
+          "src/main/resources/assets/mythicrealms/blockstates/glacite_ore.json",
+          "src/main/resources/assets/mythicrealms/items/glacite_ore.json",
+          "src/main/resources/assets/mythicrealms/models/item/glacite_ore.json",
+          "src/main/java/net/mcreator/mythicrealms/block/GlaciteOreBlock.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Crystal"
+    },
+    {
+      "name": "FlamiteOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamite_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/flamite_ore_biome_modifier.json",
+          "src/main/resources/data/mythicrealms/worldgen/configured_feature/flamite_ore.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/flamite_ore.json",
+          "src/main/resources/assets/mythicrealms/blockstates/flamite_ore.json",
+          "src/main/java/net/mcreator/mythicrealms/block/FlamiteOreBlock.java",
+          "src/main/resources/assets/mythicrealms/models/item/flamite_ore.json",
+          "src/main/resources/assets/mythicrealms/items/flamite_ore.json",
+          "src/main/resources/data/mythicrealms/worldgen/placed_feature/flamite_ore.json",
+          "src/main/resources/assets/mythicrealms/models/block/flamite_ore.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Crystal"
+    },
+    {
+      "name": "Flamite",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flamite",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/flamite.json",
+          "src/main/resources/assets/mythicrealms/models/item/flamite.json",
+          "src/main/java/net/mcreator/mythicrealms/item/FlamiteItem.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Crystal"
     }
   ],
   "variable_elements": [
@@ -11299,6 +11370,8 @@
       "~CUSTOM:LifeSteal"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:FlamiteOre",
+      "~CUSTOM:GlaciteOre",
       "~CUSTOM:SkiesStoneBricks",
       "~CUSTOM:MythrillOre",
       "~CUSTOM:SkiesStone",
@@ -11308,6 +11381,8 @@
       "~CUSTOM:TitaniumOre"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:FlamiteOre",
+      "~CUSTOM:GlaciteOre",
       "~CUSTOM:MythrillOre",
       "~CUSTOM:VibraniumOre",
       "~CUSTOM:TitaniumOre"
@@ -11709,7 +11784,6 @@
       "CUSTOM:BloodWood",
       "CUSTOM:BowOfApollo",
       "CUSTOM:CaveMagicBook",
-      "CUSTOM:Crystal",
       "CUSTOM:DashMagicBook",
       "CUSTOM:DeepworldPortal",
       "CUSTOM:DeepworldTravelMachine",
@@ -13382,7 +13456,9 @@
       "Mythrill",
       "UltimateIngot",
       "Nanos",
-      "ActivedNano"
+      "ActivedNano",
+      "Glacite",
+      "Flamite"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -13784,7 +13860,6 @@
       "advancements.tempest_magic_unlock.descr": "Now Is Possible For You Use Tempest Magic",
       "advancements.tempest_magic_unlock.title": "Tempest Magic Unlock",
       "item_group.mythicrealms.knowledge_of_book": "Knowledge Of Book",
-      "item.mythicrealms.crystal": "Crystal",
       "item.mythicrealms.barrier_magic_book.description_0": "Barrier Magic Book",
       "item.mythicrealms.barrier_magic_book": "Book of Knowledge",
       "advancements.barrier_magic_unlock.descr": "Now Is Possible For You Use Barrier Magic",
@@ -13946,7 +14021,12 @@
       "item.mythicrealms.nano_armor_leggings": "Nano\u0027s Leggings",
       "item.mythicrealms.nano_armor_chestplate": "Nano\u0027s Chestplate",
       "item.mythicrealms.actived_nano": "Actived Nano",
-      "key.mythicrealms.expose_armor": "Expose Armor"
+      "key.mythicrealms.expose_armor": "Expose Armor",
+      "item.mythicrealms.crystal_barrier_block": "Crystal",
+      "item.mythicrealms.glacite": "Glacite",
+      "item.mythicrealms.glacite_ore": "Glacite Ore",
+      "item.mythicrealms.flamite_ore": "Glacite Ore",
+      "item.mythicrealms.flamite": "Glacite"
     }
   },
   "metadata": {
@@ -14074,7 +14154,10 @@
       "ToxicSlime": "armorforge:default",
       "UltimateIngot": "armorforge:default",
       "Nanos": "armorforge:default",
-      "ActivedNano": "armorforge:default"
+      "ActivedNano": "armorforge:default",
+      "Crystal": "armorforge:default",
+      "Glacite": "armorforge:default",
+      "Flamite": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -14166,7 +14249,10 @@
       "ToxicSlime": "All perspectives",
       "UltimateIngot": "All perspectives",
       "Nanos": "All perspectives",
-      "ActivedNano": "All perspectives"
+      "ActivedNano": "All perspectives",
+      "Crystal": "All perspectives",
+      "Glacite": "All perspectives",
+      "Flamite": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -14473,6 +14559,10 @@
               },
               {
                 "name": "Oricalc",
+                "children": []
+              },
+              {
+                "name": "Crystal",
                 "children": []
               }
             ]
