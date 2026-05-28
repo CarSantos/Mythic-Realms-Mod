@@ -1,0 +1,13 @@
+{
+  "_fv": 79,
+  "_type": "humanoidmodel",
+  "definition": {
+    "modelName": "ModelLobisomen",
+    "helmetModelPart": "head",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg"
+  }
+}

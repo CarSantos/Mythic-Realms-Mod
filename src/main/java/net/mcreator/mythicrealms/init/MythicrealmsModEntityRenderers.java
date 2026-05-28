@@ -44,5 +44,6 @@ public class MythicrealmsModEntityRenderers {
 		event.registerEntityRenderer(MythicrealmsModEntities.WENDIGO.get(), WendigoRenderer::new);
 		event.registerEntityRenderer(MythicrealmsModEntities.XOCHITL.get(), XochitlRenderer::new);
 		event.registerEntityRenderer(MythicrealmsModEntities.TOXIC_SLIME_PROJETILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(MythicrealmsModEntities.LOBISOMEN.get(), LobisomenRenderer::new);
 	}
 }

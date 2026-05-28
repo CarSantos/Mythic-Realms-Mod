@@ -41,5 +41,17 @@ public class MythicrealmsModCuriosCompat {
 				ChimeraGunWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
 			}
 		}, MythicrealmsModItems.CHIMERA_GUN_ITEM.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+		}, MythicrealmsModItems.TECH_JETPACK_ITEM.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+		}, MythicrealmsModItems.TOMOE_RING_ITEM.get());
 	}
 }

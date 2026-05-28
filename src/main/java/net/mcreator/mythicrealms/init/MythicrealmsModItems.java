@@ -284,6 +284,9 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> LANCE;
 	public static final DeferredItem<Item> CHIMERA_GUN_ITEM;
 	public static final DeferredItem<Item> SPECTATE_MAGIC_BOOK;
+	public static final DeferredItem<Item> TECH_JETPACK_ITEM;
+	public static final DeferredItem<Item> TOMOE_RING_ITEM;
+	public static final DeferredItem<Item> LOBISOMEN_SPAWN_EGG;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -541,6 +544,9 @@ public class MythicrealmsModItems {
 		LANCE = register("lance", LanceItem::new);
 		CHIMERA_GUN_ITEM = register("chimera_gun_item", ChimeraGunItemItem::new);
 		SPECTATE_MAGIC_BOOK = register("spectate_magic_book", SpectateMagicBookItem::new);
+		TECH_JETPACK_ITEM = register("tech_jetpack_item", TechJetpackItemItem::new);
+		TOMOE_RING_ITEM = register("tomoe_ring_item", TomoeRingItemItem::new);
+		LOBISOMEN_SPAWN_EGG = register("lobisomen_spawn_egg", properties -> new SpawnEggItem(MythicrealmsModEntities.LOBISOMEN.get(), properties));
 	}
 
 	// Start of user code block custom items

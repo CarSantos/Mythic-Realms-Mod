@@ -2,18 +2,18 @@
   "_fv": 79,
   "_type": "item",
   "definition": {
-    "renderType": 0,
-    "texture": "techgoogles",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "elementfire",
+    "customModelName": "tomoe_ring:default",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Tech Googles",
+    "name": "Tomoe Ring",
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "COMBAT"
+        "value": "CUSTOM:DivineWeapons"
       }
     ],
     "stackSize": 1,

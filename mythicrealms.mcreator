@@ -11904,6 +11904,10 @@
             "type": "number"
           },
           {
+            "name": "y",
+            "type": "number"
+          },
+          {
             "name": "z",
             "type": "number"
           },
@@ -12050,6 +12054,183 @@
         ]
       },
       "path": "~/System/Magic/Magic Powers/00 Elements/Block"
+    },
+    {
+      "name": "TechJetpackItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tech_jetpack_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/tech_jetpack_item.json",
+          "src/main/java/net/mcreator/mythicrealms/item/TechJetpackItemItem.java",
+          "src/main/resources/assets/mythicrealms/items/tech_jetpack_item.json"
+        ]
+      },
+      "path": "~/Item/Curios/Tech Jetpack"
+    },
+    {
+      "name": "TechJetpack",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tech_jetpack",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/Tech Jetpack"
+    },
+    {
+      "name": "TechJetpackRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tech_jetpack_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/tech_jetpack_recipe.json"
+        ]
+      },
+      "path": "~/Item/Curios/Tech Jetpack"
+    },
+    {
+      "name": "TomoeRingItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomoe_ring_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/TomoeRingItemItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/tomoe_ring_item.json",
+          "src/main/resources/assets/mythicrealms/items/tomoe_ring_item.json"
+        ]
+      },
+      "path": "~/Item/Curios/Tomoe Ring"
+    },
+    {
+      "name": "TomoeRing",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomoe_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/TomoeRingRenderer.java"
+        ]
+      },
+      "path": "~/Item/Curios/Tomoe Ring"
+    },
+    {
+      "name": "Lobisomen",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobisomen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/entity/LobisomenEntity.java",
+          "src/main/resources/assets/mythicrealms/models/item/lobisomen_spawn_egg.json",
+          "src/main/resources/assets/mythicrealms/items/lobisomen_spawn_egg.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/LobisomenRenderer.java",
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/lobisomen_biome_modifier.json"
+        ]
+      },
+      "path": "~/Creature/Lobisomen"
+    },
+    {
+      "name": "LobisomenVisual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobisomen_visual",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenVisualProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "LobisomenEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobisomen_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/potion/LobisomenEffectMobEffect.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "LobisomenModel",
+      "type": "humanoidmodel",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobisomen_model",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "PlayerGivesLobisomen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_gives_lobisomen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/PlayerGivesLobisomenProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "LobisomenOnEntityTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobisomen_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenOnEntityTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Creature/Lobisomen"
     }
   ],
   "variable_elements": [
@@ -14347,7 +14528,8 @@
       "AngelArmor",
       "TechGooglesItem",
       "NanoArmor",
-      "MagicArmor"
+      "MagicArmor",
+      "TechJetpackItem"
     ],
     "MISC": [
       "GhostHorse",
@@ -14369,7 +14551,8 @@
       "Angel",
       "Demon",
       "Wendigo",
-      "Xochitl"
+      "Xochitl",
+      "Lobisomen"
     ],
     "TOOLS": [
       "MinersDream",
@@ -14445,7 +14628,8 @@
       "ShieldOfAthena",
       "BowOfApollo",
       "Lance",
-      "ChimeraGunItem"
+      "ChimeraGunItem",
+      "TomoeRingItem"
     ]
   },
   "language_map": {
@@ -14469,7 +14653,7 @@
       "item.mythicrealms.steel_ingot": "Steel Ingot",
       "item.mythicrealms.steel_plate": "Steel Plate",
       "effect.mythicrealms.plague": "Plague",
-      "effect.mythicrealms.zombie": "Plague",
+      "effect.mythicrealms.zombie": "Zombie",
       "enchantment.mythicrealms.life_steal": "Life Steal",
       "item.mythicrealms.titanium_ingot": "Titanium Ingot",
       "item.mythicrealms.titanium_ore": "Titanium Ore",
@@ -14612,7 +14796,7 @@
       "item.mythicrealms.yeti_spawn_egg": "Yeti Spawn Egg",
       "entity.mythicrealms.joker": "Joker",
       "item.mythicrealms.joker_spawn_egg": "Joker Spawn Egg",
-      "effect.mythicrealms.vampire_effect": "Frozen",
+      "effect.mythicrealms.vampire_effect": "Vampire",
       "item.mythicrealms.vampire_spawn_egg": "Vampire Spawn Egg",
       "entity.mythicrealms.vampire": "Vampire",
       "biome.mythicrealms.darkness_plains": "Darkness Plains",
@@ -14924,7 +15108,12 @@
       "advancements.spectate_magic_unlock.descr": "Now Is Possible For You Use Spectate Magic",
       "advancements.spectate_magic_unlock.title": "Spectate Magic Unlock",
       "item.mythicrealms.spectate_magic_book": "Book of Knowledge",
-      "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book"
+      "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book",
+      "item.mythicrealms.tech_jetpack_item": "Tech Jetpack",
+      "item.mythicrealms.tomoe_ring_item": "Tomoe Ring",
+      "item.mythicrealms.lobisomen_spawn_egg": "Lobisomen Spawn Egg",
+      "entity.mythicrealms.lobisomen": "Lobisomen",
+      "effect.mythicrealms.lobisomen_effect": "Lobisomen"
     }
   },
   "metadata": {
@@ -15065,7 +15254,9 @@
       "ManaFlamethower": "armorforge:default",
       "FlyMagicBook": "armorforge:default",
       "ChimeraGunItem": "armorforge:default",
-      "SpectateMagicBook": "armorforge:default"
+      "SpectateMagicBook": "armorforge:default",
+      "TechJetpackItem": "armorforge:default",
+      "TomoeRingItem": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -15170,7 +15361,9 @@
       "ManaFlamethower": "All perspectives",
       "FlyMagicBook": "All perspectives",
       "ChimeraGunItem": "All perspectives",
-      "SpectateMagicBook": "All perspectives"
+      "SpectateMagicBook": "All perspectives",
+      "TechJetpackItem": "All perspectives",
+      "TomoeRingItem": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -15383,6 +15576,10 @@
           },
           {
             "name": "Xochitl",
+            "children": []
+          },
+          {
+            "name": "Lobisomen",
             "children": []
           }
         ]
@@ -15680,6 +15877,14 @@
               {
                 "name": "Chimera Gun",
                 "children": []
+              },
+              {
+                "name": "Tech Jetpack",
+                "children": []
+              },
+              {
+                "name": "Tomoe Ring",
+                "children": []
               }
             ]
           }
@@ -15912,6 +16117,10 @@
               },
               {
                 "name": "Radiation",
+                "children": []
+              },
+              {
+                "name": "Lobisomen",
                 "children": []
               }
             ]

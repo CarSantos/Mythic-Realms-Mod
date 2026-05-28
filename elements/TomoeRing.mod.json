@@ -1,0 +1,28 @@
+{
+  "_fv": 79,
+  "_type": "curiosbauble",
+  "definition": {
+    "item": "TomoeRingItem",
+    "slotType": "BACK",
+    "slotAmount": 1,
+    "addSlot": false,
+    "enderMask": false,
+    "friendlyPigs": false,
+    "snowWalk": false,
+    "equipSound": {
+      "value": ""
+    },
+    "hasModel": true,
+    "baubleModel": "ModelTomoe_Ring",
+    "baubleModelTexture": "tomoe_ring.png",
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "Empty",
+    "armsModelPartR": "Empty",
+    "leggingsModelPartL": "Empty",
+    "leggingsModelPartR": "Empty",
+    "disabledToggles": [
+      "RING"
+    ]
+  }
+}

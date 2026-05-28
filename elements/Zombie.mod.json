@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Plague",
+    "effectName": "Zombie",
     "icon": "zombie",
     "color": {
       "value": -13408768,

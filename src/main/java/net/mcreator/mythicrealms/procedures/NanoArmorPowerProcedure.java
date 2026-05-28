@@ -83,7 +83,7 @@ public class NanoArmorPowerProcedure {
 			if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mythicrealms:lunar_plains"))) {
 				entity.setAirSupply(10);
 			}
-			if (Minecraft.getInstance().options.keyJump.isDown() && entity.getBbHeight() <= 250) {
+			if (Minecraft.getInstance().options.keyJump.isDown() && entity.getY() < 350) {
 				entity.push(0, 0.1, 0);
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 1200, 5, false, false));

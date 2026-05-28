@@ -82,6 +82,7 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.BOW_OF_APOLLO.get());
 				tabData.accept(MythicrealmsModItems.LANCE.get());
 				tabData.accept(MythicrealmsModItems.CHIMERA_GUN_ITEM.get());
+				tabData.accept(MythicrealmsModItems.TOMOE_RING_ITEM.get());
 			}).withSearchBar().withTabsBefore(ROLE_ITENS.getId()).build());
 
 	@SubscribeEvent
@@ -251,6 +252,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_CHESTPLATE.get());
 			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_LEGGINGS.get());
 			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.TECH_JETPACK_ITEM.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MythicrealmsModItems.GHOST_HORSE_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.PANDEMIC_SPAWN_EGG.get());
@@ -271,6 +273,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.DEMON_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.WENDIGO_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.XOCHITL_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.LOBISOMEN_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MythicrealmsModItems.MINERS_DREAM.get());
 			tabData.accept(MythicrealmsModItems.STEEL_PICKAXE.get());

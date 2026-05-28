@@ -10,6 +10,7 @@ import net.minecraft.client.model.PlayerModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.mythicrealms.client.model.Modelplayermodel;
+import net.mcreator.mythicrealms.client.model.ModelLobisomen;
 import net.mcreator.mythicrealms.client.model.ModelArmor_Nano;
 
 import java.util.Map;
@@ -20,6 +21,7 @@ import java.util.Collections;
 public class MythicrealmsModHumanoidModels {
 	public static PlayerModel NANO_MODEL;
 	public static PlayerModel PLAYER_BASE;
+	public static PlayerModel LOBISOMEN_MODEL;
 
 	@SubscribeEvent
 	public static void initModels(EntityRenderersEvent.AddLayers event) {
@@ -34,6 +36,12 @@ public class MythicrealmsModHumanoidModels {
 				Map.of("head", new ModelPart(Collections.emptyList(), Map.of("head", player_base_temp.Head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()))), "body", getPlayerPart(player_base_temp.Body, "jacket"), "left_arm",
 						getPlayerPart(player_base_temp.LeftArm, "left_sleeve"), "right_arm", getPlayerPart(player_base_temp.RightArm, "right_sleeve"), "left_leg", getPlayerPart(player_base_temp.LeftLeg, "left_pants"), "right_leg",
 						getPlayerPart(player_base_temp.RightLeg, "right_pants"))),
+				false);
+		ModelLobisomen lobisomen_model_temp = new ModelLobisomen(Minecraft.getInstance().getEntityModels().bakeLayer(ModelLobisomen.LAYER_LOCATION));
+		LOBISOMEN_MODEL = new PlayerModel(new ModelPart(Collections.emptyList(),
+				Map.of("head", new ModelPart(Collections.emptyList(), Map.of("head", lobisomen_model_temp.head, "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()))), "body", getPlayerPart(lobisomen_model_temp.Body, "jacket"),
+						"left_arm", getPlayerPart(lobisomen_model_temp.LeftArm, "left_sleeve"), "right_arm", getPlayerPart(lobisomen_model_temp.RightArm, "right_sleeve"), "left_leg", getPlayerPart(lobisomen_model_temp.LeftLeg, "left_pants"),
+						"right_leg", getPlayerPart(lobisomen_model_temp.RightLeg, "right_pants"))),
 				false);
 	}
 

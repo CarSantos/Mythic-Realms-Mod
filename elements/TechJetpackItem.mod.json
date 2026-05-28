@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "techgoogles",
+    "texture": "techjetpack",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Tech Googles",
+    "name": "Tech Jetpack",
     "rarity": "COMMON",
     "creativeTabs": [
       {

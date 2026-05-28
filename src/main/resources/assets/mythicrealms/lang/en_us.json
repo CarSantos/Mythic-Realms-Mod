@@ -18,7 +18,7 @@
   "item.mythicrealms.steel_ingot": "Steel Ingot",
   "item.mythicrealms.steel_plate": "Steel Plate",
   "effect.mythicrealms.plague": "Plague",
-  "effect.mythicrealms.zombie": "Plague",
+  "effect.mythicrealms.zombie": "Zombie",
   "enchantment.mythicrealms.life_steal": "Life Steal",
   "item.mythicrealms.titanium_ingot": "Titanium Ingot",
   "item.mythicrealms.titanium_ore": "Titanium Ore",
@@ -161,7 +161,7 @@
   "item.mythicrealms.yeti_spawn_egg": "Yeti Spawn Egg",
   "entity.mythicrealms.joker": "Joker",
   "item.mythicrealms.joker_spawn_egg": "Joker Spawn Egg",
-  "effect.mythicrealms.vampire_effect": "Frozen",
+  "effect.mythicrealms.vampire_effect": "Vampire",
   "item.mythicrealms.vampire_spawn_egg": "Vampire Spawn Egg",
   "entity.mythicrealms.vampire": "Vampire",
   "biome.mythicrealms.darkness_plains": "Darkness Plains",
@@ -473,5 +473,10 @@
   "advancements.spectate_magic_unlock.descr": "Now Is Possible For You Use Spectate Magic",
   "advancements.spectate_magic_unlock.title": "Spectate Magic Unlock",
   "item.mythicrealms.spectate_magic_book": "Book of Knowledge",
-  "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book"
+  "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book",
+  "item.mythicrealms.tech_jetpack_item": "Tech Jetpack",
+  "item.mythicrealms.tomoe_ring_item": "Tomoe Ring",
+  "item.mythicrealms.lobisomen_spawn_egg": "Lobisomen Spawn Egg",
+  "entity.mythicrealms.lobisomen": "Lobisomen",
+  "effect.mythicrealms.lobisomen_effect": "Lobisomen"
 }

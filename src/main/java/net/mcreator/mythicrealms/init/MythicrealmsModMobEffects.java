@@ -30,6 +30,7 @@ public class MythicrealmsModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> HIGH_PRESSURE = REGISTRY.register("high_pressure", () -> new HighPressureMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> VAMPIRE_EFFECT = REGISTRY.register("vampire_effect", () -> new VampireEffectMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> RADIATION = REGISTRY.register("radiation", () -> new RadiationMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> LOBISOMEN_EFFECT = REGISTRY.register("lobisomen_effect", () -> new LobisomenEffectMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -51,6 +52,8 @@ public class MythicrealmsModMobEffects {
 		if (effectInstance.getEffect().is(HIGH_PRESSURE)) {
 			HighPressureEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(VAMPIRE_EFFECT)) {
+			VampireEffectExpiresProcedure.execute(entity);
+		} else if (effectInstance.getEffect().is(LOBISOMEN_EFFECT)) {
 			VampireEffectExpiresProcedure.execute(entity);
 		}
 	}

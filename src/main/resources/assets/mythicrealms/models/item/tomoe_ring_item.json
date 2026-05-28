@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/tomoe_ring",
+  "textures": {
+    "0": "mythicrealms:block/tomoe_ring",
+    "particle": "mythicrealms:item/elementfire"
+  }
+}

@@ -2,10 +2,10 @@
   "_fv": 79,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Vampire",
+    "effectName": "Lobisomen",
     "icon": "vampire",
     "color": {
-      "value": -10092544,
+      "value": -10268106,
       "falpha": 0.0
     },
     "onAddedSound": {

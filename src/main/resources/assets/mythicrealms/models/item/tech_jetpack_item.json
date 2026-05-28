@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mythicrealms:item/techgoogles"
+    "layer0": "mythicrealms:item/techjetpack"
   },
   "display": {
     "thirdperson_righthand": {

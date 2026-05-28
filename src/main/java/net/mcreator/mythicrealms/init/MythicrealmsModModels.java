@@ -37,6 +37,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelDemon.LAYER_LOCATION, ModelDemon::createBodyLayer);
 		event.registerLayerDefinition(ModelPharaoh.LAYER_LOCATION, ModelPharaoh::createBodyLayer);
 		event.registerLayerDefinition(ModelAngel.LAYER_LOCATION, ModelAngel::createBodyLayer);
+		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(ModelVenraid.LAYER_LOCATION, ModelVenraid::createBodyLayer);
 		event.registerLayerDefinition(ModelBlackHole.LAYER_LOCATION, ModelBlackHole::createBodyLayer);
 		event.registerLayerDefinition(ModelYeti.LAYER_LOCATION, ModelYeti::createBodyLayer);
@@ -46,6 +47,8 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelNightmareHorse.LAYER_LOCATION, ModelNightmareHorse::createBodyLayer);
 		event.registerLayerDefinition(ModelWendigo_Armor.LAYER_LOCATION, ModelWendigo_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_pharaoh.LAYER_LOCATION, ModelArmor_pharaoh::createBodyLayer);
+		event.registerLayerDefinition(ModelTomoe_Ring.LAYER_LOCATION, ModelTomoe_Ring::createBodyLayer);
+		event.registerLayerDefinition(ModelLobisomen.LAYER_LOCATION, ModelLobisomen::createBodyLayer);
 		event.registerLayerDefinition(ModelSturgeon.LAYER_LOCATION, ModelSturgeon::createBodyLayer);
 		event.registerLayerDefinition(ModelXochitl_Armor.LAYER_LOCATION, ModelXochitl_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Ent.LAYER_LOCATION, ModelArmor_Ent::createBodyLayer);

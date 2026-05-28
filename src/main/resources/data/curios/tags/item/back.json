@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "mythicrealms:magnet",
-    "mythicrealms:chimera_gun_item"
+    "mythicrealms:chimera_gun_item",
+    "mythicrealms:tech_jetpack_item",
+    "mythicrealms:tomoe_ring_item"
   ]
 }
