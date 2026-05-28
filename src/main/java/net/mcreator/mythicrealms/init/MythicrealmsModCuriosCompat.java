@@ -9,7 +9,7 @@ import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.minecraft.world.item.ItemStack;
 
 import net.mcreator.mythicrealms.procedures.TechGooglesWhileBaubleIsEquippedTickProcedure;
-import net.mcreator.mythicrealms.procedures.MagnetPropulsorWhileBaubleIsEquippedTickProcedure;
+import net.mcreator.mythicrealms.procedures.ChimeraGunWhileBaubleIsEquippedTickProcedure;
 
 public class MythicrealmsModCuriosCompat {
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
@@ -29,11 +29,17 @@ public class MythicrealmsModCuriosCompat {
 			public ItemStack getStack() {
 				return stack;
 			}
+		}, MythicrealmsModItems.MAGNET.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
 
 			@Override
 			public void curioTick(SlotContext slotContext) {
-				MagnetPropulsorWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
+				ChimeraGunWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
 			}
-		}, MythicrealmsModItems.MAGNET.get());
+		}, MythicrealmsModItems.CHIMERA_GUN_ITEM.get());
 	}
 }

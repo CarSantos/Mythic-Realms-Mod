@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mythicrealms:magnet"
+    "mythicrealms:magnet",
+    "mythicrealms:chimera_gun_item"
   ]
 }

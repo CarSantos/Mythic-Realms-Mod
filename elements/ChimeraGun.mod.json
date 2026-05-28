@@ -1,0 +1,31 @@
+{
+  "_fv": 79,
+  "_type": "curiosbauble",
+  "definition": {
+    "item": "ChimeraGunItem",
+    "slotType": "BACK",
+    "slotAmount": 1,
+    "addSlot": false,
+    "enderMask": false,
+    "friendlyPigs": false,
+    "snowWalk": false,
+    "equipSound": {
+      "value": ""
+    },
+    "hasModel": true,
+    "baubleModel": "ModelChimera_Gun",
+    "baubleModelTexture": "chimera_gun.png",
+    "curioTick": {
+      "name": "ChimeraGunWhileBaubleIsEquippedTick"
+    },
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "Empty",
+    "armsModelPartR": "Empty",
+    "leggingsModelPartL": "Empty",
+    "leggingsModelPartR": "Empty",
+    "disabledToggles": [
+      "RING"
+    ]
+  }
+}

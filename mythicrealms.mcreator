@@ -2703,25 +2703,6 @@
       "path": "~/System/Magic/Magic Powers/Thunder"
     },
     {
-      "name": "GhostMagic",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ghost_magic",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/GhostMagicProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Ghost Mode"
-    },
-    {
       "name": "GhostKey",
       "type": "keybind",
       "compiles": true,
@@ -2730,25 +2711,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mythicrealms/network/GhostKeyMessage.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Ghost Mode"
-    },
-    {
-      "name": "GhostMagicRealesed",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ghost_magic_realesed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/GhostMagicRealesedProcedure.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Ghost Mode"
@@ -9544,25 +9506,6 @@
       "path": "~/Item/Curios/Tech Googles"
     },
     {
-      "name": "MagnetPropulsorWhileBaubleIsEquippedTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "magnet_propulsor_while_bauble_is_equipped_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/MagnetPropulsorWhileBaubleIsEquippedTickProcedure.java"
-        ]
-      },
-      "path": "~/Item/Curios/Magnet Propulsor"
-    },
-    {
       "name": "MagnetPropulsor",
       "type": "curiosbauble",
       "compiles": true,
@@ -11915,6 +11858,198 @@
         ]
       },
       "path": "~/Item/Weapons/Lance"
+    },
+    {
+      "name": "ChimeraGun",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chimera_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/ChimeraGunRenderer.java"
+        ]
+      },
+      "path": "~/Item/Curios/Chimera Gun"
+    },
+    {
+      "name": "ChimeraGunItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chimera_gun_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/chimera_gun_item.json",
+          "src/main/java/net/mcreator/mythicrealms/item/ChimeraGunItemItem.java",
+          "src/main/resources/assets/mythicrealms/items/chimera_gun_item.json"
+        ]
+      },
+      "path": "~/Item/Curios/Chimera Gun"
+    },
+    {
+      "name": "BackCuriosProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_curios_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/BackCuriosProcedureProcedure.java"
+        ]
+      },
+      "path": "~/Item/Curios"
+    },
+    {
+      "name": "ChimeraGunWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chimera_gun_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ChimeraGunWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Item/Curios/Chimera Gun"
+    },
+    {
+      "name": "GhostMagicReal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_magic_real",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/GhostMagicRealProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Ghost Mode"
+    },
+    {
+      "name": "SpectatorMagic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectator_magic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SpectatorMagicProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Spectate"
+    },
+    {
+      "name": "SpectatorMagicRealesed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectator_magic_realesed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SpectatorMagicRealesedProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Spectate"
+    },
+    {
+      "name": "SpectateMagic",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectate_magic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/network/SpectateMagicMessage.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Spectate"
+    },
+    {
+      "name": "SpectateMagicUnlock",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectate_magic_unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/spectate_magic_unlock.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Spectate"
+    },
+    {
+      "name": "SpectateMagicBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spectate_magic_book",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/spectate_magic_book.json",
+          "src/main/resources/assets/mythicrealms/models/item/spectate_magic_book.json",
+          "src/main/java/net/mcreator/mythicrealms/item/SpectateMagicBookItem.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/00 Elements/Block"
     }
   ],
   "variable_elements": [
@@ -14283,7 +14418,8 @@
       "MagicArmorMagicBook",
       "SubstituteMagicBook",
       "FireWaveMagicBook",
-      "FlyMagicBook"
+      "FlyMagicBook",
+      "SpectateMagicBook"
     ],
     "CUSTOM:RoleItens": [
       "GiantRole",
@@ -14308,7 +14444,8 @@
       "PumpkinStaff",
       "ShieldOfAthena",
       "BowOfApollo",
-      "Lance"
+      "Lance",
+      "ChimeraGunItem"
     ]
   },
   "language_map": {
@@ -14781,7 +14918,13 @@
       "item.mythicrealms.fly_magic_book.description_0": "Fly Magic Book",
       "advancements.fly_magic_unlock.title": "Fly Magic Unlock",
       "advancements.fly_magic_unlock.descr": "Now Is Possible For You Use Fly Magic",
-      "item.mythicrealms.lance": "Lance"
+      "item.mythicrealms.lance": "Lance",
+      "item.mythicrealms.chimera_gun_item": "Chimera Gun",
+      "key.mythicrealms.spectate_magic": "Spectate Key",
+      "advancements.spectate_magic_unlock.descr": "Now Is Possible For You Use Spectate Magic",
+      "advancements.spectate_magic_unlock.title": "Spectate Magic Unlock",
+      "item.mythicrealms.spectate_magic_book": "Book of Knowledge",
+      "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book"
     }
   },
   "metadata": {
@@ -14920,7 +15063,9 @@
       "SubstituteMagicBook": "armorforge:default",
       "FireWaveMagicBook": "armorforge:default",
       "ManaFlamethower": "armorforge:default",
-      "FlyMagicBook": "armorforge:default"
+      "FlyMagicBook": "armorforge:default",
+      "ChimeraGunItem": "armorforge:default",
+      "SpectateMagicBook": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -15023,7 +15168,9 @@
       "SubstituteMagicBook": "All perspectives",
       "FireWaveMagicBook": "All perspectives",
       "ManaFlamethower": "All perspectives",
-      "FlyMagicBook": "All perspectives"
+      "FlyMagicBook": "All perspectives",
+      "ChimeraGunItem": "All perspectives",
+      "SpectateMagicBook": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -15529,6 +15676,10 @@
               {
                 "name": "Magnet Propulsor",
                 "children": []
+              },
+              {
+                "name": "Chimera Gun",
+                "children": []
               }
             ]
           }
@@ -15727,6 +15878,10 @@
                   {
                     "name": "Fly",
                     "children": []
+                  },
+                  {
+                    "name": "Spectate",
+                    "children": []
                   }
                 ]
               }
@@ -15828,7 +15983,7 @@
   "workspaceSettings": {
     "modid": "mythicrealms",
     "modName": "MythicRealms",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "CarSantos7",
     "websiteURL": "https://sites.google.com/view/carsantos7/mythic-realms",
     "license": "Not specified",

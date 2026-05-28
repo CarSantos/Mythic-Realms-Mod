@@ -54,11 +54,6 @@ public class MythicrealmsModKeyMappings {
 			if (isDownOld != isDown && isDown) {
 				ClientPacketDistributor.sendToServer(new GhostKeyMessage(0, 0));
 				GhostKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-				GHOST_KEY_LASTPRESS = System.currentTimeMillis();
-			} else if (isDownOld != isDown && !isDown) {
-				int dt = (int) (System.currentTimeMillis() - GHOST_KEY_LASTPRESS);
-				ClientPacketDistributor.sendToServer(new GhostKeyMessage(1, dt));
-				GhostKeyMessage.pressAction(Minecraft.getInstance().player, 1, dt);
 			}
 			isDownOld = isDown;
 		}
@@ -108,8 +103,26 @@ public class MythicrealmsModKeyMappings {
 		}
 	};
 	public static final KeyMapping EXPOSE_ARMOR = new KeyMapping("key.mythicrealms.expose_armor", GLFW.GLFW_KEY_UNKNOWN, "key.categories.misc");
-	private static long GHOST_KEY_LASTPRESS = 0;
+	public static final KeyMapping SPECTATE_MAGIC = new KeyMapping("key.mythicrealms.spectate_magic", GLFW.GLFW_KEY_UNKNOWN, "key.categories.gameplay") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				ClientPacketDistributor.sendToServer(new SpectateMagicMessage(0, 0));
+				SpectateMagicMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				SPECTATE_MAGIC_LASTPRESS = System.currentTimeMillis();
+			} else if (isDownOld != isDown && !isDown) {
+				int dt = (int) (System.currentTimeMillis() - SPECTATE_MAGIC_LASTPRESS);
+				ClientPacketDistributor.sendToServer(new SpectateMagicMessage(1, dt));
+				SpectateMagicMessage.pressAction(Minecraft.getInstance().player, 1, dt);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long SMOKE_KEY_LASTPRESS = 0;
+	private static long SPECTATE_MAGIC_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
@@ -120,6 +133,7 @@ public class MythicrealmsModKeyMappings {
 		event.register(ACCELARATION_KEY);
 		event.register(WATER_BREATH_KEY);
 		event.register(EXPOSE_ARMOR);
+		event.register(SPECTATE_MAGIC);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)
@@ -133,6 +147,7 @@ public class MythicrealmsModKeyMappings {
 				SMOKE_KEY.consumeClick();
 				ACCELARATION_KEY.consumeClick();
 				WATER_BREATH_KEY.consumeClick();
+				SPECTATE_MAGIC.consumeClick();
 			}
 		}
 	}

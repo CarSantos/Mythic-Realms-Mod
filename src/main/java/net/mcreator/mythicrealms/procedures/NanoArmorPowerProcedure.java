@@ -15,7 +15,9 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.Minecraft;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.AdvancementHolder;
 
@@ -50,8 +52,6 @@ public class NanoArmorPowerProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP_BOOST, 60, 1, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 60, 1, false, false));
-			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 60, 2, false, false));
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.WEAKNESS);
@@ -82,6 +82,13 @@ public class NanoArmorPowerProcedure {
 			}
 			if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mythicrealms:lunar_plains"))) {
 				entity.setAirSupply(10);
+			}
+			if (Minecraft.getInstance().options.keyJump.isDown() && entity.getBbHeight() <= 250) {
+				entity.push(0, 0.1, 0);
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 1200, 5, false, false));
+				if (world instanceof ServerLevel _level)
+					_level.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, x, y, z, 5, 0, 0.5, 0, 0.1);
 			}
 		}
 	}

@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/chimera_gun_model",
+  "textures": {
+    "0": "mythicrealms:block/chimera_gun",
+    "particle": "minecraft:item/bow"
+  }
+}

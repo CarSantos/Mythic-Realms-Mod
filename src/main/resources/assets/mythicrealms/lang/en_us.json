@@ -467,5 +467,11 @@
   "item.mythicrealms.fly_magic_book.description_0": "Fly Magic Book",
   "advancements.fly_magic_unlock.title": "Fly Magic Unlock",
   "advancements.fly_magic_unlock.descr": "Now Is Possible For You Use Fly Magic",
-  "item.mythicrealms.lance": "Lance"
+  "item.mythicrealms.lance": "Lance",
+  "item.mythicrealms.chimera_gun_item": "Chimera Gun",
+  "key.mythicrealms.spectate_magic": "Spectate Key",
+  "advancements.spectate_magic_unlock.descr": "Now Is Possible For You Use Spectate Magic",
+  "advancements.spectate_magic_unlock.title": "Spectate Magic Unlock",
+  "item.mythicrealms.spectate_magic_book": "Book of Knowledge",
+  "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book"
 }

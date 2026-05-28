@@ -14,23 +14,24 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 
-import net.mcreator.mythicrealms.procedures.GhostMagicRealProcedure;
+import net.mcreator.mythicrealms.procedures.SpectatorMagicRealesedProcedure;
+import net.mcreator.mythicrealms.procedures.SpectatorMagicProcedure;
 import net.mcreator.mythicrealms.MythicrealmsMod;
 
 @EventBusSubscriber
-public record GhostKeyMessage(int eventType, int pressedms) implements CustomPacketPayload {
-	public static final Type<GhostKeyMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MythicrealmsMod.MODID, "key_ghost_key"));
-	public static final StreamCodec<RegistryFriendlyByteBuf, GhostKeyMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, GhostKeyMessage message) -> {
+public record SpectateMagicMessage(int eventType, int pressedms) implements CustomPacketPayload {
+	public static final Type<SpectateMagicMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(MythicrealmsMod.MODID, "key_spectate_magic"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, SpectateMagicMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, SpectateMagicMessage message) -> {
 		buffer.writeInt(message.eventType);
 		buffer.writeInt(message.pressedms);
-	}, (RegistryFriendlyByteBuf buffer) -> new GhostKeyMessage(buffer.readInt(), buffer.readInt()));
+	}, (RegistryFriendlyByteBuf buffer) -> new SpectateMagicMessage(buffer.readInt(), buffer.readInt()));
 
 	@Override
-	public Type<GhostKeyMessage> type() {
+	public Type<SpectateMagicMessage> type() {
 		return TYPE;
 	}
 
-	public static void handleData(final GhostKeyMessage message, final IPayloadContext context) {
+	public static void handleData(final SpectateMagicMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
 			context.enqueueWork(() -> {
 				pressAction(context.player(), message.eventType, message.pressedms);
@@ -51,12 +52,16 @@ public record GhostKeyMessage(int eventType, int pressedms) implements CustomPac
 			return;
 		if (type == 0) {
 
-			GhostMagicRealProcedure.execute(world, x, y, z, entity);
+			SpectatorMagicProcedure.execute(entity);
+		}
+		if (type == 1) {
+
+			SpectatorMagicRealesedProcedure.execute(entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MythicrealmsMod.addNetworkMessage(GhostKeyMessage.TYPE, GhostKeyMessage.STREAM_CODEC, GhostKeyMessage::handleData);
+		MythicrealmsMod.addNetworkMessage(SpectateMagicMessage.TYPE, SpectateMagicMessage.STREAM_CODEC, SpectateMagicMessage::handleData);
 	}
 }

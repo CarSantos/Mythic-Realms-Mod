@@ -3,10 +3,13 @@
   "_type": "keybind",
   "definition": {
     "triggerKey": "NONE",
-    "keyBindingName": "Ghost Mode",
+    "keyBindingName": "Spectate Key",
     "keyBindingCategoryKey": "gameplay",
     "onKeyPressed": {
-      "name": "GhostMagicReal"
+      "name": "SpectatorMagic"
+    },
+    "onKeyReleased": {
+      "name": "SpectatorMagicRealesed"
     }
   }
 }

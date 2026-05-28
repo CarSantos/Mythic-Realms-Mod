@@ -33,6 +33,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(Modelplayermodel.LAYER_LOCATION, Modelplayermodel::createBodyLayer);
 		event.registerLayerDefinition(ModelMummy.LAYER_LOCATION, ModelMummy::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Ninja.LAYER_LOCATION, ModelArmor_Ninja::createBodyLayer);
+		event.registerLayerDefinition(ModelChimera_Gun.LAYER_LOCATION, ModelChimera_Gun::createBodyLayer);
 		event.registerLayerDefinition(ModelDemon.LAYER_LOCATION, ModelDemon::createBodyLayer);
 		event.registerLayerDefinition(ModelPharaoh.LAYER_LOCATION, ModelPharaoh::createBodyLayer);
 		event.registerLayerDefinition(ModelAngel.LAYER_LOCATION, ModelAngel::createBodyLayer);
