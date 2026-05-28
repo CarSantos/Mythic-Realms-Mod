@@ -55,24 +55,8 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.FLY_MAGIC_BOOK.get());
 				tabData.accept(MythicrealmsModItems.SPECTATE_MAGIC_BOOK.get());
 			}).build());
-	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ROLE_ITENS = REGISTRY.register("role_itens",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.role_itens")).icon(() -> new ItemStack(MythicrealmsModItems.PLAYER_ROLE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(MythicrealmsModItems.GIANT_ROLE.get());
-				tabData.accept(MythicrealmsModItems.GUARDIAN_ROLE.get());
-				tabData.accept(MythicrealmsModItems.TANK_ROLE.get());
-				tabData.accept(MythicrealmsModItems.ASSASSIN_ROLE.get());
-				tabData.accept(MythicrealmsModItems.BARBARIAN_ROLE.get());
-				tabData.accept(MythicrealmsModItems.HUNTER_ROLE.get());
-				tabData.accept(MythicrealmsModItems.INVESTIGATOR_ROLE.get());
-				tabData.accept(MythicrealmsModItems.SOLDIER_ROLE.get());
-				tabData.accept(MythicrealmsModItems.DRUID_ROLE.get());
-				tabData.accept(MythicrealmsModItems.MONK_ROLE.get());
-				tabData.accept(MythicrealmsModItems.SUMMONER_ROLE.get());
-				tabData.accept(MythicrealmsModItems.WIZARD_ROLE.get());
-			}).withTabsBefore(KNOWLEDGE_OF_BOOK.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DIVINE_WEAPONS = REGISTRY.register("divine_weapons",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.divine_weapons")).icon(() -> new ItemStack(MythicrealmsModItems.SHIELD_OF_ATHENA.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(MythicrealmsModItems.PLAYER_ROLE.get());
 				tabData.accept(MythicrealmsModItems.TANMAKU_SWORD.get());
 				tabData.accept(MythicrealmsModItems.BLOOD_SWORD.get());
 				tabData.accept(MythicrealmsModItems.EGYPTIAN_SWORD.get());
@@ -83,7 +67,7 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.LANCE.get());
 				tabData.accept(MythicrealmsModItems.CHIMERA_GUN_ITEM.get());
 				tabData.accept(MythicrealmsModItems.TOMOE_RING_ITEM.get());
-			}).withSearchBar().withTabsBefore(ROLE_ITENS.getId()).build());
+			}).withSearchBar().withTabsBefore(KNOWLEDGE_OF_BOOK.getId()).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
@@ -286,6 +270,18 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.RELIGION_BOOK.get());
 			tabData.accept(MythicrealmsModItems.NECRO_BOOK.get());
 			tabData.accept(MythicrealmsModItems.ILLUMINATY_ITEM.get());
+			tabData.accept(MythicrealmsModItems.ASSASSIN_ROLE.get());
+			tabData.accept(MythicrealmsModItems.BARBARIAN_ROLE.get());
+			tabData.accept(MythicrealmsModItems.DRUID_ROLE.get());
+			tabData.accept(MythicrealmsModItems.GIANT_ROLE.get());
+			tabData.accept(MythicrealmsModItems.GUARDIAN_ROLE.get());
+			tabData.accept(MythicrealmsModItems.SOLDIER_ROLE.get());
+			tabData.accept(MythicrealmsModItems.WIZARD_ROLE.get());
+			tabData.accept(MythicrealmsModItems.TANK_ROLE.get());
+			tabData.accept(MythicrealmsModItems.SUMMONER_ROLE.get());
+			tabData.accept(MythicrealmsModItems.MONK_ROLE.get());
+			tabData.accept(MythicrealmsModItems.HUNTER_ROLE.get());
+			tabData.accept(MythicrealmsModItems.INVESTIGATOR_ROLE.get());
 		}
 	}
 }

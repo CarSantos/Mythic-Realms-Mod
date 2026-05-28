@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Lobisomen",
-    "icon": "vampire",
+    "icon": "lobisomen_effect",
     "color": {
       "value": -10268106,
       "falpha": 0.0

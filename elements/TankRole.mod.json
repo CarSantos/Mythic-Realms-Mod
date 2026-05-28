@@ -9,11 +9,11 @@
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Tank",
+    "name": "Tank Item",
     "rarity": "COMMON",
     "creativeTabs": [
       {
-        "value": "CUSTOM:RoleItens"
+        "value": "TOOLS"
       }
     ],
     "stackSize": 1,

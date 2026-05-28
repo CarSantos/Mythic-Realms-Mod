@@ -18,7 +18,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.mythicrealms.item.inventory.PlayerRoleInventoryCapability;
 import net.mcreator.mythicrealms.item.inventory.BackpackItemInventoryCapability;
 import net.mcreator.mythicrealms.item.*;
 import net.mcreator.mythicrealms.MythicrealmsMod;
@@ -184,7 +183,6 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> SHIELD_OF_ATHENA;
 	public static final DeferredItem<Item> BOW_OF_APOLLO;
 	public static final DeferredItem<Item> PUMPKIN_STAFF;
-	public static final DeferredItem<Item> PLAYER_ROLE;
 	public static final DeferredItem<Item> VENRAID_SWORD;
 	public static final DeferredItem<Item> NECRO_BOOK;
 	public static final DeferredItem<Item> RELIGION_BOOK;
@@ -444,7 +442,6 @@ public class MythicrealmsModItems {
 		SHIELD_OF_ATHENA = register("shield_of_athena", ShieldOfAthenaItem::new);
 		BOW_OF_APOLLO = register("bow_of_apollo", BowOfApolloItem::new);
 		PUMPKIN_STAFF = register("pumpkin_staff", PumpkinStaffItem::new);
-		PLAYER_ROLE = register("player_role", PlayerRoleItem::new);
 		VENRAID_SWORD = register("venraid_sword", VenraidSwordItem::new);
 		NECRO_BOOK = register("necro_book", NecroBookItem::new);
 		RELIGION_BOOK = register("religion_book", ReligionBookItem::new);
@@ -574,6 +571,5 @@ public class MythicrealmsModItems {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new BackpackItemInventoryCapability(stack), BACKPACK_ITEM.get());
-		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new PlayerRoleInventoryCapability(stack), PLAYER_ROLE.get());
 	}
 }

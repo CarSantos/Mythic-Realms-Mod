@@ -8,8 +8,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 import net.neoforged.api.distmarker.Dist;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
@@ -34,11 +32,11 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 @EventBusSubscriber(Dist.CLIENT)
-public class LobisomenVisualProcedure {
+public class FrozenVisualProcedure {
 	@SubscribeEvent
 	public static void onPlayerRendered(RenderPlayerEvent.Pre event) {
 		Entity entity = (Entity) event.getRenderState().getRenderData(MythicrealmsModRenderStateModifiers.LIVING_ENTITY);
-		execute(event, entity.level(), entity, event);
+		execute(event, entity, (EntityModel) event.getRenderer().getModel(), event);
 	}
 
 	public static Collection<Runnable> capes = new ConcurrentLinkedQueue<>();
@@ -103,18 +101,24 @@ public class LobisomenVisualProcedure {
 		poseStack.popPose();
 	}
 
-	public static void execute(LevelAccessor world, Entity entity, RenderPlayerEvent playerRenderEvent) {
-		execute(null, world, entity, playerRenderEvent);
+	public static void execute(Entity entity, EntityModel entityModel, RenderPlayerEvent playerRenderEvent) {
+		execute(null, entity, entityModel, playerRenderEvent);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, RenderPlayerEvent playerRenderEvent) {
-		if (entity == null || playerRenderEvent == null)
+	private static void execute(@Nullable Event event, Entity entity, EntityModel entityModel, RenderPlayerEvent playerRenderEvent) {
+		if (entity == null || entityModel == null || playerRenderEvent == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MythicrealmsModMobEffects.LOBISOMEN_EFFECT) && (world instanceof Level _lvl1 && _lvl1.isBrightOutside()) == false && world.dimensionType().moonPhase(world.dayTime()) == 1) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MythicrealmsModMobEffects.FROZEN)) {
 			{
-				ResourceLocation texture = (ResourceLocation.fromNamespaceAndPath("mythicrealms", "textures/entities/lobisomen.png"));
-				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.LOBISOMEN_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.entityCutout(texture)), playerRenderEvent.getRenderState());
+				ResourceLocation texture = (ResourceLocation.fromNamespaceAndPath("mythicrealms", "textures/entities/frozen_mode.png"));
+				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.PLAYER_BASE, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.entityCutoutNoCull(texture)), playerRenderEvent.getRenderState());
 			}
+			((PlayerModel) entityModel).hat.skipDraw = !(false);
+			((PlayerModel) entityModel).jacket.skipDraw = !(false);
+			((PlayerModel) entityModel).leftPants.skipDraw = !(false);
+			((PlayerModel) entityModel).leftSleeve.skipDraw = !(false);
+			((PlayerModel) entityModel).rightPants.skipDraw = !(false);
+			((PlayerModel) entityModel).rightSleeve.skipDraw = !(false);
 		}
 	}
 }

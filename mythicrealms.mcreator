@@ -346,22 +346,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -937,7 +921,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/TankAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Tank"
+      "path": "~/Item/Curios/01 Role/Role/Tank"
     },
     {
       "name": "TankRole",
@@ -952,22 +936,7 @@
           "src/main/resources/assets/mythicrealms/models/item/tank_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Tank"
-    },
-    {
-      "name": "RoleGUI",
-      "type": "gui",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "role_gui",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/RoleGUIButtonMessage.java",
-          "src/main/java/net/mcreator/mythicrealms/client/gui/RoleGUIScreen.java",
-          "src/main/java/net/mcreator/mythicrealms/world/inventory/RoleGUIMenu.java"
-        ]
-      },
-      "path": "~/System/Role/RoleSystem/RoleGui"
+      "path": "~/Item/Curios/01 Role/Role/Tank"
     },
     {
       "name": "GiantAtribute",
@@ -986,7 +955,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/GiantAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Tank"
+      "path": "~/Item/Curios/01 Role/Role/Tank"
     },
     {
       "name": "GiantRole",
@@ -1001,7 +970,7 @@
           "src/main/resources/assets/mythicrealms/models/item/giant_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Tank"
+      "path": "~/Item/Curios/01 Role/Role/Tank"
     },
     {
       "name": "GuardianAtribute",
@@ -1020,7 +989,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/GuardianAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Tank"
+      "path": "~/Item/Curios/01 Role/Role/Tank"
     },
     {
       "name": "GuardianRole",
@@ -1035,7 +1004,7 @@
           "src/main/java/net/mcreator/mythicrealms/item/GuardianRoleItem.java"
         ]
       },
-      "path": "~/System/Role/Role/Tank"
+      "path": "~/Item/Curios/01 Role/Role/Tank"
     },
     {
       "name": "BarbarianAtribute",
@@ -1054,7 +1023,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/BarbarianAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "BarbarianRole",
@@ -1069,7 +1038,7 @@
           "src/main/resources/assets/mythicrealms/models/item/barbarian_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "AssassinAtribute",
@@ -1088,7 +1057,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/AssassinAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "AssassinRole",
@@ -1103,7 +1072,7 @@
           "src/main/resources/assets/mythicrealms/models/item/assassin_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "SoldierAtribute",
@@ -1122,7 +1091,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/SoldierAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "SoldierRole",
@@ -1137,7 +1106,7 @@
           "src/main/resources/assets/mythicrealms/models/item/soldier_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "InvestigatorAtribute",
@@ -1172,7 +1141,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/InvestigatorAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "InvestigatorRole",
@@ -1187,7 +1156,7 @@
           "src/main/java/net/mcreator/mythicrealms/item/InvestigatorRoleItem.java"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "HunterAtribute",
@@ -1206,7 +1175,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/HunterAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "HunterRole",
@@ -1221,7 +1190,7 @@
           "src/main/resources/assets/mythicrealms/models/item/hunter_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Soldier"
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
     },
     {
       "name": "MonkAtribute",
@@ -1240,7 +1209,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/MonkAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "MonkRole",
@@ -1255,7 +1224,7 @@
           "src/main/resources/assets/mythicrealms/models/item/monk_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "WizardAtribute",
@@ -1274,7 +1243,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/WizardAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "WizardRole",
@@ -1289,7 +1258,7 @@
           "src/main/resources/assets/mythicrealms/models/item/wizard_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "SummonerAtribute",
@@ -1308,7 +1277,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/SummonerAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "SummonerRole",
@@ -1323,7 +1292,7 @@
           "src/main/resources/assets/mythicrealms/models/item/summoner_role.json"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "DruidAtribute",
@@ -1342,7 +1311,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/DruidAtributeProcedure.java"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "DruidRole",
@@ -1357,7 +1326,7 @@
           "src/main/java/net/mcreator/mythicrealms/item/DruidRoleItem.java"
         ]
       },
-      "path": "~/System/Role/Role/Magician"
+      "path": "~/Item/Curios/01 Role/Role/Magician"
     },
     {
       "name": "LifeStealMagic",
@@ -7893,92 +7862,6 @@
       "path": "~/Item/Weapons/Pumpkin Staff"
     },
     {
-      "name": "PlayerRole",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_role",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mythicrealms/models/item/player_role.json",
-          "src/main/java/net/mcreator/mythicrealms/item/inventory/PlayerRoleInventoryCapability.java",
-          "src/main/java/net/mcreator/mythicrealms/item/PlayerRoleItem.java",
-          "src/main/resources/assets/mythicrealms/items/player_role.json"
-        ]
-      },
-      "path": "~/System/Role/RoleSystem/RoleGui"
-    },
-    {
-      "name": "PlayerRoleItemRefresh",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_role_item_refresh",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/PlayerRoleItemRefreshProcedure.java"
-        ]
-      },
-      "path": "~/System/Role/RoleSystem/RoleGui"
-    },
-    {
-      "name": "PlayerRoleItemTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_role_item_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/PlayerRoleItemTickProcedure.java"
-        ]
-      },
-      "path": "~/System/Role/RoleSystem/RoleGui"
-    },
-    {
       "name": "VenraidSword",
       "type": "tool",
       "compiles": true,
@@ -8006,17 +7889,6 @@
         ]
       },
       "path": "~/Item/Weapons/VenraidSword"
-    },
-    {
-      "name": "RoleItens",
-      "type": "tab",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "role_itens",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/System/Role/Role"
     },
     {
       "name": "NecroBook",
@@ -10339,41 +10211,6 @@
       "path": "~/System/Magic/Magic Powers/Water Breath"
     },
     {
-      "name": "WithoutArmor",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "without_armor",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/WithoutArmorProcedure.java"
-        ]
-      },
-      "path": "~/System"
-    },
-    {
       "name": "Mythrill",
       "type": "item",
       "compiles": true,
@@ -11920,7 +11757,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/BackCuriosProcedureProcedure.java"
         ]
       },
-      "path": "~/Item/Curios"
+      "path": "~/Item/Curios/00 Slot"
     },
     {
       "name": "ChimeraGunWhileBaubleIsEquippedTick",
@@ -12231,6 +12068,180 @@
         ]
       },
       "path": "~/Creature/Lobisomen"
+    },
+    {
+      "name": "FrozenVisual",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_visual",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "entityModel",
+            "type": "model"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/FrozenVisualProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Frozen"
+    },
+    {
+      "name": "RoleSlot",
+      "type": "curiosslot",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "role_slot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/curios/entities/role_slot.json",
+          "src/main/resources/data/mythicrealms/curios/slots/role_slot.json",
+          "src/main/resources/data/curios/tags/item/role_slot.json"
+        ]
+      },
+      "path": "~/Item/Curios/01 Role"
+    },
+    {
+      "name": "DruidRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "druid_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Magician"
+    },
+    {
+      "name": "MonkRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "monk_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Magician"
+    },
+    {
+      "name": "SummonerRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoner_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Magician"
+    },
+    {
+      "name": "WizardRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wizard_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Magician"
+    },
+    {
+      "name": "AssassinRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assassin_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
+    },
+    {
+      "name": "BarbarianRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "barbarian_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
+    },
+    {
+      "name": "HunterRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hunter_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
+    },
+    {
+      "name": "InvestigatorRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "investigator_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
+    },
+    {
+      "name": "SoldierRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldier_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Soldier"
+    },
+    {
+      "name": "GiantRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "giant_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Tank"
+    },
+    {
+      "name": "GuardianRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "guardian_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Tank"
+    },
+    {
+      "name": "TankRoleItem",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tank_role_item",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Curios/01 Role/Role/Tank"
     }
   ],
   "variable_elements": [
@@ -12847,7 +12858,6 @@
       "CUSTOM:ShieldOfAthena",
       "CUSTOM:BowOfApollo",
       "CUSTOM:PumpkinStaff",
-      "CUSTOM:PlayerRole",
       "CUSTOM:VenraidSword",
       "CUSTOM:NecroBook",
       "CUSTOM:ReligionBook",
@@ -14568,7 +14578,19 @@
       "ReligionBook",
       "NecroBook",
       "IlluminatyItem",
-      "Sky"
+      "Sky",
+      "AssassinRole",
+      "BarbarianRole",
+      "DruidRole",
+      "GiantRole",
+      "GuardianRole",
+      "SoldierRole",
+      "WizardRole",
+      "TankRole",
+      "SummonerRole",
+      "MonkRole",
+      "HunterRole",
+      "InvestigatorRole"
     ],
     "CUSTOM:KnowledgeOfBook": [
       "AccelarationMagicBook",
@@ -14604,22 +14626,7 @@
       "FlyMagicBook",
       "SpectateMagicBook"
     ],
-    "CUSTOM:RoleItens": [
-      "GiantRole",
-      "GuardianRole",
-      "TankRole",
-      "AssassinRole",
-      "BarbarianRole",
-      "HunterRole",
-      "InvestigatorRole",
-      "SoldierRole",
-      "DruidRole",
-      "MonkRole",
-      "SummonerRole",
-      "WizardRole"
-    ],
     "CUSTOM:DivineWeapons": [
-      "PlayerRole",
       "TanmakuSword",
       "BloodSword",
       "EgyptianSword",
@@ -14638,18 +14645,18 @@
       "effect.mythicrealms.expansion_sf": "Expansion SF",
       "effect.mythicrealms.exausted_sf": "Expansion SF",
       "effect.mythicrealms.frozen": "Frozen",
-      "item.mythicrealms.tank_role": "Tank",
-      "item.mythicrealms.giant_role": "Giant",
-      "item.mythicrealms.guardian_role": "Guardian",
-      "item.mythicrealms.barbarian_role": "Barbarian",
-      "item.mythicrealms.assassin_role": "Assassin",
-      "item.mythicrealms.soldier_role": "Soldier",
-      "item.mythicrealms.investigator_role": "Investigator",
-      "item.mythicrealms.hunter_role": "Hunter",
-      "item.mythicrealms.monk_role": "Monk",
-      "item.mythicrealms.wizard_role": "Wizard",
-      "item.mythicrealms.summoner_role": "Summoner",
-      "item.mythicrealms.druid_role": "Druid",
+      "item.mythicrealms.tank_role": "Tank Item",
+      "item.mythicrealms.giant_role": "Giant Item",
+      "item.mythicrealms.guardian_role": "Guardian Item",
+      "item.mythicrealms.barbarian_role": "Barbarian Item",
+      "item.mythicrealms.assassin_role": "Assassin Item",
+      "item.mythicrealms.soldier_role": "Soldier Item",
+      "item.mythicrealms.investigator_role": "Investigator Item",
+      "item.mythicrealms.hunter_role": "Hunter Item",
+      "item.mythicrealms.monk_role": "Monk Item",
+      "item.mythicrealms.wizard_role": "Wizard Item",
+      "item.mythicrealms.summoner_role": "Summoner Item",
+      "item.mythicrealms.druid_role": "Druid Item",
       "item.mythicrealms.steel_ingot": "Steel Ingot",
       "item.mythicrealms.steel_plate": "Steel Plate",
       "effect.mythicrealms.plague": "Plague",
@@ -14913,10 +14920,8 @@
       "item.mythicrealms.bow_of_apollo": "Bow Of Apollo",
       "item.mythicrealms.pumpkin_staff": "Pumpkin Staff",
       "gui.mythicrealms.role_gui.button_3": "3",
-      "item.mythicrealms.player_role": "Player Role",
       "gui.mythicrealms.role_gui.label_empty": "",
       "item.mythicrealms.venraid_sword": "Venraid Sword",
-      "item_group.mythicrealms.role_itens": "Role Itens",
       "item.mythicrealms.necro_book": "Necro Book",
       "item.mythicrealms.religion_book": "Religion Book",
       "item.mythicrealms.soulforce_book": "Soulforce Book",
@@ -15113,7 +15118,8 @@
       "item.mythicrealms.tomoe_ring_item": "Tomoe Ring",
       "item.mythicrealms.lobisomen_spawn_egg": "Lobisomen Spawn Egg",
       "entity.mythicrealms.lobisomen": "Lobisomen",
-      "effect.mythicrealms.lobisomen_effect": "Lobisomen"
+      "effect.mythicrealms.lobisomen_effect": "Lobisomen",
+      "curios.identifier.role_slot": "Role Slot"
     }
   },
   "metadata": {
@@ -15885,6 +15891,28 @@
               {
                 "name": "Tomoe Ring",
                 "children": []
+              },
+              {
+                "name": "01 Role",
+                "children": [
+                  {
+                    "name": "Role",
+                    "children": [
+                      {
+                        "name": "Tank",
+                        "children": []
+                      },
+                      {
+                        "name": "Soldier",
+                        "children": []
+                      },
+                      {
+                        "name": "Magician",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }
@@ -16128,37 +16156,6 @@
           {
             "name": "Events",
             "children": []
-          },
-          {
-            "name": "Role",
-            "children": [
-              {
-                "name": "RoleSystem",
-                "children": [
-                  {
-                    "name": "RoleGui",
-                    "children": []
-                  }
-                ]
-              },
-              {
-                "name": "Role",
-                "children": [
-                  {
-                    "name": "Tank",
-                    "children": []
-                  },
-                  {
-                    "name": "Soldier",
-                    "children": []
-                  },
-                  {
-                    "name": "Magician",
-                    "children": []
-                  }
-                ]
-              }
-            ]
           },
           {
             "name": "Enchantement",

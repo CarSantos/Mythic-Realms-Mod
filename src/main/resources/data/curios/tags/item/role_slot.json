@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "mythicrealms:druid_role",
+    "mythicrealms:monk_role",
+    "mythicrealms:summoner_role",
+    "mythicrealms:wizard_role",
+    "mythicrealms:assassin_role",
+    "mythicrealms:barbarian_role",
+    "mythicrealms:hunter_role",
+    "mythicrealms:investigator_role",
+    "mythicrealms:soldier_role",
+    "mythicrealms:giant_role",
+    "mythicrealms:guardian_role",
+    "mythicrealms:tank_role"
+  ]
+}

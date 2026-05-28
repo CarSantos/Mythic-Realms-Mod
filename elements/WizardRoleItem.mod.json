@@ -2,8 +2,8 @@
   "_fv": 79,
   "_type": "curiosbauble",
   "definition": {
-    "item": "TechJetpackItem",
-    "slotType": "BACK",
+    "item": "WizardRole",
+    "slotType": "RoleSlot",
     "slotAmount": 1,
     "addSlot": false,
     "enderMask": false,
@@ -14,7 +14,10 @@
     },
     "hasModel": false,
     "baubleModel": "Default",
-    "baubleModelTexture": "tech_jetpack.png",
+    "baubleModelTexture": "",
+    "curioTick": {
+      "name": "WizardAtribute"
+    },
     "helmetModelPart": "Empty",
     "bodyModelPart": "Empty",
     "armsModelPartL": "Empty",
