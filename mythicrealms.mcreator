@@ -15116,9 +15116,9 @@
       "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book",
       "item.mythicrealms.tech_jetpack_item": "Tech Jetpack",
       "item.mythicrealms.tomoe_ring_item": "Tomoe Ring",
-      "item.mythicrealms.lobisomen_spawn_egg": "Lobisomen Spawn Egg",
-      "entity.mythicrealms.lobisomen": "Lobisomen",
-      "effect.mythicrealms.lobisomen_effect": "Lobisomen",
+      "item.mythicrealms.lobisomen_spawn_egg": "Werewolf Spawn Egg",
+      "entity.mythicrealms.lobisomen": "Werewolf",
+      "effect.mythicrealms.lobisomen_effect": "Werewolf",
       "curios.identifier.role_slot": "Role Slot"
     }
   },

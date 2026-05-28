@@ -29,6 +29,7 @@ import javax.annotation.Nullable;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Collection;
+import java.util.Calendar;
 
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -111,6 +112,12 @@ public class LobisomenVisualProcedure {
 		if (entity == null || playerRenderEvent == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MythicrealmsModMobEffects.LOBISOMEN_EFFECT) && (world instanceof Level _lvl1 && _lvl1.isBrightOutside()) == false && world.dimensionType().moonPhase(world.dayTime()) == 1) {
+			{
+				ResourceLocation texture = (ResourceLocation.fromNamespaceAndPath("mythicrealms", "textures/entities/lobisomen.png"));
+				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.LOBISOMEN_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.entityCutout(texture)), playerRenderEvent.getRenderState());
+			}
+		}
+		if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 13) {
 			{
 				ResourceLocation texture = (ResourceLocation.fromNamespaceAndPath("mythicrealms", "textures/entities/lobisomen.png"));
 				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.LOBISOMEN_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.entityCutout(texture)), playerRenderEvent.getRenderState());

@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Lobisomen",
+    "mobName": "Werewolf",
     "mobLabel": "",
     "mobModelName": "ModelLobisomen",
     "mobModelTexture": "lobisomen.png",
