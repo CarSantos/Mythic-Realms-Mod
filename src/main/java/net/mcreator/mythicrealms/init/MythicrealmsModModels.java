@@ -18,6 +18,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelMagic_Armor.LAYER_LOCATION, ModelMagic_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelLava_Golem.LAYER_LOCATION, ModelLava_Golem::createBodyLayer);
 		event.registerLayerDefinition(ModelJoker.LAYER_LOCATION, ModelJoker::createBodyLayer);
+		event.registerLayerDefinition(ModelWerewolf_Armor.LAYER_LOCATION, ModelWerewolf_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Demon.LAYER_LOCATION, ModelArmor_Demon::createBodyLayer);
 		event.registerLayerDefinition(ModelUnicorn.LAYER_LOCATION, ModelUnicorn::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Nano.LAYER_LOCATION, ModelArmor_Nano::createBodyLayer);

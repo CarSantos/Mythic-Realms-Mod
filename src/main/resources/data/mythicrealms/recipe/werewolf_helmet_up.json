@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:netherite_upgrade_smithing_template",
+  "base": "mythicrealms:samurai_armor_helmet",
+  "addition": "mythicrealms:werewolf_fang",
+  "result": {
+    "id": "mythicrealms:werewolf_armor_helmet"
+  }
+}

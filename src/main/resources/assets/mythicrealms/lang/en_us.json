@@ -488,5 +488,9 @@
   "item.mythicrealms.desert_magic_book": "Book of Knowledge",
   "item.mythicrealms.desert_magic_book.description_0": "Desert Magic Book",
   "item.mythicrealms.fang": "Fang",
-  "item.mythicrealms.werewolf_fang": "Werewolf Fang"
+  "item.mythicrealms.werewolf_fang": "Werewolf Fang",
+  "item.mythicrealms.werewolf_armor_leggings": "Werewolf Leggings",
+  "item.mythicrealms.werewolf_armor_boots": "Werewolf Boots",
+  "item.mythicrealms.werewolf_armor_chestplate": "Werewolf Chestplate",
+  "item.mythicrealms.werewolf_armor_helmet": "Werewolf Helmet"
 }

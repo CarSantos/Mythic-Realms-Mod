@@ -242,6 +242,10 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_LEGGINGS.get());
 			tabData.accept(MythicrealmsModItems.MAGIC_ARMOR_BOOTS.get());
 			tabData.accept(MythicrealmsModItems.TECH_JETPACK_ITEM.get());
+			tabData.accept(MythicrealmsModItems.WEREWOLF_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.WEREWOLF_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.WEREWOLF_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.WEREWOLF_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MythicrealmsModItems.GHOST_HORSE_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.PANDEMIC_SPAWN_EGG.get());

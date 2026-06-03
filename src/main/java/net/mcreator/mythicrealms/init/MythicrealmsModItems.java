@@ -292,6 +292,10 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> DESERT_MAGIC_BOOK;
 	public static final DeferredItem<Item> FANG;
 	public static final DeferredItem<Item> WEREWOLF_FANG;
+	public static final DeferredItem<Item> WEREWOLF_ARMOR_HELMET;
+	public static final DeferredItem<Item> WEREWOLF_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> WEREWOLF_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> WEREWOLF_ARMOR_BOOTS;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -558,6 +562,10 @@ public class MythicrealmsModItems {
 		DESERT_MAGIC_BOOK = register("desert_magic_book", DesertMagicBookItem::new);
 		FANG = register("fang", FangItem::new);
 		WEREWOLF_FANG = register("werewolf_fang", WerewolfFangItem::new);
+		WEREWOLF_ARMOR_HELMET = register("werewolf_armor_helmet", WerewolfArmorItem.Helmet::new);
+		WEREWOLF_ARMOR_CHESTPLATE = register("werewolf_armor_chestplate", WerewolfArmorItem.Chestplate::new);
+		WEREWOLF_ARMOR_LEGGINGS = register("werewolf_armor_leggings", WerewolfArmorItem.Leggings::new);
+		WEREWOLF_ARMOR_BOOTS = register("werewolf_armor_boots", WerewolfArmorItem.Boots::new);
 	}
 
 	// Start of user code block custom items

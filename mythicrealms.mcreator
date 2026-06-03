@@ -12897,6 +12897,100 @@
         ]
       },
       "path": "~/System/Effects/Lobisomen/Fang"
+    },
+    {
+      "name": "WerewolfArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/werewolf_armor_boots.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/WerewolfArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/models/item/werewolf_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/items/werewolf_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/equipment/werewolf_armor.json",
+          "src/main/resources/assets/mythicrealms/models/item/werewolf_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/models/item/werewolf_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/items/werewolf_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/models/item/werewolf_armor_helmet.json",
+          "src/main/java/net/mcreator/mythicrealms/item/WerewolfArmorItem.java",
+          "src/main/resources/assets/mythicrealms/items/werewolf_armor_helmet.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "WerewolfArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/WerewolfArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "WerewolfHelmetUp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_helmet_up",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/werewolf_helmet_up.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "WerewolfChestUp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_chest_up",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/werewolf_chest_up.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "WerewolfLegUp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_leg_up",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/werewolf_leg_up.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "WerewolfBootUp",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_boot_up",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/werewolf_boot_up.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
     }
   ],
   "variable_elements": [
@@ -13235,6 +13329,7 @@
       "~CUSTOM:DeepworldOcean"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:WerewolfArmor.helmet",
       "~CUSTOM:MagicArmor.helmet",
       "~CUSTOM:WendigoArmorArmor.helmet",
       "~CUSTOM:XochitlArmor.helmet",
@@ -13252,6 +13347,7 @@
       "~CUSTOM:BloodArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:WerewolfArmor.body",
       "~CUSTOM:MagicArmor.body",
       "~CUSTOM:WendigoArmorArmor.body",
       "~CUSTOM:XochitlArmor.body",
@@ -13269,6 +13365,7 @@
       "~CUSTOM:BloodArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:WerewolfArmor.legs",
       "~CUSTOM:MagicArmor.legs",
       "~CUSTOM:WendigoArmorArmor.legs",
       "~CUSTOM:XochitlArmor.legs",
@@ -13286,6 +13383,7 @@
       "~CUSTOM:BloodArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:WerewolfArmor.boots",
       "~CUSTOM:MagicArmor.boots",
       "~CUSTOM:WendigoArmorArmor.boots",
       "~CUSTOM:XochitlArmor.boots",
@@ -15117,6 +15215,9 @@
     ],
     "ITEMS:mythicrealms:lance_repair_items": [
       "~CUSTOM:TitaniumIngot"
+    ],
+    "ITEMS:mythicrealms:werewolf_armor_repair_items": [
+      "~CUSTOM:Fang"
     ]
   },
   "tab_element_order": {
@@ -15196,7 +15297,8 @@
       "TechGooglesItem",
       "NanoArmor",
       "MagicArmor",
-      "TechJetpackItem"
+      "TechJetpackItem",
+      "WerewolfArmor"
     ],
     "MISC": [
       "GhostHorse",
@@ -15791,7 +15893,11 @@
       "item.mythicrealms.desert_magic_book": "Book of Knowledge",
       "item.mythicrealms.desert_magic_book.description_0": "Desert Magic Book",
       "item.mythicrealms.fang": "Fang",
-      "item.mythicrealms.werewolf_fang": "Werewolf Fang"
+      "item.mythicrealms.werewolf_fang": "Werewolf Fang",
+      "item.mythicrealms.werewolf_armor_leggings": "Werewolf Leggings",
+      "item.mythicrealms.werewolf_armor_boots": "Werewolf Boots",
+      "item.mythicrealms.werewolf_armor_chestplate": "Werewolf Chestplate",
+      "item.mythicrealms.werewolf_armor_helmet": "Werewolf Helmet"
     }
   },
   "metadata": {
@@ -16443,6 +16549,10 @@
               },
               {
                 "name": "MagicArmor",
+                "children": []
+              },
+              {
+                "name": "Werewolf Armor",
                 "children": []
               }
             ]
