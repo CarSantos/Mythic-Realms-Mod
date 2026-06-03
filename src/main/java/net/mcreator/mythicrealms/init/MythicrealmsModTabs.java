@@ -159,6 +159,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.ULTIMATE_INGOT.get());
 			tabData.accept(MythicrealmsModItems.ORICALC.get());
 			tabData.accept(MythicrealmsModItems.RING.get());
+			tabData.accept(MythicrealmsModItems.FANG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
@@ -286,6 +287,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.MONK_ROLE.get());
 			tabData.accept(MythicrealmsModItems.HUNTER_ROLE.get());
 			tabData.accept(MythicrealmsModItems.INVESTIGATOR_ROLE.get());
+			tabData.accept(MythicrealmsModItems.WEREWOLF_FANG.get());
 		}
 	}
 }

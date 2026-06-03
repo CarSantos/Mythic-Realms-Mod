@@ -11940,33 +11940,6 @@
       "path": "~/Item/Curios/Tomoe Ring"
     },
     {
-      "name": "LobisomenVisual",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lobisomen_visual",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "playerRenderEvent",
-            "type": "playerrendering"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenVisualProcedure.java"
-        ]
-      },
-      "path": "~/System/Effects/Lobisomen"
-    },
-    {
       "name": "LobisomenModel",
       "type": "humanoidmodel",
       "compiles": true,
@@ -11974,29 +11947,6 @@
       "registry_name": "lobisomen_model",
       "metadata": {
         "files": []
-      },
-      "path": "~/System/Effects/Lobisomen"
-    },
-    {
-      "name": "PlayerGivesLobisomen",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "player_gives_lobisomen",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/PlayerGivesLobisomenProcedure.java"
-        ]
       },
       "path": "~/System/Effects/Lobisomen"
     },
@@ -12206,33 +12156,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/WerewolfspawnProcedure.java"
-        ]
-      },
-      "path": "~/System/Effects/Lobisomen"
-    },
-    {
-      "name": "LobisomenVisualAllTransforme",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lobisomen_visual_all_transforme",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "entityRenderEvent",
-            "type": "entityrendering"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenVisualAllTransformeProcedure.java"
         ]
       },
       "path": "~/System/Effects/Lobisomen"
@@ -12849,6 +12772,67 @@
         ]
       },
       "path": "~/World Gen/Structures/AtlantiCastle"
+    },
+    {
+      "name": "LobisomenVisualPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobisomen_visual_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "entityModel",
+            "type": "model"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenVisualPlayerProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "Fang",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fang",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/fang.json",
+          "src/main/resources/assets/mythicrealms/models/item/fang.json",
+          "src/main/java/net/mcreator/mythicrealms/item/FangItem.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "WerewolfFang",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_fang",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/werewolf_fang.json",
+          "src/main/resources/assets/mythicrealms/models/item/werewolf_fang.json",
+          "src/main/java/net/mcreator/mythicrealms/item/WerewolfFangItem.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
     }
   ],
   "variable_elements": [
@@ -15108,7 +15092,8 @@
       "ActivedNano",
       "UltimateIngot",
       "Oricalc",
-      "Ring"
+      "Ring",
+      "Fang"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -15199,7 +15184,8 @@
       "MonkRole",
       "HunterRole",
       "InvestigatorRole",
-      "OceanDimension"
+      "OceanDimension",
+      "WerewolfFang"
     ],
     "CUSTOM:KnowledgeOfBook": [
       "AccelarationMagicBook",
@@ -15739,7 +15725,9 @@
       "advancements.desert_magic_unlock.title": "Desert Magic Unlock",
       "advancements.desert_magic_unlock.descr": "Now Is Possible For You Use Desert Magic",
       "item.mythicrealms.desert_magic_book": "Book of Knowledge",
-      "item.mythicrealms.desert_magic_book.description_0": "Desert Magic Book"
+      "item.mythicrealms.desert_magic_book.description_0": "Desert Magic Book",
+      "item.mythicrealms.fang": "Fang",
+      "item.mythicrealms.werewolf_fang": "Werewolf Fang"
     }
   },
   "metadata": {
@@ -15885,7 +15873,9 @@
       "TomoeRingItem": "armorforge:default",
       "Ring": "armorforge:default",
       "IceAgeMagicBook": "armorforge:default",
-      "DesertMagicBook": "armorforge:default"
+      "DesertMagicBook": "armorforge:default",
+      "Fang": "armorforge:default",
+      "WerewolfFang": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -15995,7 +15985,9 @@
       "TomoeRingItem": "All perspectives",
       "Ring": "All perspectives",
       "IceAgeMagicBook": "All perspectives",
-      "DesertMagicBook": "All perspectives"
+      "DesertMagicBook": "All perspectives",
+      "Fang": "All perspectives",
+      "WerewolfFang": "All perspectives"
     }
   },
   "foldersRoot": {

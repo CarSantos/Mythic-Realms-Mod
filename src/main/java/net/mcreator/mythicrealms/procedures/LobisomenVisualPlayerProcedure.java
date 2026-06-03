@@ -35,11 +35,11 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 @EventBusSubscriber(Dist.CLIENT)
-public class LobisomenVisualProcedure {
+public class LobisomenVisualPlayerProcedure {
 	@SubscribeEvent
 	public static void onPlayerRendered(RenderPlayerEvent.Pre event) {
 		Entity entity = (Entity) event.getRenderState().getRenderData(MythicrealmsModRenderStateModifiers.LIVING_ENTITY);
-		execute(event, entity.level(), entity, event);
+		execute(event, entity.level(), entity, (EntityModel) event.getRenderer().getModel(), event);
 	}
 
 	public static Collection<Runnable> capes = new ConcurrentLinkedQueue<>();
@@ -104,24 +104,31 @@ public class LobisomenVisualProcedure {
 		poseStack.popPose();
 	}
 
-	public static void execute(LevelAccessor world, Entity entity, RenderPlayerEvent playerRenderEvent) {
-		execute(null, world, entity, playerRenderEvent);
+	public static void execute(LevelAccessor world, Entity entity, EntityModel entityModel, RenderPlayerEvent playerRenderEvent) {
+		execute(null, world, entity, entityModel, playerRenderEvent);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, RenderPlayerEvent playerRenderEvent) {
-		if (entity == null || playerRenderEvent == null)
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, EntityModel entityModel, RenderPlayerEvent playerRenderEvent) {
+		if (entity == null || entityModel == null || playerRenderEvent == null)
 			return;
-		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MythicrealmsModMobEffects.WEREWOLF_EFFECT) && (world instanceof Level _lvl1 && _lvl1.isBrightOutside()) == false && world.dimensionType().moonPhase(world.dayTime()) == 0) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MythicrealmsModMobEffects.WEREWOLF_EFFECT)
+				&& ((world instanceof Level _lvl1 && _lvl1.isBrightOutside()) == false && world.dimensionType().moonPhase(world.dayTime()) == 0 || Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 13)) {
 			{
 				ResourceLocation texture = (ResourceLocation.fromNamespaceAndPath("mythicrealms", "textures/entities/lobisomen.png"));
-				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.LOBISOMEN_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.entityCutout(texture)), playerRenderEvent.getRenderState());
+				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.LOBISOMEN_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.armorCutoutNoCull(texture)), playerRenderEvent.getRenderState());
 			}
-			if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 13) {
-				{
-					ResourceLocation texture = (ResourceLocation.fromNamespaceAndPath("mythicrealms", "textures/entities/lobisomen.png"));
-					renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.LOBISOMEN_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.entityCutout(texture)), playerRenderEvent.getRenderState());
-				}
-			}
+			((PlayerModel) entityModel).body.skipDraw = !(false);
+			((PlayerModel) entityModel).hat.skipDraw = !(false);
+			((PlayerModel) entityModel).head.skipDraw = !(false);
+			((PlayerModel) entityModel).jacket.skipDraw = !(false);
+			((PlayerModel) entityModel).leftArm.skipDraw = !(false);
+			((PlayerModel) entityModel).leftLeg.skipDraw = !(false);
+			((PlayerModel) entityModel).leftPants.skipDraw = !(false);
+			((PlayerModel) entityModel).leftSleeve.skipDraw = !(false);
+			((PlayerModel) entityModel).rightArm.skipDraw = !(false);
+			((PlayerModel) entityModel).rightLeg.skipDraw = !(false);
+			((PlayerModel) entityModel).rightPants.skipDraw = !(false);
+			((PlayerModel) entityModel).rightSleeve.skipDraw = !(false);
 		}
 	}
 }

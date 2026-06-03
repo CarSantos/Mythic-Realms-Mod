@@ -486,5 +486,7 @@
   "advancements.desert_magic_unlock.title": "Desert Magic Unlock",
   "advancements.desert_magic_unlock.descr": "Now Is Possible For You Use Desert Magic",
   "item.mythicrealms.desert_magic_book": "Book of Knowledge",
-  "item.mythicrealms.desert_magic_book.description_0": "Desert Magic Book"
+  "item.mythicrealms.desert_magic_book.description_0": "Desert Magic Book",
+  "item.mythicrealms.fang": "Fang",
+  "item.mythicrealms.werewolf_fang": "Werewolf Fang"
 }

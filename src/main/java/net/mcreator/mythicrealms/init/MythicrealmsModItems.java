@@ -290,6 +290,8 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> OCEAN_PORTAL;
 	public static final DeferredItem<Item> ICE_AGE_MAGIC_BOOK;
 	public static final DeferredItem<Item> DESERT_MAGIC_BOOK;
+	public static final DeferredItem<Item> FANG;
+	public static final DeferredItem<Item> WEREWOLF_FANG;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -554,6 +556,8 @@ public class MythicrealmsModItems {
 		OCEAN_PORTAL = block(MythicrealmsModBlocks.OCEAN_PORTAL, new Item.Properties().rarity(Rarity.EPIC));
 		ICE_AGE_MAGIC_BOOK = register("ice_age_magic_book", IceAgeMagicBookItem::new);
 		DESERT_MAGIC_BOOK = register("desert_magic_book", DesertMagicBookItem::new);
+		FANG = register("fang", FangItem::new);
+		WEREWOLF_FANG = register("werewolf_fang", WerewolfFangItem::new);
 	}
 
 	// Start of user code block custom items
