@@ -116,7 +116,7 @@ public class NanoArmorVisualProcedure {
 				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == MythicrealmsModItems.NANO_ARMOR_BOOTS.get()) {
 			{
 				ResourceLocation texture = (ResourceLocation.fromNamespaceAndPath("mythicrealms", "textures/entities/nano_armor.png"));
-				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.NANO_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.lineStrip()), playerRenderEvent.getRenderState());
+				renderHumanoid(playerRenderEvent, MythicrealmsModHumanoidModels.NANO_MODEL, playerRenderEvent.getMultiBufferSource().getBuffer(RenderType.armorCutoutNoCull(texture)), playerRenderEvent.getRenderState());
 			}
 		}
 	}

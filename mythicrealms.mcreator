@@ -12817,7 +12817,7 @@
           "src/main/java/net/mcreator/mythicrealms/item/FangItem.java"
         ]
       },
-      "path": "~/System/Effects/Lobisomen"
+      "path": "~/System/Effects/Lobisomen/Fang"
     },
     {
       "name": "WerewolfFang",
@@ -12832,7 +12832,71 @@
           "src/main/java/net/mcreator/mythicrealms/item/WerewolfFangItem.java"
         ]
       },
+      "path": "~/System/Effects/Lobisomen/Fang"
+    },
+    {
+      "name": "WerewolfFangItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_fang_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/WerewolfFangItemInInventoryTickProcedure.java"
+        ]
+      },
       "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "FangUpgrade",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fang_upgrade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/FangUpgradeProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen/Fang"
+    },
+    {
+      "name": "FangRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fang_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/fang_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/fang_recipe.json"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen/Fang"
     }
   ],
   "variable_elements": [
@@ -16783,7 +16847,12 @@
               },
               {
                 "name": "Lobisomen",
-                "children": []
+                "children": [
+                  {
+                    "name": "Fang",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
