@@ -33,11 +33,11 @@ public class ReflectMagicEffectProcedure {
 									+ (entityiterator instanceof LivingEntity _entUseItem4 ? _entUseItem4.getUseItem() : ItemStack.EMPTY).getDamageValue()));
 				}
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 100);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), false);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 100);
 	}
 }

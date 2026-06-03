@@ -10,6 +10,7 @@ import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
@@ -18,7 +19,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
-import net.mcreator.mythicrealms.init.MythicrealmsModMobEffects;
 import net.mcreator.mythicrealms.MythicrealmsMod;
 
 public class TempestMagicProcedure {
@@ -41,15 +41,15 @@ public class TempestMagicProcedure {
 						_level.addFreshEntity(entityToSpawn);
 					}
 					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-						_entity.addEffect(new MobEffectInstance(MythicrealmsModMobEffects.FROZEN, 100, 2, false, false));
+						_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 100, 5, false, false));
 					world.getLevelData().setRaining(false);
 				});
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 360);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 200);
 	}
 }

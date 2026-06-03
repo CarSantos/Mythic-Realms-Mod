@@ -1,0 +1,8 @@
+{
+  "_fv": 79,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">entity_spawns</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"logic_entity_compare\"><field name=\"entity\">EntityVillager</field><value name=\"compareTo\"><block type=\"entity_from_deps\"></block></value></block></value><statement name=\"DO0\"><block type=\"controls_if\"><comment pinned=\"false\" h=\"85\" w=\"293\">This example will test if the random number is less than 0.7 (70%). Random numbers range between (0.0 and 1.0). If it is true, then it will run what is in the \"do\" section of the if statement.</comment><value name=\"IF0\"><block type=\"math_chance_of_x_in_y\"><value name=\"num1\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"num2\"><block type=\"math_number\"><field name=\"NUM\">125</field></block></value></block></value><statement name=\"DO0\"><block type=\"entity_add_potion\"><field name=\"potion\">CUSTOM:WerewolfEffect</field><value name=\"level\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"duration\"><block type=\"math_java_constants\"><field name=\"CONSTANT\">INFINITY</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></statement></block></statement></block></next></block></xml>",
+    "skipDependencyNullCheck": false
+  }
+}

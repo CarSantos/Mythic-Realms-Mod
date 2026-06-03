@@ -46,11 +46,6 @@ public class GhostHorseRenderer extends MobRenderer<GhostHorseEntity, LivingEnti
 		poseStack.scale(entity.getAgeScale(), entity.getAgeScale(), entity.getAgeScale());
 	}
 
-	@Override
-	protected boolean isBodyVisible(LivingEntityRenderState state) {
-		return false;
-	}
-
 	private static final class AnimatedModel extends ModelGhostHorse {
 		private GhostHorseEntity entity = null;
 		private final KeyframeAnimation keyframeAnimation0;

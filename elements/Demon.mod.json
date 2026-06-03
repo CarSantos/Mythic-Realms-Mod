@@ -170,7 +170,7 @@
     "spawningCondition": {
       "name": "DemonNaturalEntitySpawningCondition"
     },
-    "spawningProbability": 5,
+    "spawningProbability": 8,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
     "maxNumberOfMobsPerGroup": 3,

@@ -3,7 +3,7 @@
   "biomes": "deep_ocean",
   "spawners": {
     "type": "mythicrealms:hippocampus",
-    "weight": 8,
+    "weight": 10,
     "minCount": 1,
     "maxCount": 2
   }

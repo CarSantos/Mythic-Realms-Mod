@@ -9,17 +9,17 @@
         "value": "Blocks.STRUCTURE_BLOCK"
       }
     ],
-    "spacing": 32,
-    "separation": 16,
+    "spacing": 25,
+    "separation": 10,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:DeepworldDesert"
       }
     ],
-    "terrainAdaptation": "none",
+    "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",
     "surfaceDetectionType": "WORLD_SURFACE",
-    "useStartHeight": true,
+    "useStartHeight": false,
     "startHeightProviderType": "UNIFORM",
     "startHeightMin": 64,
     "startHeightMax": 128,

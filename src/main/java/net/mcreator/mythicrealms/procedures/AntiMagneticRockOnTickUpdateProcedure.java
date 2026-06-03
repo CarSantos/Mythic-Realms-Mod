@@ -35,7 +35,7 @@ public class AntiMagneticRockOnTickUpdateProcedure {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(9 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
-					entityiterator.setDeltaMovement(new Vec3(((x + entityiterator.getX()) * 0.0001), ((y + entityiterator.getY()) * 0.0001), ((z + entityiterator.getZ()) * 0.0001)));
+					entityiterator.push((entityiterator.getLookAngle().x * (-3)), (entityiterator.getLookAngle().y * (-3)), (entityiterator.getLookAngle().z * (-3)));
 				}
 			}
 		}

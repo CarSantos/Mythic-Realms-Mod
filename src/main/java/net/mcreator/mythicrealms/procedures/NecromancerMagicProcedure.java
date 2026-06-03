@@ -8,7 +8,11 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.WitherSkeleton;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntitySpawnReason;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
@@ -26,6 +30,16 @@ public class NecromancerMagicProcedure {
 			return;
 		if (world instanceof Level _level)
 			_level.getScoreboard().addPlayerTeam("necro");
+		{
+			Entity _entityTeam = entity;
+			PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("necro");
+			if (_pt != null) {
+				if (_entityTeam instanceof Player _player)
+					_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+				else
+					_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+			}
+		}
 		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 1000) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
@@ -53,66 +67,73 @@ public class NecromancerMagicProcedure {
 				}
 			}
 			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 3), (y + 2), (z + 3), (x - 3), (y - 2), (z - 3)))) {
-				if (hasEntityInInventory(entity, new ItemStack(MythicrealmsModItems.NECROMANCER_MAGIC_BOOK.get()))) {
-					if (entityiterator instanceof WitherSkeleton) {
+				if (entityiterator instanceof WitherSkeleton) {
+					{
+						Entity _entityTeam = entityiterator;
+						PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("necro");
+						if (_pt != null) {
+							if (_entityTeam instanceof Player _player)
+								_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
+							else
+								_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
+						}
+					}
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 6000, 1, false, false));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 6000, 1, false, false));
+					if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+						_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 6000, 1, false, false));
+					if (entityiterator instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.IRON_HELMET));
+					}
+					if (entityiterator instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));
+					}
+					if (entityiterator instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Items.IRON_LEGGINGS));
+					}
+					if (entityiterator instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.IRON_BOOTS));
+					}
+					if (entityiterator instanceof LivingEntity _entity) {
+						ItemStack _setstack15 = new ItemStack(MythicrealmsModItems.STEEL_AXE.get()).copy();
+						_setstack15.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack15);
+						ItemStack _setstack16 = new ItemStack(Items.TOTEM_OF_UNDYING).copy();
+						_setstack16.setCount(1);
+						_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack16);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
+					MythicrealmsMod.queueServerWork(1200, () -> {
+						{
+							Entity _entityTeam = entity;
+							PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("necro");
+							if (_pt != null)
+								_entityTeam.level().getScoreboard().removePlayerFromTeam(_entityTeam.getStringUUID(), _pt);
+						}
 						{
 							Entity _entityTeam = entityiterator;
 							PlayerTeam _pt = _entityTeam.level().getScoreboard().getPlayerTeam("necro");
-							if (_pt != null) {
-								if (_entityTeam instanceof Player _player)
-									_entityTeam.level().getScoreboard().addPlayerToTeam(_player.getGameProfile().getName(), _pt);
-								else
-									_entityTeam.level().getScoreboard().addPlayerToTeam(_entityTeam.getStringUUID(), _pt);
-							}
+							if (_pt != null)
+								_entityTeam.level().getScoreboard().removePlayerFromTeam(_entityTeam.getStringUUID(), _pt);
 						}
-						if (entityiterator instanceof TamableAnimal _toTame && entity instanceof Player _owner)
-							_toTame.tame(_owner);
-						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.STRENGTH, 6000, 1, false, false));
-						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.RESISTANCE, 6000, 1, false, false));
-						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-							_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 6000, 1, false, false));
-						if (entityiterator instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.HEAD, new ItemStack(Items.IRON_HELMET));
+						if (!entityiterator.level().isClientSide())
+							entityiterator.discard();
+						if (world instanceof Level _level) {
+							PlayerTeam _pt = _level.getScoreboard().getPlayerTeam("necro");
+							if (_pt != null)
+								_level.getScoreboard().removePlayerTeam(_pt);
 						}
-						if (entityiterator instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.CHEST, new ItemStack(Items.IRON_CHESTPLATE));
-						}
-						if (entityiterator instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.LEGS, new ItemStack(Items.IRON_LEGGINGS));
-						}
-						if (entityiterator instanceof LivingEntity _living) {
-							_living.setItemSlot(EquipmentSlot.FEET, new ItemStack(Items.IRON_BOOTS));
-						}
-						if (entityiterator instanceof LivingEntity _entity) {
-							ItemStack _setstack16 = new ItemStack(MythicrealmsModItems.STEEL_AXE.get()).copy();
-							_setstack16.setCount(1);
-							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack16);
-							ItemStack _setstack17 = new ItemStack(Items.TOTEM_OF_UNDYING).copy();
-							_setstack17.setCount(1);
-							_entity.setItemInHand(InteractionHand.OFF_HAND, _setstack17);
-							if (_entity instanceof Player _player)
-								_player.getInventory().setChanged();
-						}
-						MythicrealmsMod.queueServerWork(3200, () -> {
-							if (!entityiterator.level().isClientSide())
-								entityiterator.discard();
-						});
-					}
+					});
 				}
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 200);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 200);
-	}
-
-	private static boolean hasEntityInInventory(Entity entity, ItemStack itemstack) {
-		if (entity instanceof Player player)
-			return player.getInventory().contains(stack -> !stack.isEmpty() && ItemStack.isSameItem(stack, itemstack));
-		return false;
 	}
 }

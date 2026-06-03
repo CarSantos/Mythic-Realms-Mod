@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "mythicrealms:item/lobisomen_spawn_egg_generated"
-  }
-}

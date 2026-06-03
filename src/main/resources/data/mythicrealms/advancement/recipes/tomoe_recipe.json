@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "mythicrealms:tomoe_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ingredient_0": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mythicrealms:tempest_magic_book"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ingredient_0"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "mythicrealms:tomoe_recipe"
+    ]
+  }
+}

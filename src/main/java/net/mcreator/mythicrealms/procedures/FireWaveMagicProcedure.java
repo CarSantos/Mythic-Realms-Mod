@@ -35,11 +35,11 @@ public class FireWaveMagicProcedure {
 					entityiterator.igniteForSeconds(10);
 				}
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 40);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 40);
 	}
 }

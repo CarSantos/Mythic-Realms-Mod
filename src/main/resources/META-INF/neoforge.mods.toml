@@ -33,6 +33,12 @@ authors="CarSantos7"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.mythicrealms]]
+    modId="mcreator_link"
+    type="required"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 [[dependencies.mythicrealms]]
     modId="curios_api"

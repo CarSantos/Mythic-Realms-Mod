@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mythicrealms:atlantisbases",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 25,
+    "separation": 10,
+    "salt": 1521420391
+  }
+}

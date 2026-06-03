@@ -16,10 +16,10 @@
         "value": "plains"
       }
     ],
-    "terrainAdaptation": "none",
+    "terrainAdaptation": "beard_thin",
     "generationStep": "SURFACE_STRUCTURES",
     "surfaceDetectionType": "WORLD_SURFACE",
-    "useStartHeight": true,
+    "useStartHeight": false,
     "startHeightProviderType": "UNIFORM",
     "startHeightMin": 64,
     "startHeightMax": 128,

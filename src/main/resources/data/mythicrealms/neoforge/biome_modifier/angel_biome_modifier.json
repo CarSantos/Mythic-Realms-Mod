@@ -1,9 +1,9 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": "mythicrealms:lunar_plains",
+  "biomes": "mythicrealms:asgard",
   "spawners": {
     "type": "mythicrealms:angel",
-    "weight": 20,
+    "weight": 10,
     "minCount": 1,
     "maxCount": 3
   }

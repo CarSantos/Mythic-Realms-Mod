@@ -33,12 +33,12 @@ public class LightTravelOnKeyPressedProcedure {
 					projectileLevel.addFreshEntity(_entityToSpawn);
 				}
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 100);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), false);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 100);
 	}
 
 	private static Projectile initProjectileProperties(Projectile entityToSpawn, Entity shooter, Vec3 acceleration) {

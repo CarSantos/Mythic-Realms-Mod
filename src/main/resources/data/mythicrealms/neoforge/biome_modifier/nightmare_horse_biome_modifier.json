@@ -3,7 +3,7 @@
   "biomes": "crimson_forest",
   "spawners": {
     "type": "mythicrealms:nightmare_horse",
-    "weight": 40,
+    "weight": 10,
     "minCount": 1,
     "maxCount": 1
   }

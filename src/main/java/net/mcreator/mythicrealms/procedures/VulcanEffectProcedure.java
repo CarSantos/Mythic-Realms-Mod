@@ -2,34 +2,30 @@ package net.mcreator.mythicrealms.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
-import net.minecraft.world.level.block.Rotation;
-import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
-import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
-import net.mcreator.mythicrealms.init.MythicrealmsModParticleTypes;
+
+import java.util.Comparator;
 
 public class VulcanEffectProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		double sx = 0;
+		double sy = 0;
+		double sz = 0;
 		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 1000) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
@@ -37,33 +33,52 @@ public class VulcanEffectProcedure {
 				_vars.markSyncDirty();
 			}
 			{
-				Entity _ent = entity;
-				_ent.teleportTo(x, (y + 1), z);
-				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, (y + 1), z, _ent.getYRot(), _ent.getXRot());
-			}
-			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("mythicrealms", "vulcan_magic"));
-				if (template != null) {
-					template.placeInWorld(_serverworld, BlockPos.containing(x - 9, y - 1, z - 9), BlockPos.containing(x - 9, y - 1, z - 9), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+				final Vec3 _center = new Vec3(x, y, z);
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(13 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+					if (!(entityiterator == entity)) {
+						entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())));
+						entityiterator.push((entityiterator.getLookAngle().x * (-5)), 1.5, (entityiterator.getLookAngle().z * (-5)));
+					}
 				}
 			}
-			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 4), (y + 4), (z + 4), (x - 4), (y - 4), (z - 4)))) {
-				entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3(x, y, z));
-				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.FIRE_MAGIC_PARTICLE.get()), x, y, z, 50, 2, 2, 2, 1);
-				entityiterator.setDeltaMovement(new Vec3((Math.sin(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-3)), (Math.sin(entityiterator.getXRot() * (-1)) * (-2)),
-						(Math.cos(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-3))));
-				entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
-				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 200, 2, false, false));
+			sx = -7;
+			for (int index0 = 0; index0 < 15; index0++) {
+				sy = -7;
+				for (int index1 = 0; index1 < 15; index1++) {
+					sz = -7;
+					for (int index2 = 0; index2 < 15; index2++) {
+						if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.GRASS_BLOCK || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.DIRT_PATH
+								|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.SAND || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.GRAVEL) {
+							{
+								BlockPos _bp = BlockPos.containing(x + sx, y + sy, z + sz);
+								BlockState _bs = Blocks.LAVA.defaultBlockState();
+								BlockState _bso = world.getBlockState(_bp);
+								for (Property<?> _propertyOld : _bso.getProperties()) {
+									Property _propertyNew = _bs.getBlock().getStateDefinition().getProperty(_propertyOld.getName());
+									if (_propertyNew != null && _bs.getValue(_propertyNew) != null)
+										try {
+											_bs = _bs.setValue(_propertyNew, _bso.getValue(_propertyOld));
+										} catch (Exception e) {
+										}
+								}
+								world.setBlock(_bp, _bs, 3);
+							}
+						} else {
+							if (world instanceof ServerLevel _level)
+								_level.sendParticles(ParticleTypes.FALLING_LAVA, (x + sx), (y + sy), (z + sz), 16, 2, 2, 2, 1);
+						}
+						sz = sz + 1;
+					}
+					sy = sy + 1;
+				}
+				sx = sx + 1;
 			}
+			world.setBlock(BlockPos.containing(entity.getX(), entity.getY() + -1, entity.getZ()), Blocks.STONE.defaultBlockState(), 3);
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 1200);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), false);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 1600);
 	}
 }

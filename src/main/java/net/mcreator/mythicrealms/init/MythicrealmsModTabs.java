@@ -54,6 +54,8 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.FIRE_WAVE_MAGIC_BOOK.get());
 				tabData.accept(MythicrealmsModItems.FLY_MAGIC_BOOK.get());
 				tabData.accept(MythicrealmsModItems.SPECTATE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.ICE_AGE_MAGIC_BOOK.get());
+				tabData.accept(MythicrealmsModItems.DESERT_MAGIC_BOOK.get());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> DIVINE_WEAPONS = REGISTRY.register("divine_weapons",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mythicrealms.divine_weapons")).icon(() -> new ItemStack(MythicrealmsModItems.SHIELD_OF_ATHENA.get())).displayItems((parameters, tabData) -> {
@@ -115,6 +117,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_PRESSURE_PLATE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_BUTTON.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.LUNAR_COBBLESTONE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.WATER_STONE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(MythicrealmsModItems.BLOOD_BOTTLE.get());
 			tabData.accept(MythicrealmsModItems.BLOOD_POTIONS.get());
@@ -155,6 +158,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.ACTIVED_NANO.get());
 			tabData.accept(MythicrealmsModItems.ULTIMATE_INGOT.get());
 			tabData.accept(MythicrealmsModItems.ORICALC.get());
+			tabData.accept(MythicrealmsModItems.RING.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
@@ -257,7 +261,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.DEMON_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.WENDIGO_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.XOCHITL_SPAWN_EGG.get());
-			tabData.accept(MythicrealmsModItems.LOBISOMEN_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.UNICORN_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MythicrealmsModItems.MINERS_DREAM.get());
 			tabData.accept(MythicrealmsModItems.STEEL_PICKAXE.get());

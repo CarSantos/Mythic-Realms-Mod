@@ -12,7 +12,7 @@ import javax.annotation.Nullable;
 
 public class MagnetItem extends Item {
 	public MagnetItem(Item.Properties properties) {
-		super(properties);
+		super(properties.stacksTo(1));
 	}
 
 	@Override

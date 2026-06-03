@@ -27,6 +27,8 @@
     "armsModelPartR": "Empty",
     "leggingsModelPartL": "Empty",
     "leggingsModelPartR": "Empty",
-    "disabledToggles": []
+    "disabledToggles": [
+      "RING"
+    ]
   }
 }

@@ -7,7 +7,7 @@
     "mobModelName": "ModelGhostHorse",
     "mobModelTexture": "ghosthorse.png",
     "transparentModelCondition": {
-      "fixedValue": true
+      "fixedValue": false
     },
     "isShakingCondition": {
       "fixedValue": false

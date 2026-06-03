@@ -54,11 +54,11 @@ public class StopTimeEffectProcedure {
 						_livingEntity12.getAttribute(Attributes.KNOCKBACK_RESISTANCE).setBaseValue(0);
 				});
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 3200);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 3200);
 	}
 }

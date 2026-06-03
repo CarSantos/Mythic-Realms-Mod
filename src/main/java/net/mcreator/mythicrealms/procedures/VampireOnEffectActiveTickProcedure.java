@@ -7,11 +7,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
 
 public class VampireOnEffectActiveTickProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		{
@@ -19,7 +20,7 @@ public class VampireOnEffectActiveTickProcedure {
 			_vars.soulforceRegen = 0.05;
 			_vars.markSyncDirty();
 		}
-		if ((world instanceof Level _lvl0 && _lvl0.isBrightOutside()) == true) {
+		if ((world instanceof Level _lvl0 && _lvl0.isBrightOutside()) == true && world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) == true) {
 			entity.igniteForSeconds(2);
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, 1, false, false));

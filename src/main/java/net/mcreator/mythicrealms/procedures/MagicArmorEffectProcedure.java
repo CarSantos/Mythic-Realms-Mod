@@ -67,11 +67,11 @@ public class MagicArmorEffectProcedure {
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 1200);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), false);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 1200);
 	}
 }

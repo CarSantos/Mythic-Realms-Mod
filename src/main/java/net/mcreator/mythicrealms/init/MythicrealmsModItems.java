@@ -284,7 +284,12 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> SPECTATE_MAGIC_BOOK;
 	public static final DeferredItem<Item> TECH_JETPACK_ITEM;
 	public static final DeferredItem<Item> TOMOE_RING_ITEM;
-	public static final DeferredItem<Item> LOBISOMEN_SPAWN_EGG;
+	public static final DeferredItem<Item> UNICORN_SPAWN_EGG;
+	public static final DeferredItem<Item> RING;
+	public static final DeferredItem<Item> WATER_STONE;
+	public static final DeferredItem<Item> OCEAN_PORTAL;
+	public static final DeferredItem<Item> ICE_AGE_MAGIC_BOOK;
+	public static final DeferredItem<Item> DESERT_MAGIC_BOOK;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -543,7 +548,12 @@ public class MythicrealmsModItems {
 		SPECTATE_MAGIC_BOOK = register("spectate_magic_book", SpectateMagicBookItem::new);
 		TECH_JETPACK_ITEM = register("tech_jetpack_item", TechJetpackItemItem::new);
 		TOMOE_RING_ITEM = register("tomoe_ring_item", TomoeRingItemItem::new);
-		LOBISOMEN_SPAWN_EGG = register("lobisomen_spawn_egg", properties -> new SpawnEggItem(MythicrealmsModEntities.LOBISOMEN.get(), properties));
+		UNICORN_SPAWN_EGG = register("unicorn_spawn_egg", properties -> new SpawnEggItem(MythicrealmsModEntities.UNICORN.get(), properties));
+		RING = register("ring", RingItem::new);
+		WATER_STONE = block(MythicrealmsModBlocks.WATER_STONE);
+		OCEAN_PORTAL = block(MythicrealmsModBlocks.OCEAN_PORTAL, new Item.Properties().rarity(Rarity.EPIC));
+		ICE_AGE_MAGIC_BOOK = register("ice_age_magic_book", IceAgeMagicBookItem::new);
+		DESERT_MAGIC_BOOK = register("desert_magic_book", DesertMagicBookItem::new);
 	}
 
 	// Start of user code block custom items

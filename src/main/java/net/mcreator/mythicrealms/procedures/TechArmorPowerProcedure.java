@@ -77,9 +77,6 @@ public class TechArmorPowerProcedure {
 					}
 				}
 			}
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mythicrealms:desert_of_dead_star"))) {
-				entity.invulnerableTime = 20;
-			}
 			if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mythicrealms:lunar_plains"))) {
 				entity.setAirSupply(10);
 			}

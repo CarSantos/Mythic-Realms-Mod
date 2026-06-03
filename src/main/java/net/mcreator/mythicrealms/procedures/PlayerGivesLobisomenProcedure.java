@@ -31,10 +31,10 @@ public class PlayerGivesLobisomenProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (entity instanceof Player && entity instanceof Villager && sourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MythicrealmsModMobEffects.LOBISOMEN_EFFECT)) {
+		if (entity instanceof Player && entity instanceof Villager && sourceentity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(MythicrealmsModMobEffects.WEREWOLF_EFFECT)) {
 			if (Math.random() < 0.4) {
 				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MythicrealmsModMobEffects.LOBISOMEN_EFFECT, (int) Double.POSITIVE_INFINITY, 1, false, false));
+					_entity.addEffect(new MobEffectInstance(MythicrealmsModMobEffects.WEREWOLF_EFFECT, (int) Double.POSITIVE_INFINITY, 1, false, false));
 			}
 		}
 	}

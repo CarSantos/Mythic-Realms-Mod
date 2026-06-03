@@ -39,7 +39,7 @@ public class VampireEffectMobEffect extends MobEffect {
 
 	@Override
 	public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-		VampireOnEffectActiveTickProcedure.execute(level, entity);
+		VampireOnEffectActiveTickProcedure.execute(level, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return super.applyEffectTick(level, entity, amplifier);
 	}
 

@@ -7,6 +7,7 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -83,12 +84,13 @@ public class NanoArmorPowerProcedure {
 			if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mythicrealms:lunar_plains"))) {
 				entity.setAirSupply(10);
 			}
-			if (Minecraft.getInstance().options.keyJump.isDown() && entity.getY() < 350) {
-				entity.push(0, 0.1, 0);
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-					_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 1200, 5, false, false));
+			if (Minecraft.getInstance().options.keyJump.isDown() && !entity.isInWater()) {
+				if (entity instanceof Player _plr && !(_plr.isFallFlying())) {
+					_plr.startFallFlying();
+				}
+				entity.push((entity.getLookAngle().x * 0.1), (entity.getLookAngle().y * 0.1), (entity.getLookAngle().z * 0.1));
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, x, y, z, 5, 0, 0.5, 0, 0.1);
+					_level.sendParticles(ParticleTypes.SOUL_FIRE_FLAME, x, y, z, 5, (entity.getLookAngle().x * 0.05), (entity.getLookAngle().y * 0.05), (entity.getLookAngle().z * 0.05), 0.1);
 			}
 		}
 	}

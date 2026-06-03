@@ -28,15 +28,17 @@ public class HighestSoundEffectProcedure {
 				_vars.markSyncDirty();
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.MUSIC_MAGIC_PARTICLE.get()), x, y, z, 1280, 6, 6, 6, 0.2);
+				_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.MUSIC_MAGIC_PARTICLE.get()), x, y, z, 1280, 18, 6, 18, 0.2);
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.MUSIC_MAGIC_PARTICLE.get()), x, y, z, 640, 10, 6, 10, 0.2);
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.MUSIC_MAGIC_PARTICLE.get()), x, y, z, 320, 18, 6, 18, 0.2);
+				_level.sendParticles((SimpleParticleType) (MythicrealmsModParticleTypes.MUSIC_MAGIC_PARTICLE.get()), x, y, z, 320, 6, 6, 6, 0.2);
 			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 4), (y + 4), (z + 4), (x - 4), (y - 4), (z - 4)))) {
 				entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 4);
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 2400, 2, false, false));
+				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 1200, 1, false, false));
 			}
 			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 8), (y + 8), (z + 8), (x - 8), (y - 8), (z - 8)))) {
 				entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
@@ -48,11 +50,11 @@ public class HighestSoundEffectProcedure {
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.NAUSEA, 1200, 1, false, false));
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 80);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 80);
 	}
 }

@@ -118,8 +118,8 @@ public class MythicrealmsModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<ToxicSlimeProjetileEntity>> TOXIC_SLIME_PROJETILE = register("toxic_slime_projetile",
 			EntityType.Builder.<ToxicSlimeProjetileEntity>of(ToxicSlimeProjetileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<LobisomenEntity>> LOBISOMEN = register("lobisomen",
-			EntityType.Builder.<LobisomenEntity>of(LobisomenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+	public static final DeferredHolder<EntityType<?>, EntityType<UnicornEntity>> UNICORN = register("unicorn",
+			EntityType.Builder.<UnicornEntity>of(UnicornEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
 
@@ -151,7 +151,7 @@ public class MythicrealmsModEntities {
 		DemonEntity.init(event);
 		WendigoEntity.init(event);
 		XochitlEntity.init(event);
-		LobisomenEntity.init(event);
+		UnicornEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -176,6 +176,6 @@ public class MythicrealmsModEntities {
 		event.put(DEMON.get(), DemonEntity.createAttributes().build());
 		event.put(WENDIGO.get(), WendigoEntity.createAttributes().build());
 		event.put(XOCHITL.get(), XochitlEntity.createAttributes().build());
-		event.put(LOBISOMEN.get(), LobisomenEntity.createAttributes().build());
+		event.put(UNICORN.get(), UnicornEntity.createAttributes().build());
 	}
 }

@@ -42,12 +42,12 @@ public class LifeStealMagicProcedure {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.COMPOSTER, (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0, 3, 0, 0.5);
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 100);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), false);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 100);
 	}
 
 	private static Entity findEntityInWorldRange(LevelAccessor world, Class<? extends Entity> clazz, double x, double y, double z, double range) {

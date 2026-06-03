@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/waterstone",
+    "up": "mythicrealms:block/waterstone",
+    "north": "mythicrealms:block/waterstone",
+    "east": "mythicrealms:block/waterstone",
+    "south": "mythicrealms:block/waterstone",
+    "west": "mythicrealms:block/waterstone",
+    "particle": "mythicrealms:block/waterstone"
+  },
+  "render_type": "solid"
+}

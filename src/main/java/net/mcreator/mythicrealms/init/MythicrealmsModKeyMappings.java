@@ -32,19 +32,6 @@ public class MythicrealmsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping CAVE = new KeyMapping("key.mythicrealms.cave", GLFW.GLFW_KEY_UNKNOWN, "key.categories.gameplay") {
-		private boolean isDownOld = false;
-
-		@Override
-		public void setDown(boolean isDown) {
-			super.setDown(isDown);
-			if (isDownOld != isDown && isDown) {
-				ClientPacketDistributor.sendToServer(new CaveMessage(0, 0));
-				CaveMessage.pressAction(Minecraft.getInstance().player, 0, 0);
-			}
-			isDownOld = isDown;
-		}
-	};
 	public static final KeyMapping GHOST_KEY = new KeyMapping("key.mythicrealms.ghost_key", GLFW.GLFW_KEY_UNKNOWN, "key.categories.gameplay") {
 		private boolean isDownOld = false;
 
@@ -121,19 +108,32 @@ public class MythicrealmsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
+	public static final KeyMapping VAMPIRE_BAT_FORM = new KeyMapping("key.mythicrealms.vampire_bat_form", GLFW.GLFW_KEY_UNKNOWN, "key.categories.misc") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				ClientPacketDistributor.sendToServer(new VampireBatFormMessage(0, 0));
+				VampireBatFormMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long SMOKE_KEY_LASTPRESS = 0;
 	private static long SPECTATE_MAGIC_LASTPRESS = 0;
 
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(DASH_KEY);
-		event.register(CAVE);
 		event.register(GHOST_KEY);
 		event.register(SMOKE_KEY);
 		event.register(ACCELARATION_KEY);
 		event.register(WATER_BREATH_KEY);
 		event.register(EXPOSE_ARMOR);
 		event.register(SPECTATE_MAGIC);
+		event.register(VAMPIRE_BAT_FORM);
 	}
 
 	@EventBusSubscriber(Dist.CLIENT)
@@ -142,12 +142,12 @@ public class MythicrealmsModKeyMappings {
 		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				DASH_KEY.consumeClick();
-				CAVE.consumeClick();
 				GHOST_KEY.consumeClick();
 				SMOKE_KEY.consumeClick();
 				ACCELARATION_KEY.consumeClick();
 				WATER_BREATH_KEY.consumeClick();
 				SPECTATE_MAGIC.consumeClick();
+				VAMPIRE_BAT_FORM.consumeClick();
 			}
 		}
 	}

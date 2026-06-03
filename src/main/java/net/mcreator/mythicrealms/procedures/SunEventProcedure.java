@@ -34,13 +34,21 @@ public class SunEventProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity, RenderLevelStageEvent.AfterSky skyRenderEvent) {
 		if (entity == null || skyRenderEvent == null)
 			return;
+		boolean is_day = false;
 		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD) {
-			if ((world instanceof Level _lvl3 && _lvl3.isBrightOutside()) == true) {
-				if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 31) {
-					EclipseEventProcedure.execute(world, entity, skyRenderEvent);
-				} else if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) != 31) {
+			is_day = false;
+			if (world.dayTime() == 0) {
+				if (Math.random() < (1) / ((float) 1) || Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 31 && Math.random() < (1) / ((float) 30)) {
+					is_day = true;
+					if (world.dayTime() == 12000) {
+						is_day = false;
+					}
+				} else {
 					RenderUtils.swapVanillaTexture(RenderUtils.SUN_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/sun.png"));
 				}
+			}
+			if (is_day == true) {
+				EclipseEventProcedure.execute(world, entity, skyRenderEvent);
 			}
 		}
 	}

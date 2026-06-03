@@ -1,0 +1,64 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Werewolf",
+    "icon": "lobisomen_effect",
+    "color": {
+      "value": -10268106,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "SNEAKING_SPEED"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_EFFICIENCY"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "JUMP_STRENGTH"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": 0.3,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ]
+  }
+}

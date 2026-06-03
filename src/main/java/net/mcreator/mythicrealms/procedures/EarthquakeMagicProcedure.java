@@ -37,19 +37,18 @@ public class EarthquakeMagicProcedure {
 				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(13 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					if (!(entityiterator == entity)) {
 						entityiterator.lookAt(EntityAnchorArgument.Anchor.EYES, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())));
-						entityiterator.setDeltaMovement(new Vec3((Math.sin(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-8)), (Math.sin(entityiterator.getXRot() * (-1)) * (-1)),
-								(Math.cos(entityiterator.getYRot() * (-1) * 0.017453292) * Math.cos(entityiterator.getXRot() * (-1)) * (-8))));
+						entityiterator.push((entityiterator.getLookAngle().x * (-5)), 1.5, (entityiterator.getLookAngle().z * (-5)));
 						entityiterator.hurt(new DamageSource(world.holderOrThrow(DamageTypes.MAGIC)), 2);
 						if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(MobEffects.SLOWNESS, 200, 2, false, false));
 					}
 				}
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 360);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 100);
 	}
 }

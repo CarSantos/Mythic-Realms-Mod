@@ -640,6 +640,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -748,7 +760,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/EclipseEventProcedure.java"
         ]
       },
-      "path": "~/System/Events"
+      "path": "~/System/Events/SunEvents"
     },
     {
       "name": "BloodMoonEvent",
@@ -775,7 +787,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/BloodMoonEventProcedure.java"
         ]
       },
-      "path": "~/System/Events"
+      "path": "~/System/Events/MoonEvents/BloodMoon"
     },
     {
       "name": "HarvestMoonEvent",
@@ -785,6 +797,10 @@
       "registry_name": "harvest_moon_event",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -810,7 +826,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/HarvestMoonEventProcedure.java"
         ]
       },
-      "path": "~/System/Events"
+      "path": "~/System/Events/MoonEvents/HarvestMoon"
     },
     {
       "name": "PumpkinMoonEvent",
@@ -820,6 +836,10 @@
       "registry_name": "pumpkin_moon_event",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "skyRenderEvent",
             "type": "skyRenderEvent"
@@ -833,7 +853,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/PumpkinMoonEventProcedure.java"
         ]
       },
-      "path": "~/System/Events"
+      "path": "~/System/Events/MoonEvents"
     },
     {
       "name": "EarthMoonEvent",
@@ -2339,6 +2359,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2357,19 +2381,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/CaveOnKeyPressedProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Cave"
-    },
-    {
-      "name": "Cave",
-      "type": "keybind",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cave",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/network/CaveMessage.java"
         ]
       },
       "path": "~/System/Magic/Magic Powers/Cave"
@@ -4154,41 +4165,6 @@
         ]
       },
       "path": "~/Item/Utility/DeepworldTravelMachine"
-    },
-    {
-      "name": "NecroEntity",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necro_entity",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/NecroEntityProcedure.java"
-        ]
-      },
-      "path": "~/System/Magic/Magic Powers/Necromancer"
     },
     {
       "name": "PoisonCloudMagic",
@@ -10105,7 +10081,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/ManaMoonEventProcedure.java"
         ]
       },
-      "path": "~/System/Events"
+      "path": "~/System/Events/MoonEvents/ManaMoon"
     },
     {
       "name": "ToxicSandEntityWalksOnTheBlock",
@@ -11428,6 +11404,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -11960,23 +11940,6 @@
       "path": "~/Item/Curios/Tomoe Ring"
     },
     {
-      "name": "Lobisomen",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lobisomen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/entity/LobisomenEntity.java",
-          "src/main/resources/assets/mythicrealms/models/item/lobisomen_spawn_egg.json",
-          "src/main/resources/assets/mythicrealms/items/lobisomen_spawn_egg.json",
-          "src/main/java/net/mcreator/mythicrealms/client/renderer/LobisomenRenderer.java",
-          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/lobisomen_biome_modifier.json"
-        ]
-      },
-      "path": "~/Creature/Lobisomen"
-    },
-    {
       "name": "LobisomenVisual",
       "type": "procedure",
       "compiles": true,
@@ -11999,19 +11962,6 @@
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenVisualProcedure.java"
-        ]
-      },
-      "path": "~/System/Effects/Lobisomen"
-    },
-    {
-      "name": "LobisomenEffect",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lobisomen_effect",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/potion/LobisomenEffectMobEffect.java"
         ]
       },
       "path": "~/System/Effects/Lobisomen"
@@ -12049,25 +11999,6 @@
         ]
       },
       "path": "~/System/Effects/Lobisomen"
-    },
-    {
-      "name": "LobisomenOnEntityTickUpdate",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lobisomen_on_entity_tick_update",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenOnEntityTickUpdateProcedure.java"
-        ]
-      },
-      "path": "~/Creature/Lobisomen"
     },
     {
       "name": "FrozenVisual",
@@ -12242,6 +12173,682 @@
         "files": []
       },
       "path": "~/Item/Curios/01 Role/Role/Tank"
+    },
+    {
+      "name": "Unicorn",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unicorn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/entity/UnicornEntity.java",
+          "src/main/resources/assets/mythicrealms/models/item/unicorn_spawn_egg.json",
+          "src/main/resources/assets/mythicrealms/items/unicorn_spawn_egg.json",
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/unicorn_biome_modifier.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/UnicornRenderer.java"
+        ]
+      },
+      "path": "~/Creature/Unicorn"
+    },
+    {
+      "name": "Werewolfspawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolfspawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/WerewolfspawnProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "LobisomenVisualAllTransforme",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobisomen_visual_all_transforme",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "entityRenderEvent",
+            "type": "entityrendering"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/LobisomenVisualAllTransformeProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "WerewolfEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/potion/WerewolfEffectMobEffect.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "Lobieffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lobieffect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/LobieffectProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Lobisomen"
+    },
+    {
+      "name": "Ring",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/RingItem.java",
+          "src/main/resources/assets/mythicrealms/items/ring.json",
+          "src/main/resources/assets/mythicrealms/models/item/ring.json"
+        ]
+      },
+      "path": "~/Item/Curios/Tomoe Ring"
+    },
+    {
+      "name": "RingRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ring_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/ring_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/ring_recipe.json"
+        ]
+      },
+      "path": "~/Item/Curios/Tomoe Ring"
+    },
+    {
+      "name": "TomoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tomoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/tomoe_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/tomoe_recipe.json"
+        ]
+      },
+      "path": "~/Item/Curios/Tomoe Ring"
+    },
+    {
+      "name": "UnicornOnInitialEntitySpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unicorn_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/UnicornOnInitialEntitySpawnProcedure.java"
+        ]
+      },
+      "path": "~/Creature/Unicorn"
+    },
+    {
+      "name": "BloodMoonEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_moon_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/BloodMoonEntityProcedure.java"
+        ]
+      },
+      "path": "~/System/Events/MoonEvents/BloodMoon"
+    },
+    {
+      "name": "ManaMoonEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_moon_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "skyRenderEvent",
+            "type": "skyRenderEvent"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ManaMoonEntityProcedure.java"
+        ]
+      },
+      "path": "~/System/Events/MoonEvents/ManaMoon"
+    },
+    {
+      "name": "OceanHighPressure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean_high_pressure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/OceanHighPressureProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/High Pressure"
+    },
+    {
+      "name": "NecromancerMagicEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necromancer_magic_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/NecromancerMagicEntityProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Necromancer"
+    },
+    {
+      "name": "WaterStone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "water_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/water_stone.json",
+          "src/main/resources/assets/mythicrealms/models/block/water_stone.json",
+          "src/main/resources/assets/mythicrealms/models/item/water_stone.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/water_stone.json",
+          "src/main/resources/assets/mythicrealms/blockstates/water_stone.json",
+          "src/main/java/net/mcreator/mythicrealms/block/WaterStoneBlock.java"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Ocean"
+    },
+    {
+      "name": "OceanDimension",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/world/dimension/OceanDimensionDimension.java",
+          "src/main/resources/data/mythicrealms/dimension/ocean_dimension.json",
+          "src/main/resources/data/mythicrealms/dimension_type/ocean_dimension.json"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Ocean"
+    },
+    {
+      "name": "OceanPortal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean_portal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/block/OceanPortalBlock.java",
+          "src/main/resources/assets/mythicrealms/models/block/ocean_portal.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/ocean_portal.json",
+          "src/main/resources/assets/mythicrealms/models/item/ocean_portal.json",
+          "src/main/resources/assets/mythicrealms/items/ocean_portal.json",
+          "src/main/resources/assets/mythicrealms/blockstates/ocean_portal.json"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Ocean"
+    },
+    {
+      "name": "OceanPortalOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean_portal_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/OceanPortalOpenProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Ocean"
+    },
+    {
+      "name": "OceanPortalOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean_portal_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/OceanPortalOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Ocean"
+    },
+    {
+      "name": "AtlantiCastle",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atlanti_castle",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/loot_table/chests/atlanti_castle.json"
+        ]
+      },
+      "path": "~/World Gen/Structures/AtlantiCastle"
+    },
+    {
+      "name": "VampireBat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_bat",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/VampireBatProcedure.java"
+        ]
+      },
+      "path": "~/System/Effects/Vampire"
+    },
+    {
+      "name": "VampireBatForm",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "vampire_bat_form",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/network/VampireBatFormMessage.java"
+        ]
+      },
+      "path": "~/System/Effects/Vampire"
+    },
+    {
+      "name": "IceAgeMagic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_age_magic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/IceAgeMagicProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Ice Age"
+    },
+    {
+      "name": "IceAgeMagicBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_age_magic_book",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/ice_age_magic_book.json",
+          "src/main/resources/assets/mythicrealms/models/item/ice_age_magic_book.json",
+          "src/main/java/net/mcreator/mythicrealms/item/IceAgeMagicBookItem.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/00 Elements/Block"
+    },
+    {
+      "name": "MagneticRockOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magnetic_rock_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MagneticRockOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Item/Utility/Magnet"
+    },
+    {
+      "name": "OceanPortalPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ocean_portal_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/OceanPortalPlaceProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Ocean"
+    },
+    {
+      "name": "DesertMagic",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_magic",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/DesertMagicProcedure.java"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Desert"
+    },
+    {
+      "name": "DesertMagicUnlock",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_magic_unlock",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/desert_magic_unlock.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/Desert"
+    },
+    {
+      "name": "DesertMagicBook",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "desert_magic_book",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/desert_magic_book.json",
+          "src/main/java/net/mcreator/mythicrealms/item/DesertMagicBookItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/desert_magic_book.json"
+        ]
+      },
+      "path": "~/System/Magic/Magic Powers/00 Elements/Block"
+    },
+    {
+      "name": "AtlantisCastleSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atlantis_castle_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/AtlantisCastleSpawnProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Structures/AtlantiCastle"
+    },
+    {
+      "name": "Atlantisbases",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atlantisbases",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/worldgen/structure/atlantisbases.json",
+          "src/main/resources/data/mythicrealms/worldgen/structure_set/atlantisbases.json",
+          "src/main/resources/data/mythicrealms/worldgen/template_pool/atlantisbases.json"
+        ]
+      },
+      "path": "~/World Gen/Structures/AtlantiCastle"
     }
   ],
   "variable_elements": [
@@ -14500,7 +15107,8 @@
       "Nanos",
       "ActivedNano",
       "UltimateIngot",
-      "Oricalc"
+      "Oricalc",
+      "Ring"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -14562,7 +15170,7 @@
       "Demon",
       "Wendigo",
       "Xochitl",
-      "Lobisomen"
+      "Unicorn"
     ],
     "TOOLS": [
       "MinersDream",
@@ -14590,7 +15198,8 @@
       "SummonerRole",
       "MonkRole",
       "HunterRole",
-      "InvestigatorRole"
+      "InvestigatorRole",
+      "OceanDimension"
     ],
     "CUSTOM:KnowledgeOfBook": [
       "AccelarationMagicBook",
@@ -14624,7 +15233,9 @@
       "SubstituteMagicBook",
       "FireWaveMagicBook",
       "FlyMagicBook",
-      "SpectateMagicBook"
+      "SpectateMagicBook",
+      "IceAgeMagicBook",
+      "DesertMagicBook"
     ],
     "CUSTOM:DivineWeapons": [
       "TanmakuSword",
@@ -14681,7 +15292,6 @@
       "item.mythicrealms.hippocampus_spawn_egg": "Hippocampus Spawn Egg",
       "entity.mythicrealms.hippocampus": "Hippocampus",
       "item.mythicrealms.miners_dream": "Miner\u0027s Dream",
-      "key.mythicrealms.cave": "Cave",
       "enchantment.mythicrealms.curse_of_tree": "Curse Of Tree",
       "key.mythicrealms.ghost_key": "Ghost Mode",
       "enchantment.mythicrealms.reflect": "Reflect",
@@ -15116,10 +15726,20 @@
       "item.mythicrealms.spectate_magic_book.description_0": "Spectate Magic Book",
       "item.mythicrealms.tech_jetpack_item": "Tech Jetpack",
       "item.mythicrealms.tomoe_ring_item": "Tomoe Ring",
-      "item.mythicrealms.lobisomen_spawn_egg": "Werewolf Spawn Egg",
-      "entity.mythicrealms.lobisomen": "Werewolf",
-      "effect.mythicrealms.lobisomen_effect": "Werewolf",
-      "curios.identifier.role_slot": "Role Slot"
+      "curios.identifier.role_slot": "Role Slot",
+      "item.mythicrealms.unicorn_spawn_egg": "Unicorn Spawn Egg",
+      "entity.mythicrealms.unicorn": "Unicorn",
+      "effect.mythicrealms.werewolf_effect": "Werewolf",
+      "item.mythicrealms.ring": "Ring",
+      "item.mythicrealms.water_stone": "Water Stone",
+      "item.mythicrealms.ocean_portal": "Deepworld Portal",
+      "key.mythicrealms.vampire_bat_form": "Vampire Bat Form",
+      "item.mythicrealms.ice_age_magic_book": "Book of Knowledge",
+      "item.mythicrealms.ice_age_magic_book.description_0": "Ice Age Magic Book",
+      "advancements.desert_magic_unlock.title": "Desert Magic Unlock",
+      "advancements.desert_magic_unlock.descr": "Now Is Possible For You Use Desert Magic",
+      "item.mythicrealms.desert_magic_book": "Book of Knowledge",
+      "item.mythicrealms.desert_magic_book.description_0": "Desert Magic Book"
     }
   },
   "metadata": {
@@ -15262,7 +15882,10 @@
       "ChimeraGunItem": "armorforge:default",
       "SpectateMagicBook": "armorforge:default",
       "TechJetpackItem": "armorforge:default",
-      "TomoeRingItem": "armorforge:default"
+      "TomoeRingItem": "armorforge:default",
+      "Ring": "armorforge:default",
+      "IceAgeMagicBook": "armorforge:default",
+      "DesertMagicBook": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -15369,7 +15992,10 @@
       "ChimeraGunItem": "All perspectives",
       "SpectateMagicBook": "All perspectives",
       "TechJetpackItem": "All perspectives",
-      "TomoeRingItem": "All perspectives"
+      "TomoeRingItem": "All perspectives",
+      "Ring": "All perspectives",
+      "IceAgeMagicBook": "All perspectives",
+      "DesertMagicBook": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -15397,6 +16023,10 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "Ocean",
+                "children": []
               }
             ]
           },
@@ -15500,6 +16130,10 @@
               {
                 "name": "Pharaoh Pyramid",
                 "children": []
+              },
+              {
+                "name": "AtlantiCastle",
+                "children": []
               }
             ]
           }
@@ -15585,7 +16219,7 @@
             "children": []
           },
           {
-            "name": "Lobisomen",
+            "name": "Unicorn",
             "children": []
           }
         ]
@@ -16115,6 +16749,14 @@
                   {
                     "name": "Spectate",
                     "children": []
+                  },
+                  {
+                    "name": "Ice Age",
+                    "children": []
+                  },
+                  {
+                    "name": "Desert",
+                    "children": []
                   }
                 ]
               }
@@ -16155,7 +16797,29 @@
           },
           {
             "name": "Events",
-            "children": []
+            "children": [
+              {
+                "name": "MoonEvents",
+                "children": [
+                  {
+                    "name": "BloodMoon",
+                    "children": []
+                  },
+                  {
+                    "name": "HarvestMoon",
+                    "children": []
+                  },
+                  {
+                    "name": "ManaMoon",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "SunEvents",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Enchantement",
@@ -16198,7 +16862,8 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "curios_api"
+      "curios_api",
+      "mcreator_link"
     ],
     "currentGenerator": "neoforge-1.21.8",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",

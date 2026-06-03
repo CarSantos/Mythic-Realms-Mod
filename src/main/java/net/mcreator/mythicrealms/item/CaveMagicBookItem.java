@@ -31,7 +31,7 @@ public class CaveMagicBookItem extends Item {
 	@Override
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
 		InteractionResult ar = super.use(world, entity, hand);
-		CaveOnKeyPressedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		CaveOnKeyPressedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, entity.getItemInHand(hand));
 		return ar;
 	}
 }

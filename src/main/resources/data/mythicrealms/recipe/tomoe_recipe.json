@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": "mythicrealms:ring",
+    "b": "mythicrealms:tempest_magic_book"
+  },
+  "result": {
+    "id": "mythicrealms:tomoe_ring_item",
+    "count": 1
+  }
+}

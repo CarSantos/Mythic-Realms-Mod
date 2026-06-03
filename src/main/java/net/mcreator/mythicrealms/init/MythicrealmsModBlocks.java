@@ -85,6 +85,8 @@ public class MythicrealmsModBlocks {
 	public static final DeferredBlock<Block> CRYSTAL_BARRIER_BLOCK;
 	public static final DeferredBlock<Block> GLACITE_ORE;
 	public static final DeferredBlock<Block> FLAMITE_ORE;
+	public static final DeferredBlock<Block> WATER_STONE;
+	public static final DeferredBlock<Block> OCEAN_PORTAL;
 	static {
 		TITANIUM_ORE = register("titanium_ore", TitaniumOreBlock::new);
 		VIBRANIUM_ORE = register("vibranium_ore", VibraniumOreBlock::new);
@@ -155,6 +157,8 @@ public class MythicrealmsModBlocks {
 		CRYSTAL_BARRIER_BLOCK = register("crystal_barrier_block", CrystalBarrierBlockBlock::new);
 		GLACITE_ORE = register("glacite_ore", GlaciteOreBlock::new);
 		FLAMITE_ORE = register("flamite_ore", FlamiteOreBlock::new);
+		WATER_STONE = register("water_stone", WaterStoneBlock::new);
+		OCEAN_PORTAL = register("ocean_portal", OceanPortalBlock::new);
 	}
 
 	// Start of user code block custom blocks

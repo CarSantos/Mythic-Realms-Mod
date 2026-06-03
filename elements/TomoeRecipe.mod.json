@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:TempestMagicBook"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": "CUSTOM:TempestMagicBook"
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ring"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:TomoeRingItem"
+    },
+    "name": "tomoe_recipe",
+    "namespace": "mod"
+  }
+}

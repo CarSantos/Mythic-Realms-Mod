@@ -34,23 +34,47 @@ public class MoonEventProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity, RenderLevelStageEvent.AfterSky skyRenderEvent) {
 		if (entity == null || skyRenderEvent == null)
 			return;
-		double random = 0;
-		if ((world instanceof Level _lvl0 && _lvl0.isBrightOutside()) == false && (world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD) {
+		boolean is_bloodmoon = false;
+		boolean is_harvestmooon = false;
+		boolean is_manamoon = false;
+		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD) {
 			if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 31 && Calendar.getInstance().get(Calendar.MONTH) == 10) {
-				PumpkinMoonEventProcedure.execute(world, skyRenderEvent);
+				PumpkinMoonEventProcedure.execute(world, entity, skyRenderEvent);
 			} else if (world.dimensionType().moonPhase(world.dayTime()) == 0) {
-				if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 13) {
-					BloodMoonEventProcedure.execute(world, entity, skyRenderEvent);
-				}
-				if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 7) {
-					HarvestMoonEventProcedure.execute(world, x, y, z, skyRenderEvent);
+				if (world.dayTime() == 12000) {
+					if (Math.random() < (1) / ((float) 100) || Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 13 && Math.random() < (1) / ((float) 20)) {
+						is_bloodmoon = true;
+						if (world.dayTime() == 24000) {
+							is_bloodmoon = false;
+						}
+					} else if (Math.random() < (1) / ((float) 150) || Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 7 && Math.random() < (1) / ((float) 30)) {
+						is_harvestmooon = true;
+						if (world.dayTime() == 24000) {
+							is_harvestmooon = false;
+						}
+					} else if (Math.random() < (1) / ((float) 150) || Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 14 && Math.random() < (1) / ((float) 30)) {
+						is_manamoon = true;
+						if (world.dayTime() == 24000) {
+							is_manamoon = false;
+						}
+					} else {
+						RenderUtils.swapVanillaTexture(RenderUtils.SUN_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/sun.png"));
+					}
 				}
 			} else {
-				if (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 14) {
-					ManaMoonEventProcedure.execute(world, entity, skyRenderEvent);
-				}
 				RenderUtils.swapVanillaTexture(RenderUtils.MOON_LOCATION, ResourceLocation.parse("mythicrealms:textures/environment/moon_phases.png"));
 			}
+		}
+		if (is_bloodmoon == true) {
+			BloodMoonEventProcedure.execute(world, entity, skyRenderEvent);
+			BloodMoonEntityProcedure.execute(entity);
+		}
+		if (is_harvestmooon == true) {
+			HarvestMoonEventProcedure.execute(world, x, y, z, entity, skyRenderEvent);
+		}
+		if (is_manamoon == true) {
+			ManaMoonEventProcedure.execute(world, entity, skyRenderEvent);
+			ManaMoonEntityProcedure.execute(world, entity, skyRenderEvent);
 		}
 	}
 }

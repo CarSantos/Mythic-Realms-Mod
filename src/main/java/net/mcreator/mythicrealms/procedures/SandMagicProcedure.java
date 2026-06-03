@@ -18,6 +18,9 @@ public class SandMagicProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
+		double sx = 0;
+		double sy = 0;
+		double sz = 0;
 		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 25) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
@@ -30,11 +33,11 @@ public class SandMagicProcedure {
 				if (entityiterator instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 3200, 1, false, false));
 			}
+			if (entity instanceof Player _player)
+				_player.getCooldowns().addCooldown(itemstack, 40);
 		} else {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("You don't have enough Soulforce"), true);
 		}
-		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack, 80);
 	}
 }
