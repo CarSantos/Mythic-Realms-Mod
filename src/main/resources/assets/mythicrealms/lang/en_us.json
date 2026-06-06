@@ -427,10 +427,10 @@
   "item.mythicrealms.actived_nano": "Actived Nano",
   "key.mythicrealms.expose_armor": "Expose Armor",
   "item.mythicrealms.crystal_barrier_block": "Crystal",
-  "item.mythicrealms.glacite": "Glacite",
+  "item.mythicrealms.glacite": "Glacite Crystal",
   "item.mythicrealms.glacite_ore": "Glacite Ore",
-  "item.mythicrealms.flamite_ore": "Glacite Ore",
-  "item.mythicrealms.flamite": "Glacite",
+  "item.mythicrealms.flamite_ore": "Flmaite Ore",
+  "item.mythicrealms.flamite": "Flamite Crystal",
   "item.mythicrealms.nanite": "Nanite",
   "item.mythicrealms.xochitl_armor_helmet": "Xochitl Helmet",
   "item.mythicrealms.xochitl_armor_leggings": "Xochitl Leggings",
@@ -492,5 +492,9 @@
   "item.mythicrealms.werewolf_armor_leggings": "Werewolf Leggings",
   "item.mythicrealms.werewolf_armor_boots": "Werewolf Boots",
   "item.mythicrealms.werewolf_armor_chestplate": "Werewolf Chestplate",
-  "item.mythicrealms.werewolf_armor_helmet": "Werewolf Helmet"
+  "item.mythicrealms.werewolf_armor_helmet": "Werewolf Helmet",
+  "item.mythicrealms.blood_crystal": "Blood Crystal",
+  "item.mythicrealms.werewolf_chestplate_incomplete": "Werewolf Chestplate Incomplete",
+  "item.mythicrealms.crystal": "Crystal",
+  "item.mythicrealms.crystal_ore": "Crystal Ore"
 }

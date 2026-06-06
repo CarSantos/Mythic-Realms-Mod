@@ -21,7 +21,7 @@
       "value": "Items.NETHERITE_UPGRADE"
     },
     "smithingReturnStack": {
-      "value": "CUSTOM:WerewolfArmor.body"
+      "value": "CUSTOM:WerewolfChestplateIncomplete"
     },
     "name": "werewolf_chest_up",
     "namespace": "mod"

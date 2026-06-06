@@ -17,8 +17,6 @@ import net.mcreator.mythicrealms.client.RenderUtils;
 
 import javax.annotation.Nullable;
 
-import java.util.Calendar;
-
 @EventBusSubscriber(Dist.CLIENT)
 public class SunEventProcedure {
 	@SubscribeEvent
@@ -38,7 +36,7 @@ public class SunEventProcedure {
 		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD) {
 			is_day = false;
 			if (world.dayTime() == 0) {
-				if (Math.random() < (1) / ((float) 1) || Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 31 && Math.random() < (1) / ((float) 30)) {
+				if (Math.random() < (1) / ((float) 500)) {
 					is_day = true;
 					if (world.dayTime() == 12000) {
 						is_day = false;

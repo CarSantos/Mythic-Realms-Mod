@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "glaciteblock",
+    "texture": "crystalblock",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -39,7 +39,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Glacite Ore",
+    "name": "Crystal Ore",
     "specialInformation": {
       "fixedValue": []
     },
@@ -58,7 +58,7 @@
     ],
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "CUSTOM:Glacite"
+      "value": "CUSTOM:Crystal"
     },
     "dropAmount": 1,
     "xpAmountMin": 0,
@@ -142,13 +142,7 @@
     "generateFeature": true,
     "restrictionBiomes": [
       {
-        "value": "snowy_tundra"
-      },
-      {
-        "value": "taiga_cold"
-      },
-      {
-        "value": "mutated_ice_flats"
+        "value": "#minecraft:is_mountain"
       }
     ],
     "blocksToReplace": [
@@ -159,7 +153,7 @@
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 2,
     "frequencyOnChunk": 3,
-    "minGenerateHeight": 30,
+    "minGenerateHeight": 60,
     "maxGenerateHeight": 2000
   }
 }

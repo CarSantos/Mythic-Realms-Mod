@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "flmaite",
+    "texture": "crystal",
     "customModelName": "Normal",
     "guiTexture": "",
     "customProperties": {},
     "states": [],
     "animations": [],
-    "name": "Flamite Crystal",
+    "name": "Crystal",
     "rarity": "COMMON",
     "creativeTabs": [
       {

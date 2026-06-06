@@ -1,6 +1,10 @@
 {
   "type": "neoforge:add_features",
-  "biomes": "#minecraft:is_overworld",
+  "biomes": [
+    "snowy_plains",
+    "snowy_taiga",
+    "ice_spikes"
+  ],
   "features": "mythicrealms:glacite_ore",
   "step": "underground_ores"
 }

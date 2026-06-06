@@ -296,6 +296,10 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> WEREWOLF_ARMOR_CHESTPLATE;
 	public static final DeferredItem<Item> WEREWOLF_ARMOR_LEGGINGS;
 	public static final DeferredItem<Item> WEREWOLF_ARMOR_BOOTS;
+	public static final DeferredItem<Item> BLOOD_CRYSTAL;
+	public static final DeferredItem<Item> WEREWOLF_CHESTPLATE_INCOMPLETE;
+	public static final DeferredItem<Item> CRYSTAL;
+	public static final DeferredItem<Item> CRYSTAL_ORE;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -566,6 +570,10 @@ public class MythicrealmsModItems {
 		WEREWOLF_ARMOR_CHESTPLATE = register("werewolf_armor_chestplate", WerewolfArmorItem.Chestplate::new);
 		WEREWOLF_ARMOR_LEGGINGS = register("werewolf_armor_leggings", WerewolfArmorItem.Leggings::new);
 		WEREWOLF_ARMOR_BOOTS = register("werewolf_armor_boots", WerewolfArmorItem.Boots::new);
+		BLOOD_CRYSTAL = register("blood_crystal", BloodCrystalItem::new);
+		WEREWOLF_CHESTPLATE_INCOMPLETE = register("werewolf_chestplate_incomplete", WerewolfChestplateIncompleteItem::new);
+		CRYSTAL = register("crystal", CrystalItem::new);
+		CRYSTAL_ORE = block(MythicrealmsModBlocks.CRYSTAL_ORE);
 	}
 
 	// Start of user code block custom items

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:blood_crystal",
+    "b": "mythicrealms:werewolf_chestplate_incomplete"
+  },
+  "result": {
+    "id": "mythicrealms:werewolf_armor_chestplate",
+    "count": 1
+  }
+}

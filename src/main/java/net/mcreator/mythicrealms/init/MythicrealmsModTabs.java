@@ -160,6 +160,9 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.ORICALC.get());
 			tabData.accept(MythicrealmsModItems.RING.get());
 			tabData.accept(MythicrealmsModItems.FANG.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_CRYSTAL.get());
+			tabData.accept(MythicrealmsModItems.WEREWOLF_CHESTPLATE_INCOMPLETE.get());
+			tabData.accept(MythicrealmsModItems.CRYSTAL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
@@ -177,6 +180,9 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_LEAVES.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_SAPLING.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.SAND_OF_STAR.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.CRYSTAL_ORE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.FLAMITE_ORE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.GLACITE_ORE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(MythicrealmsModItems.STEEL_SWORD.get());
 			tabData.accept(MythicrealmsModItems.NINJA_ARMOR_HELMET.get());

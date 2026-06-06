@@ -12991,6 +12991,85 @@
         ]
       },
       "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "BloodCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/blood_crystal.json",
+          "src/main/java/net/mcreator/mythicrealms/item/BloodCrystalItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/blood_crystal.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "WerewolfChestplateIncomplete",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_chestplate_incomplete",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/werewolf_chestplate_incomplete.json",
+          "src/main/java/net/mcreator/mythicrealms/item/WerewolfChestplateIncompleteItem.java",
+          "src/main/resources/assets/mythicrealms/items/werewolf_chestplate_incomplete.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "WerewolfChestComplete",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "werewolf_chest_complete",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/werewolf_chest_complete.json"
+        ]
+      },
+      "path": "~/Item/Armors/Werewolf Armor"
+    },
+    {
+      "name": "Crystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/CrystalItem.java",
+          "src/main/resources/assets/mythicrealms/items/crystal.json",
+          "src/main/resources/assets/mythicrealms/models/item/crystal.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Crystal"
+    },
+    {
+      "name": "CrystalOre",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/crystal_ore_biome_modifier.json",
+          "src/main/resources/assets/mythicrealms/models/item/crystal_ore.json",
+          "src/main/resources/assets/mythicrealms/models/block/crystal_ore.json",
+          "src/main/resources/data/mythicrealms/worldgen/placed_feature/crystal_ore.json",
+          "src/main/java/net/mcreator/mythicrealms/block/CrystalOreBlock.java",
+          "src/main/resources/data/mythicrealms/worldgen/configured_feature/crystal_ore.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/crystal_ore.json",
+          "src/main/resources/assets/mythicrealms/blockstates/crystal_ore.json",
+          "src/main/resources/assets/mythicrealms/items/crystal_ore.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Crystal"
     }
   ],
   "variable_elements": [
@@ -13064,6 +13143,7 @@
       "~CUSTOM:LifeSteal"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:CrystalOre",
       "~CUSTOM:FlamiteOre",
       "~CUSTOM:GlaciteOre",
       "~CUSTOM:SkiesStoneBricks",
@@ -13075,6 +13155,7 @@
       "~CUSTOM:TitaniumOre"
     ],
     "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:CrystalOre",
       "~CUSTOM:FlamiteOre",
       "~CUSTOM:GlaciteOre",
       "~CUSTOM:MythrillOre",
@@ -15258,7 +15339,10 @@
       "UltimateIngot",
       "Oricalc",
       "Ring",
-      "Fang"
+      "Fang",
+      "BloodCrystal",
+      "WerewolfChestplateIncomplete",
+      "Crystal"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -15276,7 +15360,10 @@
       "LunarBlock",
       "YggdrasilLeaves",
       "YggdrasilSapling",
-      "SandOfStar"
+      "SandOfStar",
+      "CrystalOre",
+      "FlamiteOre",
+      "GlaciteOre"
     ],
     "COMBAT": [
       "SteelSword",
@@ -15832,10 +15919,10 @@
       "item.mythicrealms.actived_nano": "Actived Nano",
       "key.mythicrealms.expose_armor": "Expose Armor",
       "item.mythicrealms.crystal_barrier_block": "Crystal",
-      "item.mythicrealms.glacite": "Glacite",
+      "item.mythicrealms.glacite": "Glacite Crystal",
       "item.mythicrealms.glacite_ore": "Glacite Ore",
-      "item.mythicrealms.flamite_ore": "Glacite Ore",
-      "item.mythicrealms.flamite": "Glacite",
+      "item.mythicrealms.flamite_ore": "Flmaite Ore",
+      "item.mythicrealms.flamite": "Flamite Crystal",
       "item.mythicrealms.nanite": "Nanite",
       "item.mythicrealms.xochitl_armor_helmet": "Xochitl Helmet",
       "item.mythicrealms.xochitl_armor_leggings": "Xochitl Leggings",
@@ -15897,7 +15984,11 @@
       "item.mythicrealms.werewolf_armor_leggings": "Werewolf Leggings",
       "item.mythicrealms.werewolf_armor_boots": "Werewolf Boots",
       "item.mythicrealms.werewolf_armor_chestplate": "Werewolf Chestplate",
-      "item.mythicrealms.werewolf_armor_helmet": "Werewolf Helmet"
+      "item.mythicrealms.werewolf_armor_helmet": "Werewolf Helmet",
+      "item.mythicrealms.blood_crystal": "Blood Crystal",
+      "item.mythicrealms.werewolf_chestplate_incomplete": "Werewolf Chestplate Incomplete",
+      "item.mythicrealms.crystal": "Crystal",
+      "item.mythicrealms.crystal_ore": "Crystal Ore"
     }
   },
   "metadata": {
@@ -16045,7 +16136,9 @@
       "IceAgeMagicBook": "armorforge:default",
       "DesertMagicBook": "armorforge:default",
       "Fang": "armorforge:default",
-      "WerewolfFang": "armorforge:default"
+      "WerewolfFang": "armorforge:default",
+      "BloodCrystal": "armorforge:default",
+      "WerewolfChestplateIncomplete": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -16157,7 +16250,9 @@
       "IceAgeMagicBook": "All perspectives",
       "DesertMagicBook": "All perspectives",
       "Fang": "All perspectives",
-      "WerewolfFang": "All perspectives"
+      "WerewolfFang": "All perspectives",
+      "BloodCrystal": "All perspectives",
+      "WerewolfChestplateIncomplete": "All perspectives"
     }
   },
   "foldersRoot": {

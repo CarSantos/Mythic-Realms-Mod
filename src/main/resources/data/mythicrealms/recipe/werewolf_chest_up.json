@@ -4,6 +4,6 @@
   "base": "mythicrealms:samurai_armor_chestplate",
   "addition": "mythicrealms:werewolf_fang",
   "result": {
-    "id": "mythicrealms:werewolf_armor_chestplate"
+    "id": "mythicrealms:werewolf_chestplate_incomplete"
   }
 }
