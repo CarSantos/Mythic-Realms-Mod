@@ -20,10 +20,10 @@ public class FireWaveMagicProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 50) {
+		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 20) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 50;
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 20;
 				_vars.markSyncDirty();
 			}
 			if (world instanceof ServerLevel _level)

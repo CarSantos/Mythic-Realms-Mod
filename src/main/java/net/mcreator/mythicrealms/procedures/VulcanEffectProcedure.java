@@ -26,10 +26,10 @@ public class VulcanEffectProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 1000) {
+		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 300) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 1000;
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 300;
 				_vars.markSyncDirty();
 			}
 			{

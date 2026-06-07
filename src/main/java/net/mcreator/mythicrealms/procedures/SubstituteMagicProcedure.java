@@ -17,10 +17,10 @@ public class SubstituteMagicProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 10) {
+		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 5) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 10;
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 5;
 				_vars.markSyncDirty();
 			}
 			entity.push((entity.getLookAngle().x * (-2)), 0.5, (entity.getLookAngle().z * (-2)));

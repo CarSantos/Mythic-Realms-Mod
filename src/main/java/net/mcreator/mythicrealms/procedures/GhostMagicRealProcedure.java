@@ -47,7 +47,7 @@ public class GhostMagicRealProcedure {
 					}
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"execute at @a anchored feet run tp @p ^ ^0.01 ^0.1");
+								"execute at @a anchored feet run tp @p ^ ^0.01 ^0.01");
 					if (entity instanceof Player _player) {
 						_player.getAbilities().flying = true;
 						_player.onUpdateAbilities();

@@ -16,10 +16,10 @@ public class LightTravelOnKeyPressedProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 20) {
+		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 25) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 20;
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 25;
 				_vars.markSyncDirty();
 			}
 			entity.invulnerableTime = 100;

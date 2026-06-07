@@ -25,10 +25,10 @@ public class TempestMagicProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 500) {
+		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 200) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 500;
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 200;
 				_vars.markSyncDirty();
 			}
 			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 16), (y + 16), (z + 16), (x - 16), (y - 16), (z - 16)))) {

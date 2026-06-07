@@ -49,7 +49,7 @@ public class SmokeMagicProcedure {
 						_level.sendParticles(ParticleTypes.WHITE_SMOKE, x, y, z, 16, 1, 2, 1, 1);
 					{
 						MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-						_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 1;
+						_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 2;
 						_vars.markSyncDirty();
 					}
 				} else if (getEntityGameType(entity) == GameType.CREATIVE) {

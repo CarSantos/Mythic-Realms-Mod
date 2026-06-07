@@ -40,7 +40,7 @@ public class WaterBreathMagicProcedure {
 				if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 10) {
 					{
 						MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-						_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 0.25;
+						_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 0.5;
 						_vars.markSyncDirty();
 					}
 					if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())

@@ -21,10 +21,10 @@ public class SandMagicProcedure {
 		double sx = 0;
 		double sy = 0;
 		double sz = 0;
-		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 25) {
+		if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 50) {
 			{
 				MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 25;
+				_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 50;
 				_vars.markSyncDirty();
 			}
 			for (Entity entityiterator : world.getEntities(entity, new AABB((x + 8), (y + 4), (z + 8), (x - 8), (y - 4), (z - 8)))) {

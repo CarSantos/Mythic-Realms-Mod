@@ -18,10 +18,10 @@ public class DashMagicProcedure {
 			return;
 		if (entity instanceof ServerPlayer _plr0 && _plr0.level() instanceof ServerLevel _serverLevel0
 				&& _plr0.getAdvancements().getOrStartProgress(_serverLevel0.getServer().getAdvancements().get(ResourceLocation.parse("mythicrealms:dash_magic_unlock"))).isDone()) {
-			if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 10) {
+			if (entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce > 5) {
 				{
 					MythicrealmsModVariables.PlayerVariables _vars = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES);
-					_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 10;
+					_vars.Soulforce = entity.getData(MythicrealmsModVariables.PLAYER_VARIABLES).Soulforce - 5;
 					_vars.markSyncDirty();
 				}
 				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * 4), (entity.getLookAngle().y * 4), (entity.getLookAngle().z * 4)));
