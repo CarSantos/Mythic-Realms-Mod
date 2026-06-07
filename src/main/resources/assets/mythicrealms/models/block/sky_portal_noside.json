@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "pane": "mythicrealms:block/00_sky_portal_frame",
+    "particle": "mythicrealms:block/00_sky_portal_frame"
+  },
+  "render_type": "translucent"
+}

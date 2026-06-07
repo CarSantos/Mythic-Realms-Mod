@@ -4063,34 +4063,6 @@
       "path": "~/World Gen/Biome/Moon"
     },
     {
-      "name": "DeepworldDesert",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepworld_desert",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/mythicrealms/worldgen/biome/deepworld_desert.json"
-        ]
-      },
-      "path": "~/World Gen/Biome"
-    },
-    {
-      "name": "DeepworldForest",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "deepworld_forest",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/mythicrealms/worldgen/placed_feature/deepworld_forest_tree.json",
-          "src/main/resources/data/mythicrealms/worldgen/configured_feature/deepworld_forest_tree.json",
-          "src/main/resources/data/mythicrealms/worldgen/biome/deepworld_forest.json"
-        ]
-      },
-      "path": "~/World Gen/Biome"
-    },
-    {
       "name": "DeepworldTravelMachineBlockDestroyedByPlayer",
       "type": "procedure",
       "compiles": true,
@@ -12374,11 +12346,15 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/mythicrealms/block/OceanPortalBlock.java",
-          "src/main/resources/assets/mythicrealms/models/block/ocean_portal.json",
+          "src/main/resources/assets/mythicrealms/models/block/ocean_portal_side_alt.json",
           "src/main/resources/data/mythicrealms/loot_table/blocks/ocean_portal.json",
+          "src/main/resources/assets/mythicrealms/models/block/ocean_portal_side.json",
           "src/main/resources/assets/mythicrealms/models/item/ocean_portal.json",
           "src/main/resources/assets/mythicrealms/items/ocean_portal.json",
-          "src/main/resources/assets/mythicrealms/blockstates/ocean_portal.json"
+          "src/main/resources/assets/mythicrealms/blockstates/ocean_portal.json",
+          "src/main/resources/assets/mythicrealms/models/block/ocean_portal_post.json",
+          "src/main/resources/assets/mythicrealms/models/block/ocean_portal_noside.json",
+          "src/main/resources/assets/mythicrealms/models/block/ocean_portal_noside_alt.json"
         ]
       },
       "path": "~/World Gen/Dimension/Ocean"
@@ -13044,6 +13020,227 @@
         ]
       },
       "path": "~/Creature/Sturgeon"
+    },
+    {
+      "name": "SkyPortal",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_portal",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/loot_table/blocks/sky_portal.json",
+          "src/main/resources/assets/mythicrealms/models/block/sky_portal_side.json",
+          "src/main/resources/assets/mythicrealms/models/block/sky_portal_noside_alt.json",
+          "src/main/resources/assets/mythicrealms/models/item/sky_portal.json",
+          "src/main/resources/assets/mythicrealms/models/block/sky_portal_noside.json",
+          "src/main/resources/assets/mythicrealms/items/sky_portal.json",
+          "src/main/resources/assets/mythicrealms/models/block/sky_portal_side_alt.json",
+          "src/main/java/net/mcreator/mythicrealms/block/SkyPortalBlock.java",
+          "src/main/resources/assets/mythicrealms/models/block/sky_portal_post.json",
+          "src/main/resources/assets/mythicrealms/blockstates/sky_portal.json"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky"
+    },
+    {
+      "name": "SkyPortalOpen",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_portal_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SkyPortalOpenProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky"
+    },
+    {
+      "name": "SkyPortalOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_portal_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SkyPortalOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky"
+    },
+    {
+      "name": "SkyPortalPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sky_portal_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SkyPortalPlaceProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Dimension/Sky"
+    },
+    {
+      "name": "XochitlNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xochitl_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/XochitlNaturalEntitySpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/Creature/Xochitl"
+    },
+    {
+      "name": "SolidBlood",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_blood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/solid_blood.json",
+          "src/main/java/net/mcreator/mythicrealms/block/SolidBloodBlock.java",
+          "src/main/resources/assets/mythicrealms/models/block/solid_blood.json",
+          "src/main/resources/assets/mythicrealms/items/solid_blood.json",
+          "src/main/resources/assets/mythicrealms/blockstates/solid_blood.json",
+          "src/main/resources/data/mythicrealms/loot_table/blocks/solid_blood.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/Darkness/Block"
+    },
+    {
+      "name": "BloodNeighbourBlockChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_neighbour_block_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/BloodNeighbourBlockChangesProcedure.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/Darkness/Block"
+    },
+    {
+      "name": "Blood",
+      "type": "fluid",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/BloodItem.java",
+          "src/main/java/net/mcreator/mythicrealms/block/BloodBlock.java",
+          "src/main/resources/assets/mythicrealms/blockstates/blood.json",
+          "src/main/resources/assets/mythicrealms/models/item/blood_bucket.json",
+          "src/main/java/net/mcreator/mythicrealms/fluid/types/BloodFluidType.java",
+          "src/main/resources/assets/mythicrealms/items/blood_bucket.json",
+          "src/main/resources/assets/mythicrealms/models/block/blood.json",
+          "src/main/java/net/mcreator/mythicrealms/client/fluid/BloodFluidExtension.java",
+          "src/main/java/net/mcreator/mythicrealms/fluid/BloodFluid.java"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/Darkness"
     }
   ],
   "variable_elements": [
@@ -13093,11 +13290,11 @@
   "sound_elements": [],
   "tag_elements": {
     "BLOCKS:minecraft:overworld_carver_replaceables": [
+      "~Blocks.SANDSTONE#0",
       "~CUSTOM:SkiesStone",
       "~CUSTOM:SkiesGrass",
-      "~Blocks.SANDSTONE#0",
-      "~Blocks.SAND#0",
-      "~Blocks.SNOW_LAYER",
+      "~CUSTOM:MagneticRock",
+      "~CUSTOM:AntiMagneticRock",
       "~Blocks.STONE#0",
       "~Blocks.DIRT#0",
       "~Blocks.GRASS",
@@ -13205,9 +13402,7 @@
     "BIOMES:minecraft:has_structure/nether_fossil": [
       "~CUSTOM:ToxicBiome",
       "~CUSTOM:DarknessForest",
-      "~CUSTOM:DarknessPlains",
-      "~CUSTOM:DeepworldForest",
-      "~CUSTOM:DeepworldDesert"
+      "~CUSTOM:DarknessPlains"
     ],
     "ENTITIES:minecraft:necro": [
       "EntityBlaze",
@@ -15264,6 +15459,13 @@
     ],
     "ITEMS:mythicrealms:werewolf_armor_repair_items": [
       "~CUSTOM:Fang"
+    ],
+    "BLOCKS:minecraft:sand": [
+      "CUSTOM:SandOfStar",
+      "Blocks.SAND#0"
+    ],
+    "BLOCKS:minecraft:replaceable": [
+      "~CUSTOM:Blood"
     ]
   },
   "tab_element_order": {
@@ -15328,7 +15530,10 @@
       "SandOfStar",
       "CrystalOre",
       "FlamiteOre",
-      "GlaciteOre"
+      "GlaciteOre",
+      "SkiesGrass",
+      "SkiesStone",
+      "SolidBlood"
     ],
     "COMBAT": [
       "SteelSword",
@@ -15403,7 +15608,8 @@
       "HunterRole",
       "InvestigatorRole",
       "OceanDimension",
-      "WerewolfFang"
+      "WerewolfFang",
+      "Blood"
     ],
     "CUSTOM:KnowledgeOfBook": [
       "AccelarationMagicBook",
@@ -15594,8 +15800,6 @@
       "item.mythicrealms.deepworld_portal": "Deepworld Portal",
       "item.mythicrealms.lunar_block": "Lunar Block",
       "biome.mythicrealms.lunar_plains": "Lunar Plains",
-      "biome.mythicrealms.deepworld_desert": "Deep Desert",
-      "biome.mythicrealms.deepworld_forest": "Deepworld Plains",
       "item.mythicrealms.poison_cloud_magic_book": "Book of Knowledge",
       "item.mythicrealms.poison_cloud_magic_book.description_0": "Poison Cloud Magic Book",
       "advancements.poison_cloud_magic_unlock.descr": "Now Is Possible For You Use Poison Cloud Magic",
@@ -15932,7 +16136,7 @@
       "effect.mythicrealms.werewolf_effect": "Werewolf",
       "item.mythicrealms.ring": "Ring",
       "item.mythicrealms.water_stone": "Water Stone",
-      "item.mythicrealms.ocean_portal": "Deepworld Portal",
+      "item.mythicrealms.ocean_portal": "Ocean Portal",
       "key.mythicrealms.vampire_bat_form": "Vampire Bat Form",
       "item.mythicrealms.ice_age_magic_book": "Book of Knowledge",
       "item.mythicrealms.ice_age_magic_book.description_0": "Ice Age Magic Book",
@@ -15949,7 +16153,13 @@
       "item.mythicrealms.blood_crystal": "Blood Crystal",
       "item.mythicrealms.werewolf_chestplate_incomplete": "Werewolf Chestplate Incomplete",
       "item.mythicrealms.crystal": "Crystal",
-      "item.mythicrealms.crystal_ore": "Crystal Ore"
+      "item.mythicrealms.crystal_ore": "Crystal Ore",
+      "item.mythicrealms.sky_portal": "Sky Portal",
+      "item.mythicrealms.solid_blood": "Solid Blood",
+      "fluid.mythicrealms.blood": "Blood",
+      "fluid_type.mythicrealms.blood": "Blood",
+      "block.mythicrealms.blood": "Blood",
+      "item.mythicrealms.blood_bucket": "Blood Bucket"
     }
   },
   "metadata": {
@@ -15963,6 +16173,8 @@
       "src/main/resources/data/mythicrealms/curios/slots/head.json",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModCuriosRenderers.java",
       "src/main/resources/data/curios/tags/item/head.json",
+      "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModFluidTypes.java",
+      "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModFluids.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModScreens.java",
       "src/main/java/net/mcreator/mythicrealms/init/MythicrealmsModMenus.java",
       "src/main/java/net/mcreator/mythicrealms/network/MenuStateUpdateMessage.java",

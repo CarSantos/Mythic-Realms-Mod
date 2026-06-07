@@ -27,7 +27,6 @@ import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -38,6 +37,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.mythicrealms.procedures.XochitlNaturalEntitySpawningConditionProcedure;
 import net.mcreator.mythicrealms.procedures.WalkConditionProcedure;
 import net.mcreator.mythicrealms.procedures.SkyIdleConditionProcedure;
 import net.mcreator.mythicrealms.procedures.IdleConditionProcedure;
@@ -234,8 +234,12 @@ public class XochitlEntity extends PathfinderMob implements RangedAttackMob {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(MythicrealmsModEntities.XOCHITL.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getBlockState(pos.below()).is(BlockTags.ANIMALS_SPAWNABLE_ON) && world.getRawBrightness(pos, 0) > 8), RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MythicrealmsModEntities.XOCHITL.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return XochitlNaturalEntitySpawningConditionProcedure.execute(world, x, y, z);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

@@ -6,6 +6,7 @@ package net.mcreator.mythicrealms.init;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.fluids.capability.wrappers.FluidBucketWrapper;
 import net.neoforged.neoforge.capabilities.RegisterCapabilitiesEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -300,6 +301,9 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> WEREWOLF_CHESTPLATE_INCOMPLETE;
 	public static final DeferredItem<Item> CRYSTAL;
 	public static final DeferredItem<Item> CRYSTAL_ORE;
+	public static final DeferredItem<Item> SKY_PORTAL;
+	public static final DeferredItem<Item> SOLID_BLOOD;
+	public static final DeferredItem<Item> BLOOD_BUCKET;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -574,6 +578,9 @@ public class MythicrealmsModItems {
 		WEREWOLF_CHESTPLATE_INCOMPLETE = register("werewolf_chestplate_incomplete", WerewolfChestplateIncompleteItem::new);
 		CRYSTAL = register("crystal", CrystalItem::new);
 		CRYSTAL_ORE = block(MythicrealmsModBlocks.CRYSTAL_ORE);
+		SKY_PORTAL = block(MythicrealmsModBlocks.SKY_PORTAL, new Item.Properties().rarity(Rarity.EPIC));
+		SOLID_BLOOD = block(MythicrealmsModBlocks.SOLID_BLOOD);
+		BLOOD_BUCKET = register("blood_bucket", BloodItem::new);
 	}
 
 	// Start of user code block custom items
@@ -601,5 +608,6 @@ public class MythicrealmsModItems {
 	@SubscribeEvent
 	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
 		event.registerItem(Capabilities.ItemHandler.ITEM, (stack, context) -> new BackpackItemInventoryCapability(stack), BACKPACK_ITEM.get());
+		event.registerItem(Capabilities.FluidHandler.ITEM, (stack, context) -> new FluidBucketWrapper(stack), BLOOD_BUCKET.get());
 	}
 }

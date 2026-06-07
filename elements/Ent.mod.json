@@ -168,9 +168,6 @@
     "maxNumberOfMobsPerGroup": 1,
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:DeepworldForest"
-      },
-      {
         "value": "mutated_forest"
       }
     ],

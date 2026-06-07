@@ -3,7 +3,7 @@
   "_type": "block",
   "definition": {
     "texture": "oceanportalframe",
-    "textureTop": "deep_portal",
+    "textureTop": "oceanportalframe",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
@@ -17,6 +17,7 @@
     "animations": [],
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Pane",
     "blockSetType": "OAK",
     "pottedPlant": {
       "value": ""
@@ -25,7 +26,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "SOLID",
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -39,7 +40,7 @@
       }
     ],
     "customProperties": [],
-    "name": "Deepworld Portal",
+    "name": "Ocean Portal",
     "specialInformation": {
       "fixedValue": []
     },

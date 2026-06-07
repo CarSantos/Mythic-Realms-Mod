@@ -116,6 +116,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_TRAPDOOR.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_PRESSURE_PLATE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.YGGDRASIL_BUTTON.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.SKIES_STONE_BRICKS.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.LUNAR_COBBLESTONE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.WATER_STONE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
@@ -183,6 +184,9 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModBlocks.CRYSTAL_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.FLAMITE_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.GLACITE_ORE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.SKIES_GRASS.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.SKIES_STONE.get().asItem());
+			tabData.accept(MythicrealmsModBlocks.SOLID_BLOOD.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(MythicrealmsModItems.STEEL_SWORD.get());
 			tabData.accept(MythicrealmsModItems.NINJA_ARMOR_HELMET.get());
@@ -298,6 +302,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.HUNTER_ROLE.get());
 			tabData.accept(MythicrealmsModItems.INVESTIGATOR_ROLE.get());
 			tabData.accept(MythicrealmsModItems.WEREWOLF_FANG.get());
+			tabData.accept(MythicrealmsModItems.BLOOD_BUCKET.get());
 		}
 	}
 }

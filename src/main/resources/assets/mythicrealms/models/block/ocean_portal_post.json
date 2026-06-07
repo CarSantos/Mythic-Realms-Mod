@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "mythicrealms:block/oceanportalframe",
+    "pane": "mythicrealms:block/oceanportalframe",
+    "edge": "mythicrealms:block/oceanportalframe"
+  },
+  "render_type": "translucent"
+}

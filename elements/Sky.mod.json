@@ -34,10 +34,10 @@
     "sunHeightAffectsFog": false,
     "canRespawnHere": false,
     "hasFog": false,
-    "ambientLight": 0.0,
+    "ambientLight": 0.5,
     "doesWaterVaporize": false,
     "hasFixedTime": true,
-    "fixedTimeValue": 0,
+    "fixedTimeValue": 6000,
     "coordinateScale": 1.0,
     "infiniburnTag": "minecraft:infiniburn_overworld",
     "bedWorks": true,
@@ -48,6 +48,9 @@
     "minMonsterSpawnLightLimit": 0,
     "maxMonsterSpawnLightLimit": 7,
     "monsterSpawnBlockLightLimit": 0,
+    "onPlayerEntersDimension": {
+      "name": "SkyPortalPlace"
+    },
     "portalFrame": {
       "value": ""
     },

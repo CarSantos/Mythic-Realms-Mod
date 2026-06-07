@@ -1,9 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": [
-    "mythicrealms:deepworld_forest",
-    "flower_forest"
-  ],
+  "biomes": "flower_forest",
   "spawners": {
     "type": "mythicrealms:ent",
     "weight": 5,

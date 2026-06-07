@@ -1,7 +1,6 @@
 {
   "type": "neoforge:add_spawns",
   "biomes": [
-    "mythicrealms:deepworld_forest",
     "mythicrealms:mythic_forest",
     "birch_forest",
     "flower_forest",

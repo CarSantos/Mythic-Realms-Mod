@@ -68,6 +68,8 @@ public class MythicrealmsMod {
 		MythicrealmsModMobEffects.REGISTRY.register(modEventBus);
 		MythicrealmsModMenus.REGISTRY.register(modEventBus);
 		MythicrealmsModParticleTypes.REGISTRY.register(modEventBus);
+		MythicrealmsModFluids.REGISTRY.register(modEventBus);
+		MythicrealmsModFluidTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

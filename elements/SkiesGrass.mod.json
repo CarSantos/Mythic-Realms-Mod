@@ -21,7 +21,7 @@
     "pottedPlant": {
       "value": ""
     },
-    "tintType": "No tint",
+    "tintType": "Grass",
     "isItemTinted": false,
     "hasTransparency": false,
     "connectedSides": false,
@@ -51,7 +51,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "DECORATIONS"
+      }
+    ],
     "destroyTool": "shovel",
     "customDrop": {
       "value": ""

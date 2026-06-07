@@ -21,7 +21,7 @@ public class MummyOnEntityTickUpdateProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.SPEED, 60, 1, false, false));
 			return false;
-		} else if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mythicrealms:deepworld_desert")) == true || world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("desert")) == true) {
+		} else if (world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("mythicrealms:deleted_mod_element")) == true || world.getBiome(BlockPos.containing(x, y, z)).is(ResourceLocation.parse("desert")) == true) {
 			if (entity instanceof LivingEntity _livingEntity6 && _livingEntity6.getAttributes().hasAttribute(Attributes.BURNING_TIME))
 				_livingEntity6.getAttribute(Attributes.BURNING_TIME).setBaseValue(0);
 			return false;

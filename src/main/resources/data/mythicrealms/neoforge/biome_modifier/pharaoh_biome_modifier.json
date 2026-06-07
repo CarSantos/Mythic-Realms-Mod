@@ -1,9 +1,6 @@
 {
   "type": "neoforge:add_spawns",
-  "biomes": [
-    "mythicrealms:deepworld_desert",
-    "desert"
-  ],
+  "biomes": "desert",
   "spawners": {
     "type": "mythicrealms:pharaoh",
     "weight": 5,

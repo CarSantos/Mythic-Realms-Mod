@@ -6,9 +6,9 @@
     "minecraft:dirt",
     "mythicrealms:skies_stone",
     "minecraft:stone",
-    "minecraft:snow",
+    "mythicrealms:anti_magnetic_rock",
     "mythicrealms:lunar_block",
-    "minecraft:sand",
-    "minecraft:sandstone"
+    "minecraft:sandstone",
+    "mythicrealms:magnetic_rock"
   ]
 }

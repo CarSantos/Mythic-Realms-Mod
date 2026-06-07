@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/leaves",
   "textures": {
     "all": "mythicrealms:block/mysthic_wood_leaves",
     "particle": "mythicrealms:block/mysthic_wood_leaves"

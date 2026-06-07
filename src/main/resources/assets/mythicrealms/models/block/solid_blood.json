@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mythicrealms:block/solid_blood",
+    "up": "mythicrealms:block/solid_blood",
+    "north": "mythicrealms:block/solid_blood",
+    "east": "mythicrealms:block/solid_blood",
+    "south": "mythicrealms:block/solid_blood",
+    "west": "mythicrealms:block/solid_blood",
+    "particle": "mythicrealms:block/solid_blood"
+  },
+  "render_type": "solid"
+}

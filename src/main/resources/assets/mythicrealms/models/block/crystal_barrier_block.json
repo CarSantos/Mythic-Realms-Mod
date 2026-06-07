@@ -9,5 +9,5 @@
     "west": "mythicrealms:block/crystal",
     "particle": "mythicrealms:block/crystal"
   },
-  "render_type": "solid"
+  "render_type": "translucent"
 }

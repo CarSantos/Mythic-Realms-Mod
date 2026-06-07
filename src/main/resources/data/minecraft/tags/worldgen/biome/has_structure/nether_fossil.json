@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "mythicrealms:deepworld_desert",
-    "mythicrealms:deepworld_forest",
     "mythicrealms:darkness_plains",
     "mythicrealms:darkness_forest",
     "mythicrealms:toxic_biome"

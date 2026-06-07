@@ -5,6 +5,10 @@ package net.mcreator.mythicrealms.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
@@ -88,6 +92,9 @@ public class MythicrealmsModBlocks {
 	public static final DeferredBlock<Block> WATER_STONE;
 	public static final DeferredBlock<Block> OCEAN_PORTAL;
 	public static final DeferredBlock<Block> CRYSTAL_ORE;
+	public static final DeferredBlock<Block> SKY_PORTAL;
+	public static final DeferredBlock<Block> SOLID_BLOOD;
+	public static final DeferredBlock<Block> BLOOD;
 	static {
 		TITANIUM_ORE = register("titanium_ore", TitaniumOreBlock::new);
 		VIBRANIUM_ORE = register("vibranium_ore", VibraniumOreBlock::new);
@@ -161,11 +168,24 @@ public class MythicrealmsModBlocks {
 		WATER_STONE = register("water_stone", WaterStoneBlock::new);
 		OCEAN_PORTAL = register("ocean_portal", OceanPortalBlock::new);
 		CRYSTAL_ORE = register("crystal_ore", CrystalOreBlock::new);
+		SKY_PORTAL = register("sky_portal", SkyPortalBlock::new);
+		SOLID_BLOOD = register("solid_blood", SolidBloodBlock::new);
+		BLOOD = register("blood", BloodBlock::new);
 	}
 
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 	private static <B extends Block> DeferredBlock<B> register(String name, Function<BlockBehaviour.Properties, ? extends B> supplier) {
 		return REGISTRY.registerBlock(name, supplier);
+	}
+
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			BloodLeavesBlock.blockColorLoad(event);
+			MagicLeavesBlock.blockColorLoad(event);
+			SkiesGrassBlock.blockColorLoad(event);
+		}
 	}
 }

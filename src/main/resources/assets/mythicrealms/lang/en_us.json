@@ -137,8 +137,6 @@
   "item.mythicrealms.deepworld_portal": "Deepworld Portal",
   "item.mythicrealms.lunar_block": "Lunar Block",
   "biome.mythicrealms.lunar_plains": "Lunar Plains",
-  "biome.mythicrealms.deepworld_desert": "Deep Desert",
-  "biome.mythicrealms.deepworld_forest": "Deepworld Plains",
   "item.mythicrealms.poison_cloud_magic_book": "Book of Knowledge",
   "item.mythicrealms.poison_cloud_magic_book.description_0": "Poison Cloud Magic Book",
   "advancements.poison_cloud_magic_unlock.descr": "Now Is Possible For You Use Poison Cloud Magic",
@@ -475,7 +473,7 @@
   "effect.mythicrealms.werewolf_effect": "Werewolf",
   "item.mythicrealms.ring": "Ring",
   "item.mythicrealms.water_stone": "Water Stone",
-  "item.mythicrealms.ocean_portal": "Deepworld Portal",
+  "item.mythicrealms.ocean_portal": "Ocean Portal",
   "key.mythicrealms.vampire_bat_form": "Vampire Bat Form",
   "item.mythicrealms.ice_age_magic_book": "Book of Knowledge",
   "item.mythicrealms.ice_age_magic_book.description_0": "Ice Age Magic Book",
@@ -492,5 +490,11 @@
   "item.mythicrealms.blood_crystal": "Blood Crystal",
   "item.mythicrealms.werewolf_chestplate_incomplete": "Werewolf Chestplate Incomplete",
   "item.mythicrealms.crystal": "Crystal",
-  "item.mythicrealms.crystal_ore": "Crystal Ore"
+  "item.mythicrealms.crystal_ore": "Crystal Ore",
+  "item.mythicrealms.sky_portal": "Sky Portal",
+  "item.mythicrealms.solid_blood": "Solid Blood",
+  "fluid.mythicrealms.blood": "Blood",
+  "fluid_type.mythicrealms.blood": "Blood",
+  "block.mythicrealms.blood": "Blood",
+  "item.mythicrealms.blood_bucket": "Blood Bucket"
 }
