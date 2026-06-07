@@ -8,7 +8,6 @@ import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -35,6 +34,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.mythicrealms.procedures.SwimConditionProcedure;
+import net.mcreator.mythicrealms.procedures.SturgeonNaturalEntitySpawningConditionProcedure;
 import net.mcreator.mythicrealms.init.MythicrealmsModEntities;
 
 public class SturgeonEntity extends PathfinderMob {
@@ -195,8 +195,12 @@ public class SturgeonEntity extends PathfinderMob {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(MythicrealmsModEntities.STURGEON.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos, random) -> (world.getBlockState(pos).is(Blocks.WATER) && world.getBlockState(pos.above()).is(Blocks.WATER)), RegisterSpawnPlacementsEvent.Operation.REPLACE);
+		event.register(MythicrealmsModEntities.STURGEON.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return SturgeonNaturalEntitySpawningConditionProcedure.execute(world, x, y, z);
+		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

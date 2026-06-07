@@ -24,7 +24,7 @@ public class DemonNaturalEntitySpawningConditionProcedure {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
-				return false;
+				return true;
 			}
 		}
 		if ((world instanceof Level _lvl ? _lvl.dimension() : (world instanceof WorldGenLevel _wgl ? _wgl.getLevel().dimension() : Level.OVERWORLD)) == Level.OVERWORLD) {
@@ -37,7 +37,7 @@ public class DemonNaturalEntitySpawningConditionProcedure {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
-				return false;
+				return true;
 			}
 		}
 		return false;

@@ -49,28 +49,28 @@ public class MythicrealmsModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(-1f, 0f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_plains")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(-1f, 0f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_plains")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(0f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_forest")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.15f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(0f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_forest")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.7f, 0.5f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(-1f, 0f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "mythic_forest")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.7f, 0.5f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(-1f, 0f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "mythic_forest")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "desert_of_dead_star")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "desert_of_dead_star")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "toxic_biome")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "toxic_biome")))));
-					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(-0.5f, 0.5f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
-							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "magnetic_cave")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0.1f, 1f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 0.3f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_plains")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0.1f, 1f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 0.3f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_plains")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0.1f, 1f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 0.3f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(0.1f, 1f), Climate.Parameter.span(0.03f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 0.3f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "darkness_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.15f), Climate.Parameter.span(-0.3f, 0.3f), Climate.Parameter.span(0.05f, 1f), Climate.Parameter.span(-0.7f, -0.45f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.5f, 0.5f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "mythic_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-1f, -0.15f), Climate.Parameter.span(-0.3f, 0.3f), Climate.Parameter.span(0.05f, 1f), Climate.Parameter.span(-0.7f, -0.45f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.5f, 0.5f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "mythic_forest")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, -0.3f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "desert_of_dead_star")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(-0.1f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, -0.3f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "desert_of_dead_star")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.4999f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-1f, 0f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "toxic_biome")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.4999f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-1f, -0.3f),
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-1f, 0f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "toxic_biome")))));
+					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.5f, 0f), Climate.Parameter.span(-1f, -0.35f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 0.5f),
+							Climate.Parameter.span(0.2f, 0.9f), Climate.Parameter.span(0f, 1f), 0), biomeRegistry.getOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("mythicrealms", "magnetic_cave")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));

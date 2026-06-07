@@ -148,27 +148,14 @@
     "rangedAttackRadius": 10.0,
     "spawnThisMob": true,
     "doesDespawnWhenIdle": true,
+    "spawningCondition": {
+      "name": "SturgeonNaturalEntitySpawningCondition"
+    },
     "spawningProbability": 50,
     "mobSpawningType": "waterAmbient",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 6,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:DeepworldForest"
-      },
-      {
-        "value": "CUSTOM:DeepworldOcean"
-      },
-      {
-        "value": "CUSTOM:DeepworldPlains"
-      },
-      {
-        "value": "CUSTOM:DeepworldSnowForest"
-      },
-      {
-        "value": "CUSTOM:DeepworldSnowPlains"
-      }
-    ],
+    "restrictionBiomes": [],
     "spawnInDungeons": false,
     "raidSpawnsCount": [
       4,

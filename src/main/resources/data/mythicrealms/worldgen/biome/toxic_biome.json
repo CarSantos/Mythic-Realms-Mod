@@ -1,7 +1,7 @@
 {
   "has_precipitation": true,
   "temperature": 0.5,
-  "downfall": 0.5,
+  "downfall": 1,
   "effects": {
     "particle": {
       "options": {
@@ -9,10 +9,10 @@
       },
       "probability": 0.003
     },
-    "foliage_color": -16114425,
-    "grass_color": -16114425,
-    "sky_color": -16031232,
-    "fog_color": -16031232,
+    "foliage_color": 10387789,
+    "grass_color": 9470285,
+    "sky_color": -13933009,
+    "fog_color": 12638463,
     "water_color": 4159204,
     "water_fog_color": 329011
   },

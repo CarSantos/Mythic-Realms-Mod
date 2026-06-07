@@ -2,13 +2,9 @@
   "replace": false,
   "values": [
     "mythicrealms:deepworld_desert",
-    "mythicrealms:deepworld_plains",
     "mythicrealms:deepworld_forest",
     "mythicrealms:darkness_plains",
     "mythicrealms:darkness_forest",
-    "mythicrealms:deepworld_snow_forest",
-    "mythicrealms:desert_of_dead_star",
-    "mythicrealms:toxic_biome",
-    "mythicrealms:deepworld_snow_plains"
+    "mythicrealms:toxic_biome"
   ]
 }

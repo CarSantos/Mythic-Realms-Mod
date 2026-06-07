@@ -12,6 +12,10 @@
     "underwaterBlock": {
       "value": "Blocks.GRAVEL"
     },
+    "airColor": {
+      "value": -13024949,
+      "falpha": 0.0
+    },
     "grassColor": {
       "value": -10378674,
       "falpha": 0.0
@@ -38,30 +42,30 @@
       "value": "CUSTOM:FireMagicParticle"
     },
     "particlesProbability": 0.5,
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
+    "rainingPossibility": 0.0,
+    "temperature": 1.6,
     "spawnBiome": true,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.5,
-      "max": 0.5
+      "min": 0.5,
+      "max": 1.0
     },
     "genHumidity": {
-      "min": -0.5,
-      "max": 0.5
+      "min": -0.1,
+      "max": 1.0
     },
     "genContinentalness": {
       "min": 0.3,
       "max": 1.0
     },
     "genErosion": {
-      "min": -0.5,
-      "max": 0.5
+      "min": -1.0,
+      "max": -0.3
     },
     "genWeirdness": {
       "min": -1.0,
-      "max": 1.0
+      "max": -0.3
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",
@@ -98,11 +102,11 @@
     "spawnIgloo": false,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
-    "spawnShipwreckBeached": false,
+    "spawnShipwreckBeached": true,
     "spawnBuriedTreasure": false,
     "oceanRuinType": "NONE",
     "spawnNetherBridge": false,
-    "spawnNetherFossil": true,
+    "spawnNetherFossil": false,
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",

@@ -36,24 +36,24 @@
           "biome": "mythicrealms:mythic_forest",
           "parameters": {
             "temperature": [
-              -0.7,
-              0.5
+              -1,
+              -0.15
             ],
             "humidity": [
-              -0.5,
-              1
+              -0.3,
+              0.3
             ],
             "continentalness": [
-              -0.1,
+              0.05,
               1
             ],
             "weirdness": [
-              -1,
-              1
+              -0.5,
+              0.5
             ],
             "erosion": [
-              -1,
-              0
+              -0.7,
+              -0.45
             ],
             "depth": 0,
             "offset": 0
