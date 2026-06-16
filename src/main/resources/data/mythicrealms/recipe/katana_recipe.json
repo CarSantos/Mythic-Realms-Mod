@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "mythicrealms:noble_steel",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "mythicrealms:katana",
+    "count": 1
+  }
+}

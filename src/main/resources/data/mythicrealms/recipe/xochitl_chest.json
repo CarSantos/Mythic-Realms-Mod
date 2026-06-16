@@ -3,11 +3,12 @@
   "category": "misc",
   "pattern": [
     "a a",
-    "aaa",
+    "aba",
     "aaa"
   ],
   "key": {
-    "a": "mythicrealms:xochitl_ingot"
+    "a": "mythicrealms:xochitl_ingot",
+    "b": "mythicrealms:soul_ingot"
   },
   "result": {
     "id": "mythicrealms:xochitl_armor_chestplate",

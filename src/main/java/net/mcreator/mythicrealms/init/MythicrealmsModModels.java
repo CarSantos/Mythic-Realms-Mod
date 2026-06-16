@@ -25,6 +25,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelGhostHorse.LAYER_LOCATION, ModelGhostHorse::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Angel.LAYER_LOCATION, ModelArmor_Angel::createBodyLayer);
 		event.registerLayerDefinition(ModelPandemic.LAYER_LOCATION, ModelPandemic::createBodyLayer);
+		event.registerLayerDefinition(ModelTesla_Armor.LAYER_LOCATION, ModelTesla_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelVampire.LAYER_LOCATION, ModelVampire::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Samurai.LAYER_LOCATION, ModelArmor_Samurai::createBodyLayer);
 		event.registerLayerDefinition(ModelTech_Nocturn_Armor.LAYER_LOCATION, ModelTech_Nocturn_Armor::createBodyLayer);
@@ -37,6 +38,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelArmor_Ninja.LAYER_LOCATION, ModelArmor_Ninja::createBodyLayer);
 		event.registerLayerDefinition(ModelChimera_Gun.LAYER_LOCATION, ModelChimera_Gun::createBodyLayer);
 		event.registerLayerDefinition(ModelDemon.LAYER_LOCATION, ModelDemon::createBodyLayer);
+		event.registerLayerDefinition(Modelfossilarmor.LAYER_LOCATION, Modelfossilarmor::createBodyLayer);
 		event.registerLayerDefinition(ModelPharaoh.LAYER_LOCATION, ModelPharaoh::createBodyLayer);
 		event.registerLayerDefinition(ModelAngel.LAYER_LOCATION, ModelAngel::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
@@ -54,6 +56,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelSturgeon.LAYER_LOCATION, ModelSturgeon::createBodyLayer);
 		event.registerLayerDefinition(ModelXochitl_Armor.LAYER_LOCATION, ModelXochitl_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelArmor_Ent.LAYER_LOCATION, ModelArmor_Ent::createBodyLayer);
+		event.registerLayerDefinition(ModelArmor_god_egyptian.LAYER_LOCATION, ModelArmor_god_egyptian::createBodyLayer);
 		event.registerLayerDefinition(ModelDracula.LAYER_LOCATION, ModelDracula::createBodyLayer);
 		event.registerLayerDefinition(ModelPaladino_Armor.LAYER_LOCATION, ModelPaladino_Armor::createBodyLayer);
 		event.registerLayerDefinition(ModelZombie.LAYER_LOCATION, ModelZombie::createBodyLayer);

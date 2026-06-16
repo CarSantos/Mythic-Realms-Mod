@@ -16,7 +16,7 @@ import net.minecraft.core.registries.Registries;
 import java.util.Map;
 
 public abstract class DemonArmorItem extends Item {
-	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(20, Map.of(ArmorType.BOOTS, 4, ArmorType.LEGGINGS, 8, ArmorType.CHESTPLATE, 11, ArmorType.HELMET, 4, ArmorType.BODY, 11), 25,
+	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(20, Map.of(ArmorType.BOOTS, 5, ArmorType.LEGGINGS, 9, ArmorType.CHESTPLATE, 12, ArmorType.HELMET, 5, ArmorType.BODY, 12), 25,
 			DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_netherite")), 1f, 0.1f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:demon_armor_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("mythicrealms:demon_armor")));
 

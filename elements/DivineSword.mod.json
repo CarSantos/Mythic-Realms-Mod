@@ -1,0 +1,43 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "steel_sword",
+    "customModelName": "divinesword:default",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Divine Sword",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:DivineWeapons"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 25,
+    "damageVsEntity": 12.0,
+    "usageCount": 1024,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:AngelIngot"
+      }
+    ],
+    "immuneToFire": true,
+    "blockDropsTier": "DIAMOND",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DivineSwordLivingEntityIsHitWithTool"
+    }
+  }
+}

@@ -5407,7 +5407,7 @@
           "src/main/resources/assets/mythicrealms/models/item/blood_armor_leggings.json"
         ]
       },
-      "path": "~/Item/Armors/BloodArmor"
+      "path": "~/Item/Armors/02 Armor/BloodArmor"
     },
     {
       "name": "BloodHelmetRecipe",
@@ -5421,7 +5421,7 @@
           "src/main/resources/data/mythicrealms/recipe/blood_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/BloodArmor"
+      "path": "~/Item/Armors/02 Armor/BloodArmor"
     },
     {
       "name": "BloodChestplateRecipe",
@@ -5435,7 +5435,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/blood_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/BloodArmor"
+      "path": "~/Item/Armors/02 Armor/BloodArmor"
     },
     {
       "name": "BloodLeggingsRecipe",
@@ -5449,7 +5449,7 @@
           "src/main/resources/data/mythicrealms/recipe/blood_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/BloodArmor"
+      "path": "~/Item/Armors/02 Armor/BloodArmor"
     },
     {
       "name": "BloodBootsRecipe",
@@ -5463,7 +5463,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/blood_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/BloodArmor"
+      "path": "~/Item/Armors/02 Armor/BloodArmor"
     },
     {
       "name": "BloodArmorPower",
@@ -5482,7 +5482,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/BloodArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/BloodArmor"
+      "path": "~/Item/Armors/02 Armor/BloodArmor"
     },
     {
       "name": "NobleSteel",
@@ -5534,7 +5534,7 @@
           "src/main/java/net/mcreator/mythicrealms/client/renderer/item/SamuraiArmorArmor.java"
         ]
       },
-      "path": "~/Item/Armors/SamuraiArmor"
+      "path": "~/Item/Armors/02 Armor/SamuraiArmor"
     },
     {
       "name": "SamuraiArmorPower",
@@ -5553,7 +5553,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/SamuraiArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/SamuraiArmor"
+      "path": "~/Item/Armors/02 Armor/SamuraiArmor"
     },
     {
       "name": "SamuraiHelmetRecipe",
@@ -5567,7 +5567,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/samurai_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/SamuraiArmor"
+      "path": "~/Item/Armors/02 Armor/SamuraiArmor"
     },
     {
       "name": "SamuraiChestplateRecipe",
@@ -5581,7 +5581,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/samurai_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/SamuraiArmor"
+      "path": "~/Item/Armors/02 Armor/SamuraiArmor"
     },
     {
       "name": "SamuraiLeggingsRecipe",
@@ -5595,7 +5595,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/samurai_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/SamuraiArmor"
+      "path": "~/Item/Armors/02 Armor/SamuraiArmor"
     },
     {
       "name": "SamuraiBootsRecipe",
@@ -5609,7 +5609,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/samurai_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/SamuraiArmor"
+      "path": "~/Item/Armors/02 Armor/SamuraiArmor"
     },
     {
       "name": "GhostMushroom",
@@ -5850,7 +5850,7 @@
           "src/main/resources/assets/mythicrealms/models/item/venraid_armor_helmet.json"
         ]
       },
-      "path": "~/Item/Armors/VenraidArmor"
+      "path": "~/Item/Armors/02 Armor/VenraidArmor"
     },
     {
       "name": "VenraidArmorPower",
@@ -5869,7 +5869,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/VenraidArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/VenraidArmor"
+      "path": "~/Item/Armors/02 Armor/VenraidArmor"
     },
     {
       "name": "VenraidHelmetRecipe",
@@ -5883,7 +5883,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/venraid_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/VenraidArmor"
+      "path": "~/Item/Armors/02 Armor/VenraidArmor"
     },
     {
       "name": "VenraidChestplateRecipe",
@@ -5897,7 +5897,7 @@
           "src/main/resources/data/mythicrealms/recipe/venraid_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/VenraidArmor"
+      "path": "~/Item/Armors/02 Armor/VenraidArmor"
     },
     {
       "name": "VenraidLeggingsRecipe",
@@ -5911,7 +5911,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/venraid_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/VenraidArmor"
+      "path": "~/Item/Armors/02 Armor/VenraidArmor"
     },
     {
       "name": "VenraidBootsRecipe",
@@ -5925,7 +5925,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/venraid_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/VenraidArmor"
+      "path": "~/Item/Armors/02 Armor/VenraidArmor"
     },
     {
       "name": "Bandage",
@@ -5963,7 +5963,7 @@
           "src/main/resources/assets/mythicrealms/models/item/pharaoh_armor_chestplate.json"
         ]
       },
-      "path": "~/Item/Armors/PharaohArmor"
+      "path": "~/Item/Armors/02 Armor/PharaohArmor"
     },
     {
       "name": "PharaohBootsRecipe",
@@ -5977,7 +5977,7 @@
           "src/main/resources/data/mythicrealms/recipe/pharaoh_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PharaohArmor"
+      "path": "~/Item/Armors/02 Armor/PharaohArmor"
     },
     {
       "name": "PharaohArmorPower",
@@ -5996,7 +5996,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/PharaohArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/PharaohArmor"
+      "path": "~/Item/Armors/02 Armor/PharaohArmor"
     },
     {
       "name": "PharaohLeggingsRecipe",
@@ -6010,7 +6010,7 @@
           "src/main/resources/data/mythicrealms/recipe/pharaoh_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PharaohArmor"
+      "path": "~/Item/Armors/02 Armor/PharaohArmor"
     },
     {
       "name": "PharaohHelmetRecipe",
@@ -6024,7 +6024,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/pharaoh_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PharaohArmor"
+      "path": "~/Item/Armors/02 Armor/PharaohArmor"
     },
     {
       "name": "PharaohChestplateRecipe",
@@ -6038,7 +6038,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/pharaoh_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PharaohArmor"
+      "path": "~/Item/Armors/02 Armor/PharaohArmor"
     },
     {
       "name": "ScarabItemInInventoryTick",
@@ -6142,7 +6142,7 @@
           "src/main/resources/assets/mythicrealms/items/tech_armor_leggings.json"
         ]
       },
-      "path": "~/Item/Armors/TechArmor"
+      "path": "~/Item/Armors/02 Armor/TechArmor"
     },
     {
       "name": "TechArmorPower",
@@ -6177,7 +6177,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/TechArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/TechArmor"
+      "path": "~/Item/Armors/02 Armor/TechArmor"
     },
     {
       "name": "TechBootsRecipe",
@@ -6191,7 +6191,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/tech_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/TechArmor"
+      "path": "~/Item/Armors/02 Armor/TechArmor"
     },
     {
       "name": "TechLeggingsRecipe",
@@ -6205,7 +6205,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/tech_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/TechArmor"
+      "path": "~/Item/Armors/02 Armor/TechArmor"
     },
     {
       "name": "TechHelmetRecipe",
@@ -6219,7 +6219,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/tech_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/TechArmor"
+      "path": "~/Item/Armors/02 Armor/TechArmor"
     },
     {
       "name": "TechChestplateRecipe",
@@ -6233,7 +6233,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/tech_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/TechArmor"
+      "path": "~/Item/Armors/02 Armor/TechArmor"
     },
     {
       "name": "NinjaArmor",
@@ -6256,7 +6256,7 @@
           "src/main/resources/assets/mythicrealms/items/ninja_armor_boots.json"
         ]
       },
-      "path": "~/Item/Armors/NinjaArmor"
+      "path": "~/Item/Armors/02 Armor/NinjaArmor"
     },
     {
       "name": "NinjaArmorPower",
@@ -6275,7 +6275,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/NinjaArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/NinjaArmor"
+      "path": "~/Item/Armors/02 Armor/NinjaArmor"
     },
     {
       "name": "ReinforcedLeather",
@@ -6317,7 +6317,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/ninja_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/NinjaArmor"
+      "path": "~/Item/Armors/02 Armor/NinjaArmor"
     },
     {
       "name": "NinjaLeggingsRecipe",
@@ -6331,7 +6331,7 @@
           "src/main/resources/data/mythicrealms/recipe/ninja_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/NinjaArmor"
+      "path": "~/Item/Armors/02 Armor/NinjaArmor"
     },
     {
       "name": "NinjaHelmetRecipe",
@@ -6345,7 +6345,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/ninja_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/NinjaArmor"
+      "path": "~/Item/Armors/02 Armor/NinjaArmor"
     },
     {
       "name": "NinjaChestplateRecipe",
@@ -6359,7 +6359,7 @@
           "src/main/resources/data/mythicrealms/recipe/ninja_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/NinjaArmor"
+      "path": "~/Item/Armors/02 Armor/NinjaArmor"
     },
     {
       "name": "AngelFeather",
@@ -6426,7 +6426,7 @@
           "src/main/resources/assets/mythicrealms/items/angel_armor_helmet.json"
         ]
       },
-      "path": "~/Item/Armors/AngelArmor"
+      "path": "~/Item/Armors/02 Armor/AngelArmor"
     },
     {
       "name": "AngelBootsRecipe",
@@ -6440,7 +6440,7 @@
           "src/main/resources/data/mythicrealms/recipe/angel_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/AngelArmor"
+      "path": "~/Item/Armors/02 Armor/AngelArmor"
     },
     {
       "name": "AngelLeggingsRecipe",
@@ -6454,7 +6454,7 @@
           "src/main/resources/data/mythicrealms/recipe/angel_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/AngelArmor"
+      "path": "~/Item/Armors/02 Armor/AngelArmor"
     },
     {
       "name": "AngelHelmetRecipe",
@@ -6468,7 +6468,7 @@
           "src/main/resources/data/mythicrealms/recipe/angel_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/AngelArmor"
+      "path": "~/Item/Armors/02 Armor/AngelArmor"
     },
     {
       "name": "AngelChestplateRecipe",
@@ -6482,7 +6482,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/angel_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/AngelArmor"
+      "path": "~/Item/Armors/02 Armor/AngelArmor"
     },
     {
       "name": "AngelArmorPower",
@@ -6517,7 +6517,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/AngelArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/AngelArmor"
+      "path": "~/Item/Armors/02 Armor/AngelArmor"
     },
     {
       "name": "DemonArmor",
@@ -6540,7 +6540,7 @@
           "src/main/resources/assets/mythicrealms/models/item/demon_armor_boots.json"
         ]
       },
-      "path": "~/Item/Armors/DemonArmor"
+      "path": "~/Item/Armors/02 Armor/DemonArmor"
     },
     {
       "name": "DemonArmorPower",
@@ -6575,7 +6575,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/DemonArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/DemonArmor"
+      "path": "~/Item/Armors/02 Armor/DemonArmor"
     },
     {
       "name": "DemonScale",
@@ -6633,7 +6633,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/demon_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/DemonArmor"
+      "path": "~/Item/Armors/02 Armor/DemonArmor"
     },
     {
       "name": "DemonLeggingsRecipe",
@@ -6647,7 +6647,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/demon_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/DemonArmor"
+      "path": "~/Item/Armors/02 Armor/DemonArmor"
     },
     {
       "name": "DemonHelmetRecipe",
@@ -6661,7 +6661,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/demon_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/DemonArmor"
+      "path": "~/Item/Armors/02 Armor/DemonArmor"
     },
     {
       "name": "DemonChestplateRecipe",
@@ -6675,7 +6675,7 @@
           "src/main/resources/data/mythicrealms/recipe/demon_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/DemonArmor"
+      "path": "~/Item/Armors/02 Armor/DemonArmor"
     },
     {
       "name": "EntArmor",
@@ -6698,7 +6698,7 @@
           "src/main/resources/assets/mythicrealms/items/ent_armor_boots.json"
         ]
       },
-      "path": "~/Item/Armors/EntArmor"
+      "path": "~/Item/Armors/02 Armor/EntArmor"
     },
     {
       "name": "EntArmorPower",
@@ -6733,7 +6733,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/EntArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/EntArmor"
+      "path": "~/Item/Armors/02 Armor/EntArmor"
     },
     {
       "name": "EntEntityDies",
@@ -8377,7 +8377,7 @@
           "src/main/resources/assets/mythicrealms/equipment/magnet_armor.json"
         ]
       },
-      "path": "~/Item/Armors/MagnetArmor"
+      "path": "~/Item/Armors/02 Armor/MagnetArmor"
     },
     {
       "name": "MagnetHelmetRecipe",
@@ -8391,7 +8391,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/magnet_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/MagnetArmor"
+      "path": "~/Item/Armors/02 Armor/MagnetArmor"
     },
     {
       "name": "MagnetChestplateRecipe",
@@ -8405,7 +8405,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/magnet_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/MagnetArmor"
+      "path": "~/Item/Armors/02 Armor/MagnetArmor"
     },
     {
       "name": "MagnetLeggingsRecipe",
@@ -8419,7 +8419,7 @@
           "src/main/resources/data/mythicrealms/recipe/magnet_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/MagnetArmor"
+      "path": "~/Item/Armors/02 Armor/MagnetArmor"
     },
     {
       "name": "MagnetBootsRecipe",
@@ -8433,7 +8433,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/magnet_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/MagnetArmor"
+      "path": "~/Item/Armors/02 Armor/MagnetArmor"
     },
     {
       "name": "MagnetArmorPower",
@@ -8468,7 +8468,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/MagnetArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/MagnetArmor"
+      "path": "~/Item/Armors/02 Armor/MagnetArmor"
     },
     {
       "name": "PalladioBlock",
@@ -9327,7 +9327,7 @@
           "src/main/resources/assets/mythicrealms/models/item/palladio_armor_chestplate.json"
         ]
       },
-      "path": "~/Item/Armors/PalladinArmor"
+      "path": "~/Item/Armors/02 Armor/PalladinArmor"
     },
     {
       "name": "PalladioArmorHelmetRecipe",
@@ -9341,7 +9341,7 @@
           "src/main/resources/data/mythicrealms/recipe/palladio_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PalladinArmor"
+      "path": "~/Item/Armors/02 Armor/PalladinArmor"
     },
     {
       "name": "PalladioArmorChestplateRecipe",
@@ -9355,7 +9355,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/palladio_armor_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PalladinArmor"
+      "path": "~/Item/Armors/02 Armor/PalladinArmor"
     },
     {
       "name": "PalladioArmorLeggingsRecipe",
@@ -9369,7 +9369,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/palladio_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PalladinArmor"
+      "path": "~/Item/Armors/02 Armor/PalladinArmor"
     },
     {
       "name": "PalladioArmorBootsRecipe",
@@ -9383,7 +9383,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/palladio_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/PalladinArmor"
+      "path": "~/Item/Armors/02 Armor/PalladinArmor"
     },
     {
       "name": "PalladioArmorPower",
@@ -9402,7 +9402,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/PalladioArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/PalladinArmor"
+      "path": "~/Item/Armors/02 Armor/PalladinArmor"
     },
     {
       "name": "Uranium",
@@ -10528,7 +10528,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/NanoArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "NanoModel",
@@ -10539,7 +10539,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "NanoArmor",
@@ -10562,7 +10562,7 @@
           "src/main/resources/assets/mythicrealms/models/item/nano_armor_leggings.json"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "NanoArmorVisual",
@@ -10585,7 +10585,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/NanoArmorVisualProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "ActivedNano",
@@ -10628,7 +10628,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/nano_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "NanoChestplateRecipe",
@@ -10642,7 +10642,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/nano_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "NanoLeggingsRecipe",
@@ -10656,7 +10656,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/nano_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "NanoBootsRecipe",
@@ -10670,7 +10670,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/nano_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "ExposeArmor",
@@ -10683,7 +10683,7 @@
           "src/main/java/net/mcreator/mythicrealms/network/ExposeArmorMessage.java"
         ]
       },
-      "path": "~/Item/Armors/Nano Armor"
+      "path": "~/Item/Armors/02 Armor/Nano Armor"
     },
     {
       "name": "SmokeMagicVisual",
@@ -10973,7 +10973,7 @@
           "src/main/resources/assets/mythicrealms/models/item/xochitl_armor_chestplate.json"
         ]
       },
-      "path": "~/Item/Armors/Xochitl Armor"
+      "path": "~/Item/Armors/02 Armor/Xochitl Armor"
     },
     {
       "name": "XochitlHelmet",
@@ -10987,7 +10987,7 @@
           "src/main/resources/data/mythicrealms/recipe/xochitl_helmet.json"
         ]
       },
-      "path": "~/Item/Armors/Xochitl Armor"
+      "path": "~/Item/Armors/02 Armor/Xochitl Armor"
     },
     {
       "name": "XochitlChest",
@@ -11001,7 +11001,7 @@
           "src/main/resources/data/mythicrealms/recipe/xochitl_chest.json"
         ]
       },
-      "path": "~/Item/Armors/Xochitl Armor"
+      "path": "~/Item/Armors/02 Armor/Xochitl Armor"
     },
     {
       "name": "XochitlLeg",
@@ -11015,7 +11015,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/xochitl_leg.json"
         ]
       },
-      "path": "~/Item/Armors/Xochitl Armor"
+      "path": "~/Item/Armors/02 Armor/Xochitl Armor"
     },
     {
       "name": "XochitlBoots",
@@ -11029,7 +11029,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/xochitl_boots.json"
         ]
       },
-      "path": "~/Item/Armors/Xochitl Armor"
+      "path": "~/Item/Armors/02 Armor/Xochitl Armor"
     },
     {
       "name": "XochitlArmorPower",
@@ -11052,7 +11052,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/XochitlArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/Xochitl Armor"
+      "path": "~/Item/Armors/02 Armor/Xochitl Armor"
     },
     {
       "name": "WendigoArmorPower",
@@ -11071,7 +11071,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/WendigoArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/Wendigo Armor"
+      "path": "~/Item/Armors/02 Armor/Wendigo Armor"
     },
     {
       "name": "WendigoBone",
@@ -11086,7 +11086,7 @@
           "src/main/java/net/mcreator/mythicrealms/item/WendigoBoneItem.java"
         ]
       },
-      "path": "~/Item/Armors/Wendigo Armor"
+      "path": "~/Item/Armors/02 Armor/Wendigo Armor"
     },
     {
       "name": "WendigoArmorArmor",
@@ -11109,7 +11109,7 @@
           "src/main/resources/assets/mythicrealms/models/item/wendigo_armor_armor_chestplate.json"
         ]
       },
-      "path": "~/Item/Armors/Wendigo Armor"
+      "path": "~/Item/Armors/02 Armor/Wendigo Armor"
     },
     {
       "name": "WendigoArmorArmorHelmetRecipe",
@@ -11123,7 +11123,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_helmet_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Wendigo Armor"
+      "path": "~/Item/Armors/02 Armor/Wendigo Armor"
     },
     {
       "name": "WendigoArmorArmorChestplateRecipe",
@@ -11137,7 +11137,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_chestplate_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Wendigo Armor"
+      "path": "~/Item/Armors/02 Armor/Wendigo Armor"
     },
     {
       "name": "WendigoArmorArmorLeggingsRecipe",
@@ -11151,7 +11151,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_leggings_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Wendigo Armor"
+      "path": "~/Item/Armors/02 Armor/Wendigo Armor"
     },
     {
       "name": "WendigoArmorArmorBootsRecipe",
@@ -11165,7 +11165,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/wendigo_armor_armor_boots_recipe.json"
         ]
       },
-      "path": "~/Item/Armors/Wendigo Armor"
+      "path": "~/Item/Armors/02 Armor/Wendigo Armor"
     },
     {
       "name": "Oricalc",
@@ -11180,7 +11180,7 @@
           "src/main/resources/assets/mythicrealms/models/item/oricalc.json"
         ]
       },
-      "path": "~/Item/Ingot/Oricalc"
+      "path": "~/Item/Ingot/Orichalcum"
     },
     {
       "name": "OricalcRecipe",
@@ -11194,7 +11194,7 @@
           "src/main/resources/data/mythicrealms/advancement/recipes/oricalc_recipe.json"
         ]
       },
-      "path": "~/Item/Ingot/Oricalc"
+      "path": "~/Item/Ingot/Orichalcum"
     },
     {
       "name": "MagicArmor",
@@ -11217,7 +11217,7 @@
           "src/main/resources/assets/mythicrealms/models/item/magic_armor_leggings.json"
         ]
       },
-      "path": "~/Item/Armors/MagicArmor"
+      "path": "~/Item/Armors/02 Armor/MagicArmor"
     },
     {
       "name": "MagicArmorPower",
@@ -11230,13 +11230,17 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
           "src/main/java/net/mcreator/mythicrealms/procedures/MagicArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/MagicArmor"
+      "path": "~/Item/Armors/02 Armor/MagicArmor"
     },
     {
       "name": "MagicArmorEffect",
@@ -11453,29 +11457,6 @@
       "path": "~/System/Magic/Magic Powers/Substitute"
     },
     {
-      "name": "ManaFlamethowerCanUseRangedItem",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mana_flamethower_can_use_ranged_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/ManaFlamethowerCanUseRangedItemProcedure.java"
-        ]
-      },
-      "path": "~/Item/Weapons/01 Guns/Mana Flamethower"
-    },
-    {
       "name": "FlyMagic",
       "type": "procedure",
       "compiles": true,
@@ -11552,22 +11533,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ],
         "files": [
@@ -12837,7 +12802,7 @@
           "src/main/resources/assets/mythicrealms/items/werewolf_armor_helmet.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "WerewolfArmorPower",
@@ -12856,7 +12821,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/WerewolfArmorPowerProcedure.java"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "WerewolfHelmetUp",
@@ -12869,7 +12834,7 @@
           "src/main/resources/data/mythicrealms/recipe/werewolf_helmet_up.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "WerewolfChestUp",
@@ -12882,7 +12847,7 @@
           "src/main/resources/data/mythicrealms/recipe/werewolf_chest_up.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "WerewolfLegUp",
@@ -12895,7 +12860,7 @@
           "src/main/resources/data/mythicrealms/recipe/werewolf_leg_up.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "WerewolfBootUp",
@@ -12908,7 +12873,7 @@
           "src/main/resources/data/mythicrealms/recipe/werewolf_boot_up.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "BloodCrystal",
@@ -12923,7 +12888,7 @@
           "src/main/resources/assets/mythicrealms/models/item/blood_crystal.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "WerewolfChestplateIncomplete",
@@ -12938,7 +12903,7 @@
           "src/main/resources/assets/mythicrealms/items/werewolf_chestplate_incomplete.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "WerewolfChestComplete",
@@ -12951,7 +12916,7 @@
           "src/main/resources/data/mythicrealms/recipe/werewolf_chest_complete.json"
         ]
       },
-      "path": "~/Item/Armors/Werewolf Armor"
+      "path": "~/Item/Armors/02 Armor/Werewolf Armor"
     },
     {
       "name": "Crystal",
@@ -13241,6 +13206,809 @@
         ]
       },
       "path": "~/World Gen/Biome/Overworld/Darkness"
+    },
+    {
+      "name": "Capacitor",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capacitor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/capacitor.json",
+          "src/main/resources/assets/mythicrealms/models/item/capacitor.json",
+          "src/main/java/net/mcreator/mythicrealms/item/CapacitorItem.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Capacitor"
+    },
+    {
+      "name": "CapacitorRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "capacitor_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/capacitor_recipe.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Capacitor"
+    },
+    {
+      "name": "SolidBloodRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "solid_blood_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/solid_blood_recipe.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/Darkness/Block"
+    },
+    {
+      "name": "BloodLake",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_lake",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/worldgen/template_pool/blood_lake.json",
+          "src/main/resources/data/mythicrealms/worldgen/structure/blood_lake.json",
+          "src/main/resources/data/mythicrealms/worldgen/structure_set/blood_lake.json"
+        ]
+      },
+      "path": "~/World Gen/Biome/Overworld/Darkness"
+    },
+    {
+      "name": "CommandMount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "command_mount",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/CommandMountProcedure.java"
+        ]
+      },
+      "path": "~/Creature"
+    },
+    {
+      "name": "YetiCommandMount",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yeti_command_mount",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/YetiCommandMountProcedure.java"
+        ]
+      },
+      "path": "~/Creature/Yeti"
+    },
+    {
+      "name": "TeslaArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/tesla_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/items/tesla_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/items/tesla_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/tesla_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/tesla_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/equipment/tesla_armor.json",
+          "src/main/resources/assets/mythicrealms/models/item/tesla_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/items/tesla_armor_boots.json",
+          "src/main/java/net/mcreator/mythicrealms/item/TeslaArmorItem.java",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/TeslaArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/items/tesla_armor_leggings.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/Tesla Armor"
+    },
+    {
+      "name": "TeslaLeggingsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/tesla_leggings_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/tesla_leggings_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/Tesla Armor"
+    },
+    {
+      "name": "TeslaHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/tesla_helmet_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/tesla_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/Tesla Armor"
+    },
+    {
+      "name": "TeslaChestplateRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_chestplate_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/tesla_chestplate_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/tesla_chestplate_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/Tesla Armor"
+    },
+    {
+      "name": "TeslaBootsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/tesla_boots_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/tesla_boots_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/Tesla Armor"
+    },
+    {
+      "name": "TeslaArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tesla_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/TeslaArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/Tesla Armor"
+    },
+    {
+      "name": "VenraidSwordToolInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "venraid_sword_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/VenraidSwordToolInInventoryTickProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/VenraidSword"
+    },
+    {
+      "name": "DivineSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/divine_sword.json",
+          "src/main/resources/assets/mythicrealms/items/divine_sword.json",
+          "src/main/java/net/mcreator/mythicrealms/item/DivineSwordItem.java"
+        ]
+      },
+      "path": "~/Item/Weapons/DivineSword"
+    },
+    {
+      "name": "DivineSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/DivineSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/DivineSword"
+    },
+    {
+      "name": "DivineSwordRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/divine_sword_recipe.json"
+        ]
+      },
+      "path": "~/Item/Weapons/DivineSword"
+    },
+    {
+      "name": "Mjolnir",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/items/mjolnir.json",
+          "src/main/resources/assets/mythicrealms/models/item/mjolnir.json",
+          "src/main/java/net/mcreator/mythicrealms/item/MjolnirItem.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Mjolnir"
+    },
+    {
+      "name": "MjolnirRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MjolnirRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Mjolnir"
+    },
+    {
+      "name": "MjolnirItemInInventoryTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MjolnirItemInInventoryTickProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Mjolnir"
+    },
+    {
+      "name": "Hammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/HammerItem.java",
+          "src/main/resources/assets/mythicrealms/items/hammer.json",
+          "src/main/resources/assets/mythicrealms/models/item/hammer.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Hammer"
+    },
+    {
+      "name": "HammerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hammer_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/hammer_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/hammer_recipe.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Hammer"
+    },
+    {
+      "name": "MjolnirRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mjolnir_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/mjolnir_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/mjolnir_recipe.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Mjolnir"
+    },
+    {
+      "name": "TanmakuHammer",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tanmaku_hammer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/tanmaku_hammer.json",
+          "src/main/java/net/mcreator/mythicrealms/item/TanmakuHammerItem.java",
+          "src/main/resources/assets/mythicrealms/items/tanmaku_hammer.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Hammer"
+    },
+    {
+      "name": "Katana",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katana",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/KatanaItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/katana.json",
+          "src/main/resources/assets/mythicrealms/items/katana.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Katana"
+    },
+    {
+      "name": "KatanaRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "katana_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/katana_recipe.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Katana"
+    },
+    {
+      "name": "PreHistoryArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pre_history_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/equipment/pre_history_armor.json",
+          "src/main/resources/assets/mythicrealms/items/pre_history_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/items/pre_history_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/items/pre_history_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/items/pre_history_armor_chestplate.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/PreHistoryArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/models/item/pre_history_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/pre_history_armor_chestplate.json",
+          "src/main/java/net/mcreator/mythicrealms/item/PreHistoryArmorItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/pre_history_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/models/item/pre_history_armor_leggings.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/FossilArmor"
+    },
+    {
+      "name": "FossilArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/FossilArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/FossilArmor"
+    },
+    {
+      "name": "SoulItem",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/SoulItemItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/soul_item.json",
+          "src/main/resources/assets/mythicrealms/items/soul_item.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Soul"
+    },
+    {
+      "name": "SoulforcePotionPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulforce_potion_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SoulforcePotionPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Soul"
+    },
+    {
+      "name": "SoulforcePotion",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulforce_potion",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/soulforce_potion.json",
+          "src/main/resources/assets/mythicrealms/items/soulforce_potion.json",
+          "src/main/java/net/mcreator/mythicrealms/item/SoulforcePotionItem.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Soul"
+    },
+    {
+      "name": "SoulforcePotionRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulforce_potion_recipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/recipe/brewing/SoulforcePotionRecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Soul"
+    },
+    {
+      "name": "SoulIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/SoulIngotItem.java",
+          "src/main/resources/assets/mythicrealms/items/soul_ingot.json",
+          "src/main/resources/assets/mythicrealms/models/item/soul_ingot.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Soul"
+    },
+    {
+      "name": "SoulIngotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_ingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/soul_ingot_recipe.json"
+        ]
+      },
+      "path": "~/Item/Ingot/Soul"
+    },
+    {
+      "name": "ManaPotionPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana_potion_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/ManaPotionPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Item/Food/Mana Potion"
+    },
+    {
+      "name": "SoulDrop",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SoulDropProcedure.java"
+        ]
+      },
+      "path": "~/Item/Ingot/Soul"
+    },
+    {
+      "name": "EgyptianGodArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_god_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/equipment/egyptian_god_armor.json",
+          "src/main/java/net/mcreator/mythicrealms/item/EgyptianGodArmorItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/egyptian_god_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/items/egyptian_god_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/items/egyptian_god_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/items/egyptian_god_armor_leggings.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/EgyptianGodArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/models/item/egyptian_god_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/egyptian_god_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/models/item/egyptian_god_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/items/egyptian_god_armor_boots.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/EgyptianArmor"
+    },
+    {
+      "name": "EgyptianGodArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_god_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/EgyptianGodArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/EgyptianArmor"
+    },
+    {
+      "name": "DivineIngot",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divine_ingot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/DivineIngotItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/divine_ingot.json",
+          "src/main/resources/assets/mythicrealms/items/divine_ingot.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/00 Ingots/Divine Ingot"
+    },
+    {
+      "name": "DivineingotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "divineingot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/divineingot_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/00 Ingots/Divine Ingot"
+    },
+    {
+      "name": "EyeOfRa",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_of_ra",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/EyeOfRaItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/eye_of_ra.json",
+          "src/main/resources/assets/mythicrealms/items/eye_of_ra.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/00 Ingots/Eye of Ra"
+    },
+    {
+      "name": "EgyptianGodHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_god_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/egyptian_god_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/EgyptianArmor"
+    },
+    {
+      "name": "EgyptianGodChestRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_god_chest_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/egyptian_god_chest_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/EgyptianArmor"
+    },
+    {
+      "name": "EgyptianGodLegRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_god_leg_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/egyptian_god_leg_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/EgyptianArmor"
+    },
+    {
+      "name": "EgyptianGodBootRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_god_boot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/egyptian_god_boot_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/EgyptianArmor"
     }
   ],
   "variable_elements": [
@@ -13334,6 +14102,8 @@
       "~CUSTOM:TitaniumOre"
     ],
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:TanmakuHammer",
+      "~CUSTOM:Hammer",
       "~CUSTOM:SteelPickaxe"
     ],
     "ITEMS:mythicrealms:steel_pickaxe_repair_items": [
@@ -13346,6 +14116,8 @@
       "~CUSTOM:SteelIngot"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:Katana",
+      "~CUSTOM:DivineSword",
       "~CUSTOM:Lance",
       "~CUSTOM:EgyptianSword",
       "~CUSTOM:TanmakuSword",
@@ -13570,6 +14342,9 @@
       "~CUSTOM:BloodSapling"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:EgyptianGodArmor.helmet",
+      "~CUSTOM:PreHistoryArmor.helmet",
+      "~CUSTOM:TeslaArmor.helmet",
       "~CUSTOM:WerewolfArmor.helmet",
       "~CUSTOM:MagicArmor.helmet",
       "~CUSTOM:WendigoArmorArmor.helmet",
@@ -13588,6 +14363,9 @@
       "~CUSTOM:BloodArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:EgyptianGodArmor.body",
+      "~CUSTOM:PreHistoryArmor.body",
+      "~CUSTOM:TeslaArmor.body",
       "~CUSTOM:WerewolfArmor.body",
       "~CUSTOM:MagicArmor.body",
       "~CUSTOM:WendigoArmorArmor.body",
@@ -13606,6 +14384,9 @@
       "~CUSTOM:BloodArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:EgyptianGodArmor.legs",
+      "~CUSTOM:PreHistoryArmor.legs",
+      "~CUSTOM:TeslaArmor.legs",
       "~CUSTOM:WerewolfArmor.legs",
       "~CUSTOM:MagicArmor.legs",
       "~CUSTOM:WendigoArmorArmor.legs",
@@ -13624,6 +14405,9 @@
       "~CUSTOM:BloodArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:EgyptianGodArmor.boots",
+      "~CUSTOM:PreHistoryArmor.boots",
+      "~CUSTOM:TeslaArmor.boots",
       "~CUSTOM:WerewolfArmor.boots",
       "~CUSTOM:MagicArmor.boots",
       "~CUSTOM:WendigoArmorArmor.boots",
@@ -15466,7 +16250,26 @@
     ],
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:Blood"
-    ]
+    ],
+    "ITEMS:mythicrealms:tesla_armor_repair_items": [
+      "~CUSTOM:Capacitor"
+    ],
+    "ITEMS:mythicrealms:divine_sword_repair_items": [
+      "~CUSTOM:AngelIngot"
+    ],
+    "ITEMS:mythicrealms:hammer_repair_items": [
+      "~CUSTOM:TitaniumIngot"
+    ],
+    "ITEMS:mythicrealms:tanmaku_hammer_repair_items": [
+      "~CUSTOM:TitaniumIngot"
+    ],
+    "ITEMS:mythicrealms:katana_repair_items": [
+      "~CUSTOM:NobleSteel"
+    ],
+    "ITEMS:mythicrealms:pre_history_armor_repair_items": [
+      "~Blocks.BONE_BLOCK"
+    ],
+    "ITEMS:mythicrealms:egyptian_god_armor_repair_items": []
   },
   "tab_element_order": {
     "MATERIALS": [
@@ -15495,27 +16298,33 @@
       "AngelIngot",
       "DemonScale",
       "DemonIngot",
-      "ManaBottle",
       "StarDust",
       "Mythrill",
+      "Crystal",
       "Glacite",
       "Flamite",
+      "BloodCrystal",
       "Nanite",
       "Nanos",
       "ActivedNano",
-      "UltimateIngot",
       "Oricalc",
-      "Ring",
       "Fang",
-      "BloodCrystal",
       "WerewolfChestplateIncomplete",
-      "Crystal"
+      "Capacitor",
+      "Ring",
+      "ManaBottle",
+      "UltimateIngot",
+      "SoulItem",
+      "SoulIngot",
+      "DivineIngot",
+      "EyeOfRa"
     ],
     "DECORATIONS": [
       "AdamantOre",
       "UraniumBlock",
       "TitaniumOre",
       "VibraniumOre",
+      "SolidBlood",
       "BloodSapling",
       "BloodLeaves",
       "BloodGrass",
@@ -15532,8 +16341,7 @@
       "FlamiteOre",
       "GlaciteOre",
       "SkiesGrass",
-      "SkiesStone",
-      "SolidBlood"
+      "SkiesStone"
     ],
     "COMBAT": [
       "SteelSword",
@@ -15553,9 +16361,12 @@
       "AngelArmor",
       "TechGooglesItem",
       "NanoArmor",
+      "TeslaArmor",
       "MagicArmor",
       "TechJetpackItem",
-      "WerewolfArmor"
+      "WerewolfArmor",
+      "PreHistoryArmor",
+      "EgyptianGodArmor"
     ],
     "MISC": [
       "GhostHorse",
@@ -15587,14 +16398,11 @@
       "SteelShovel",
       "SteelHoe",
       "BackpackItem",
+      "Blood",
       "Magnet",
-      "Moon",
-      "Deepworld",
       "SoulforceBook",
       "ReligionBook",
       "NecroBook",
-      "IlluminatyItem",
-      "Sky",
       "AssassinRole",
       "BarbarianRole",
       "DruidRole",
@@ -15607,9 +16415,12 @@
       "MonkRole",
       "HunterRole",
       "InvestigatorRole",
-      "OceanDimension",
       "WerewolfFang",
-      "Blood"
+      "Deepworld",
+      "OceanDimension",
+      "Moon",
+      "Sky",
+      "IlluminatyItem"
     ],
     "CUSTOM:KnowledgeOfBook": [
       "AccelarationMagicBook",
@@ -15652,12 +16463,17 @@
       "BloodSword",
       "EgyptianSword",
       "VenraidSword",
+      "Lance",
+      "Hammer",
+      "TanmakuHammer",
+      "Mjolnir",
+      "DivineSword",
+      "TomoeRingItem",
+      "ChimeraGunItem",
       "PumpkinStaff",
       "ShieldOfAthena",
       "BowOfApollo",
-      "Lance",
-      "ChimeraGunItem",
-      "TomoeRingItem"
+      "Katana"
     ]
   },
   "language_map": {
@@ -16064,7 +16880,7 @@
       "item.mythicrealms.toxic_sand": "Toxic Sand",
       "biome.mythicrealms.toxic_biome": "Toxic Plains",
       "key.mythicrealms.water_breath_key": "Water Breath Key",
-      "item.mythicrealms.mythrill": "Mythrill",
+      "item.mythicrealms.mythrill": "Mythril",
       "item.mythicrealms.skies_stone": "Skies Stone",
       "item.mythicrealms.mythrill_ore": "Mythrill Ore",
       "item.mythicrealms.skies_grass": "Skies Grass",
@@ -16098,7 +16914,7 @@
       "item.mythicrealms.wendigo_armor_armor_boots": "Wendigo Boots",
       "item.mythicrealms.wendigo_armor_armor_helmet": "Wendigo Helmet",
       "item.mythicrealms.wendigo_armor_armor_leggings": "Wendigo Leggings",
-      "item.mythicrealms.oricalc": "Oricalc",
+      "item.mythicrealms.oricalc": "Orichalcum",
       "item.mythicrealms.magic_armor_helmet": "Magic Helmet",
       "item.mythicrealms.magic_armor_leggings": "Magic Leggings",
       "item.mythicrealms.magic_armor_chestplate": "Magic Robe",
@@ -16159,7 +16975,30 @@
       "fluid.mythicrealms.blood": "Blood",
       "fluid_type.mythicrealms.blood": "Blood",
       "block.mythicrealms.blood": "Blood",
-      "item.mythicrealms.blood_bucket": "Blood Bucket"
+      "item.mythicrealms.blood_bucket": "Blood Bucket",
+      "item.mythicrealms.capacitor": "Capacitor",
+      "item.mythicrealms.tesla_armor_boots": "Tesla Boots",
+      "item.mythicrealms.tesla_armor_chestplate": "Tesla Chestplate",
+      "item.mythicrealms.tesla_armor_helmet": "Tesla Helmet",
+      "item.mythicrealms.tesla_armor_leggings": "Tesla Leggings",
+      "item.mythicrealms.divine_sword": "Divine Sword",
+      "item.mythicrealms.mjolnir": "Mjölnir",
+      "item.mythicrealms.hammer": "Hammer",
+      "item.mythicrealms.tanmaku_hammer": "Hammer",
+      "item.mythicrealms.katana": "Katana",
+      "item.mythicrealms.pre_history_armor_leggings": "Fossil Leggings",
+      "item.mythicrealms.pre_history_armor_helmet": "Fossil Helmet",
+      "item.mythicrealms.pre_history_armor_chestplate": "Fossil Chestplate",
+      "item.mythicrealms.pre_history_armor_boots": "Fossil Boots",
+      "item.mythicrealms.soul_item": "Soul",
+      "item.mythicrealms.soulforce_potion": "Soulforce Potion",
+      "item.mythicrealms.soul_ingot": "Soul Ingot",
+      "item.mythicrealms.egyptian_god_armor_helmet": "Egyptian God Helmet",
+      "item.mythicrealms.egyptian_god_armor_boots": "Egyptian God Boots",
+      "item.mythicrealms.egyptian_god_armor_chestplate": "Egyptian God Chestplate",
+      "item.mythicrealms.egyptian_god_armor_leggings": "Egyptian God Leggings",
+      "item.mythicrealms.divine_ingot": "Divine Ingot",
+      "item.mythicrealms.eye_of_ra": "Eye Of Ra"
     }
   },
   "metadata": {
@@ -16311,7 +17150,14 @@
       "Fang": "armorforge:default",
       "WerewolfFang": "armorforge:default",
       "BloodCrystal": "armorforge:default",
-      "WerewolfChestplateIncomplete": "armorforge:default"
+      "WerewolfChestplateIncomplete": "armorforge:default",
+      "Capacitor": "armorforge:default",
+      "Mjolnir": "armorforge:default",
+      "SoulItem": "armorforge:default",
+      "SoulforcePotion": "armorforge:default",
+      "SoulIngot": "armorforge:default",
+      "DivineIngot": "armorforge:default",
+      "EyeOfRa": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -16425,7 +17271,14 @@
       "Fang": "All perspectives",
       "WerewolfFang": "All perspectives",
       "BloodCrystal": "All perspectives",
-      "WerewolfChestplateIncomplete": "All perspectives"
+      "WerewolfChestplateIncomplete": "All perspectives",
+      "Capacitor": "All perspectives",
+      "Mjolnir": "All perspectives",
+      "SoulItem": "All perspectives",
+      "SoulforcePotion": "All perspectives",
+      "SoulIngot": "All perspectives",
+      "DivineIngot": "All perspectives",
+      "EyeOfRa": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -16647,6 +17500,10 @@
           {
             "name": "Unicorn",
             "children": []
+          },
+          {
+            "name": "Deepmare",
+            "children": []
           }
         ]
       },
@@ -16739,11 +17596,19 @@
                 "children": []
               },
               {
-                "name": "Oricalc",
+                "name": "Orichalcum",
                 "children": []
               },
               {
                 "name": "Crystal",
+                "children": []
+              },
+              {
+                "name": "Capacitor",
+                "children": []
+              },
+              {
+                "name": "Soul",
                 "children": []
               }
             ]
@@ -16752,72 +17617,107 @@
             "name": "Armors",
             "children": [
               {
-                "name": "BloodArmor",
-                "children": []
-              },
-              {
-                "name": "SamuraiArmor",
-                "children": []
-              },
-              {
-                "name": "VenraidArmor",
-                "children": []
-              },
-              {
-                "name": "PharaohArmor",
-                "children": []
-              },
-              {
-                "name": "TechArmor",
-                "children": []
-              },
-              {
-                "name": "NinjaArmor",
-                "children": []
-              },
-              {
-                "name": "AngelArmor",
-                "children": []
-              },
-              {
-                "name": "DemonArmor",
-                "children": []
-              },
-              {
-                "name": "EntArmor",
-                "children": []
-              },
-              {
                 "name": "00 Procedures",
                 "children": []
               },
               {
-                "name": "MagnetArmor",
-                "children": []
+                "name": "01 Divine Armor",
+                "children": [
+                  {
+                    "name": "EgyptianArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "00 Ingots",
+                    "children": [
+                      {
+                        "name": "Divine Ingot",
+                        "children": []
+                      },
+                      {
+                        "name": "Eye of Ra",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               },
               {
-                "name": "PalladinArmor",
-                "children": []
-              },
-              {
-                "name": "Nano Armor",
-                "children": []
-              },
-              {
-                "name": "Xochitl Armor",
-                "children": []
-              },
-              {
-                "name": "Wendigo Armor",
-                "children": []
-              },
-              {
-                "name": "MagicArmor",
-                "children": []
-              },
-              {
-                "name": "Werewolf Armor",
-                "children": []
+                "name": "02 Armor",
+                "children": [
+                  {
+                    "name": "AngelArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "BloodArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "DemonArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "EntArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "FossilArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "MagicArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "MagnetArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "Nano Armor",
+                    "children": []
+                  },
+                  {
+                    "name": "NinjaArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "PalladinArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "PharaohArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "SamuraiArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "TechArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "Tesla Armor",
+                    "children": []
+                  },
+                  {
+                    "name": "VenraidArmor",
+                    "children": []
+                  },
+                  {
+                    "name": "Wendigo Armor",
+                    "children": []
+                  },
+                  {
+                    "name": "Werewolf Armor",
+                    "children": []
+                  },
+                  {
+                    "name": "Xochitl Armor",
+                    "children": []
+                  }
+                ]
               }
             ]
           },
@@ -16857,16 +17757,23 @@
                 "children": []
               },
               {
-                "name": "01 Guns",
-                "children": [
-                  {
-                    "name": "Mana Flamethower",
-                    "children": []
-                  }
-                ]
+                "name": "Lance",
+                "children": []
               },
               {
-                "name": "Lance",
+                "name": "DivineSword",
+                "children": []
+              },
+              {
+                "name": "Mjolnir",
+                "children": []
+              },
+              {
+                "name": "Hammer",
+                "children": []
+              },
+              {
+                "name": "Katana",
                 "children": []
               }
             ]
@@ -17288,7 +18195,7 @@
   "workspaceSettings": {
     "modid": "mythicrealms",
     "modName": "MythicRealms",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": "CarSantos7",
     "websiteURL": "https://sites.google.com/view/carsantos7/mythic-realms",
     "license": "Not specified",

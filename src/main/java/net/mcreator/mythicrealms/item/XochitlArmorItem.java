@@ -14,8 +14,8 @@ import net.minecraft.core.registries.Registries;
 import java.util.Map;
 
 public abstract class XochitlArmorItem extends Item {
-	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(45, Map.of(ArmorType.BOOTS, 6, ArmorType.LEGGINGS, 12, ArmorType.CHESTPLATE, 15, ArmorType.HELMET, 6, ArmorType.BODY, 15), 30,
-			DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), 1.5f, 0.1f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:xochitl_armor_repair_items")),
+	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(45, Map.of(ArmorType.BOOTS, 5, ArmorType.LEGGINGS, 9, ArmorType.CHESTPLATE, 12, ArmorType.HELMET, 5, ArmorType.BODY, 12), 30,
+			DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), 2f, 0.1f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:xochitl_armor_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("mythicrealms:xochitl_armor")));
 
 	private XochitlArmorItem(Item.Properties properties) {

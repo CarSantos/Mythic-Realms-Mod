@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mythicrealms:pre_history_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mythicrealms:pre_history_armor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    " d "
+  ],
+  "key": {
+    "a": "mythicrealms:thunder_magic_book",
+    "b": "mythicrealms:hammer",
+    "c": "mythicrealms:tempest_magic_book",
+    "d": "minecraft:stick"
+  },
+  "result": {
+    "id": "mythicrealms:mjolnir",
+    "count": 1
+  }
+}

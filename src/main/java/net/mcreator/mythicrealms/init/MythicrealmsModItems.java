@@ -304,6 +304,29 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> SKY_PORTAL;
 	public static final DeferredItem<Item> SOLID_BLOOD;
 	public static final DeferredItem<Item> BLOOD_BUCKET;
+	public static final DeferredItem<Item> CAPACITOR;
+	public static final DeferredItem<Item> TESLA_ARMOR_HELMET;
+	public static final DeferredItem<Item> TESLA_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> TESLA_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> TESLA_ARMOR_BOOTS;
+	public static final DeferredItem<Item> DIVINE_SWORD;
+	public static final DeferredItem<Item> MJOLNIR;
+	public static final DeferredItem<Item> HAMMER;
+	public static final DeferredItem<Item> TANMAKU_HAMMER;
+	public static final DeferredItem<Item> KATANA;
+	public static final DeferredItem<Item> PRE_HISTORY_ARMOR_HELMET;
+	public static final DeferredItem<Item> PRE_HISTORY_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> PRE_HISTORY_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> PRE_HISTORY_ARMOR_BOOTS;
+	public static final DeferredItem<Item> SOUL_ITEM;
+	public static final DeferredItem<Item> SOULFORCE_POTION;
+	public static final DeferredItem<Item> SOUL_INGOT;
+	public static final DeferredItem<Item> EGYPTIAN_GOD_ARMOR_HELMET;
+	public static final DeferredItem<Item> EGYPTIAN_GOD_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> EGYPTIAN_GOD_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> EGYPTIAN_GOD_ARMOR_BOOTS;
+	public static final DeferredItem<Item> DIVINE_INGOT;
+	public static final DeferredItem<Item> EYE_OF_RA;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -581,6 +604,29 @@ public class MythicrealmsModItems {
 		SKY_PORTAL = block(MythicrealmsModBlocks.SKY_PORTAL, new Item.Properties().rarity(Rarity.EPIC));
 		SOLID_BLOOD = block(MythicrealmsModBlocks.SOLID_BLOOD);
 		BLOOD_BUCKET = register("blood_bucket", BloodItem::new);
+		CAPACITOR = register("capacitor", CapacitorItem::new);
+		TESLA_ARMOR_HELMET = register("tesla_armor_helmet", TeslaArmorItem.Helmet::new);
+		TESLA_ARMOR_CHESTPLATE = register("tesla_armor_chestplate", TeslaArmorItem.Chestplate::new);
+		TESLA_ARMOR_LEGGINGS = register("tesla_armor_leggings", TeslaArmorItem.Leggings::new);
+		TESLA_ARMOR_BOOTS = register("tesla_armor_boots", TeslaArmorItem.Boots::new);
+		DIVINE_SWORD = register("divine_sword", DivineSwordItem::new);
+		MJOLNIR = register("mjolnir", MjolnirItem::new);
+		HAMMER = register("hammer", HammerItem::new);
+		TANMAKU_HAMMER = register("tanmaku_hammer", TanmakuHammerItem::new);
+		KATANA = register("katana", KatanaItem::new);
+		PRE_HISTORY_ARMOR_HELMET = register("pre_history_armor_helmet", PreHistoryArmorItem.Helmet::new);
+		PRE_HISTORY_ARMOR_CHESTPLATE = register("pre_history_armor_chestplate", PreHistoryArmorItem.Chestplate::new);
+		PRE_HISTORY_ARMOR_LEGGINGS = register("pre_history_armor_leggings", PreHistoryArmorItem.Leggings::new);
+		PRE_HISTORY_ARMOR_BOOTS = register("pre_history_armor_boots", PreHistoryArmorItem.Boots::new);
+		SOUL_ITEM = register("soul_item", SoulItemItem::new);
+		SOULFORCE_POTION = register("soulforce_potion", SoulforcePotionItem::new);
+		SOUL_INGOT = register("soul_ingot", SoulIngotItem::new);
+		EGYPTIAN_GOD_ARMOR_HELMET = register("egyptian_god_armor_helmet", EgyptianGodArmorItem.Helmet::new);
+		EGYPTIAN_GOD_ARMOR_CHESTPLATE = register("egyptian_god_armor_chestplate", EgyptianGodArmorItem.Chestplate::new);
+		EGYPTIAN_GOD_ARMOR_LEGGINGS = register("egyptian_god_armor_leggings", EgyptianGodArmorItem.Leggings::new);
+		EGYPTIAN_GOD_ARMOR_BOOTS = register("egyptian_god_armor_boots", EgyptianGodArmorItem.Boots::new);
+		DIVINE_INGOT = register("divine_ingot", DivineIngotItem::new);
+		EYE_OF_RA = register("eye_of_ra", EyeOfRaItem::new);
 	}
 
 	// Start of user code block custom items

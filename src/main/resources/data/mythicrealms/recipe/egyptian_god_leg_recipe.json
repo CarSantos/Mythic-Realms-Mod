@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "a a",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:divine_ingot",
+    "b": "mythicrealms:pharaoh_armor_leggings"
+  },
+  "result": {
+    "id": "mythicrealms:egyptian_god_armor_leggings",
+    "count": 1
+  }
+}

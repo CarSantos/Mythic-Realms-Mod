@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/katana",
+  "textures": {
+    "0": "mythicrealms:block/katana",
+    "particle": "mythicrealms:item/steel_sword"
+  }
+}

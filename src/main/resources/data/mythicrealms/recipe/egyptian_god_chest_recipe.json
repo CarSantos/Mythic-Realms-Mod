@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "mythicrealms:divine_ingot",
+    "b": "mythicrealms:pharaoh_armor_chestplate"
+  },
+  "result": {
+    "id": "mythicrealms:egyptian_god_armor_chestplate",
+    "count": 1
+  }
+}

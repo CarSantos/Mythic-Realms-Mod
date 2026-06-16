@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca"
+  ],
+  "key": {
+    "a": "mythicrealms:divine_ingot",
+    "b": "mythicrealms:eye_of_ra",
+    "c": "mythicrealms:pharaoh_armor_helmet"
+  },
+  "result": {
+    "id": "mythicrealms:egyptian_god_armor_helmet",
+    "count": 1
+  }
+}

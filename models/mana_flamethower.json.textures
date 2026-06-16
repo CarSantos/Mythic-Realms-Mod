@@ -3,7 +3,7 @@
     "default": {
       "name": "default",
       "map": {
-        "0": "mana_flamethower"
+        "0": "manaflamethower"
       }
     }
   }

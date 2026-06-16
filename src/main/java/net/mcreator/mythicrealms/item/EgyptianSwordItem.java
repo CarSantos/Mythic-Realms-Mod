@@ -19,7 +19,7 @@ public class EgyptianSwordItem extends Item {
 	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 512, 8f, 0, 32, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:egyptian_sword_repair_items")));
 
 	public EgyptianSwordItem(Item.Properties properties) {
-		super(properties.sword(TOOL_MATERIAL, 6f, -3f));
+		super(properties.sword(TOOL_MATERIAL, 4.8f, -3f));
 	}
 
 	@Override

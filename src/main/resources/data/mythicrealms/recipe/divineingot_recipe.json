@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:mythrill",
+    "b": "mythicrealms:ultimate_ingot",
+    "c": "mythicrealms:soul_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:divine_ingot",
+    "count": 1
+  }
+}

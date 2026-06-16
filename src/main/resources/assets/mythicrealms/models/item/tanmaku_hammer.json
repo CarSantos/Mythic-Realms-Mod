@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/tanmaku_hammer",
+  "textures": {
+    "0": "mythicrealms:block/tanmaku_hammer",
+    "particle": "mythicrealms:item/elementghost"
+  }
+}

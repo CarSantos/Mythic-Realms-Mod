@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mythicrealms:egyptian_god_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mythicrealms:egyptian_god_armor"
+      }
+    ]
+  }
+}

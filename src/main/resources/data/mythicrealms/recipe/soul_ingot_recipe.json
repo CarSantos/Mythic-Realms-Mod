@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:soulforce_potion",
+    "b": "mythicrealms:soul_item",
+    "c": "mythicrealms:steel_ingot"
+  },
+  "result": {
+    "id": "mythicrealms:soul_ingot",
+    "count": 1
+  }
+}

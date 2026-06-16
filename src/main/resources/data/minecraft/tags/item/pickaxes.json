@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "mythicrealms:tanmaku_hammer",
+    "mythicrealms:hammer",
     "mythicrealms:steel_pickaxe"
   ]
 }

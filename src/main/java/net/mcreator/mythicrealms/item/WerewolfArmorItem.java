@@ -14,7 +14,7 @@ import net.minecraft.core.registries.Registries;
 import java.util.Map;
 
 public abstract class WerewolfArmorItem extends Item {
-	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(20, Map.of(ArmorType.BOOTS, 6, ArmorType.LEGGINGS, 12, ArmorType.CHESTPLATE, 16, ArmorType.HELMET, 6, ArmorType.BODY, 16), 25,
+	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(20, Map.of(ArmorType.BOOTS, 4, ArmorType.LEGGINGS, 8, ArmorType.CHESTPLATE, 11, ArmorType.HELMET, 4, ArmorType.BODY, 11), 25,
 			DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_netherite")), 1f, 0.1f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:werewolf_armor_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("mythicrealms:werewolf_armor")));
 

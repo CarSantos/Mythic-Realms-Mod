@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:capacitor",
+    "b": "mythicrealms:tech_armor_leggings"
+  },
+  "result": {
+    "id": "mythicrealms:tesla_armor_leggings",
+    "count": 1
+  }
+}

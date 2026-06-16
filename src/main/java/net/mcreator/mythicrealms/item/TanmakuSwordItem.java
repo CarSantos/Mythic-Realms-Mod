@@ -19,7 +19,7 @@ public class TanmakuSwordItem extends Item {
 	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 999, 8f, 0, 32, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:tanmaku_sword_repair_items")));
 
 	public TanmakuSwordItem(Item.Properties properties) {
-		super(properties.sword(TOOL_MATERIAL, 6f, -2.8f));
+		super(properties.sword(TOOL_MATERIAL, 7f, -2.8f));
 	}
 
 	@Override

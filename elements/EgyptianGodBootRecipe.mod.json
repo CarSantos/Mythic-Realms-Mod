@@ -1,0 +1,49 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DivineIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:DivineIngot"
+      },
+      {
+        "value": "CUSTOM:DivineIngot"
+      },
+      {
+        "value": "CUSTOM:PharaohArmor.boots"
+      },
+      {
+        "value": "CUSTOM:DivineIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:EgyptianGodArmor.boots"
+    },
+    "name": "egyptian_god_boot_recipe",
+    "namespace": "mod"
+  }
+}

@@ -15,7 +15,7 @@ import java.util.Map;
 
 public abstract class TechArmorItem extends Item {
 	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(30, Map.of(ArmorType.BOOTS, 4, ArmorType.LEGGINGS, 8, ArmorType.CHESTPLATE, 11, ArmorType.HELMET, 4, ArmorType.BODY, 11), 25,
-			DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), 3f, 0.5f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:tech_armor_repair_items")),
+			DeferredHolder.create(Registries.SOUND_EVENT, ResourceLocation.parse("item.armor.equip_iron")), 1f, 0.5f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:tech_armor_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("mythicrealms:tech_armor")));
 
 	private TechArmorItem(Item.Properties properties) {

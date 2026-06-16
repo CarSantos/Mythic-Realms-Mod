@@ -1,0 +1,104 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "tesla_helmet",
+    "enableBody": true,
+    "textureBody": "tesla_chest",
+    "enableLeggings": true,
+    "textureLeggings": "tesla_leg",
+    "enableBoots": true,
+    "textureBoots": "tesla_boot",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Tesla Helmet",
+    "bodyName": "Tesla Chestplate",
+    "leggingsName": "Tesla Leggings",
+    "bootsName": "Tesla Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelTesla_Armor",
+    "helmetModelPart": "armorHead",
+    "helmetModelTexture": "tesla_armor.png",
+    "bodyModelName": "ModelTesla_Armor",
+    "bodyModelPart": "bipedBody",
+    "armsModelPartL": "bipedLeftArm",
+    "armsModelPartR": "bipedRightArm",
+    "bodyModelTexture": "tesla_armor.png",
+    "leggingsModelName": "ModelTesla_Armor",
+    "leggingsModelPartL": "armorLeftLeg",
+    "leggingsModelPartR": "armorRightLeg",
+    "leggingsModelTexture": "tesla_armor.png",
+    "bootsModelName": "ModelTesla_Armor",
+    "bootsModelPartL": "armorLeftBoot",
+    "bootsModelPartR": "armorRightBoot",
+    "bootsModelTexture": "tesla_armor.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 60,
+    "damageValueHelmet": 6,
+    "damageValueBody": 15,
+    "damageValueLeggings": 11,
+    "damageValueBoots": 6,
+    "enchantability": 50,
+    "toughness": 3.0,
+    "knockbackResistance": 1.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Capacitor"
+      }
+    ]
+  }
+}

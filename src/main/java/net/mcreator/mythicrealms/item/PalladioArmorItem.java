@@ -14,7 +14,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import java.util.Map;
 
 public abstract class PalladioArmorItem extends Item {
-	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(100, Map.of(ArmorType.BOOTS, 5, ArmorType.LEGGINGS, 11, ArmorType.CHESTPLATE, 13, ArmorType.HELMET, 5, ArmorType.BODY, 13), 30,
+	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(100, Map.of(ArmorType.BOOTS, 5, ArmorType.LEGGINGS, 9, ArmorType.CHESTPLATE, 12, ArmorType.HELMET, 5, ArmorType.BODY, 12), 30,
 			BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), 2f, 0.1f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:palladio_armor_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("mythicrealms:palladio_armor")));
 

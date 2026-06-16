@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba"
+  ],
+  "key": {
+    "a": "mythicrealms:blood_bucket",
+    "b": "minecraft:cobbled_deepslate"
+  },
+  "result": {
+    "id": "mythicrealms:solid_blood",
+    "count": 1
+  }
+}

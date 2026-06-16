@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    " b "
+  ],
+  "key": {
+    "a": "mythicrealms:titanium_ingot",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "mythicrealms:hammer",
+    "count": 1
+  }
+}

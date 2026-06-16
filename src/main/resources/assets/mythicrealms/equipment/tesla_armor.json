@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "mythicrealms:tesla_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "mythicrealms:tesla_armor"
+      }
+    ]
+  }
+}

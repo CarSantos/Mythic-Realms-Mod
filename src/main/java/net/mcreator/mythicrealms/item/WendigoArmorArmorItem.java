@@ -14,7 +14,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import java.util.Map;
 
 public abstract class WendigoArmorArmorItem extends Item {
-	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(32, Map.of(ArmorType.BOOTS, 5, ArmorType.LEGGINGS, 7, ArmorType.CHESTPLATE, 10, ArmorType.HELMET, 5, ArmorType.BODY, 10), 30,
+	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(32, Map.of(ArmorType.BOOTS, 5, ArmorType.LEGGINGS, 9, ArmorType.CHESTPLATE, 12, ArmorType.HELMET, 5, ArmorType.BODY, 12), 30,
 			BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), 0.2f, 0f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:wendigo_armor_armor_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("mythicrealms:wendigo_armor_armor")));
 

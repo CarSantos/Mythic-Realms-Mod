@@ -2,11 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
+    "aba",
     "a a"
   ],
   "key": {
-    "a": "mythicrealms:xochitl_ingot"
+    "a": "mythicrealms:xochitl_ingot",
+    "b": "mythicrealms:soul_ingot"
   },
   "result": {
     "id": "mythicrealms:xochitl_armor_helmet",

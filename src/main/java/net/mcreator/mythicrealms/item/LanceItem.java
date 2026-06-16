@@ -17,13 +17,13 @@ public class LanceItem extends Item {
 	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_IRON_TOOL, 512, 4f, 0, 20, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:lance_repair_items")));
 
 	public LanceItem(Item.Properties properties) {
-		super(properties.sword(TOOL_MATERIAL, 5f, -2.5f));
+		super(properties.sword(TOOL_MATERIAL, 8f, -2.5f));
 	}
 
 	@Override
 	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
 		InteractionResult ar = super.use(world, entity, hand);
-		LanceRightClickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		LanceRightClickProcedure.execute(entity);
 		return ar;
 	}
 }

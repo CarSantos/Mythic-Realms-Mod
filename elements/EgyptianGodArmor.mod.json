@@ -1,0 +1,100 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "egyptiangodhelmet",
+    "enableBody": true,
+    "textureBody": "egyptiangodchest",
+    "enableLeggings": true,
+    "textureLeggings": "egyptiangodleg",
+    "enableBoots": true,
+    "textureBoots": "egyptiangodboot",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Egyptian God Helmet",
+    "bodyName": "Egyptian God Chestplate",
+    "leggingsName": "Egyptian God Leggings",
+    "bootsName": "Egyptian God Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "ModelArmor_god_egyptian",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "egyptian_god_armor.png",
+    "bodyModelName": "ModelArmor_god_egyptian",
+    "bodyModelPart": "Chestplate",
+    "armsModelPartL": "LeftPlate",
+    "armsModelPartR": "RightPlate",
+    "bodyModelTexture": "egyptian_god_armor.png",
+    "leggingsModelName": "ModelArmor_god_egyptian",
+    "leggingsModelPartL": "LeftLegging",
+    "leggingsModelPartR": "RightLegging",
+    "leggingsModelTexture": "egyptian_god_armor.png",
+    "bootsModelName": "ModelArmor_god_egyptian",
+    "bootsModelPartL": "LeftBoots",
+    "bootsModelPartR": "RightBoots",
+    "bootsModelTexture": "egyptian_god_armor.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 64,
+    "damageValueHelmet": 10,
+    "damageValueBody": 24,
+    "damageValueLeggings": 18,
+    "damageValueBoots": 10,
+    "enchantability": 30,
+    "toughness": 5.0,
+    "knockbackResistance": 1.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "mythicrealms:blood_lake",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 7,
+    "separation": 3,
+    "salt": 96063067
+  }
+}

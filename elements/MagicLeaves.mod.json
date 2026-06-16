@@ -22,7 +22,7 @@
     "pottedPlant": {
       "value": ""
     },
-    "tintType": "Foliage",
+    "tintType": "No tint",
     "isItemTinted": true,
     "hasTransparency": true,
     "connectedSides": false,

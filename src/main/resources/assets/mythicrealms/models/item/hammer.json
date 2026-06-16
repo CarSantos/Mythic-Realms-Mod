@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/hammer",
+  "textures": {
+    "0": "mythicrealms:block/hammer_2",
+    "particle": "mythicrealms:item/elementghost"
+  }
+}

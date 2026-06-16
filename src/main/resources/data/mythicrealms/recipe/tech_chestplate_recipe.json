@@ -4,11 +4,12 @@
   "pattern": [
     "a a",
     "aba",
-    "aaa"
+    "aca"
   ],
   "key": {
     "a": "mythicrealms:vibranium_ingot",
-    "b": "mythicrealms:magnet_armor_chestplate"
+    "b": "mythicrealms:magnet_armor_chestplate",
+    "c": "mythicrealms:soul_ingot"
   },
   "result": {
     "id": "mythicrealms:tech_armor_chestplate",

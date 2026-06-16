@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "mythicrealms:nanite",
+    "b": "mythicrealms:steel_plate"
+  },
+  "result": {
+    "id": "mythicrealms:capacitor",
+    "count": 1
+  }
+}

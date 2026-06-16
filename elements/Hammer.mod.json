@@ -1,0 +1,43 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Pickaxe",
+    "renderType": 1,
+    "blockingRenderType": 0,
+    "texture": "elementghost",
+    "customModelName": "hammer:default",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "Hammer",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:DivineWeapons"
+      }
+    ],
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 50,
+    "damageVsEntity": 7.0,
+    "usageCount": 512,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:TitaniumIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "ExpellMagic"
+    }
+  }
+}

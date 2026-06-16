@@ -183,8 +183,6 @@ public class MythicrealmsModBlocks {
 	public static class BlocksClientSideHandler {
 		@SubscribeEvent
 		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
-			BloodLeavesBlock.blockColorLoad(event);
-			MagicLeavesBlock.blockColorLoad(event);
 			SkiesGrassBlock.blockColorLoad(event);
 		}
 	}

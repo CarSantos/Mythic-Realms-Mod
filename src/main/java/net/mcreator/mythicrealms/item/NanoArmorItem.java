@@ -14,8 +14,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import java.util.Map;
 
 public abstract class NanoArmorItem extends Item {
-	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(60, Map.of(ArmorType.BOOTS, 8, ArmorType.LEGGINGS, 16, ArmorType.CHESTPLATE, 22, ArmorType.HELMET, 8, ArmorType.BODY, 22), 50,
-			BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), 6f, 1f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:nano_armor_repair_items")),
+	public static ArmorMaterial ARMOR_MATERIAL = new ArmorMaterial(60, Map.of(ArmorType.BOOTS, 6, ArmorType.LEGGINGS, 11, ArmorType.CHESTPLATE, 15, ArmorType.HELMET, 6, ArmorType.BODY, 15), 50,
+			BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), 3f, 1f, TagKey.create(Registries.ITEM, ResourceLocation.parse("mythicrealms:nano_armor_repair_items")),
 			ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.parse("mythicrealms:nano_armor")));
 
 	private NanoArmorItem(Item.Properties properties) {

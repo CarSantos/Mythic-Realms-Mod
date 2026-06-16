@@ -3,11 +3,12 @@
   "category": "misc",
   "pattern": [
     "a a",
-    "aaa",
+    "aba",
     "aaa"
   ],
   "key": {
-    "a": "mythicrealms:demon_ingot"
+    "a": "mythicrealms:demon_ingot",
+    "b": "mythicrealms:soul_ingot"
   },
   "result": {
     "id": "mythicrealms:demon_armor_chestplate",

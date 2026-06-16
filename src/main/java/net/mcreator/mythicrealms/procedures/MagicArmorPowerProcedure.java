@@ -5,6 +5,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.bus.api.Event;
 
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,6 +14,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.mythicrealms.network.MythicrealmsModVariables;
 import net.mcreator.mythicrealms.init.MythicrealmsModItems;
+import net.mcreator.mythicrealms.MythicrealmsMod;
 
 import javax.annotation.Nullable;
 
@@ -20,14 +22,14 @@ import javax.annotation.Nullable;
 public class MagicArmorPowerProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		execute(event, event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity());
 	}
 
-	public static void execute(Entity entity) {
-		execute(null, entity);
+	public static void execute(LevelAccessor world, Entity entity) {
+		execute(null, world, entity);
 	}
 
-	private static void execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == MythicrealmsModItems.MAGIC_ARMOR_HELMET.get()
@@ -51,6 +53,25 @@ public class MagicArmorPowerProcedure {
 				if (entity instanceof LivingEntity _livingEntity10 && _livingEntity10.getAttributes().hasAttribute(Attributes.ARMOR))
 					_livingEntity10.getAttribute(Attributes.ARMOR).setBaseValue(20);
 			}
+			MythicrealmsMod.queueServerWork(2400, () -> {
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == MythicrealmsModItems.MAGIC_ARMOR_HELMET.get()
+						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == MythicrealmsModItems.MAGIC_ARMOR_CHESTPLATE.get()
+						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == MythicrealmsModItems.MAGIC_ARMOR_LEGGINGS.get()
+						&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == MythicrealmsModItems.MAGIC_ARMOR_BOOTS.get()) {
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.HEAD, ItemStack.EMPTY);
+					}
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.CHEST, ItemStack.EMPTY);
+					}
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.LEGS, ItemStack.EMPTY);
+					}
+					if (entity instanceof LivingEntity _living) {
+						_living.setItemSlot(EquipmentSlot.FEET, ItemStack.EMPTY);
+					}
+				}
+			});
 		}
 	}
 }

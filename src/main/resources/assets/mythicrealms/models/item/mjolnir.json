@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/mjolnir",
+  "textures": {
+    "1": "mythicrealms:block/mjolnir",
+    "particle": "mythicrealms:item/elementfire"
+  }
+}
