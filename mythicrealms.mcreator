@@ -14221,6 +14221,88 @@
         ]
       },
       "path": "~/Item/Weapons/Sun and Moon Sword"
+    },
+    {
+      "name": "EyeOfRaVisionProjectileProjectileHits",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_of_ra_vision_projectile_projectile_hits",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/EyeOfRaVisionProjectileProjectileHitsProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Egyptian Staff"
+    },
+    {
+      "name": "EyeOfRaVisionProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_of_ra_vision_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/entity/EyeOfRaVisionProjectileEntity.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Egyptian Staff"
+    },
+    {
+      "name": "EgyptianStaffRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_staff_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/EgyptianStaffRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Egyptian Staff"
+    },
+    {
+      "name": "EgyptianStaff",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "egyptian_staff",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/egyptian_staff.json",
+          "src/main/java/net/mcreator/mythicrealms/item/EgyptianStaffItem.java",
+          "src/main/resources/assets/mythicrealms/items/egyptian_staff.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Egyptian Staff"
     }
   ],
   "variable_elements": [
@@ -16700,7 +16782,8 @@
       "ShieldOfAthena",
       "BowOfApollo",
       "Katana",
-      "EyeOfRa"
+      "EyeOfRa",
+      "EgyptianStaff"
     ]
   },
   "language_map": {
@@ -17231,7 +17314,8 @@
       "item.mythicrealms.hindu_god_armor_chestplate": "Hindu God Chestplate",
       "item.mythicrealms.hindu_god_armor_boots": "Hindu God Boots",
       "item.mythicrealms.sun_sword": "Sun Sword",
-      "item.mythicrealms.moon_sword": "Moon Sword"
+      "item.mythicrealms.moon_sword": "Moon Sword",
+      "item.mythicrealms.egyptian_staff": "Egyptian Staff"
     }
   },
   "metadata": {
@@ -17390,7 +17474,8 @@
       "SoulforcePotion": "armorforge:default",
       "SoulIngot": "armorforge:default",
       "DivineIngot": "armorforge:default",
-      "EyeOfRa": "armorforge:default"
+      "EyeOfRa": "armorforge:default",
+      "EgyptianStaff": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -17511,7 +17596,8 @@
       "SoulforcePotion": "All perspectives",
       "SoulIngot": "All perspectives",
       "DivineIngot": "All perspectives",
-      "EyeOfRa": "All perspectives"
+      "EyeOfRa": "All perspectives",
+      "EgyptianStaff": "All perspectives"
     }
   },
   "foldersRoot": {
@@ -18015,6 +18101,10 @@
               },
               {
                 "name": "Sun and Moon Sword",
+                "children": []
+              },
+              {
+                "name": "Egyptian Staff",
                 "children": []
               }
             ]

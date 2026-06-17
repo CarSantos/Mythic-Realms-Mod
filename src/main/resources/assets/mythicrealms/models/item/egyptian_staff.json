@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/egyptian_staff",
+  "textures": {
+    "0": "mythicrealms:block/cajado_egipcio",
+    "particle": "mythicrealms:item/eyeofra"
+  }
+}

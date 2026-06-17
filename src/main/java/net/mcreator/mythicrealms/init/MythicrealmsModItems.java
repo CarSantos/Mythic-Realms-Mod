@@ -333,6 +333,7 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> HINDU_GOD_ARMOR_BOOTS;
 	public static final DeferredItem<Item> SUN_SWORD;
 	public static final DeferredItem<Item> MOON_SWORD;
+	public static final DeferredItem<Item> EGYPTIAN_STAFF;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -639,6 +640,7 @@ public class MythicrealmsModItems {
 		HINDU_GOD_ARMOR_BOOTS = register("hindu_god_armor_boots", HinduGodArmorItem.Boots::new);
 		SUN_SWORD = register("sun_sword", SunSwordItem::new);
 		MOON_SWORD = register("moon_sword", MoonSwordItem::new);
+		EGYPTIAN_STAFF = register("egyptian_staff", EgyptianStaffItem::new);
 	}
 
 	// Start of user code block custom items

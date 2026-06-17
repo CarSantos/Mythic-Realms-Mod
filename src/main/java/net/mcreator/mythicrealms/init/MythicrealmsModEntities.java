@@ -122,6 +122,8 @@ public class MythicrealmsModEntities {
 			EntityType.Builder.<UnicornEntity>of(UnicornEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<EyeOfRaVisionProjectileEntity>> EYE_OF_RA_VISION_PROJECTILE = register("eye_of_ra_vision_projectile",
+			EntityType.Builder.<EyeOfRaVisionProjectileEntity>of(EyeOfRaVisionProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0f, 0f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

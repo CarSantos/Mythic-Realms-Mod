@@ -75,6 +75,7 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.BOW_OF_APOLLO.get());
 				tabData.accept(MythicrealmsModItems.KATANA.get());
 				tabData.accept(MythicrealmsModItems.EYE_OF_RA.get());
+				tabData.accept(MythicrealmsModItems.EGYPTIAN_STAFF.get());
 			}).withSearchBar().withTabsBefore(KNOWLEDGE_OF_BOOK.getId()).build());
 
 	@SubscribeEvent
