@@ -327,6 +327,12 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> EGYPTIAN_GOD_ARMOR_BOOTS;
 	public static final DeferredItem<Item> DIVINE_INGOT;
 	public static final DeferredItem<Item> EYE_OF_RA;
+	public static final DeferredItem<Item> HINDU_GOD_ARMOR_HELMET;
+	public static final DeferredItem<Item> HINDU_GOD_ARMOR_CHESTPLATE;
+	public static final DeferredItem<Item> HINDU_GOD_ARMOR_LEGGINGS;
+	public static final DeferredItem<Item> HINDU_GOD_ARMOR_BOOTS;
+	public static final DeferredItem<Item> SUN_SWORD;
+	public static final DeferredItem<Item> MOON_SWORD;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -627,6 +633,12 @@ public class MythicrealmsModItems {
 		EGYPTIAN_GOD_ARMOR_BOOTS = register("egyptian_god_armor_boots", EgyptianGodArmorItem.Boots::new);
 		DIVINE_INGOT = register("divine_ingot", DivineIngotItem::new);
 		EYE_OF_RA = register("eye_of_ra", EyeOfRaItem::new);
+		HINDU_GOD_ARMOR_HELMET = register("hindu_god_armor_helmet", HinduGodArmorItem.Helmet::new);
+		HINDU_GOD_ARMOR_CHESTPLATE = register("hindu_god_armor_chestplate", HinduGodArmorItem.Chestplate::new);
+		HINDU_GOD_ARMOR_LEGGINGS = register("hindu_god_armor_leggings", HinduGodArmorItem.Leggings::new);
+		HINDU_GOD_ARMOR_BOOTS = register("hindu_god_armor_boots", HinduGodArmorItem.Boots::new);
+		SUN_SWORD = register("sun_sword", SunSwordItem::new);
+		MOON_SWORD = register("moon_sword", MoonSwordItem::new);
 	}
 
 	// Start of user code block custom items

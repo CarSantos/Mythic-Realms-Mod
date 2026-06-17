@@ -74,6 +74,7 @@ public class MythicrealmsModTabs {
 				tabData.accept(MythicrealmsModItems.SHIELD_OF_ATHENA.get());
 				tabData.accept(MythicrealmsModItems.BOW_OF_APOLLO.get());
 				tabData.accept(MythicrealmsModItems.KATANA.get());
+				tabData.accept(MythicrealmsModItems.EYE_OF_RA.get());
 			}).withSearchBar().withTabsBefore(KNOWLEDGE_OF_BOOK.getId()).build());
 
 	@SubscribeEvent
@@ -174,7 +175,6 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.SOUL_ITEM.get());
 			tabData.accept(MythicrealmsModItems.SOUL_INGOT.get());
 			tabData.accept(MythicrealmsModItems.DIVINE_INGOT.get());
-			tabData.accept(MythicrealmsModItems.EYE_OF_RA.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());
@@ -279,6 +279,10 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.EGYPTIAN_GOD_ARMOR_CHESTPLATE.get());
 			tabData.accept(MythicrealmsModItems.EGYPTIAN_GOD_ARMOR_LEGGINGS.get());
 			tabData.accept(MythicrealmsModItems.EGYPTIAN_GOD_ARMOR_BOOTS.get());
+			tabData.accept(MythicrealmsModItems.HINDU_GOD_ARMOR_HELMET.get());
+			tabData.accept(MythicrealmsModItems.HINDU_GOD_ARMOR_CHESTPLATE.get());
+			tabData.accept(MythicrealmsModItems.HINDU_GOD_ARMOR_LEGGINGS.get());
+			tabData.accept(MythicrealmsModItems.HINDU_GOD_ARMOR_BOOTS.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(MythicrealmsModItems.GHOST_HORSE_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.PANDEMIC_SPAWN_EGG.get());
@@ -326,6 +330,8 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.INVESTIGATOR_ROLE.get());
 			tabData.accept(MythicrealmsModItems.WEREWOLF_FANG.get());
 			tabData.accept(MythicrealmsModItems.ILLUMINATY_ITEM.get());
+			tabData.accept(MythicrealmsModItems.SUN_SWORD.get());
+			tabData.accept(MythicrealmsModItems.MOON_SWORD.get());
 		}
 	}
 }

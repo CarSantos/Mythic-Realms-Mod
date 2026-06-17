@@ -42,6 +42,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelPharaoh.LAYER_LOCATION, ModelPharaoh::createBodyLayer);
 		event.registerLayerDefinition(ModelAngel.LAYER_LOCATION, ModelAngel::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
+		event.registerLayerDefinition(Modelhindugodarmor.LAYER_LOCATION, Modelhindugodarmor::createBodyLayer);
 		event.registerLayerDefinition(ModelVenraid.LAYER_LOCATION, ModelVenraid::createBodyLayer);
 		event.registerLayerDefinition(ModelBlackHole.LAYER_LOCATION, ModelBlackHole::createBodyLayer);
 		event.registerLayerDefinition(ModelYeti.LAYER_LOCATION, ModelYeti::createBodyLayer);

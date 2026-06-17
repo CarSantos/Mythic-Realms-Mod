@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/moonsword",
+  "textures": {
+    "0": "mythicrealms:block/moon_sword",
+    "particle": "mythicrealms:item/steel_sword"
+  }
+}

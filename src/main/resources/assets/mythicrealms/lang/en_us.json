@@ -502,7 +502,7 @@
   "item.mythicrealms.tesla_armor_chestplate": "Tesla Chestplate",
   "item.mythicrealms.tesla_armor_helmet": "Tesla Helmet",
   "item.mythicrealms.tesla_armor_leggings": "Tesla Leggings",
-  "item.mythicrealms.divine_sword": "Divine Sword",
+  "item.mythicrealms.divine_sword": "Celestial Sword",
   "item.mythicrealms.mjolnir": "Mjölnir",
   "item.mythicrealms.hammer": "Hammer",
   "item.mythicrealms.tanmaku_hammer": "Hammer",
@@ -519,5 +519,11 @@
   "item.mythicrealms.egyptian_god_armor_chestplate": "Egyptian God Chestplate",
   "item.mythicrealms.egyptian_god_armor_leggings": "Egyptian God Leggings",
   "item.mythicrealms.divine_ingot": "Divine Ingot",
-  "item.mythicrealms.eye_of_ra": "Eye Of Ra"
+  "item.mythicrealms.eye_of_ra": "Eye Of Ra",
+  "item.mythicrealms.hindu_god_armor_helmet": "Hindu God Helmet",
+  "item.mythicrealms.hindu_god_armor_leggings": "Hindu God Leggings",
+  "item.mythicrealms.hindu_god_armor_chestplate": "Hindu God Chestplate",
+  "item.mythicrealms.hindu_god_armor_boots": "Hindu God Boots",
+  "item.mythicrealms.sun_sword": "Sun Sword",
+  "item.mythicrealms.moon_sword": "Moon Sword"
 }

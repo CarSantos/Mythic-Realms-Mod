@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "mythicrealms:divine_ingot",
+    "b": "mythicrealms:divine_sword"
+  },
+  "result": {
+    "id": "mythicrealms:sun_sword",
+    "count": 1
+  }
+}

@@ -1,7 +1,9 @@
 {
   "replace": false,
   "values": [
+    "mythicrealms:sun_sword",
     "mythicrealms:blood_sword",
+    "mythicrealms:moon_sword",
     "mythicrealms:tanmaku_sword",
     "mythicrealms:steel_sword",
     "mythicrealms:lance",

@@ -14009,6 +14009,218 @@
         ]
       },
       "path": "~/Item/Armors/01 Divine Armor/EgyptianArmor"
+    },
+    {
+      "name": "EyeOfRaCuroisWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_of_ra_curois_while_bauble_is_equipped_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/EyeOfRaCuroisWhileBaubleIsEquippedTickProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/00 Ingots/Eye of Ra"
+    },
+    {
+      "name": "EyeOfRaCurois",
+      "type": "curiosbauble",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_of_ra_curois",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Item/Armors/01 Divine Armor/00 Ingots/Eye of Ra"
+    },
+    {
+      "name": "HinduGodArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hindu_god_armor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/HinduGodArmorItem.java",
+          "src/main/resources/assets/mythicrealms/items/hindu_god_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/hindu_god_armor_leggings.json",
+          "src/main/resources/assets/mythicrealms/equipment/hindu_god_armor.json",
+          "src/main/resources/assets/mythicrealms/items/hindu_god_armor_leggings.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/item/HinduGodArmorArmor.java",
+          "src/main/resources/assets/mythicrealms/models/item/hindu_god_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/items/hindu_god_armor_chestplate.json",
+          "src/main/resources/assets/mythicrealms/items/hindu_god_armor_boots.json",
+          "src/main/resources/assets/mythicrealms/models/item/hindu_god_armor_helmet.json",
+          "src/main/resources/assets/mythicrealms/models/item/hindu_god_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/HinduArmor"
+    },
+    {
+      "name": "HinduGodArmorPower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hindu_god_armor_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/HinduGodArmorPowerProcedure.java"
+        ]
+      },
+      "path": "~/Item/Armors/01 Divine Armor/HinduArmor"
+    },
+    {
+      "name": "SunSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/SunSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Sun and Moon Sword"
+    },
+    {
+      "name": "SunSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/SunSwordItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/sun_sword.json",
+          "src/main/resources/assets/mythicrealms/items/sun_sword.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Sun and Moon Sword"
+    },
+    {
+      "name": "MoonSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/item/MoonSwordItem.java",
+          "src/main/resources/assets/mythicrealms/models/item/moon_sword.json",
+          "src/main/resources/assets/mythicrealms/items/moon_sword.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Sun and Moon Sword"
+    },
+    {
+      "name": "MoonSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "moon_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/MoonSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Sun and Moon Sword"
+    },
+    {
+      "name": "TradeSword",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_sword",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/TradeSwordProcedure.java"
+        ]
+      },
+      "path": "~/Item/Weapons/Sun and Moon Sword"
+    },
+    {
+      "name": "SunAndMoonSword",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sun_and_moon_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/sun_and_moon_sword.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Sun and Moon Sword"
     }
   ],
   "variable_elements": [
@@ -14116,6 +14328,8 @@
       "~CUSTOM:SteelIngot"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:MoonSword",
+      "~CUSTOM:SunSword",
       "~CUSTOM:Katana",
       "~CUSTOM:DivineSword",
       "~CUSTOM:Lance",
@@ -14342,6 +14556,7 @@
       "~CUSTOM:BloodSapling"
     ],
     "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:HinduGodArmor.helmet",
       "~CUSTOM:EgyptianGodArmor.helmet",
       "~CUSTOM:PreHistoryArmor.helmet",
       "~CUSTOM:TeslaArmor.helmet",
@@ -14363,6 +14578,7 @@
       "~CUSTOM:BloodArmor.helmet"
     ],
     "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:HinduGodArmor.body",
       "~CUSTOM:EgyptianGodArmor.body",
       "~CUSTOM:PreHistoryArmor.body",
       "~CUSTOM:TeslaArmor.body",
@@ -14384,6 +14600,7 @@
       "~CUSTOM:BloodArmor.body"
     ],
     "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:HinduGodArmor.legs",
       "~CUSTOM:EgyptianGodArmor.legs",
       "~CUSTOM:PreHistoryArmor.legs",
       "~CUSTOM:TeslaArmor.legs",
@@ -14405,6 +14622,7 @@
       "~CUSTOM:BloodArmor.legs"
     ],
     "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:HinduGodArmor.boots",
       "~CUSTOM:EgyptianGodArmor.boots",
       "~CUSTOM:PreHistoryArmor.boots",
       "~CUSTOM:TeslaArmor.boots",
@@ -16269,7 +16487,13 @@
     "ITEMS:mythicrealms:pre_history_armor_repair_items": [
       "~Blocks.BONE_BLOCK"
     ],
-    "ITEMS:mythicrealms:egyptian_god_armor_repair_items": []
+    "ITEMS:mythicrealms:egyptian_god_armor_repair_items": [],
+    "ITEMS:mythicrealms:sun_sword_repair_items": [
+      "~CUSTOM:DivineIngot"
+    ],
+    "ITEMS:mythicrealms:moon_sword_repair_items": [
+      "~CUSTOM:DivineIngot"
+    ]
   },
   "tab_element_order": {
     "MATERIALS": [
@@ -16316,8 +16540,7 @@
       "UltimateIngot",
       "SoulItem",
       "SoulIngot",
-      "DivineIngot",
-      "EyeOfRa"
+      "DivineIngot"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -16366,7 +16589,8 @@
       "TechJetpackItem",
       "WerewolfArmor",
       "PreHistoryArmor",
-      "EgyptianGodArmor"
+      "EgyptianGodArmor",
+      "HinduGodArmor"
     ],
     "MISC": [
       "GhostHorse",
@@ -16420,7 +16644,9 @@
       "OceanDimension",
       "Moon",
       "Sky",
-      "IlluminatyItem"
+      "IlluminatyItem",
+      "SunSword",
+      "MoonSword"
     ],
     "CUSTOM:KnowledgeOfBook": [
       "AccelarationMagicBook",
@@ -16473,7 +16699,8 @@
       "PumpkinStaff",
       "ShieldOfAthena",
       "BowOfApollo",
-      "Katana"
+      "Katana",
+      "EyeOfRa"
     ]
   },
   "language_map": {
@@ -16981,7 +17208,7 @@
       "item.mythicrealms.tesla_armor_chestplate": "Tesla Chestplate",
       "item.mythicrealms.tesla_armor_helmet": "Tesla Helmet",
       "item.mythicrealms.tesla_armor_leggings": "Tesla Leggings",
-      "item.mythicrealms.divine_sword": "Divine Sword",
+      "item.mythicrealms.divine_sword": "Celestial Sword",
       "item.mythicrealms.mjolnir": "Mjölnir",
       "item.mythicrealms.hammer": "Hammer",
       "item.mythicrealms.tanmaku_hammer": "Hammer",
@@ -16998,7 +17225,13 @@
       "item.mythicrealms.egyptian_god_armor_chestplate": "Egyptian God Chestplate",
       "item.mythicrealms.egyptian_god_armor_leggings": "Egyptian God Leggings",
       "item.mythicrealms.divine_ingot": "Divine Ingot",
-      "item.mythicrealms.eye_of_ra": "Eye Of Ra"
+      "item.mythicrealms.eye_of_ra": "Eye Of Ra",
+      "item.mythicrealms.hindu_god_armor_helmet": "Hindu God Helmet",
+      "item.mythicrealms.hindu_god_armor_leggings": "Hindu God Leggings",
+      "item.mythicrealms.hindu_god_armor_chestplate": "Hindu God Chestplate",
+      "item.mythicrealms.hindu_god_armor_boots": "Hindu God Boots",
+      "item.mythicrealms.sun_sword": "Sun Sword",
+      "item.mythicrealms.moon_sword": "Moon Sword"
     }
   },
   "metadata": {
@@ -17639,6 +17872,10 @@
                         "children": []
                       }
                     ]
+                  },
+                  {
+                    "name": "HinduArmor",
+                    "children": []
                   }
                 ]
               },
@@ -17774,6 +18011,10 @@
               },
               {
                 "name": "Katana",
+                "children": []
+              },
+              {
+                "name": "Sun and Moon Sword",
                 "children": []
               }
             ]

@@ -1,0 +1,100 @@
+{
+  "_fv": 79,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "hindugodhelmet",
+    "enableBody": true,
+    "textureBody": "hindugodchest",
+    "enableLeggings": true,
+    "textureLeggings": "hindugodleg",
+    "enableBoots": true,
+    "textureBoots": "hindugodboot",
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "armorTextureFile": "chainmail",
+    "helmetName": "Hindu God Helmet",
+    "bodyName": "Hindu God Chestplate",
+    "leggingsName": "Hindu God Leggings",
+    "bootsName": "Hindu God Boots",
+    "helmetSpecialInformation": {
+      "fixedValue": []
+    },
+    "bodySpecialInformation": {
+      "fixedValue": []
+    },
+    "leggingsSpecialInformation": {
+      "fixedValue": []
+    },
+    "bootsSpecialInformation": {
+      "fixedValue": []
+    },
+    "helmetModelName": "Modelhindugodarmor",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "hindu_god_armor.png",
+    "bodyModelName": "Modelhindugodarmor",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Left_Arm",
+    "armsModelPartR": "Right_Arm",
+    "bodyModelTexture": "hindu_god_armor.png",
+    "leggingsModelName": "Modelhindugodarmor",
+    "leggingsModelPartL": "Left_Leg",
+    "leggingsModelPartR": "Right_Leg",
+    "leggingsModelTexture": "hindu_god_armor.png",
+    "bootsModelName": "Modelhindugodarmor",
+    "bootsModelPartL": "Left_boot",
+    "bootsModelPartR": "Right_boot",
+    "bootsModelTexture": "hindu_god_armor.png",
+    "helmetItemRenderType": 0,
+    "helmetItemCustomModelName": "Normal",
+    "bodyItemRenderType": 0,
+    "bodyItemCustomModelName": "Normal",
+    "leggingsItemRenderType": 0,
+    "leggingsItemCustomModelName": "Normal",
+    "bootsItemRenderType": 0,
+    "bootsItemCustomModelName": "Normal",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "helmetGlowCondition": {
+      "fixedValue": false
+    },
+    "bodyGlowCondition": {
+      "fixedValue": false
+    },
+    "leggingsGlowCondition": {
+      "fixedValue": false
+    },
+    "bootsGlowCondition": {
+      "fixedValue": false
+    },
+    "helmetPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bodyPiglinNeutral": {
+      "fixedValue": false
+    },
+    "leggingsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "bootsPiglinNeutral": {
+      "fixedValue": false
+    },
+    "maxDamage": 64,
+    "damageValueHelmet": 10,
+    "damageValueBody": 24,
+    "damageValueLeggings": 18,
+    "damageValueBoots": 10,
+    "enchantability": 30,
+    "toughness": 5.0,
+    "knockbackResistance": 1.0,
+    "equipSound": {
+      "value": "item.armor.equip_iron"
+    },
+    "repairItems": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "mythicrealms:custom/sunsword",
+  "textures": {
+    "0": "mythicrealms:block/sun_sword",
+    "particle": "mythicrealms:item/steel_sword"
+  }
+}

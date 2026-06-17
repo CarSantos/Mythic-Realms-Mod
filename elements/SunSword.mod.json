@@ -6,38 +6,38 @@
     "renderType": 1,
     "blockingRenderType": 0,
     "texture": "steel_sword",
-    "customModelName": "divinesword:default",
+    "customModelName": "sunsword:default",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
-    "name": "Celestial Sword",
+    "name": "Sun Sword",
     "specialInformation": {
       "fixedValue": []
     },
     "creativeTabs": [
       {
-        "value": "CUSTOM:DivineWeapons"
+        "value": "TOOLS"
       }
     ],
     "efficiency": 4.0,
-    "attackSpeed": 1.2000000000000002,
-    "enchantability": 25,
-    "damageVsEntity": 12.0,
-    "usageCount": 1024,
+    "attackSpeed": 1.0,
+    "enchantability": 64,
+    "damageVsEntity": 20.0,
+    "usageCount": 16224,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [
       {
-        "value": "CUSTOM:AngelIngot"
+        "value": "CUSTOM:DivineIngot"
       }
     ],
     "immuneToFire": true,
-    "blockDropsTier": "DIAMOND",
+    "blockDropsTier": "NETHERITE",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {
-      "name": "DivineSwordLivingEntityIsHitWithTool"
+      "name": "SunSwordLivingEntityIsHitWithTool"
     }
   }
 }

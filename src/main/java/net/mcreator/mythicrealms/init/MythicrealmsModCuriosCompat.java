@@ -244,5 +244,16 @@ public class MythicrealmsModCuriosCompat {
 				BasicHumanProcedure.execute(slotContext.entity());
 			}
 		}, MythicrealmsModItems.TANK_ROLE.get());
+		event.registerItem(CuriosCapability.ITEM, (stack, context) -> new ICurio() {
+			@Override
+			public ItemStack getStack() {
+				return stack;
+			}
+
+			@Override
+			public void curioTick(SlotContext slotContext) {
+				EyeOfRaCuroisWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity().level(), slotContext.entity().getX(), slotContext.entity().getY(), slotContext.entity().getZ(), slotContext.entity());
+			}
+		}, MythicrealmsModItems.EYE_OF_RA.get());
 	}
 }
