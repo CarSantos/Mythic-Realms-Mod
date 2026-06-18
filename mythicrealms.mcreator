@@ -14233,6 +14233,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ],
         "files": [
@@ -14300,6 +14316,37 @@
           "src/main/resources/assets/mythicrealms/models/item/egyptian_staff.json",
           "src/main/java/net/mcreator/mythicrealms/item/EgyptianStaffItem.java",
           "src/main/resources/assets/mythicrealms/items/egyptian_staff.json"
+        ]
+      },
+      "path": "~/Item/Weapons/Egyptian Staff"
+    },
+    {
+      "name": "PrisonOfRaPlace",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prison_of_ra_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/PrisonOfRaPlaceProcedure.java"
         ]
       },
       "path": "~/Item/Weapons/Egyptian Staff"

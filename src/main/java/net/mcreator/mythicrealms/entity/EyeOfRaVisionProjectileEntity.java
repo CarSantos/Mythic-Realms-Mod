@@ -84,13 +84,13 @@ public class EyeOfRaVisionProjectileEntity extends AbstractArrow implements Item
 	@Override
 	public void playerTouch(Player entity) {
 		super.playerTouch(entity);
-		EyeOfRaVisionProjectileProjectileHitsProcedure.execute(entity);
+		EyeOfRaVisionProjectileProjectileHitsProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entity);
 	}
 
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		EyeOfRaVisionProjectileProjectileHitsProcedure.execute(entityHitResult.getEntity());
+		EyeOfRaVisionProjectileProjectileHitsProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
 	}
 
 	@Override
