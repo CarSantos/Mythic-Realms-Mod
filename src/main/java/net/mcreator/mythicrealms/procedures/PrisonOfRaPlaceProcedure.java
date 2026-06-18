@@ -14,8 +14,8 @@ public class PrisonOfRaPlaceProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("mythicrealms", "prison_of_ra"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, BlockPos.containing(x - 7, y - 2, z - 7), BlockPos.containing(x - 7, y - 2, z - 7), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-						_serverworld.random, 3);
+				template.placeInWorld(_serverworld, BlockPos.containing(x - 5.5, y - 1.5, z - 5.5), BlockPos.containing(x - 5.5, y - 1.5, z - 5.5),
+						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}
 		}
 	}

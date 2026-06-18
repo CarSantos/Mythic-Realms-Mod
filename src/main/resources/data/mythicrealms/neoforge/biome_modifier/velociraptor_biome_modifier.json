@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_spawns",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "spawners": {
+    "type": "mythicrealms:velociraptor",
+    "weight": 30,
+    "minCount": 2,
+    "maxCount": 3
+  }
+}

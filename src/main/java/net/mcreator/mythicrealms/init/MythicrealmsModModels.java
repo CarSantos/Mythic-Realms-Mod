@@ -60,6 +60,7 @@ public class MythicrealmsModModels {
 		event.registerLayerDefinition(ModelArmor_god_egyptian.LAYER_LOCATION, ModelArmor_god_egyptian::createBodyLayer);
 		event.registerLayerDefinition(ModelDracula.LAYER_LOCATION, ModelDracula::createBodyLayer);
 		event.registerLayerDefinition(ModelPaladino_Armor.LAYER_LOCATION, ModelPaladino_Armor::createBodyLayer);
+		event.registerLayerDefinition(Modelvelociraptor.LAYER_LOCATION, Modelvelociraptor::createBodyLayer);
 		event.registerLayerDefinition(ModelZombie.LAYER_LOCATION, ModelZombie::createBodyLayer);
 		event.registerLayerDefinition(ModelKitsune.LAYER_LOCATION, ModelKitsune::createBodyLayer);
 		event.registerLayerDefinition(ModelXochitl.LAYER_LOCATION, ModelXochitl::createBodyLayer);

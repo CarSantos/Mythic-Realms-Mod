@@ -124,6 +124,10 @@ public class MythicrealmsModEntities {
 					.sized(0.6f, 1.8f));
 	public static final DeferredHolder<EntityType<?>, EntityType<EyeOfRaVisionProjectileEntity>> EYE_OF_RA_VISION_PROJECTILE = register("eye_of_ra_vision_projectile",
 			EntityType.Builder.<EyeOfRaVisionProjectileEntity>of(EyeOfRaVisionProjectileEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0f, 0f));
+	public static final DeferredHolder<EntityType<?>, EntityType<VelociraptorEntity>> VELOCIRAPTOR = register("velociraptor",
+			EntityType.Builder.<VelociraptorEntity>of(VelociraptorEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -154,6 +158,7 @@ public class MythicrealmsModEntities {
 		WendigoEntity.init(event);
 		XochitlEntity.init(event);
 		UnicornEntity.init(event);
+		VelociraptorEntity.init(event);
 	}
 
 	@SubscribeEvent
@@ -179,5 +184,6 @@ public class MythicrealmsModEntities {
 		event.put(WENDIGO.get(), WendigoEntity.createAttributes().build());
 		event.put(XOCHITL.get(), XochitlEntity.createAttributes().build());
 		event.put(UNICORN.get(), UnicornEntity.createAttributes().build());
+		event.put(VELOCIRAPTOR.get(), VelociraptorEntity.createAttributes().build());
 	}
 }

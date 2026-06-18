@@ -1855,7 +1855,7 @@
           "src/main/java/net/mcreator/mythicrealms/client/renderer/GhostHorseRenderer.java"
         ]
       },
-      "path": "~/Creature/Ghost Horse"
+      "path": "~/Creature/01 Horse/Ghost Horse"
     },
     {
       "name": "GhostHorseOnInitialEntitySpawn",
@@ -1874,7 +1874,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/GhostHorseOnInitialEntitySpawnProcedure.java"
         ]
       },
-      "path": "~/Creature/Ghost Horse"
+      "path": "~/Creature/01 Horse/Ghost Horse"
     },
     {
       "name": "RunCondition",
@@ -1997,7 +1997,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/GhostHorseEntityIsHurtProcedure.java"
         ]
       },
-      "path": "~/Creature/Ghost Horse"
+      "path": "~/Creature/01 Horse/Ghost Horse"
     },
     {
       "name": "GhostHorseHurtCondition",
@@ -2017,7 +2017,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/GhostHorseHurtConditionProcedure.java"
         ]
       },
-      "path": "~/Creature/Ghost Horse"
+      "path": "~/Creature/01 Horse/Ghost Horse"
     },
     {
       "name": "NightmareHorse",
@@ -2034,7 +2034,7 @@
           "src/main/java/net/mcreator/mythicrealms/client/renderer/NightmareHorseRenderer.java"
         ]
       },
-      "path": "~/Creature/Nightmare Horse"
+      "path": "~/Creature/01 Horse/Nightmare Horse"
     },
     {
       "name": "NightmareHorseOnInitialEntitySpawn",
@@ -2057,7 +2057,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/NightmareHorseOnInitialEntitySpawnProcedure.java"
         ]
       },
-      "path": "~/Creature/Nightmare Horse"
+      "path": "~/Creature/01 Horse/Nightmare Horse"
     },
     {
       "name": "TameCreatureMount",
@@ -2183,7 +2183,7 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/hippocampus_biome_modifier.json"
         ]
       },
-      "path": "~/Creature/Hippocampus"
+      "path": "~/Creature/01 Horse/Hippocampus"
     },
     {
       "name": "HippocampusOnInitialEntitySpawn",
@@ -2202,7 +2202,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/HippocampusOnInitialEntitySpawnProcedure.java"
         ]
       },
-      "path": "~/Creature/Hippocampus"
+      "path": "~/Creature/01 Horse/Hippocampus"
     },
     {
       "name": "WaterIdleCondition",
@@ -4308,7 +4308,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/PandemicPlayerCollidesWithThisEntityProcedure.java"
         ]
       },
-      "path": "~/Creature/Pandemic"
+      "path": "~/Creature/01 Ambient/Pandemic"
     },
     {
       "name": "PandemicNaturalEntitySpawningCondition",
@@ -4340,7 +4340,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/PandemicNaturalEntitySpawningConditionProcedure.java"
         ]
       },
-      "path": "~/Creature/Pandemic"
+      "path": "~/Creature/01 Ambient/Pandemic"
     },
     {
       "name": "Pandemic",
@@ -4357,7 +4357,7 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/pandemic_biome_modifier.json"
         ]
       },
-      "path": "~/Creature/Pandemic"
+      "path": "~/Creature/01 Ambient/Pandemic"
     },
     {
       "name": "WalkCondition",
@@ -4426,7 +4426,7 @@
           "src/main/resources/assets/mythicrealms/items/yeti_spawn_egg.json"
         ]
       },
-      "path": "~/Creature/Yeti"
+      "path": "~/Creature/01 Boss/Yeti"
     },
     {
       "name": "JokerEntityIsHurt",
@@ -4445,7 +4445,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/JokerEntityIsHurtProcedure.java"
         ]
       },
-      "path": "~/Creature/Joker"
+      "path": "~/Creature/01 Boss/Joker"
     },
     {
       "name": "Joker",
@@ -4462,7 +4462,7 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/joker_biome_modifier.json"
         ]
       },
-      "path": "~/Creature/Joker"
+      "path": "~/Creature/01 Boss/Joker"
     },
     {
       "name": "VampireEffect",
@@ -4492,7 +4492,7 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/vampire_biome_modifier.json"
         ]
       },
-      "path": "~/Creature/Vampire"
+      "path": "~/Creature/01 Agressive/Vampire"
     },
     {
       "name": "DarknessPlains",
@@ -5032,7 +5032,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/VampireOnEntityTickUpdateProcedure.java"
         ]
       },
-      "path": "~/Creature/Vampire"
+      "path": "~/Creature/01 Agressive/Vampire"
     },
     {
       "name": "BloodBottleEveryTickWhileUsingItem",
@@ -5111,7 +5111,7 @@
           "src/main/resources/assets/mythicrealms/items/dracula_spawn_egg.json"
         ]
       },
-      "path": "~/Creature/Vampire"
+      "path": "~/Creature/01 Agressive/Vampire"
     },
     {
       "name": "BloodPotions",
@@ -5176,7 +5176,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/DraculaEntityDiesProcedure.java"
         ]
       },
-      "path": "~/Creature/Vampire"
+      "path": "~/Creature/01 Agressive/Vampire"
     },
     {
       "name": "VampireItIsStruckByLightning",
@@ -5211,7 +5211,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/VampireItIsStruckByLightningProcedure.java"
         ]
       },
-      "path": "~/Creature/Vampire"
+      "path": "~/Creature/01 Agressive/Vampire"
     },
     {
       "name": "LavaGolem",
@@ -5228,7 +5228,7 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/lava_golem_biome_modifier.json"
         ]
       },
-      "path": "~/Creature/Lava Golem"
+      "path": "~/Creature/01 Boss/Lava Golem"
     },
     {
       "name": "LavaGolemOnEntityTickUpdate",
@@ -5263,7 +5263,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/LavaGolemOnEntityTickUpdateProcedure.java"
         ]
       },
-      "path": "~/Creature/Lava Golem"
+      "path": "~/Creature/01 Boss/Lava Golem"
     },
     {
       "name": "RomanArena",
@@ -5371,7 +5371,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/GhostHorseSpawnProcedure.java"
         ]
       },
-      "path": "~/Creature/Ghost Horse"
+      "path": "~/Creature/01 Horse/Ghost Horse"
     },
     {
       "name": "MushroomHouseLoot",
@@ -5668,7 +5668,7 @@
           "src/main/java/net/mcreator/mythicrealms/entity/MummyEntity.java"
         ]
       },
-      "path": "~/Creature/Mummy"
+      "path": "~/Creature/01 Agressive/Mummy"
     },
     {
       "name": "MummyOnEntityTickUpdate",
@@ -5704,7 +5704,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/MummyOnEntityTickUpdateProcedure.java"
         ]
       },
-      "path": "~/Creature/Mummy"
+      "path": "~/Creature/01 Agressive/Mummy"
     },
     {
       "name": "Pharaoh",
@@ -5721,7 +5721,7 @@
           "src/main/java/net/mcreator/mythicrealms/entity/PharaohEntity.java"
         ]
       },
-      "path": "~/Creature/Mummy"
+      "path": "~/Creature/01 Agressive/Mummy"
     },
     {
       "name": "Ent",
@@ -5738,7 +5738,7 @@
           "src/main/java/net/mcreator/mythicrealms/entity/EntEntity.java"
         ]
       },
-      "path": "~/Creature/Ent"
+      "path": "~/Creature/01 Boss/Ent"
     },
     {
       "name": "BloodGrassMobplayerCollidesWithPlant",
@@ -5778,7 +5778,7 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/kitsune_biome_modifier.json"
         ]
       },
-      "path": "~/Creature/Kitsune"
+      "path": "~/Creature/01 Ambient/Kitsune"
     },
     {
       "name": "Sturgeon",
@@ -5795,7 +5795,7 @@
           "src/main/java/net/mcreator/mythicrealms/client/renderer/SturgeonRenderer.java"
         ]
       },
-      "path": "~/Creature/Sturgeon"
+      "path": "~/Creature/01 Ambient/Sturgeon"
     },
     {
       "name": "Venraid",
@@ -5812,7 +5812,7 @@
           "src/main/resources/assets/mythicrealms/models/item/venraid_spawn_egg.json"
         ]
       },
-      "path": "~/Creature/Venraid"
+      "path": "~/Creature/01 Ambient/Venraid"
     },
     {
       "name": "VenraidScale",
@@ -6119,7 +6119,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/PharaohEntityDiesProcedure.java"
         ]
       },
-      "path": "~/Creature/Mummy"
+      "path": "~/Creature/01 Agressive/Mummy"
     },
     {
       "name": "TechArmor",
@@ -6764,7 +6764,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/EntEntityDiesProcedure.java"
         ]
       },
-      "path": "~/Creature/Ent"
+      "path": "~/Creature/01 Boss/Ent"
     },
     {
       "name": "BasicHuman",
@@ -7989,37 +7989,6 @@
       "path": "~/Item/Weapons/Egyptian Sword"
     },
     {
-      "name": "PumpkinHeadEntityDies",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "pumpkin_head_entity_dies",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/mythicrealms/procedures/PumpkinHeadEntityDiesProcedure.java"
-        ]
-      },
-      "path": "~/Creature/Pumpkin Head"
-    },
-    {
       "name": "AutoSmelt",
       "type": "enchantment",
       "compiles": true,
@@ -8678,7 +8647,7 @@
           "src/main/resources/assets/mythicrealms/items/angel_spawn_egg.json"
         ]
       },
-      "path": "~/Creature/Angel"
+      "path": "~/Creature/01 Agressive/Angel"
     },
     {
       "name": "Demon",
@@ -8695,7 +8664,7 @@
           "src/main/java/net/mcreator/mythicrealms/client/renderer/DemonRenderer.java"
         ]
       },
-      "path": "~/Creature/Demon"
+      "path": "~/Creature/01 Agressive/Demon"
     },
     {
       "name": "Sky",
@@ -9188,7 +9157,7 @@
           "src/main/resources/data/mythicrealms/neoforge/biome_modifier/wendigo_biome_modifier.json"
         ]
       },
-      "path": "~/Creature/Wendigo"
+      "path": "~/Creature/01 Agressive/Wendigo"
     },
     {
       "name": "YggdrasilTreeBig",
@@ -9680,7 +9649,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/WendigoNaturalEntitySpawningConditionProcedure.java"
         ]
       },
-      "path": "~/Creature/Wendigo"
+      "path": "~/Creature/01 Agressive/Wendigo"
     },
     {
       "name": "DemonNaturalEntitySpawningCondition",
@@ -9712,7 +9681,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/DemonNaturalEntitySpawningConditionProcedure.java"
         ]
       },
-      "path": "~/Creature/Demon"
+      "path": "~/Creature/01 Agressive/Demon"
     },
     {
       "name": "XochitlPowder",
@@ -9802,7 +9771,7 @@
           "src/main/resources/assets/mythicrealms/items/xochitl_spawn_egg.json"
         ]
       },
-      "path": "~/Creature/Xochitl"
+      "path": "~/Creature/01 Boss/Xochitl"
     },
     {
       "name": "MythicForestEffect",
@@ -12018,7 +11987,7 @@
           "src/main/java/net/mcreator/mythicrealms/client/renderer/UnicornRenderer.java"
         ]
       },
-      "path": "~/Creature/Unicorn"
+      "path": "~/Creature/01 Horse/Unicorn"
     },
     {
       "name": "Werewolfspawn",
@@ -12151,7 +12120,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/UnicornOnInitialEntitySpawnProcedure.java"
         ]
       },
-      "path": "~/Creature/Unicorn"
+      "path": "~/Creature/01 Horse/Unicorn"
     },
     {
       "name": "BloodMoonEntity",
@@ -12963,18 +12932,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -12984,7 +12941,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/SturgeonNaturalEntitySpawningConditionProcedure.java"
         ]
       },
-      "path": "~/Creature/Sturgeon"
+      "path": "~/Creature/01 Ambient/Sturgeon"
     },
     {
       "name": "SkyPortal",
@@ -13114,18 +13071,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -13135,7 +13080,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/XochitlNaturalEntitySpawningConditionProcedure.java"
         ]
       },
-      "path": "~/Creature/Xochitl"
+      "path": "~/Creature/01 Boss/Xochitl"
     },
     {
       "name": "SolidBlood",
@@ -13275,7 +13220,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/CommandMountProcedure.java"
         ]
       },
-      "path": "~/Creature"
+      "path": "~/Creature/00 Procedures"
     },
     {
       "name": "YetiCommandMount",
@@ -13306,7 +13251,7 @@
           "src/main/java/net/mcreator/mythicrealms/procedures/YetiCommandMountProcedure.java"
         ]
       },
-      "path": "~/Creature/Yeti"
+      "path": "~/Creature/01 Boss/Yeti"
     },
     {
       "name": "TeslaArmor",
@@ -14350,6 +14295,43 @@
         ]
       },
       "path": "~/Item/Weapons/Egyptian Staff"
+    },
+    {
+      "name": "Velociraptor",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "velociraptor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/entity/VelociraptorEntity.java",
+          "src/main/resources/assets/mythicrealms/models/item/velociraptor_spawn_egg.json",
+          "src/main/resources/assets/mythicrealms/items/velociraptor_spawn_egg.json",
+          "src/main/resources/data/mythicrealms/neoforge/biome_modifier/velociraptor_biome_modifier.json",
+          "src/main/java/net/mcreator/mythicrealms/client/renderer/VelociraptorRenderer.java"
+        ]
+      },
+      "path": "~/Creature/01 Dinossaur/Velociraptor"
+    },
+    {
+      "name": "VelociraptorNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "velociraptor_natural_entity_spawning_condition",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/mythicrealms/procedures/VelociraptorNaturalEntitySpawningConditionProcedure.java"
+        ]
+      },
+      "path": "~/Creature/01 Dinossaur/Velociraptor"
     }
   ],
   "variable_elements": [
@@ -16616,7 +16598,6 @@
     "ITEMS:mythicrealms:pre_history_armor_repair_items": [
       "~Blocks.BONE_BLOCK"
     ],
-    "ITEMS:mythicrealms:egyptian_god_armor_repair_items": [],
     "ITEMS:mythicrealms:sun_sword_repair_items": [
       "~CUSTOM:DivineIngot"
     ],
@@ -16742,7 +16723,8 @@
       "Demon",
       "Wendigo",
       "Xochitl",
-      "Unicorn"
+      "Unicorn",
+      "Velociraptor"
     ],
     "TOOLS": [
       "MinersDream",
@@ -17362,7 +17344,9 @@
       "item.mythicrealms.hindu_god_armor_boots": "Hindu God Boots",
       "item.mythicrealms.sun_sword": "Sun Sword",
       "item.mythicrealms.moon_sword": "Moon Sword",
-      "item.mythicrealms.egyptian_staff": "Egyptian Staff"
+      "item.mythicrealms.egyptian_staff": "Egyptian Staff",
+      "item.mythicrealms.velociraptor_spawn_egg": "Velociraptor Spawn Egg",
+      "entity.mythicrealms.velociraptor": "Velociraptor"
     }
   },
   "metadata": {
@@ -17788,88 +17772,109 @@
         "name": "Creature",
         "children": [
           {
-            "name": "Ghost Horse",
-            "children": []
-          },
-          {
-            "name": "Nightmare Horse",
-            "children": []
-          },
-          {
             "name": "00 Procedures",
             "children": []
           },
           {
-            "name": "Hippocampus",
-            "children": []
+            "name": "01 Dinossaur",
+            "children": [
+              {
+                "name": "Velociraptor",
+                "children": []
+              }
+            ]
           },
           {
-            "name": "Pandemic",
-            "children": []
+            "name": "01 Horse",
+            "children": [
+              {
+                "name": "Ghost Horse",
+                "children": []
+              },
+              {
+                "name": "Hippocampus",
+                "children": []
+              },
+              {
+                "name": "Nightmare Horse",
+                "children": []
+              },
+              {
+                "name": "Unicorn",
+                "children": []
+              }
+            ]
           },
           {
-            "name": "Yeti",
-            "children": []
+            "name": "01 Boss",
+            "children": [
+              {
+                "name": "Ent",
+                "children": []
+              },
+              {
+                "name": "Joker",
+                "children": []
+              },
+              {
+                "name": "Lava Golem",
+                "children": []
+              },
+              {
+                "name": "Yeti",
+                "children": []
+              },
+              {
+                "name": "Xochitl",
+                "children": []
+              }
+            ]
           },
           {
-            "name": "Joker",
-            "children": []
+            "name": "01 Ambient",
+            "children": [
+              {
+                "name": "Sturgeon",
+                "children": []
+              },
+              {
+                "name": "Kitsune",
+                "children": []
+              },
+              {
+                "name": "Pandemic",
+                "children": []
+              },
+              {
+                "name": "Venraid",
+                "children": []
+              }
+            ]
           },
           {
-            "name": "Vampire",
-            "children": []
-          },
-          {
-            "name": "Lava Golem",
-            "children": []
-          },
-          {
-            "name": "Mummy",
-            "children": []
-          },
-          {
-            "name": "Ent",
-            "children": []
-          },
-          {
-            "name": "Kitsune",
-            "children": []
-          },
-          {
-            "name": "Sturgeon",
-            "children": []
-          },
-          {
-            "name": "Venraid",
-            "children": []
-          },
-          {
-            "name": "Pumpkin Head",
-            "children": []
-          },
-          {
-            "name": "Angel",
-            "children": []
-          },
-          {
-            "name": "Demon",
-            "children": []
-          },
-          {
-            "name": "Wendigo",
-            "children": []
-          },
-          {
-            "name": "Xochitl",
-            "children": []
-          },
-          {
-            "name": "Unicorn",
-            "children": []
-          },
-          {
-            "name": "Deepmare",
-            "children": []
+            "name": "01 Agressive",
+            "children": [
+              {
+                "name": "Demon",
+                "children": []
+              },
+              {
+                "name": "Mummy",
+                "children": []
+              },
+              {
+                "name": "Vampire",
+                "children": []
+              },
+              {
+                "name": "Wendigo",
+                "children": []
+              },
+              {
+                "name": "Angel",
+                "children": []
+              }
+            ]
           }
         ]
       },

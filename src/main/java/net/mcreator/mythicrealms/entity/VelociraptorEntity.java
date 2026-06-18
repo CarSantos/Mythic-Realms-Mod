@@ -2,29 +2,30 @@ package net.mcreator.mythicrealms.entity;
 
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-import net.neoforged.neoforge.common.NeoForgeMod;
+import net.neoforged.neoforge.event.EventHooks;
 
 import net.minecraft.world.level.storage.ValueOutput;
 import net.minecraft.world.level.storage.ValueInput;
-import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.SpawnEggItem;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.navigation.WaterBoundPathNavigation;
-import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
-import net.minecraft.world.entity.ai.control.MoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.*;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.Mth;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -32,54 +33,24 @@ import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.component.DataComponents;
 
-import net.mcreator.mythicrealms.procedures.SwimConditionProcedure;
-import net.mcreator.mythicrealms.procedures.SturgeonNaturalEntitySpawningConditionProcedure;
+import net.mcreator.mythicrealms.procedures.WalkConditionProcedure;
+import net.mcreator.mythicrealms.procedures.VelociraptorNaturalEntitySpawningConditionProcedure;
+import net.mcreator.mythicrealms.procedures.IdleConditionProcedure;
 import net.mcreator.mythicrealms.init.MythicrealmsModEntities;
 
-public class SturgeonEntity extends PathfinderMob {
+public class VelociraptorEntity extends TamableAnimal {
 
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(SturgeonEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(SturgeonEntity.class, EntityDataSerializers.INT);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(VelociraptorEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<Integer> ANIM = SynchedEntityData.defineId(VelociraptorEntity.class, EntityDataSerializers.INT);
 	public final AnimationState animationState0 = new AnimationState();
+	public final AnimationState animationState1 = new AnimationState();
 
-	public SturgeonEntity(EntityType<SturgeonEntity> type, Level world) {
+	public VelociraptorEntity(EntityType<VelociraptorEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-		this.setPathfindingMalus(PathType.WATER, 0);
-		this.moveControl = new MoveControl(this) {
-			@Override
-			public void tick() {
-				if (SturgeonEntity.this.isInWater())
-					SturgeonEntity.this.setDeltaMovement(SturgeonEntity.this.getDeltaMovement().add(0, 0.005, 0));
-				if (this.operation == MoveControl.Operation.MOVE_TO && !SturgeonEntity.this.getNavigation().isDone()) {
-					double dx = this.wantedX - SturgeonEntity.this.getX();
-					double dy = this.wantedY - SturgeonEntity.this.getY();
-					double dz = this.wantedZ - SturgeonEntity.this.getZ();
-					float f = (float) (Mth.atan2(dz, dx) * (double) (180 / Math.PI)) - 90;
-					float f1 = (float) (this.speedModifier * SturgeonEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
-					SturgeonEntity.this.setYRot(this.rotlerp(SturgeonEntity.this.getYRot(), f, 10));
-					SturgeonEntity.this.yBodyRot = SturgeonEntity.this.getYRot();
-					SturgeonEntity.this.yHeadRot = SturgeonEntity.this.getYRot();
-					if (SturgeonEntity.this.isInWater()) {
-						SturgeonEntity.this.setSpeed((float) SturgeonEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
-						float f2 = -(float) (Mth.atan2(dy, (float) Math.sqrt(dx * dx + dz * dz)) * (180 / Math.PI));
-						f2 = Mth.clamp(Mth.wrapDegrees(f2), -85, 85);
-						SturgeonEntity.this.setXRot(this.rotlerp(SturgeonEntity.this.getXRot(), f2, 5));
-						float f3 = Mth.cos(SturgeonEntity.this.getXRot() * (float) (Math.PI / 180.0));
-						SturgeonEntity.this.setZza(f3 * f1);
-						SturgeonEntity.this.setYya((float) (f1 * dy));
-					} else {
-						SturgeonEntity.this.setSpeed(f1 * 0.05F);
-					}
-				} else {
-					SturgeonEntity.this.setSpeed(0);
-					SturgeonEntity.this.setYya(0);
-					SturgeonEntity.this.setZza(0);
-				}
-			}
-		};
 	}
 
 	@Override
@@ -89,8 +60,14 @@ public class SturgeonEntity extends PathfinderMob {
 				case -1 :
 					this.animationState0.stop();
 					break;
+				case -2 :
+					this.animationState1.stop();
+					break;
 				case 0 :
 					this.animationState0.start(this.tickCount);
+					break;
+				case 1 :
+					this.animationState1.start(this.tickCount);
 					break;
 			}
 		}
@@ -100,7 +77,7 @@ public class SturgeonEntity extends PathfinderMob {
 	@Override
 	protected void defineSynchedData(SynchedEntityData.Builder builder) {
 		super.defineSynchedData(builder);
-		builder.define(TEXTURE, "sturgeon");
+		builder.define(TEXTURE, "velociraptor");
 		builder.define(ANIM, 0);
 	}
 
@@ -110,11 +87,6 @@ public class SturgeonEntity extends PathfinderMob {
 
 	public String getTexture() {
 		return this.entityData.get(TEXTURE);
-	}
-
-	@Override
-	protected PathNavigation createNavigation(Level world) {
-		return new WaterBoundPathNavigation(this, world);
 	}
 
 	@Override
@@ -143,13 +115,6 @@ public class SturgeonEntity extends PathfinderMob {
 	}
 
 	@Override
-	public boolean hurtServer(ServerLevel level, DamageSource damagesource, float amount) {
-		if (damagesource.is(DamageTypes.DROWN))
-			return false;
-		return super.hurtServer(level, damagesource, amount);
-	}
-
-	@Override
 	public void addAdditionalSaveData(ValueOutput valueOutput) {
 		super.addAdditionalSaveData(valueOutput);
 		valueOutput.putString("Texture", this.getTexture());
@@ -158,20 +123,73 @@ public class SturgeonEntity extends PathfinderMob {
 	@Override
 	public void readAdditionalSaveData(ValueInput valueInput) {
 		super.readAdditionalSaveData(valueInput);
-		this.setTexture(valueInput.getStringOr("Texture", "sturgeon"));
+		this.setTexture(valueInput.getStringOr("Texture", "velociraptor"));
+	}
+
+	@Override
+	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
+		ItemStack itemstack = sourceentity.getItemInHand(hand);
+		InteractionResult retval = InteractionResult.SUCCESS;
+		Item item = itemstack.getItem();
+		if (itemstack.getItem() instanceof SpawnEggItem) {
+			retval = super.mobInteract(sourceentity, hand);
+		} else if (this.level().isClientSide()) {
+			retval = (this.isTame() && this.isOwnedBy(sourceentity) || this.isFood(itemstack)) ? InteractionResult.SUCCESS : InteractionResult.PASS;
+		} else {
+			if (this.isTame()) {
+				if (this.isOwnedBy(sourceentity)) {
+					if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+						this.usePlayerItem(sourceentity, hand, itemstack);
+						FoodProperties foodproperties = itemstack.get(DataComponents.FOOD);
+						float nutrition = foodproperties != null ? (float) foodproperties.nutrition() : 1;
+						this.heal(nutrition);
+						retval = InteractionResult.SUCCESS;
+					} else if (this.isFood(itemstack) && this.getHealth() < this.getMaxHealth()) {
+						this.usePlayerItem(sourceentity, hand, itemstack);
+						this.heal(4);
+						retval = InteractionResult.SUCCESS;
+					} else {
+						retval = super.mobInteract(sourceentity, hand);
+					}
+				}
+			} else if (this.isFood(itemstack)) {
+				this.usePlayerItem(sourceentity, hand, itemstack);
+				if (this.random.nextInt(3) == 0 && !EventHooks.onAnimalTame(this, sourceentity)) {
+					this.tame(sourceentity);
+					this.level().broadcastEntityEvent(this, (byte) 7);
+				} else {
+					this.level().broadcastEntityEvent(this, (byte) 6);
+				}
+				this.setPersistenceRequired();
+				retval = InteractionResult.SUCCESS;
+			} else {
+				retval = super.mobInteract(sourceentity, hand);
+				if (retval == InteractionResult.SUCCESS || retval == InteractionResult.CONSUME)
+					this.setPersistenceRequired();
+			}
+		}
+		return retval;
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
 		if (this.level().isClientSide()) {
-			this.animationState0.animateWhen(SwimConditionProcedure.execute(this.level(), this.getX(), this.getZ(), this), this.tickCount);
+			this.animationState0.animateWhen(WalkConditionProcedure.execute(this), this.tickCount);
+			this.animationState1.animateWhen(IdleConditionProcedure.execute(this), this.tickCount);
 		}
 	}
 
 	@Override
-	public boolean checkSpawnObstruction(LevelReader world) {
-		return world.isUnobstructed(this);
+	public AgeableMob getBreedOffspring(ServerLevel serverWorld, AgeableMob ageable) {
+		VelociraptorEntity retval = MythicrealmsModEntities.VELOCIRAPTOR.get().create(serverWorld, EntitySpawnReason.BREEDING);
+		retval.finalizeSpawn(serverWorld, serverWorld.getCurrentDifficultyAt(retval.blockPosition()), EntitySpawnReason.BREEDING, null);
+		return retval;
+	}
+
+	@Override
+	public boolean isFood(ItemStack stack) {
+		return Ingredient.of(Items.PORKCHOP, Items.BEEF, Items.CHICKEN, Items.RABBIT, Items.MUTTON).test(stack);
 	}
 
 	@Override
@@ -195,23 +213,22 @@ public class SturgeonEntity extends PathfinderMob {
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
-		event.register(MythicrealmsModEntities.STURGEON.get(), SpawnPlacementTypes.IN_WATER, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+		event.register(MythicrealmsModEntities.VELOCIRAPTOR.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return SturgeonNaturalEntitySpawningConditionProcedure.execute(world);
+			return VelociraptorNaturalEntitySpawningConditionProcedure.execute(world);
 		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 6);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 1);
+		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-		builder = builder.add(NeoForgeMod.SWIM_SPEED, 0.3);
+		builder = builder.add(Attributes.STEP_HEIGHT, 0.3);
 		return builder;
 	}
 }

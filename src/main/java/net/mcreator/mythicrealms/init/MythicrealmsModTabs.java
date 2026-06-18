@@ -305,6 +305,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.WENDIGO_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.XOCHITL_SPAWN_EGG.get());
 			tabData.accept(MythicrealmsModItems.UNICORN_SPAWN_EGG.get());
+			tabData.accept(MythicrealmsModItems.VELOCIRAPTOR_SPAWN_EGG.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(MythicrealmsModItems.MINERS_DREAM.get());
 			tabData.accept(MythicrealmsModItems.STEEL_PICKAXE.get());

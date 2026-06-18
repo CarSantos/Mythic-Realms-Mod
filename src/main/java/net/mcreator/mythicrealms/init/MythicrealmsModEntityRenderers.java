@@ -46,5 +46,6 @@ public class MythicrealmsModEntityRenderers {
 		event.registerEntityRenderer(MythicrealmsModEntities.TOXIC_SLIME_PROJETILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(MythicrealmsModEntities.UNICORN.get(), UnicornRenderer::new);
 		event.registerEntityRenderer(MythicrealmsModEntities.EYE_OF_RA_VISION_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(MythicrealmsModEntities.VELOCIRAPTOR.get(), VelociraptorRenderer::new);
 	}
 }

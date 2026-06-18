@@ -238,7 +238,7 @@ public class XochitlEntity extends PathfinderMob implements RangedAttackMob {
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			return XochitlNaturalEntitySpawningConditionProcedure.execute(world, x, y, z);
+			return XochitlNaturalEntitySpawningConditionProcedure.execute(world);
 		}, RegisterSpawnPlacementsEvent.Operation.REPLACE);
 	}
 
