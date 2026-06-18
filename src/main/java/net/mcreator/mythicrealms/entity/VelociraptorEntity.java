@@ -38,6 +38,7 @@ import net.minecraft.core.component.DataComponents;
 import net.mcreator.mythicrealms.procedures.WalkConditionProcedure;
 import net.mcreator.mythicrealms.procedures.VelociraptorNaturalEntitySpawningConditionProcedure;
 import net.mcreator.mythicrealms.procedures.IdleConditionProcedure;
+import net.mcreator.mythicrealms.init.MythicrealmsModItems;
 import net.mcreator.mythicrealms.init.MythicrealmsModEntities;
 
 public class VelociraptorEntity extends TamableAnimal {
@@ -102,6 +103,11 @@ public class VelociraptorEntity extends TamableAnimal {
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
+	}
+
+	protected void dropCustomDeathLoot(ServerLevel serverLevel, DamageSource source, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(serverLevel, source, recentlyHitIn);
+		this.spawnAtLocation(serverLevel, new ItemStack(MythicrealmsModItems.FOSSIL.get()));
 	}
 
 	@Override

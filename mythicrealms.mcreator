@@ -14332,6 +14332,77 @@
         ]
       },
       "path": "~/Creature/01 Dinossaur/Velociraptor"
+    },
+    {
+      "name": "Fossil",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mythicrealms/models/item/fossil.json",
+          "src/main/java/net/mcreator/mythicrealms/item/FossilItem.java",
+          "src/main/resources/assets/mythicrealms/items/fossil.json"
+        ]
+      },
+      "path": "~/Creature/01 Dinossaur"
+    },
+    {
+      "name": "FossilHelmetRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/fossil_helmet_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/fossil_helmet_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/FossilArmor"
+    },
+    {
+      "name": "FossilChestRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_chest_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/fossil_chest_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/fossil_chest_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/FossilArmor"
+    },
+    {
+      "name": "FossilLegRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_leg_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/recipe/fossil_leg_recipe.json",
+          "src/main/resources/data/mythicrealms/advancement/recipes/fossil_leg_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/FossilArmor"
+    },
+    {
+      "name": "FossilBootRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_boot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mythicrealms/advancement/recipes/fossil_boot_recipe.json",
+          "src/main/resources/data/mythicrealms/recipe/fossil_boot_recipe.json"
+        ]
+      },
+      "path": "~/Item/Armors/02 Armor/FossilArmor"
     }
   ],
   "variable_elements": [
@@ -16650,7 +16721,8 @@
       "UltimateIngot",
       "SoulItem",
       "SoulIngot",
-      "DivineIngot"
+      "DivineIngot",
+      "Fossil"
     ],
     "DECORATIONS": [
       "AdamantOre",
@@ -17346,7 +17418,8 @@
       "item.mythicrealms.moon_sword": "Moon Sword",
       "item.mythicrealms.egyptian_staff": "Egyptian Staff",
       "item.mythicrealms.velociraptor_spawn_egg": "Velociraptor Spawn Egg",
-      "entity.mythicrealms.velociraptor": "Velociraptor"
+      "entity.mythicrealms.velociraptor": "Velociraptor",
+      "item.mythicrealms.fossil": "Fossil"
     }
   },
   "metadata": {
@@ -17506,7 +17579,8 @@
       "SoulIngot": "armorforge:default",
       "DivineIngot": "armorforge:default",
       "EyeOfRa": "armorforge:default",
-      "EgyptianStaff": "armorforge:default"
+      "EgyptianStaff": "armorforge:default",
+      "Fossil": "armorforge:default"
     },
     "betteranimations_perspectives": {
       "MagicianRole": "All perspectives",
@@ -17628,7 +17702,8 @@
       "SoulIngot": "All perspectives",
       "DivineIngot": "All perspectives",
       "EyeOfRa": "All perspectives",
-      "EgyptianStaff": "All perspectives"
+      "EgyptianStaff": "All perspectives",
+      "Fossil": "All perspectives"
     }
   },
   "foldersRoot": {

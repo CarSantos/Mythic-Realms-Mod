@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": "mythicrealms:fossil"
+  },
+  "result": {
+    "id": "mythicrealms:pre_history_armor_helmet",
+    "count": 1
+  }
+}

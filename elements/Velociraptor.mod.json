@@ -126,7 +126,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:Fossil"
     },
     "livingSound": {
       "value": ""

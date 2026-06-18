@@ -176,6 +176,7 @@ public class MythicrealmsModTabs {
 			tabData.accept(MythicrealmsModItems.SOUL_ITEM.get());
 			tabData.accept(MythicrealmsModItems.SOUL_INGOT.get());
 			tabData.accept(MythicrealmsModItems.DIVINE_INGOT.get());
+			tabData.accept(MythicrealmsModItems.FOSSIL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(MythicrealmsModBlocks.ADAMANT_ORE.get().asItem());
 			tabData.accept(MythicrealmsModBlocks.URANIUM_BLOCK.get().asItem());

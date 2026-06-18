@@ -335,6 +335,7 @@ public class MythicrealmsModItems {
 	public static final DeferredItem<Item> MOON_SWORD;
 	public static final DeferredItem<Item> EGYPTIAN_STAFF;
 	public static final DeferredItem<Item> VELOCIRAPTOR_SPAWN_EGG;
+	public static final DeferredItem<Item> FOSSIL;
 	static {
 		TANK_ROLE = register("tank_role", TankRoleItem::new);
 		GIANT_ROLE = register("giant_role", GiantRoleItem::new);
@@ -643,6 +644,7 @@ public class MythicrealmsModItems {
 		MOON_SWORD = register("moon_sword", MoonSwordItem::new);
 		EGYPTIAN_STAFF = register("egyptian_staff", EgyptianStaffItem::new);
 		VELOCIRAPTOR_SPAWN_EGG = register("velociraptor_spawn_egg", properties -> new SpawnEggItem(MythicrealmsModEntities.VELOCIRAPTOR.get(), properties));
+		FOSSIL = register("fossil", FossilItem::new);
 	}
 
 	// Start of user code block custom items
